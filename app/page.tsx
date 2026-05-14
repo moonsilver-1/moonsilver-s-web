@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { useAuth } from "@/app/components/auth-provider";
 
 const awards = [
   { title: { zh: "三次一等奖学金", en: "Three First-Class Scholarships" }, sub: { zh: "杭州电子科技大学", en: "Hangzhou Dianzi University" } },
@@ -94,8 +95,31 @@ function Divider() {
 
 export default function HomePage() {
   const { language } = useSiteLanguage();
+  const { user } = useAuth();
   const isEnglish = language === "en";
   const [expanded, setExpanded] = useState<string | null>("all");
+
+  if (!user) {
+    return (
+      <div className="flex min-h-[calc(100svh-5rem)] flex-col items-center justify-center bg-black text-white">
+        <div className="text-center">
+          <div className="mb-6 text-6xl">🔒</div>
+          <h2 className="mb-3 text-2xl font-semibold">
+            {isEnglish ? "Login Required" : "需要登录"}
+          </h2>
+          <p className="mb-8 text-sm text-white/50">
+            {isEnglish ? "Please log in to view this page." : "请登录后查看此页面。"}
+          </p>
+          <a
+            href="/account/login"
+            className="inline-block rounded-lg bg-white/10 px-8 py-3 text-sm font-medium transition-colors hover:bg-white/20"
+          >
+            {isEnglish ? "Go to Login" : "前往登录"}
+          </a>
+        </div>
+      </div>
+    );
+  }
 
   const copy = {
     heroEyebrow: isEnglish ? "HANGZHOU DIANZI UNIVERSITY · CLASS OF 2024" : "杭州电子科技大学 · 2024级",
