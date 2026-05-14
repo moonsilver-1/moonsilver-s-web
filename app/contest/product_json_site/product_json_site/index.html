@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品分类 JSON 接口</title>
+  <style>
+    :root {
+      --bg: linear-gradient(135deg, #f5eee5 0%, #d9ebe0 100%);
+      --card: rgba(255, 255, 255, 0.94);
+      --text: #22312a;
+      --muted: #4b6357;
+      --accent: #2f7f5f;
+      --accent-dark: #1f5d45;
+      --border: rgba(47, 127, 95, 0.16);
+      --code-bg: #eef6f1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .panel {
+      width: min(980px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(36, 48, 40, 0.12);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(28px, 4vw, 42px);
+    }
+
+    .intro {
+      margin: 0 0 26px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    .note {
+      margin: 0 0 26px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: #fff7ea;
+      color: #6a4d16;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .item {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .item h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+    }
+
+    .endpoint {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      background: var(--code-bg);
+      color: var(--accent-dark);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .endpoint:hover {
+      background: #dfeee6;
+    }
+
+    .samples {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <h1>产品分类 JSON 接口</h1>
+    <p class="intro">
+      下面是三个可直接访问的动态 JSON 接口链接。二维码可以直接指向这些地址，扫码后会返回对应母类下随机挑选的一个子类。
+    </p>
+    <p class="note">
+      返回值已经简化为最小结构，例如 <code>{"items":"苹果"}</code>。
+      每次请求 <code>/api/food.json</code>、<code>/api/daily.json</code>、<code>/api/electronics.json</code> 时，都会返回一个新的随机结果。
+    </p>
+
+    <section class="grid">
+      <article class="item">
+        <h2>食品</h2>
+        <a class="endpoint" href="./api/food.json" target="_blank" rel="noopener noreferrer">/api/food.json</a>
+        <p class="samples">每次访问会从苹果、香蕉、橙子、猪肉、牛肉、鸡肉、牛奶、酸奶等多个子类里随机返回一个。</p>
+      </article>
+
+      <article class="item">
+        <h2>日用品</h2>
+        <a class="endpoint" href="./api/daily.json" target="_blank" rel="noopener noreferrer">/api/daily.json</a>
+        <p class="samples">每次访问会从牙刷、牙膏、毛巾、洗衣液、洗洁精、香皂、纸巾等多个子类里随机返回一个。</p>
+      </article>
+
+      <article class="item">
+        <h2>电子产品</h2>
+        <a class="endpoint" href="./api/electronics.json" target="_blank" rel="noopener noreferrer">/api/electronics.json</a>
+        <p class="samples">每次访问会从手机、耳机、键盘、鼠标、显示器、平板电脑、路由器等多个子类里随机返回一个。</p>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
