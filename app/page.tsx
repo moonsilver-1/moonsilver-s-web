@@ -13,6 +13,7 @@ const awards = [
 const contests = [
   { award: { zh: "国特", en: "National 1st Prize" }, name: { zh: "美国大学生数学建模竞赛（O奖+AMS奖，赛题总冠军）", en: "MCM/ICM O Award + AMS Award (Overall Champion)" } },
   { award: { zh: "省一", en: "Provincial 1st Prize" }, name: { zh: "全国大学生数学建模竞赛", en: "National College Students Mathematical Modeling Contest" } },
+  { award: { zh: "区二", en: "Regional 2nd Prize" }, name: { zh: "中国大学生服务外包创新创业大赛（东部区域赛）", en: "China Service Outsourcing Innovation & Entrepreneurship Competition (Eastern Regional)" } },
   { award: { zh: "省二", en: "Provincial 2nd Prize" }, name: { zh: "浙江省大学生服务外包创新应用大赛", en: "Zhejiang Service Outsourcing Innovation Contest" } },
   { award: { zh: "省铜", en: "Provincial Bronze" }, name: { zh: "挑战杯“人工智能+”专项赛", en: "Challenge Cup AI+ Special Track" } },
   { award: { zh: "省三", en: "Provincial 3rd Prize" }, name: { zh: "浙江省人工智能竞赛", en: "Zhejiang Artificial Intelligence Contest" } },
@@ -62,6 +63,7 @@ const awardColor: Record<string, string> = {
   "国特": "bg-rose-500/15 text-rose-300 border-rose-400/50",
   "国一": "bg-yellow-400/10 text-yellow-300 border-yellow-400/30",
   "省一": "bg-yellow-400/10 text-yellow-300 border-yellow-400/30",
+  "区二": "bg-sky-400/10 text-sky-300 border-sky-400/30",
   "省二": "bg-sky-400/10 text-sky-300 border-sky-400/30",
   "省铜": "bg-amber-600/10 text-amber-400 border-amber-600/30",
   "省三": "bg-zinc-400/10 text-zinc-300 border-zinc-400/30",
@@ -73,6 +75,7 @@ const awardBarColor: Record<string, string> = {
   "国特": "#fb7185",
   "国一": "#facc15",
   "省一": "#facc15",
+  "区二": "#38bdf8",
   "省二": "#38bdf8",
   "省铜": "#d97706",
   "省三": "#a1a1aa",
