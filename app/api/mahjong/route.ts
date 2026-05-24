@@ -433,13 +433,15 @@ function doGang(g: GameState, room: Room, pid: number, tile: Tile, type: "self" 
       g.melds[pid][pi].tiles.push(tile);
       g.hands[pid] = g.hands[pid].filter((t) => t.id !== tile.id);
     } else {
+      const gangTiles = g.hands[pid].filter((t) => t.id === tile.id);
       g.hands[pid] = g.hands[pid].filter((t) => t.id !== tile.id);
-      g.melds[pid].push({ type: "gang_hidden", tiles: [tile, tile, tile, tile] });
+      g.melds[pid].push({ type: "gang_hidden", tiles: gangTiles });
     }
   } else {
+    const gangTiles: Tile[] = [tile];
     let rm = 0;
-    g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 3) { rm++; return false; } return true; });
-    g.melds[pid].push({ type: "gang_open", tiles: [tile, tile, tile, tile] });
+    g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 3) { rm++; gangTiles.push(t); return false; } return true; });
+    g.melds[pid].push({ type: "gang_open", tiles: gangTiles });
   }
   // draw after gang
   g.cur = pid;
@@ -465,11 +467,10 @@ function declareHu(g: GameState, room: Room, pid: number, disc: Tile | null, isS
   const pts = fan.total * base;
   const delta = [0, 0, 0, 0];
   if (isSelf) {
-    const pp = pts * 2;
-    for (let i = 0; i < 4; i++) if (i !== pid) { delta[i] = -pp; delta[pid] += pp; }
+    for (let i = 0; i < 4; i++) if (i !== pid) { delta[i] = -pts; delta[pid] += pts; }
   } else {
-    delta[g.lastDpid] = -pts * 2;
-    delta[pid] = pts * 2;
+    delta[g.lastDpid] = -pts;
+    delta[pid] = pts;
   }
   for (let i = 0; i < 4; i++) room.players[i].score += delta[i];
   g.dealer = pid;

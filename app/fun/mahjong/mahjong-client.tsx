@@ -390,6 +390,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     clearAI();
     for (let i = 1; i < 4; i++) {
       if (!reacts[i]) continue;
+      if (reacts[i].includes("hu")) { scheduleLocal(() => declareHu(i, tile, false), 500); return; }
       if (reacts[i].includes("gang")) { scheduleLocal(() => doGang(i, tile, "discard"), 350); return; }
       if (reacts[i].includes("peng")) { scheduleLocal(() => doPeng(i, tile), 350); return; }
       const chi = canChi(G.current.hands[i], tile, from, i);
@@ -402,8 +403,16 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     clearAI();
     const g = G.current;
     g._pendingBtns = [];
+    // Remove human's reactions, then process remaining AI reactions
+    if (g._reacts) {
+      delete g._reacts[0];
+      if (Object.keys(g._reacts).length > 0) {
+        aiReact(g._reacts, g._reactFrom, g._reactTile!);
+      } else {
+        schedNext(g._reactFrom);
+      }
+    }
     rerender();
-    if (g._reacts) schedNext(g._reactFrom);
   }
 
   function schedNext(from: number) {
@@ -430,9 +439,10 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     const g = G.current;
     clearAI();
     g._pendingBtns = [];
+    const pengTiles: Tile[] = [tile];
     let rm = 0;
-    g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 2) { rm++; return false; } return true; });
-    g.melds[pid].push({ type: "peng", tiles: [tile, tile, tile] });
+    g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 2) { rm++; pengTiles.push(t); return false; } return true; });
+    g.melds[pid].push({ type: "peng", tiles: pengTiles });
     SFX.peng();
     logIt(`${g.players[pid].name} <span style="color:#b89a40">碰 ${tileName(tile)}</span>`);
     showNotif(`${g.players[pid].name} 碰牌`);
@@ -471,13 +481,15 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
         g.melds[pid][pi].tiles.push(tile);
         g.hands[pid] = g.hands[pid].filter((t) => t.id !== tile.id);
       } else {
+        const gangTiles = g.hands[pid].filter((t) => t.id === tile.id);
         g.hands[pid] = g.hands[pid].filter((t) => t.id !== tile.id);
-        g.melds[pid].push({ type: "gang_hidden", tiles: [tile, tile, tile, tile] });
+        g.melds[pid].push({ type: "gang_hidden", tiles: gangTiles });
       }
     } else {
+      const gangTiles: Tile[] = [tile];
       let rm = 0;
-      g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 3) { rm++; return false; } return true; });
-      g.melds[pid].push({ type: "gang_open", tiles: [tile, tile, tile, tile] });
+      g.hands[pid] = g.hands[pid].filter((t) => { if (t.id === tile.id && rm < 3) { rm++; gangTiles.push(t); return false; } return true; });
+      g.melds[pid].push({ type: "gang_open", tiles: gangTiles });
     }
     SFX.gang();
     const lbl = type === "self" ? "暗杠" : "明杠";
@@ -511,11 +523,10 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     const pts = fan.total * base;
     const delta = [0, 0, 0, 0];
     if (isSelf) {
-      const pp = pts * 2;
-      for (let i = 0; i < 4; i++) if (i !== pid) { delta[i] = -pp; delta[pid] += pp; }
+      for (let i = 0; i < 4; i++) if (i !== pid) { delta[i] = -pts; delta[pid] += pts; }
     } else {
-      delta[g.lastDpid] = -pts * 2;
-      delta[pid] = pts * 2;
+      delta[g.lastDpid] = -pts;
+      delta[pid] = pts;
     }
     for (let i = 0; i < 4; i++) g.players[i].score += delta[i];
     g.dealer = pid;
@@ -996,12 +1007,12 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
         </div>
         <div className="mahjong-grid">
           <div className="mahjong-zone-top">
-            <PlayerHud player={localPlayers[2]} wind={windOf(2)} isDealer={g.dealer === 2} isCurrent={g.cur === 2} />
+            <PlayerHud player={localPlayers[2]} wind={windOf(2)} isDealer={g.dealer === 2} isCurrent={g.cur === 2} tileCount={g.hands[2].length} />
             <div className="mahjong-hand-row"><HandTiles pid={2} hand={g.hands[2]} /><MeldDisplay pid={2} melds={g.melds[2]} /></div>
           </div>
           <div className="mahjong-zone-left">
             <div className="mahjong-rotated-90">
-              <PlayerHud player={localPlayers[3]} wind={windOf(3)} isDealer={g.dealer === 3} isCurrent={g.cur === 3} />
+              <PlayerHud player={localPlayers[3]} wind={windOf(3)} isDealer={g.dealer === 3} isCurrent={g.cur === 3} tileCount={g.hands[3].length} />
               <div className="mahjong-hand-row"><HandTiles pid={3} hand={g.hands[3]} /><MeldDisplay pid={3} melds={g.melds[3]} /></div>
             </div>
           </div>
@@ -1021,7 +1032,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
           </div>
           <div className="mahjong-zone-right">
             <div className="mahjong-rotated-neg90">
-              <PlayerHud player={localPlayers[1]} wind={windOf(1)} isDealer={g.dealer === 1} isCurrent={g.cur === 1} />
+              <PlayerHud player={localPlayers[1]} wind={windOf(1)} isDealer={g.dealer === 1} isCurrent={g.cur === 1} tileCount={g.hands[1].length} />
               <div className="mahjong-hand-row"><HandTiles pid={1} hand={g.hands[1]} /><MeldDisplay pid={1} melds={g.melds[1]} /></div>
             </div>
           </div>
@@ -1121,7 +1132,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
         <div className="mahjong-grid">
           {/* Top: relative index 2 */}
           <div className="mahjong-zone-top">
-            <PlayerHud player={seatPlayers[2]} wind={windOf(2)} isDealer={v.dealer === 2} isCurrent={v.cur === 2} />
+            <PlayerHud player={seatPlayers[2]} wind={windOf(2)} isDealer={v.dealer === 2} isCurrent={v.cur === 2} tileCount={v.handCounts?.[2] ?? 13} />
             <div className="mahjong-hand-row">
               <HandTiles pid={2} hand={Array(v.handCounts?.[2] ?? 13).fill(null)} />
               <MeldDisplay pid={2} melds={v.melds[2]} />
@@ -1130,7 +1141,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
           {/* Left: relative index 3 */}
           <div className="mahjong-zone-left">
             <div className="mahjong-rotated-90">
-              <PlayerHud player={seatPlayers[3]} wind={windOf(3)} isDealer={v.dealer === 3} isCurrent={v.cur === 3} />
+              <PlayerHud player={seatPlayers[3]} wind={windOf(3)} isDealer={v.dealer === 3} isCurrent={v.cur === 3} tileCount={v.handCounts?.[3] ?? 13} />
               <div className="mahjong-hand-row">
                 <HandTiles pid={3} hand={Array(v.handCounts?.[3] ?? 13).fill(null)} />
                 <MeldDisplay pid={3} melds={v.melds[3]} />
@@ -1155,7 +1166,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
           {/* Right: relative index 1 */}
           <div className="mahjong-zone-right">
             <div className="mahjong-rotated-neg90">
-              <PlayerHud player={seatPlayers[1]} wind={windOf(1)} isDealer={v.dealer === 1} isCurrent={v.cur === 1} />
+              <PlayerHud player={seatPlayers[1]} wind={windOf(1)} isDealer={v.dealer === 1} isCurrent={v.cur === 1} tileCount={v.handCounts?.[1] ?? 13} />
               <div className="mahjong-hand-row">
                 <HandTiles pid={1} hand={Array(v.handCounts?.[1] ?? 13).fill(null)} />
                 <MeldDisplay pid={1} melds={v.melds[1]} />
@@ -1235,7 +1246,7 @@ function RowInput({ label, value, onChange, type = "text" }: { label: string; va
   );
 }
 
-function PlayerHud({ player, wind, isDealer, isCurrent }: { player: Player; wind: string; isDealer: boolean; isCurrent: boolean }) {
+function PlayerHud({ player, wind, isDealer, isCurrent, tileCount }: { player: Player; wind: string; isDealer: boolean; isCurrent: boolean; tileCount?: number }) {
   if (!player) return null;
   return (
     <div className="mahjong-hud">
@@ -1243,6 +1254,7 @@ function PlayerHud({ player, wind, isDealer, isCurrent }: { player: Player; wind
       <span className="mahjong-hud-name">{player.name}</span>
       <span className="mahjong-hud-wind">{wind}</span>
       <span className="mahjong-hud-score">{player.score}分</span>
+      {tileCount !== undefined && <span className="mahjong-hud-tiles">{tileCount}张</span>}
       {isDealer && <span className="mahjong-hud-dealer">庄</span>}
     </div>
   );

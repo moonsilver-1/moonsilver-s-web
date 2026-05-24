@@ -113,14 +113,14 @@ export default function MahjongPage() {
           display: flex;
           align-items: center;
           justify-content: center;
-          overflow: hidden;
+          overflow: visible;
         }
         .mahjong-zone-right {
           grid-area: rgt;
           display: flex;
           align-items: center;
           justify-content: center;
-          overflow: hidden;
+          overflow: visible;
         }
         .mahjong-rotated-90 {
           transform: rotate(90deg);
@@ -172,6 +172,14 @@ export default function MahjongPage() {
           font-size: 10px;
           color: #fff;
           font-weight: 700;
+        }
+        .mahjong-hud-tiles {
+          background: rgba(255,255,255,.1);
+          border: 1px solid rgba(255,255,255,.15);
+          padding: 1px 5px;
+          font-size: 10px;
+          color: #ccc;
+          border-radius: 3px;
         }
         .mahjong-hud-dot {
           width: 8px;
