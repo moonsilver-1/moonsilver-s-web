@@ -5,7 +5,6 @@ import type { CSSProperties } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { useThemeMode, type ThemeMode } from "@/app/lib/use-theme-mode";
 import { useSiteLanguage } from "@/app/components/language-provider";
-import { LeaderboardPanel } from "@/app/fun/leaderboard-panel";
 
 const SIZE = 4;
 const TARGET = 2048;
@@ -373,7 +372,6 @@ export default function Game2048Page() {
           </div>
 
           <p className="mt-6 text-sm text-[var(--app-muted)]">{copy.tipLabel}: {copy.tip}</p>
-          <LeaderboardPanel gameKey="2048" score={score} gameOver={gameOver} />
         </div>
 
         <div className="relative">

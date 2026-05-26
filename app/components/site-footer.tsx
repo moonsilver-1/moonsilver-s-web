@@ -1,16 +1,13 @@
 "use client";
 
-import Link from "next/link";
 import { useSiteLanguage } from "@/app/components/language-provider";
 
 const footerLabels = {
   zh: {
     friendSite: "友站",
-    login: "登录",
   },
   en: {
     friendSite: "Friend site",
-    login: "Log in",
   },
 } as const;
 
@@ -32,12 +29,6 @@ export function SiteFooter() {
           >
             {labels.friendSite}
           </a>
-          <Link
-            href="/account"
-            className="rounded-full border border-[var(--app-border)] px-3 py-2 transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-          >
-            {labels.login}
-          </Link>
         </div>
       </div>
     </footer>

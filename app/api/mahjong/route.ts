@@ -231,6 +231,12 @@ function findPlayerIndex(room: Room, playerId: string) {
   return room.players.findIndex((p) => p.id === playerId);
 }
 
+function normalizeRoomPlayerName(name: unknown) {
+  if (typeof name !== "string") return "玩家";
+  const trimmed = name.trim();
+  return trimmed || "玩家";
+}
+
 // ── Game Logic (server-side) ───────────────────────
 
 function initGame(room: Room) {
@@ -548,7 +554,7 @@ export async function POST(req: NextRequest) {
       players: [{
         id: hostId,
         clientId: body.clientId,
-        name: body.name || "玩家",
+        name: normalizeRoomPlayerName(body.name),
         isAI: false,
         score: body.score || 1000,
       }],
@@ -588,7 +594,7 @@ export async function POST(req: NextRequest) {
     room.players.push({
       id: pid,
       clientId: clientId || undefined,
-      name: body.name || "玩家",
+      name: normalizeRoomPlayerName(body.name),
       isAI: false,
       score: room.players[0].score,
     });
@@ -627,6 +633,31 @@ export async function POST(req: NextRequest) {
     }
 
     return NextResponse.json(payload);
+  }
+
+  // ── Rename Player ──
+  if (action === "rename") {
+    const room = await loadRoom(body.code);
+    if (!room) return NextResponse.json({ ok: false, error: "房间不存在" }, { status: 404 });
+    if (room.state !== "waiting") {
+      return NextResponse.json({ ok: false, error: "游戏开始后暂不支持改昵称" }, { status: 400 });
+    }
+
+    const clientId = typeof body.clientId === "string" ? body.clientId.trim() : "";
+    const requestedPlayerId = typeof body.playerId === "string" ? body.playerId.trim() : "";
+    let pid = requestedPlayerId ? findPlayerIndex(room, requestedPlayerId) : -1;
+    if (pid < 0 && clientId) {
+      pid = room.players.findIndex((p) => !p.isAI && p.clientId === clientId);
+    }
+    if (pid < 0) {
+      return NextResponse.json({ ok: false, error: "不在房间中" }, { status: 403 });
+    }
+
+    const nextName = normalizeRoomPlayerName(body.name);
+    room.players[pid].name = nextName;
+    room.seq++;
+    await saveRoom(room);
+    return NextResponse.json({ ok: true, players: room.players, playerId: room.players[pid].id, seq: room.seq });
   }
 
   // ── Leave Room ──

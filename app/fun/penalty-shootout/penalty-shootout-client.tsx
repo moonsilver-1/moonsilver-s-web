@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { useThemeMode, type ThemeMode } from "@/app/lib/use-theme-mode";
-import { LeaderboardPanel } from "@/app/fun/leaderboard-panel";
 import { GameOver } from "@/app/fun/penalty-shootout-game-development/src/components/GameOver";
 import { Menu } from "@/app/fun/penalty-shootout-game-development/src/components/Menu";
 import { Pitch, PITCH_W } from "@/app/fun/penalty-shootout-game-development/src/components/Pitch";
@@ -94,7 +93,6 @@ export function PenaltyShootoutClient() {
             </div>
           </div>
 
-          <LeaderboardPanel gameKey="penalty-shootout" score={state.playerScore} gameOver={state.phase === "game_over"} />
         </div>
 
         <div className="relative">

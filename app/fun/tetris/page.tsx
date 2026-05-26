@@ -5,7 +5,6 @@ import type { CSSProperties } from "react";
 import { useEffect, useReducer } from "react";
 import { useThemeMode, type ThemeMode } from "@/app/lib/use-theme-mode";
 import { useSiteLanguage } from "@/app/components/language-provider";
-import { LeaderboardPanel } from "@/app/fun/leaderboard-panel";
 
 const BOARD_WIDTH = 10;
 const BOARD_HEIGHT = 20;
@@ -482,7 +481,6 @@ export default function TetrisPage() {
           <p className="mt-6 text-sm text-[var(--app-muted)]">
             {state.status === "over" ? copy.tipOver : copy.tipOk}
           </p>
-          <LeaderboardPanel gameKey="tetris" score={state.score} gameOver={state.status === "over"} />
         </div>
 
         <div className="relative">

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useAuth } from "@/app/components/auth-provider";
 import {
   type Tile,
   type Meld,
@@ -98,6 +97,7 @@ interface GameData {
 
 const REACT_CHOICE_MS = 6000;
 const MP_SESSION_KEY = "mahjong_mp_session";
+const PLAYER_NAME_KEY = "mahjong_player_name";
 
 // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  MULTIPLAYER TYPES
 // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
@@ -127,18 +127,18 @@ type MPView = {
 // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?//  COMPONENT
 // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
 export default function MahjongClient() {
-  const { user } = useAuth();
   // screen: lobby | local-game | mp-waiting | mp-game
   const [screen, setScreen] = useState<"lobby" | "local-game" | "mp-waiting" | "mp-game">("lobby");
   const [lobbyMode, setLobbyMode] = useState<"choose" | "local" | "mp">("choose");
-  const [cfg, setCfg] = useState<GameConfig>({ name: user?.username || "玩家", score: 1000, base: 10, punish: "喝一杯！", pthr: 0 });
+  const [playerName, setPlayerName] = useState(readStoredPlayerName);
+  const [cfg, setCfg] = useState<GameConfig>({ name: readStoredPlayerName(), score: 1000, base: 10, punish: "喝一杯！", pthr: 0 });
 
   // 鈹€鈹€ Local game state 鈹€鈹€
   const [localPlayers, setLocalPlayers] = useState<Player[]>([]);
   const G = useRef<GameData>({
     deck: [], di: 0, hands: [[], [], [], []], melds: [[], [], [], []], discs: [[], [], [], []],
     phase: "idle", cur: 0, lastD: null, lastDpid: -1, round: 0, dealer: 0,
-    selIdx: -1, players: [], cfg: { name: user?.username || "玩家", score: 1000, base: 10, punish: "喝一杯！", pthr: 0 },
+    selIdx: -1, players: [], cfg: { name: readStoredPlayerName(), score: 1000, base: 10, punish: "喝一杯！", pthr: 0 },
     aiT: null, turnSeq: 0, meldExpanded: {},
     _pendingBtns: [], _chiOptions: [], _reacts: null, _reactFrom: -1, _reactTile: null,
   });
@@ -173,10 +173,10 @@ export default function MahjongClient() {
 function getMpClientId() {
   if (typeof window === "undefined") return "server";
   const key = "mahjong_mp_client_id";
-    let id = window.localStorage.getItem(key);
-    if (!id) {
-      id = Math.random().toString(36).slice(2, 12);
-      window.localStorage.setItem(key, id);
+  let id = window.localStorage.getItem(key);
+  if (!id) {
+    id = Math.random().toString(36).slice(2, 12);
+    window.localStorage.setItem(key, id);
   }
   return id;
 }
@@ -201,6 +201,18 @@ function readMPSession(): MPSession | null {
   }
 }
 
+function readStoredPlayerName() {
+  if (typeof window === "undefined") return "玩家";
+
+  const stored = window.localStorage.getItem(PLAYER_NAME_KEY);
+  return stored && stored.trim() ? stored.trim() : "玩家";
+}
+
+function persistPlayerName(name: string) {
+  if (typeof window === "undefined") return;
+  window.localStorage.setItem(PLAYER_NAME_KEY, name.trim() || "玩家");
+}
+
 function writeMPSession(session: MPSession) {
   if (typeof window === "undefined") return;
   window.localStorage.setItem(MP_SESSION_KEY, JSON.stringify(session));
@@ -211,13 +223,6 @@ function clearMPSession() {
   window.localStorage.removeItem(MP_SESSION_KEY);
 }
 
-function getMpSeatName(cfgName: string, authName: string | undefined) {
-  const auth = authName?.trim() || "";
-  const typed = cfgName.trim();
-  const base = auth || (typed && typed !== "玩家" ? typed : "玩家");
-  return `${base}-${getMpClientId().slice(-4)}`;
-}
-
   const showNotif = useCallback((msg: string) => {
     setNotif(msg);
     SFX.notif();
@@ -225,24 +230,25 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     notifTimer.current = setTimeout(() => setNotif(""), 2000);
   }, []);
 
-  // update name when auth loads
   useEffect(() => {
-    if (user?.username) setCfg((c) => ({ ...c, name: user.username }));
-  }, [user?.username]);
+    setCfg((current) => (current.name === playerName ? current : { ...current, name: playerName }));
+    persistPlayerName(playerName);
+  }, [playerName]);
 
   // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?  //  LOCAL GAME LOGIC (unchanged)
   // 鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺愨晲鈺?
   function startLocal() {
     clearAI();
     G.current.turnSeq++;
+    const seatName = playerName.trim() || "玩家";
     const p: Player[] = [
-      { name: cfg.name, score: cfg.score, isHuman: true },
+      { name: seatName, score: cfg.score, isHuman: true },
       { name: "机器人甲", score: cfg.score, isHuman: false },
       { name: "机器人乙", score: cfg.score, isHuman: false },
       { name: "机器人丙", score: cfg.score, isHuman: false },
     ];
     G.current.players = p;
-    G.current.cfg = { ...cfg };
+    G.current.cfg = { ...cfg, name: seatName };
     G.current.round = 0;
     G.current.dealer = Math.floor(Math.random() * 4);
     setLocalPlayers([...p]);
@@ -647,6 +653,11 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     setMpJoinCode(code);
     writeMPSession({ code, playerId, isHost });
 
+    const currentPlayer = players.find((player) => player.id === playerId);
+    if (currentPlayer?.name) {
+      setPlayerName(currentPlayer.name);
+    }
+
     if (view) {
       setMpView(view);
       setScreen(view.phase === "waiting" ? "mp-waiting" : "mp-game");
@@ -698,10 +709,11 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
   async function mpCreate() {
     setMpError("");
     SFX.click();
+    const name = playerName.trim() || "玩家";
     const res = await fetch("/api/mahjong", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "create", clientId: getMpClientId(), name: getMpSeatName(cfg.name, user?.username), score: cfg.score, base: cfg.base, punish: cfg.punish, pthr: cfg.pthr }),
+      body: JSON.stringify({ action: "create", clientId: getMpClientId(), name, score: cfg.score, base: cfg.base, punish: cfg.punish, pthr: cfg.pthr }),
     });
     const data = await res.json();
     if (!data.ok) { setMpError(data.error || "创建失败"); return; }
@@ -712,14 +724,40 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
     if (!mpJoinCode.trim()) { setMpError("请输入房间号"); return; }
     setMpError("");
     SFX.click();
+    const name = playerName.trim() || "玩家";
     const res = await fetch("/api/mahjong", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ action: "join", clientId: getMpClientId(), code: mpJoinCode.trim(), name: getMpSeatName(cfg.name, user?.username) }),
+      body: JSON.stringify({ action: "join", clientId: getMpClientId(), code: mpJoinCode.trim(), name }),
     });
     const data = await res.json();
     if (!data.ok) { setMpError(data.error || "加入失败"); return; }
     await enterMpRoom(mpJoinCode.trim(), data.playerId, false, data.players);
+  }
+
+  async function mpRename() {
+    if (!mpCode || !mpPlayerId) return;
+    const name = playerName.trim() || "玩家";
+    setMpError("");
+    const res = await fetch("/api/mahjong", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        action: "rename",
+        code: mpCode,
+        playerId: mpPlayerId,
+        clientId: getMpClientId(),
+        name,
+      }),
+    });
+    const data = (await res.json().catch(() => null)) as { ok?: boolean; error?: string; players?: MPRoomPlayer[] } | null;
+    if (!res.ok || !data?.ok || !data.players) {
+      setMpError(data?.error || "昵称修改失败");
+      return;
+    }
+    setMpPlayers(data.players);
+    setPlayerName(name);
+    setMpError("");
   }
 
   async function mpAddAI() {
@@ -875,7 +913,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
                 <button onClick={() => setLobbyMode("choose")} className="text-xs text-[var(--app-muted)] hover:text-[var(--app-fg)]">返回选择</button>
               </div>
               <div className="space-y-4">
-                <RowInput label="你的名字" value={cfg.name} onChange={(v) => setCfg({ ...cfg, name: v })} />
+                <RowInput label="你的名字" value={playerName} onChange={setPlayerName} />
                 <RowInput label="初始积分" type="number" value={String(cfg.score)} onChange={(v) => setCfg({ ...cfg, score: +v || 1000 })} />
                 <RowInput label="底分" type="number" value={String(cfg.base)} onChange={(v) => setCfg({ ...cfg, base: +v || 10 })} />
                 <RowInput label="惩罚文本" value={cfg.punish} onChange={(v) => setCfg({ ...cfg, punish: v })} />
@@ -894,7 +932,7 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
                 <button onClick={() => setLobbyMode("choose")} className="text-xs text-[var(--app-muted)] hover:text-[var(--app-fg)]">返回选择</button>
               </div>
               <div className="space-y-4">
-                <RowInput label="你的名字" value={cfg.name} onChange={(v) => setCfg({ ...cfg, name: v })} />
+                <RowInput label="你的名字" value={playerName} onChange={setPlayerName} />
                 <RowInput label="初始积分" type="number" value={String(cfg.score)} onChange={(v) => setCfg({ ...cfg, score: +v || 1000 })} />
                 <RowInput label="底分" type="number" value={String(cfg.base)} onChange={(v) => setCfg({ ...cfg, base: +v || 10 })} />
                 <RowInput label="惩罚文本" value={cfg.punish} onChange={(v) => setCfg({ ...cfg, punish: v })} />
@@ -942,6 +980,32 @@ function getMpSeatName(cfgName: string, authName: string | undefined) {
             <p className="text-xs uppercase tracking-[0.2em] text-[var(--app-muted)]">房间号</p>
             <p className="mt-2 text-4xl font-bold tracking-[0.3em]" style={{ color: "var(--mahjong-gold)" }}>{mpCode}</p>
             <p className="mt-2 text-xs text-[var(--app-muted)]">把房间号发给朋友就能加入</p>
+          </div>
+
+          <div className="mt-6 rounded-[24px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6 backdrop-blur-sm">
+            <div className="flex items-center justify-between gap-3">
+              <div>
+                <h3 className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--app-muted)]">房间昵称</h3>
+                <p className="mt-1 text-sm text-[var(--app-muted)]">改一个容易认的名字，大家在房间里就能分清谁是谁。</p>
+              </div>
+              <span className="rounded-full border border-[var(--app-border)] px-3 py-1 text-xs text-[var(--app-muted)]">{playerName.trim() || "玩家"}</span>
+            </div>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <input
+                value={playerName}
+                onChange={(e) => setPlayerName(e.target.value)}
+                className="flex-1 rounded-xl border border-[var(--app-border)] bg-[var(--app-bg)] px-4 py-3 text-sm text-[var(--app-fg)] outline-none focus:border-[var(--mahjong-gold)]"
+                placeholder="输入你的昵称"
+                maxLength={24}
+              />
+              <button
+                type="button"
+                onClick={mpRename}
+                className="rounded-xl bg-[var(--app-fg)] px-5 py-3 text-sm font-semibold text-[var(--app-bg)] tracking-wider"
+              >
+                保存昵称
+              </button>
+            </div>
           </div>
 
           <div className="mt-6 rounded-[24px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6 backdrop-blur-sm">

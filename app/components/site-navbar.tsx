@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
-import { useAuth } from "@/app/components/auth-provider";
 import { useSiteLanguage } from "@/app/components/language-provider";
 
 const navLabels = {
@@ -11,9 +10,6 @@ const navLabels = {
     home: "首页",
     fun: "娱乐",
     blog: "博客",
-    contest: "竞赛专区",
-    login: "登录",
-    logout: "退出",
     themeDark: "切换到白天模式",
     themeLight: "切换到黑夜模式",
     language: "EN",
@@ -23,9 +19,6 @@ const navLabels = {
     home: "Home",
     fun: "Fun",
     blog: "Blog",
-    contest: "Contest",
-    login: "Log in",
-    logout: "Log out",
     themeDark: "Switch to light mode",
     themeLight: "Switch to dark mode",
     language: "中",
@@ -45,7 +38,7 @@ function isActive(pathname: string, href: string) {
 
 function getInitialTheme(): "dark" | "light" {
   if (typeof window === "undefined") {
-    return "dark";
+    return "light";
   }
 
   const storedTheme = window.localStorage.getItem("site-theme");
@@ -58,10 +51,8 @@ function getInitialTheme(): "dark" | "light" {
 
 export function SiteNavbar() {
   const pathname = usePathname();
-  const { user, logout } = useAuth();
   const { language, setLanguage } = useSiteLanguage();
   const [theme, setTheme] = useState<"dark" | "light">(getInitialTheme);
-  const [pendingCount, setPendingCount] = useState(0);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -78,60 +69,11 @@ export function SiteNavbar() {
     setLanguage(language === "en" ? "zh" : "en");
   }
 
-  useEffect(() => {
-    if (!user?.isAdmin) {
-      setPendingCount(0);
-      return;
-    }
-
-    let active = true;
-
-    async function loadPendingCount() {
-      try {
-        const response = await fetch("/api/auth?admin=users");
-        const data = (await response.json().catch(() => null)) as { users?: { status?: string }[] } | null;
-
-        if (!active || !response.ok || !data?.users) {
-          return;
-        }
-
-        setPendingCount(data.users.filter((item) => item.status === "pending").length);
-      } catch {
-        // Ignore transient fetch errors; the next poll will retry.
-      }
-    }
-
-    const refresh = () => {
-      void loadPendingCount();
-    };
-
-    refresh();
-    const interval = window.setInterval(refresh, 15000);
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === "visible") {
-        refresh();
-      }
-    };
-
-    window.addEventListener("focus", refresh);
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      active = false;
-      window.clearInterval(interval);
-      window.removeEventListener("focus", refresh);
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, [user?.isAdmin]);
-
   return (
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--app-border)] bg-[var(--app-surface)]/85 px-6 py-4 backdrop-blur-md transition-colors duration-300 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center justify-between gap-4">
-          <Link
-            href="/"
-            className="select-none text-sm font-semibold uppercase tracking-widest text-[var(--app-fg)]"
-          >
+          <Link href="/" className="select-none text-sm font-semibold uppercase tracking-widest text-[var(--app-fg)]">
             MOONSILVER
           </Link>
 
@@ -177,29 +119,6 @@ export function SiteNavbar() {
           </ul>
 
           <div className="flex flex-wrap items-center gap-2">
-            <Link
-              href={user ? "/account" : "/account/login"}
-              className="relative rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-            >
-              {user ? user.username : labels.login}
-              {user?.isAdmin && pendingCount > 0 ? (
-                <span
-                  aria-label={`${pendingCount} pending account requests`}
-                  className="absolute -right-1 -top-1 min-w-[20px] rounded-full border border-rose-500/30 bg-rose-500 px-1.5 py-0.5 text-center text-[10px] font-semibold leading-none text-white"
-                >
-                  {pendingCount}
-                </span>
-              ) : null}
-            </Link>
-            {user ? (
-              <button
-                type="button"
-                onClick={logout}
-                className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-              >
-                {labels.logout}
-              </button>
-            ) : null}
             <button
               type="button"
               onClick={toggleLanguage}
