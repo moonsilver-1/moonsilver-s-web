@@ -14,7 +14,7 @@ type Award = {
 };
 
 type Contest = {
-  level: "national-1" | "provincial-1" | "regional-2" | "provincial-2" | "bronze" | "provincial-3" | "national-2" | "national-3";
+  level: "outstanding-winner" | "provincial-1" | "regional-2" | "provincial-2" | "bronze" | "provincial-3";
   award: LocaleText;
   name: LocaleText;
 };
@@ -26,7 +26,7 @@ type ResearchItem = {
 
 const awards: Award[] = [
   {
-    title: { zh: "国家奖学金", en: "National Scholarship" },
+    title: { zh: "一等奖学金", en: "First-class Scholarship" },
     sub: { zh: "杭州电子科技大学", en: "Hangzhou Dianzi University" },
   },
   {
@@ -45,49 +45,39 @@ const awards: Award[] = [
 
 const contests: Contest[] = [
   {
-    level: "national-1",
-    award: { zh: "国家一等奖", en: "National 1st Prize" },
-    name: { zh: "全国大学生数学建模竞赛", en: "National College Students Mathematical Modeling Contest" },
+    level: "outstanding-winner",
+    award: { zh: "特等奖（O奖）", en: "Outstanding Winner" },
+    name: { zh: "美国大学生数学建模竞赛", en: "Mathematical Contest in Modeling (MCM/ICM)" },
   },
   {
     level: "provincial-1",
     award: { zh: "省级一等奖", en: "Provincial 1st Prize" },
-    name: { zh: "浙江省服务外包创新应用大赛", en: "Zhejiang Service Outsourcing Innovation Contest" },
+    name: { zh: "全国大学生数学建模竞赛", en: "National College Students Mathematical Modeling Contest" },
   },
   {
     level: "regional-2",
     award: { zh: "区域二等奖", en: "Regional 2nd Prize" },
-    name: { zh: "中国服务外包创新创业大赛（华东区域）", en: "China Service Outsourcing Innovation & Entrepreneurship Competition (Eastern Region)" },
+    name: { zh: "全国大学生服务外包创新创业大赛（华东区域）", en: "National Service Outsourcing Innovation & Entrepreneurship Competition (Eastern Region)" },
   },
   {
     level: "provincial-2",
     award: { zh: "省级二等奖", en: "Provincial 2nd Prize" },
-    name: { zh: "浙江省人工智能竞赛", en: "Zhejiang Artificial Intelligence Contest" },
+    name: { zh: "浙江省服务外包创新应用大赛", en: "Zhejiang Service Outsourcing Innovation Contest" },
   },
   {
     level: "provincial-2",
     award: { zh: "省级二等奖", en: "Provincial 2nd Prize" },
-    name: { zh: "全国大学生计算机设计大赛", en: "National College Students Computer Design Competition" },
+    name: { zh: "中国大学生计算机设计大赛", en: "China College Students Computer Design Competition" },
   },
   {
     level: "bronze",
     award: { zh: "省级铜奖", en: "Provincial Bronze" },
-    name: { zh: "“挑战杯”人工智能+专项赛", en: "Challenge Cup AI+ Special Track" },
+    name: { zh: "挑战杯“人工智能+”专项赛", en: "Challenge Cup AI+ Special Track" },
   },
   {
     level: "provincial-3",
     award: { zh: "省级三等奖", en: "Provincial 3rd Prize" },
-    name: { zh: "浙江省大学生智能设计竞赛", en: "Zhejiang College Students AI Design Contest" },
-  },
-  {
-    level: "national-2",
-    award: { zh: "国家二等奖", en: "National 2nd Prize" },
-    name: { zh: "亚太地区大学生数学建模竞赛（中英文赛道）", en: "APMCM Asia-Pacific Mathematical Contest in Modeling (Chinese track)" },
-  },
-  {
-    level: "national-3",
-    award: { zh: "国家三等奖", en: "National 3rd Prize" },
-    name: { zh: "亚太地区大学生数学建模竞赛（英文赛道）", en: "APMCM Asia-Pacific Mathematical Contest in Modeling (English track)" },
+    name: { zh: "浙江省人工智能竞赛", en: "Zhejiang Artificial Intelligence Contest" },
   },
 ];
 
@@ -132,25 +122,21 @@ const windLines = Array.from({ length: 9 }, (_, i) => ({
 }));
 
 const awardColor: Record<Contest["level"], string> = {
-  "national-1": "autumn-badge autumn-badge-rose",
+  "outstanding-winner": "autumn-badge autumn-badge-rose",
   "provincial-1": "autumn-badge autumn-badge-gold",
   "regional-2": "autumn-badge autumn-badge-blue",
   "provincial-2": "autumn-badge autumn-badge-blue",
   bronze: "autumn-badge autumn-badge-bronze",
   "provincial-3": "autumn-badge autumn-badge-slate",
-  "national-2": "autumn-badge autumn-badge-green",
-  "national-3": "autumn-badge autumn-badge-purple",
 };
 
 const awardBarColor: Record<Contest["level"], string> = {
-  "national-1": "#c2410c",
+  "outstanding-winner": "#dc2626",
   "provincial-1": "#b7791f",
   "regional-2": "#2563eb",
   "provincial-2": "#2563eb",
   bronze: "#9a3412",
   "provincial-3": "#71717a",
-  "national-2": "#047857",
-  "national-3": "#7c3aed",
 };
 
 function SectionLabel({ children }: { children: string }) {
@@ -174,16 +160,16 @@ export default function HomePage() {
     heroEyebrow: isEnglish ? "HANGZHOU DIANZI UNIVERSITY · CLASS OF 2024" : "杭州电子科技大学 · 2024级",
     heroTitle: "MOONSILVER",
     heroDescription: isEnglish
-      ? "Exploring research, engineering, and creative technology between the mountain wind and a clear autumn sky."
-      : "在清朗秋色与山间北风之间，继续探索科研、工程与创造性的技术实践。",
+      ? "One day, the fragrance will spread far and wide."
+      : "终有一天馥郁传香",
     heroTagA: isEnglish ? "AI Research" : "人工智能科研",
     heroTagB: isEnglish ? "Engineering Practice" : "工程实现",
     heroTagC: isEnglish ? "Mathematical Modeling" : "数学建模",
     aboutLabel: isEnglish ? "About" : "关于",
     aboutTitle: isEnglish ? "Class of 2024 · Hangzhou Dianzi University" : "2024级 · 杭州电子科技大学",
     aboutDescription: isEnglish
-      ? "An undergraduate focused on artificial intelligence and engineering practice. Actively participating in competitions and research projects, connecting theory with real-world applications."
-      : "本科在读，关注人工智能、工程实践与产品落地。持续参与竞赛与科研项目，希望把理论、代码和真实场景更紧密地连接起来。",
+      ? "moonsilver, keep pushing forward!"
+      : "moonsilver冲冲冲！",
     honorsLabel: isEnglish ? "Honors" : "荣誉",
     honorsTitle: isEnglish ? "Awards" : "荣誉奖项",
     contestsLabel: isEnglish ? "Competitions" : "竞赛",
@@ -193,7 +179,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="home-page relative min-h-screen overflow-hidden bg-[var(--app-bg)] text-[var(--app-fg)]">
+    <div className="home-page relative min-h-screen overflow-hidden text-[var(--app-fg)]">
       <div className="autumn-page-scene pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
           <div className="autumn-sky" />
           <div className="autumn-sun" />

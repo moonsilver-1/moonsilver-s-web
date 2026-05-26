@@ -13,10 +13,10 @@
 html[data-theme="light"] {
   --app-bg: #f5f1e8;
   --app-fg: #181513;
-  --app-muted: rgba(24, 21, 19, 0.62);
+  --app-muted: rgba(24, 21, 19, 0.8);
   --app-surface: rgba(245, 241, 232, 0.9);
-  --app-border: rgba(24, 21, 19, 0.08);
-  --app-border-strong: rgba(24, 21, 19, 0.18);
+  --app-border: rgba(24, 21, 19, 0.14);
+  --app-border-strong: rgba(24, 21, 19, 0.32);
   --card-inner: rgba(248, 244, 236, 0.98);
 }
 
@@ -419,8 +419,9 @@ html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
 
 .home-page {
   background:
-    radial-gradient(circle at 12% 8%, rgba(255, 235, 187, 0.72), transparent 28rem),
-    linear-gradient(180deg, #f4eddf 0%, #f7f0e5 45%, #efe2d1 100%);
+    radial-gradient(circle at 24% 18%, rgba(255, 245, 210, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(255, 203, 128, 0.36), transparent 24rem),
+    linear-gradient(180deg, #f7d89d 0%, #f4e3c6 38%, #efe0cf 72%, #e5cfb4 100%);
 }
 
 .autumn-page-scene {
@@ -429,8 +430,9 @@ html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
 
 html[data-theme="dark"] .home-page {
   background:
-    radial-gradient(circle at 76% 18%, rgba(156, 86, 50, 0.18), transparent 28rem),
-    linear-gradient(180deg, #080706 0%, #120d0a 58%, #090806 100%);
+    radial-gradient(circle at 73% 18%, rgba(215, 170, 94, 0.28), transparent 18rem),
+    radial-gradient(circle at 26% 22%, rgba(166, 65, 36, 0.18), transparent 22rem),
+    linear-gradient(180deg, #120e0b 0%, #1c130d 48%, #0a0807 100%);
 }
 
 .autumn-hero {
@@ -572,13 +574,13 @@ html[data-theme="dark"] .autumn-hero-panel {
 }
 
 .autumn-chip {
-  border: 1px solid rgba(116, 69, 37, 0.16);
+  border: 1px solid rgba(116, 69, 37, 0.22);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.34);
+  background: rgba(255, 255, 255, 0.5);
   padding: 0.45rem 0.8rem;
   font-size: 0.72rem;
   letter-spacing: 0.06em;
-  color: rgba(70, 42, 25, 0.72);
+  color: rgba(70, 42, 25, 0.88);
 }
 
 html[data-theme="dark"] .autumn-chip {
@@ -619,7 +621,7 @@ html[data-theme="dark"] .autumn-scroll-cue span {
 }
 
 .section-label {
-  color: rgba(143, 70, 34, 0.62);
+  color: rgba(120, 56, 28, 0.82);
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.26em;
@@ -642,15 +644,25 @@ html[data-theme="dark"] .autumn-divider {
 .autumn-card {
   border-color: var(--app-border);
   background:
-    linear-gradient(145deg, rgba(255, 250, 240, 0.78), rgba(255, 246, 232, 0.4)),
+    linear-gradient(145deg, rgba(255, 250, 240, 0.85), rgba(255, 246, 232, 0.6)),
     var(--card-inner);
-  box-shadow: 0 16px 48px rgba(96, 58, 33, 0.08);
+  box-shadow: 0 16px 48px rgba(96, 58, 33, 0.1);
 }
 
 .autumn-card:hover {
   border-color: var(--app-border-strong);
   transform: translateY(-3px);
   box-shadow: 0 22px 56px rgba(96, 58, 33, 0.13);
+}
+
+html[data-theme="light"] .autumn-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 1px 6px rgba(96, 58, 33, 0.04);
+}
+
+html[data-theme="light"] .autumn-card:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 14px rgba(96, 58, 33, 0.07);
 }
 
 html[data-theme="dark"] .autumn-card {

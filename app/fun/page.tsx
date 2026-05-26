@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import SearchBar from "@/app/components/search-bar";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { useThemeMode } from "@/app/lib/use-theme-mode";
+import MiniRunnerClient from "./mini-runner/mini-runner-client";
 
 type Entry = {
   href: string;
@@ -134,9 +135,7 @@ export default function FunPage() {
             </div>
           </div>
 
-          <div className="rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-5 backdrop-blur-sm">
-            <div className="min-h-[260px] rounded-[28px] border border-[var(--app-border)] bg-[var(--app-surface)]/55" />
-          </div>
+          <MiniRunnerClient />
         </div>
       </section>
 
