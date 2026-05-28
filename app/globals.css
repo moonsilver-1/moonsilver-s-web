@@ -985,36 +985,92 @@ html[data-theme="dark"][data-scene="spring"] .autumn-sky {
     linear-gradient(180deg, #12050e 0%, #1c0d18 48%, #0a0608 100%);
 }
 
-html[data-scene="spring"] .autumn-sun {
-  background: radial-gradient(circle, rgba(252, 231, 243, 0.9) 0%, rgba(236, 72, 153, 0.18) 45%, transparent 72%);
+/* Spring hills - gentle rolling curves */
+.spring-hill {
+  position: absolute;
+  left: -12%;
+  right: -12%;
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
 }
 
-html[data-scene="spring"] .mountain-layer-far {
-  background: linear-gradient(180deg, rgba(219, 39, 119, 0.12), rgba(190, 24, 93, 0.06));
+.spring-hill-far {
+  height: 22%;
+  background: linear-gradient(180deg, rgba(252, 231, 243, 0.6), rgba(249, 168, 212, 0.3));
 }
 
-html[data-scene="spring"] .mountain-layer-mid {
-  background:
-    linear-gradient(180deg, rgba(236, 72, 153, 0.2), rgba(190, 24, 93, 0.16)),
-    linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.08) 48%, transparent 62%);
+.spring-hill-mid {
+  height: 16%;
+  background: linear-gradient(180deg, rgba(249, 168, 212, 0.45), rgba(236, 72, 153, 0.25));
 }
 
-html[data-scene="spring"] .mountain-layer-near {
-  background:
-    linear-gradient(180deg, rgba(190, 24, 93, 0.32), rgba(131, 24, 77, 0.4)),
-    linear-gradient(90deg, rgba(236, 72, 153, 0.1), transparent 44%, rgba(219, 39, 119, 0.1));
+.spring-hill-near {
+  height: 10%;
+  background: linear-gradient(180deg, rgba(236, 72, 153, 0.35), rgba(219, 39, 119, 0.18));
 }
 
-html[data-scene="spring"] .autumn-mist {
-  background: linear-gradient(90deg, transparent, rgba(252, 231, 243, 0.7), transparent);
+html[data-theme="dark"] .spring-hill-far {
+  background: linear-gradient(180deg, rgba(236, 72, 153, 0.12), rgba(219, 39, 119, 0.06));
 }
 
-html[data-theme="dark"][data-scene="spring"] .autumn-mist {
-  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.12), transparent);
+html[data-theme="dark"] .spring-hill-mid {
+  background: linear-gradient(180deg, rgba(219, 39, 119, 0.1), rgba(190, 24, 93, 0.05));
+}
+
+html[data-theme="dark"] .spring-hill-near {
+  background: linear-gradient(180deg, rgba(190, 24, 93, 0.08), rgba(131, 24, 77, 0.04));
+}
+
+/* Spring butterflies */
+.spring-butterfly {
+  position: absolute;
+  top: -5vh;
+  animation: butterfly-float var(--bf-dur, 16s) ease-in-out infinite;
+}
+
+.spring-butterfly::before,
+.spring-butterfly::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 45%;
+  height: 65%;
+  border-radius: 50% 50% 20% 50%;
+  background: rgba(236, 72, 153, 0.65);
+}
+
+.spring-butterfly::before {
+  left: 0;
+  transform-origin: right center;
+  animation: wing-flap 0.5s ease-in-out infinite alternate;
+}
+
+.spring-butterfly::after {
+  right: 0;
+  transform-origin: left center;
+  animation: wing-flap 0.5s ease-in-out infinite alternate-reverse;
+}
+
+html[data-theme="dark"] .spring-butterfly::before,
+html[data-theme="dark"] .spring-butterfly::after {
+  background: rgba(249, 168, 212, 0.35);
+}
+
+@keyframes wing-flap {
+  from { transform: rotateY(0deg) scaleX(1); }
+  to { transform: rotateY(50deg) scaleX(0.6); }
+}
+
+@keyframes butterfly-float {
+  0% { transform: translate3d(0, -5vh, 0) rotate(0deg); opacity: 0; }
+  8% { opacity: 0.9; }
+  50% { transform: translate3d(6vw, 50vh, 0) rotate(15deg); }
+  88% { opacity: 0.9; }
+  100% { transform: translate3d(-3vw, 110vh, 0) rotate(-10deg); opacity: 0; }
 }
 
 html[data-scene="spring"] .north-wind-line {
-  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.18), transparent);
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.32), transparent);
 }
 
 html[data-theme="dark"][data-scene="spring"] .north-wind-line {
@@ -1104,36 +1160,83 @@ html[data-theme="dark"][data-scene="winter"] .autumn-sky {
     linear-gradient(180deg, #050a10 0%, #0c1a2e 48%, #060a12 100%);
 }
 
-html[data-scene="winter"] .autumn-sun {
-  background: radial-gradient(circle, rgba(224, 242, 254, 0.9) 0%, rgba(56, 189, 248, 0.18) 45%, transparent 72%);
+/* Winter aurora / northern lights */
+.winter-aurora {
+  position: absolute;
+  top: 5%;
+  left: 8%;
+  right: 8%;
+  height: 18%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(56, 189, 248, 0.08),
+    rgba(34, 211, 238, 0.12),
+    rgba(74, 222, 128, 0.08),
+    rgba(34, 211, 238, 0.12),
+    rgba(56, 189, 248, 0.08),
+    transparent
+  );
+  filter: blur(18px);
+  border-radius: 50%;
+  animation: aurora-wave 12s ease-in-out infinite alternate;
 }
 
-html[data-scene="winter"] .mountain-layer-far {
-  background: linear-gradient(180deg, rgba(56, 189, 248, 0.12), rgba(14, 116, 144, 0.06));
+html[data-theme="light"] .winter-aurora {
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(56, 189, 248, 0.12),
+    rgba(34, 211, 238, 0.18),
+    rgba(74, 222, 128, 0.1),
+    rgba(34, 211, 238, 0.18),
+    rgba(56, 189, 248, 0.12),
+    transparent
+  );
 }
 
-html[data-scene="winter"] .mountain-layer-mid {
-  background:
-    linear-gradient(180deg, rgba(56, 189, 248, 0.2), rgba(14, 116, 144, 0.16)),
-    linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.1) 48%, transparent 62%);
+@keyframes aurora-wave {
+  0% { transform: translateX(-4%) scaleY(0.8); opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { transform: translateX(4%) scaleY(1.2); opacity: 0.6; }
 }
 
-html[data-scene="winter"] .mountain-layer-near {
-  background:
-    linear-gradient(180deg, rgba(14, 116, 144, 0.32), rgba(8, 51, 68, 0.4)),
-    linear-gradient(90deg, rgba(56, 189, 248, 0.1), transparent 44%, rgba(14, 165, 233, 0.1));
+/* Winter pine trees */
+.winter-pine {
+  position: absolute;
 }
 
-html[data-scene="winter"] .autumn-mist {
-  background: linear-gradient(90deg, transparent, rgba(224, 242, 254, 0.7), transparent);
+.winter-pine-tree {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 15% 35%, 30% 35%, 5% 65%, 25% 65%, 0% 100%, 100% 100%, 75% 65%, 95% 65%, 70% 35%, 85% 35%);
+  background: linear-gradient(180deg, #1a4a2e, #0f3320);
 }
 
-html[data-theme="dark"][data-scene="winter"] .autumn-mist {
-  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.1), transparent);
+html[data-theme="light"] .winter-pine-tree {
+  background: linear-gradient(180deg, #2d6a45, #1a4a2e);
+}
+
+.winter-pine-cap {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 45%;
+  height: 25%;
+  clip-path: polygon(50% 0%, 10% 100%, 90% 100%);
+  background: linear-gradient(180deg, rgba(224, 242, 254, 0.8), rgba(186, 230, 253, 0.4));
+  z-index: 1;
+}
+
+html[data-theme="dark"] .winter-pine-cap {
+  background: linear-gradient(180deg, rgba(186, 230, 253, 0.4), rgba(125, 211, 252, 0.15));
 }
 
 html[data-scene="winter"] .north-wind-line {
-  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.22), transparent);
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.38), transparent);
 }
 
 html[data-theme="dark"][data-scene="winter"] .north-wind-line {
@@ -1354,7 +1457,7 @@ html[data-theme="light"][data-scene="starry"] .autumn-scroll-cue span {
 .spring-bloom {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(249, 168, 212, 0.85), rgba(236, 72, 153, 0.3));
+  background: radial-gradient(circle, rgba(249, 168, 212, 0.9), rgba(236, 72, 153, 0.45));
 }
 
 .spring-bloom-1 { width: 80px; height: 80px; top: -30px; left: -40px; }
@@ -1375,7 +1478,7 @@ html[data-theme="dark"] .spring-trunk {
   position: absolute;
   height: 1px;
   border-radius: 999px;
-  background: linear-gradient(90deg, transparent, rgba(252, 231, 243, 0.5), transparent);
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.4), transparent);
   transform: rotate(-15deg);
   animation: spring-ray-drift 12s ease-in-out infinite alternate;
 }
@@ -1513,7 +1616,7 @@ html[data-theme="dark"] .snowman-head {
   left: -5%;
   right: -5%;
   height: 18%;
-  background: linear-gradient(180deg, rgba(224, 242, 254, 0.6) 0%, rgba(186, 230, 253, 0.3) 100%);
+  background: linear-gradient(180deg, rgba(186, 230, 253, 0.7) 0%, rgba(125, 211, 252, 0.45) 100%);
   border-radius: 50% 50% 0 0 / 20% 20% 0 0;
 }
 
@@ -1525,8 +1628,8 @@ html[data-theme="dark"] .snow-ground {
   position: absolute;
   top: -5vh;
   border-radius: 50%;
-  background: rgba(224, 242, 254, 0.9);
-  box-shadow: 0 0 4px 1px rgba(56, 189, 248, 0.25);
+  background: rgba(186, 230, 253, 0.92);
+  box-shadow: 0 0 6px 2px rgba(56, 189, 248, 0.4);
   animation: winter-snow-fall 8s linear infinite;
 }
 
