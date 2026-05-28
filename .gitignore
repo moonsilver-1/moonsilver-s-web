@@ -26,6 +26,13 @@
 .next-dev.log
 .next-dev.err.log
 
+# debug/test screenshots
+*.png
+!public/**/*.png
+
+# dev logs
+*.log
+
 # python
 __pycache__/
 *.pyc
@@ -35,6 +42,12 @@ __pycache__/
 web-design-skill/
 website/
 
+# music source (duplicate of public/music/)
+music/
+
+# claude local config
+.claude/
+
 # debug
 npm-debug.log*
 yarn-debug.log*
@@ -43,6 +56,13 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+
+# npm lockfile (using pnpm instead)
+package-lock.json
+
+# test/debug scripts
+test-*.mjs
+screenshot-preview.mjs
 
 # vercel
 .vercel
