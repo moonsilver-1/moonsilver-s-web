@@ -6,6 +6,7 @@ import SearchBar from "@/app/components/search-bar";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { useThemeMode } from "@/app/lib/use-theme-mode";
 import MiniRunnerClient from "./mini-runner/mini-runner-client";
+import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
 
 type Entry = {
   href: string;
@@ -124,7 +125,8 @@ export default function FunPage() {
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-20 text-[var(--app-fg)] transition-colors duration-300">
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <AutumnLeavesBg />
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1fr_1.05fr] lg:items-end">
           <div className="max-w-2xl">
             <span className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.label}</span>
@@ -139,7 +141,7 @@ export default function FunPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-20">
+      <section className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
         {showInterEasterEgg ? (
           <div
             aria-label={copy.easterEggAria}

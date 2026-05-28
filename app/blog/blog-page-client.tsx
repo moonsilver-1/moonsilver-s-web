@@ -4,6 +4,7 @@ import type { BlogPost } from "@/app/lib/blog-content";
 import type { FeedEntry } from "@/app/lib/feed-content";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import BlogContentClient from "./blog-content-client";
+import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
 
 type BlogPageClientProps = {
   posts: BlogPost[];
@@ -36,7 +37,8 @@ export default function BlogPageClient({ posts, feedEntries }: BlogPageClientPro
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300">
-      <section className="mx-auto max-w-7xl px-6 py-16">
+      <AutumnLeavesBg />
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-16">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy[language].eyebrow}</p>
           <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">{copy[language].title}</h1>
@@ -45,7 +47,7 @@ export default function BlogPageClient({ posts, feedEntries }: BlogPageClientPro
 
       <BlogContentClient posts={posts} />
 
-      <section className="mx-auto max-w-7xl px-6 pb-16">
+      <section className="relative z-10 mx-auto max-w-7xl px-6 pb-16">
         <aside className="rounded-[28px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6">
           <p className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy[language].feedLabel}</p>
           <h2 className="mt-4 text-2xl font-semibold tracking-tight">{copy[language].feedTitle}</h2>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { useScene } from "@/app/components/scene-provider";
+import type { SceneKey } from "@/app/lib/scene-config";
 
 type LocaleText = {
   zh: string;
@@ -98,7 +100,8 @@ const research: ResearchItem[] = [
   },
 ];
 
-const leaves = Array.from({ length: 34 }, (_, i) => ({
+// Autumn scene data
+const autumnLeaves = Array.from({ length: 10 }, (_, i) => ({
   left: `${((i * 37 + 9) % 104) - 2}%`,
   delay: `${((i * 11) % 90) / 10}s`,
   duration: `${9 + ((i * 7) % 9)}s`,
@@ -107,7 +110,7 @@ const leaves = Array.from({ length: 34 }, (_, i) => ({
   depth: i % 3,
 }));
 
-const redRain = Array.from({ length: 56 }, (_, i) => ({
+const autumnRedRain = Array.from({ length: 56 }, (_, i) => ({
   left: `${((i * 29 + 3) % 112) - 6}%`,
   delay: `${((i * 13) % 70) / 10}s`,
   duration: `${4.5 + ((i * 5) % 6)}s`,
@@ -115,10 +118,50 @@ const redRain = Array.from({ length: 56 }, (_, i) => ({
   opacity: `${0.18 + ((i % 5) * 0.045)}`,
 }));
 
-const windLines = Array.from({ length: 9 }, (_, i) => ({
+const autumnWindLines = Array.from({ length: 9 }, (_, i) => ({
   top: `${15 + i * 7}%`,
   delay: `${i * 0.45}s`,
   width: `${18 + (i % 4) * 8}vw`,
+}));
+
+// Spring scene data - soft light rays + petal rain
+const springPetals = Array.from({ length: 16 }, (_, i) => ({
+  left: `${((i * 31 + 5) % 106) - 3}%`,
+  delay: `${((i * 17) % 80) / 10}s`,
+  duration: `${10 + ((i * 7) % 8)}s`,
+  size: `${4 + ((i * 5) % 8)}px`,
+  opacity: `${0.2 + ((i % 4) * 0.08)}`,
+}));
+
+const springRays = Array.from({ length: 5 }, (_, i) => ({
+  top: `${8 + i * 14}%`,
+  left: `${15 + i * 12}%`,
+  delay: `${i * 1.2}s`,
+  width: `${20 + (i % 3) * 10}vw`,
+}));
+
+// Winter scene data - snowflakes + frost wind
+const winterSnow = Array.from({ length: 24 }, (_, i) => ({
+  left: `${((i * 23 + 7) % 108) - 4}%`,
+  delay: `${((i * 13) % 60) / 10}s`,
+  duration: `${6 + ((i * 5) % 7)}s`,
+  size: `${3 + ((i * 4) % 6)}px`,
+  opacity: `${0.3 + ((i % 5) * 0.08)}`,
+}));
+
+const winterWind = Array.from({ length: 6 }, (_, i) => ({
+  top: `${18 + i * 10}%`,
+  delay: `${i * 0.6}s`,
+  width: `${14 + (i % 3) * 7}vw`,
+}));
+
+// Starry scene data - twinkling stars
+const starryDots = Array.from({ length: 30 }, (_, i) => ({
+  left: `${((i * 29 + 3) % 100)}%`,
+  top: `${((i * 37 + 11) % 65)}%`,
+  size: `${2 + ((i * 3) % 4)}px`,
+  delay: `${((i * 7) % 30) / 10}s`,
+  duration: `${2.5 + ((i * 3) % 4)}s`,
 }));
 
 const awardColor: Record<Contest["level"], string> = {
@@ -153,6 +196,7 @@ function Divider() {
 
 export default function HomePage() {
   const { language } = useSiteLanguage();
+  const { scene } = useScene();
   const isEnglish = language === "en";
   const [expanded, setExpanded] = useState<string | null>("all");
 
@@ -182,50 +226,84 @@ export default function HomePage() {
     <div className="home-page relative min-h-screen overflow-hidden text-[var(--app-fg)]">
       <div className="autumn-page-scene pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
           <div className="autumn-sky" />
-          <div className="autumn-sun" />
-          <div className="mountain-layer mountain-layer-far" />
-          <div className="mountain-layer mountain-layer-mid" />
-          <div className="mountain-layer mountain-layer-near" />
-          <div className="autumn-mist autumn-mist-a" />
-          <div className="autumn-mist autumn-mist-b" />
-          <div className="autumn-mist autumn-mist-c" />
 
-          {windLines.map((line, i) => (
-            <span
-              key={`wind-${i}`}
-              className="north-wind-line"
-              style={{ top: line.top, width: line.width, animationDelay: line.delay }}
-            />
-          ))}
+          {scene === "autumn" && (
+            <>
+              <div className="autumn-sun" />
+              <div className="mountain-layer mountain-layer-far" />
+              <div className="mountain-layer mountain-layer-mid" />
+              <div className="mountain-layer mountain-layer-near" />
+              <div className="autumn-mist autumn-mist-a" />
+              <div className="autumn-mist autumn-mist-b" />
+              <div className="autumn-mist autumn-mist-c" />
+              {autumnWindLines.map((line, i) => (
+                <span key={`wind-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
+              ))}
+              {autumnRedRain.map((drop, i) => (
+                <span key={`rr-${i}`} className="red-rain" style={{ left: drop.left, height: drop.length, opacity: drop.opacity, animationDelay: drop.delay, animationDuration: drop.duration }} />
+              ))}
+              {autumnLeaves.map((leaf, i) => (
+                <span key={`leaf-${i}`} className={`autumn-leaf leaf-depth-${leaf.depth}`} style={{ left: leaf.left, width: leaf.size, height: `calc(${leaf.size} * 1.45)`, rotate: leaf.rotate, animationDelay: leaf.delay, animationDuration: leaf.duration }} />
+              ))}
+            </>
+          )}
 
-          {redRain.map((drop, i) => (
-            <span
-              key={`red-rain-${i}`}
-              className="red-rain"
-              style={{
-                left: drop.left,
-                height: drop.length,
-                opacity: drop.opacity,
-                animationDelay: drop.delay,
-                animationDuration: drop.duration,
-              }}
-            />
-          ))}
+          {scene === "spring" && (
+            <>
+              {/* Cherry blossom tree */}
+              <div className="spring-tree">
+                <div className="spring-trunk" />
+                <div className="spring-bloom spring-bloom-1" />
+                <div className="spring-bloom spring-bloom-2" />
+                <div className="spring-bloom spring-bloom-3" />
+                <div className="spring-bloom spring-bloom-4" />
+                <div className="spring-bloom spring-bloom-5" />
+              </div>
+              {/* Soft light rays */}
+              {springRays.map((ray, i) => (
+                <span key={`ray-${i}`} className="spring-ray" style={{ top: ray.top, left: ray.left, width: ray.width, animationDelay: ray.delay }} />
+              ))}
+              {/* Falling petals */}
+              {springPetals.map((petal, i) => (
+                <span key={`petal-${i}`} className="spring-petal" style={{ left: petal.left, width: petal.size, height: petal.size, opacity: petal.opacity, animationDelay: petal.delay, animationDuration: petal.duration }} />
+              ))}
+            </>
+          )}
 
-          {leaves.map((leaf, i) => (
-            <span
-              key={`leaf-${i}`}
-              className={`autumn-leaf leaf-depth-${leaf.depth}`}
-              style={{
-                left: leaf.left,
-                width: leaf.size,
-                height: `calc(${leaf.size} * 1.45)`,
-                rotate: leaf.rotate,
-                animationDelay: leaf.delay,
-                animationDuration: leaf.duration,
-              }}
-            />
-          ))}
+          {scene === "winter" && (
+            <>
+              {/* Snowman */}
+              <div className="snowman">
+                <div className="snowman-hat" />
+                <div className="snowman-head" />
+                <div className="snowman-body" />
+                <div className="snowman-base" />
+              </div>
+              {/* Snowy ground */}
+              <div className="snow-ground" />
+              {/* Wind lines */}
+              {winterWind.map((line, i) => (
+                <span key={`ww-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
+              ))}
+              {/* Snowflakes */}
+              {winterSnow.map((flake, i) => (
+                <span key={`snow-${i}`} className="winter-snowflake" style={{ left: flake.left, width: flake.size, height: flake.size, opacity: flake.opacity, animationDelay: flake.delay, animationDuration: flake.duration }} />
+              ))}
+            </>
+          )}
+
+          {scene === "starry" && (
+            <>
+              {/* Crescent moon */}
+              <div className="starry-moon" />
+              {/* Twinkling stars */}
+              {starryDots.map((dot, i) => (
+                <span key={`star-${i}`} className="starry-star" style={{ left: dot.left, top: dot.top, width: dot.size, height: dot.size, animationDelay: dot.delay, animationDuration: dot.duration }} />
+              ))}
+              {/* Shooting star */}
+              <span className="starry-shooting" />
+            </>
+          )}
       </div>
 
       <section className="autumn-hero relative z-10 flex min-h-[calc(100svh-5rem)] flex-col items-center justify-center overflow-hidden px-6 pt-24">

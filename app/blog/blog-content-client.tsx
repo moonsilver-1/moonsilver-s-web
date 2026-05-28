@@ -66,7 +66,7 @@ export default function BlogContentClient({ posts }: BlogContentClientProps) {
   }, [posts, searchQuery]);
 
   return (
-    <section className="mx-auto max-w-7xl px-6 pb-24">
+    <section className="relative z-10 mx-auto max-w-7xl px-6 pb-24">
       <div className="mb-8">
         <SearchBar value={searchQuery} onChange={setSearchQuery} placeholder={copy[language].search} />
       </div>

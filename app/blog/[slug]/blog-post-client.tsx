@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
 import type { BlogPost } from "@/app/lib/blog-content";
 import type { SiteLanguage } from "@/app/lib/site-language";
 
@@ -25,7 +26,8 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300">
-      <section className="mx-auto max-w-4xl px-6 py-16">
+      <AutumnLeavesBg />
+      <section className="relative z-10 mx-auto max-w-4xl px-6 py-16">
         <Link
           href="/blog"
           className="inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"

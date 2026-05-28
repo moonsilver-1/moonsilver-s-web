@@ -18,7 +18,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-[var(--app-border)] bg-[var(--app-surface)]/60 px-6 py-8 text-[var(--app-muted)] transition-colors duration-300 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
-        <p className="text-xs tracking-widest">© {new Date().getFullYear()} MOONSILVER</p>
+        <p className="font-brand text-xs tracking-widest">© {new Date().getFullYear()} MOONSILVER</p>
 
         <div className="flex flex-wrap items-center gap-3 text-xs">
           <a

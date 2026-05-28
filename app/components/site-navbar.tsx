@@ -2,8 +2,10 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { useScene } from "@/app/components/scene-provider";
+import { SCENES, SCENE_KEYS, type SceneKey } from "@/app/lib/scene-config";
 
 const navLabels = {
   zh: {
@@ -14,6 +16,7 @@ const navLabels = {
     themeLight: "切换到黑夜模式",
     language: "EN",
     switchLanguage: "切换到英文",
+    scenePicker: "切换场景",
   },
   en: {
     home: "Home",
@@ -23,6 +26,7 @@ const navLabels = {
     themeLight: "Switch to dark mode",
     language: "中",
     switchLanguage: "Switch to Chinese",
+    scenePicker: "Change scene",
   },
 } as const;
 
@@ -37,16 +41,62 @@ function isActive(pathname: string, href: string) {
 }
 
 function getInitialTheme(): "dark" | "light" {
-  if (typeof window === "undefined") {
-    return "light";
-  }
-
+  if (typeof window === "undefined") return "light";
   const storedTheme = window.localStorage.getItem("site-theme");
-  if (storedTheme === "light" || storedTheme === "dark") {
-    return storedTheme;
-  }
-
+  if (storedTheme === "light" || storedTheme === "dark") return storedTheme;
   return window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+
+function ScenePicker({ language }: { language: "zh" | "en" }) {
+  const { scene, setScene } = useScene();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    function onClick(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("click", onClick);
+    return () => document.removeEventListener("click", onClick);
+  }, [open]);
+
+  const current = SCENES[scene];
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-label={navLabels[language].scenePicker}
+        className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+      >
+        <span aria-hidden="true">{current.icon}</span>
+      </button>
+      {open && (
+        <div className="absolute right-0 top-full mt-2 min-w-[120px] overflow-hidden rounded-xl border border-[var(--app-border)] bg-[var(--app-surface)] shadow-lg backdrop-blur-md">
+          {SCENE_KEYS.map((key) => {
+            const s = SCENES[key];
+            return (
+              <button
+                key={key}
+                type="button"
+                onClick={() => { setScene(key); setOpen(false); }}
+                className={`flex w-full items-center gap-2 px-3 py-2 text-left text-xs transition-colors ${
+                  scene === key
+                    ? "bg-[var(--app-border)] text-[var(--app-fg)]"
+                    : "text-[var(--app-muted)] hover:bg-[var(--app-border)] hover:text-[var(--app-fg)]"
+                }`}
+              >
+                <span>{s.icon}</span>
+                <span>{s.label[language]}</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
 }
 
 export function SiteNavbar() {
@@ -73,11 +123,12 @@ export function SiteNavbar() {
     <nav className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--app-border)] bg-[var(--app-surface)]/85 px-6 py-4 backdrop-blur-md transition-colors duration-300 md:px-12">
       <div className="mx-auto flex max-w-7xl flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" className="select-none text-sm font-semibold uppercase tracking-widest text-[var(--app-fg)]">
+          <Link href="/" className="font-brand select-none text-sm font-semibold uppercase tracking-widest text-[var(--app-fg)]">
             MOONSILVER
           </Link>
 
           <div className="flex items-center gap-2 lg:hidden">
+            <ScenePicker language={language} />
             <button
               type="button"
               onClick={toggleLanguage}
@@ -101,7 +152,6 @@ export function SiteNavbar() {
           <ul className="flex flex-wrap gap-4 md:gap-6">
             {links.map((link) => {
               const active = isActive(pathname, link.href);
-
               return (
                 <li key={link.href}>
                   <Link
@@ -119,6 +169,9 @@ export function SiteNavbar() {
           </ul>
 
           <div className="flex flex-wrap items-center gap-2">
+            <div className="hidden lg:block">
+              <ScenePicker language={language} />
+            </div>
             <button
               type="button"
               onClick={toggleLanguage}

@@ -32,10 +32,15 @@ body {
   background: var(--app-bg);
   color: var(--app-fg);
   font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial,
-    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    "LXGW WenKai", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.font-brand {
+  font-family: var(--font-brand), "LXGW WenKai", serif;
 }
 
 a {
@@ -948,4 +953,665 @@ html[data-theme="light"] .hover\:bg-white\/\[0\.02\]:hover {
 
 html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
   background-color: rgba(24, 21, 19, 0.03) !important;
+}
+
+/* ===== Scene: Spring ===== */
+
+html[data-scene="spring"] .home-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(252, 231, 243, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(249, 168, 212, 0.36), transparent 24rem),
+    linear-gradient(180deg, #fdf2f8 0%, #fce7f3 38%, #f5f0f0 72%, #ede9e9 100%);
+}
+
+html[data-theme="dark"][data-scene="spring"] .home-page {
+  background:
+    radial-gradient(circle at 73% 18%, rgba(236, 72, 153, 0.18), transparent 18rem),
+    radial-gradient(circle at 26% 22%, rgba(219, 39, 119, 0.1), transparent 22rem),
+    linear-gradient(180deg, #12050e 0%, #1c0d18 48%, #0a0608 100%);
+}
+
+html[data-scene="spring"] .autumn-sky {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(252, 231, 243, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(249, 168, 212, 0.36), transparent 24rem),
+    linear-gradient(180deg, #fdf2f8 0%, #fce7f3 38%, #f5f0f0 72%, #ede9e9 100%);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-sky {
+  background:
+    radial-gradient(circle at 73% 18%, rgba(236, 72, 153, 0.18), transparent 18rem),
+    radial-gradient(circle at 26% 22%, rgba(219, 39, 119, 0.1), transparent 22rem),
+    linear-gradient(180deg, #12050e 0%, #1c0d18 48%, #0a0608 100%);
+}
+
+html[data-scene="spring"] .autumn-sun {
+  background: radial-gradient(circle, rgba(252, 231, 243, 0.9) 0%, rgba(236, 72, 153, 0.18) 45%, transparent 72%);
+}
+
+html[data-scene="spring"] .mountain-layer-far {
+  background: linear-gradient(180deg, rgba(219, 39, 119, 0.12), rgba(190, 24, 93, 0.06));
+}
+
+html[data-scene="spring"] .mountain-layer-mid {
+  background:
+    linear-gradient(180deg, rgba(236, 72, 153, 0.2), rgba(190, 24, 93, 0.16)),
+    linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.08) 48%, transparent 62%);
+}
+
+html[data-scene="spring"] .mountain-layer-near {
+  background:
+    linear-gradient(180deg, rgba(190, 24, 93, 0.32), rgba(131, 24, 77, 0.4)),
+    linear-gradient(90deg, rgba(236, 72, 153, 0.1), transparent 44%, rgba(219, 39, 119, 0.1));
+}
+
+html[data-scene="spring"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(252, 231, 243, 0.7), transparent);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.12), transparent);
+}
+
+html[data-scene="spring"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.18), transparent);
+}
+
+html[data-theme="dark"][data-scene="spring"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(249, 168, 212, 0.15), transparent);
+}
+
+html[data-scene="spring"] .red-rain {
+  background: linear-gradient(180deg, transparent, rgba(236, 72, 153, 0.6), transparent);
+}
+
+html[data-scene="spring"] .autumn-leaf {
+  background:
+    linear-gradient(135deg, rgba(252, 231, 243, 0.4), transparent 45%),
+    linear-gradient(160deg, #ec4899 0%, #f9a8d4 55%, #db2777 100%);
+  box-shadow: 0 7px 18px rgba(236, 72, 153, 0.12);
+}
+
+html[data-scene="spring"] .section-label {
+  color: rgba(190, 24, 93, 0.72);
+}
+
+html[data-theme="dark"][data-scene="spring"] .section-label {
+  color: rgba(249, 168, 212, 0.58);
+}
+
+html[data-scene="spring"] .autumn-chip {
+  border-color: rgba(236, 72, 153, 0.2);
+  color: rgba(157, 23, 77, 0.82);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-chip {
+  border-color: rgba(249, 168, 212, 0.12);
+  color: rgba(249, 168, 212, 0.62);
+}
+
+html[data-scene="spring"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.14), transparent);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(249, 168, 212, 0.08), transparent);
+}
+
+html[data-scene="spring"] .autumn-scroll-cue {
+  border-color: rgba(236, 72, 153, 0.2);
+}
+
+html[data-scene="spring"] .autumn-scroll-cue span {
+  background: rgba(236, 72, 153, 0.4);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-scroll-cue {
+  border-color: rgba(249, 168, 212, 0.2);
+}
+
+html[data-theme="dark"][data-scene="spring"] .autumn-scroll-cue span {
+  background: rgba(249, 168, 212, 0.4);
+}
+
+/* ===== Scene: Winter ===== */
+
+html[data-scene="winter"] .home-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(224, 242, 254, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(186, 230, 253, 0.36), transparent 24rem),
+    linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 38%, #dbeafe 72%, #cffafe 100%);
+}
+
+html[data-theme="dark"][data-scene="winter"] .home-page {
+  background:
+    radial-gradient(circle at 73% 18%, rgba(56, 189, 248, 0.18), transparent 18rem),
+    radial-gradient(circle at 26% 22%, rgba(14, 116, 144, 0.12), transparent 22rem),
+    linear-gradient(180deg, #050a10 0%, #0c1a2e 48%, #060a12 100%);
+}
+
+html[data-scene="winter"] .autumn-sky {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(224, 242, 254, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(186, 230, 253, 0.36), transparent 24rem),
+    linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 38%, #dbeafe 72%, #cffafe 100%);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-sky {
+  background:
+    radial-gradient(circle at 73% 18%, rgba(56, 189, 248, 0.18), transparent 18rem),
+    radial-gradient(circle at 26% 22%, rgba(14, 116, 144, 0.12), transparent 22rem),
+    linear-gradient(180deg, #050a10 0%, #0c1a2e 48%, #060a12 100%);
+}
+
+html[data-scene="winter"] .autumn-sun {
+  background: radial-gradient(circle, rgba(224, 242, 254, 0.9) 0%, rgba(56, 189, 248, 0.18) 45%, transparent 72%);
+}
+
+html[data-scene="winter"] .mountain-layer-far {
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.12), rgba(14, 116, 144, 0.06));
+}
+
+html[data-scene="winter"] .mountain-layer-mid {
+  background:
+    linear-gradient(180deg, rgba(56, 189, 248, 0.2), rgba(14, 116, 144, 0.16)),
+    linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.1) 48%, transparent 62%);
+}
+
+html[data-scene="winter"] .mountain-layer-near {
+  background:
+    linear-gradient(180deg, rgba(14, 116, 144, 0.32), rgba(8, 51, 68, 0.4)),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.1), transparent 44%, rgba(14, 165, 233, 0.1));
+}
+
+html[data-scene="winter"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(224, 242, 254, 0.7), transparent);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.1), transparent);
+}
+
+html[data-scene="winter"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.22), transparent);
+}
+
+html[data-theme="dark"][data-scene="winter"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.15), transparent);
+}
+
+html[data-scene="winter"] .red-rain {
+  background: linear-gradient(180deg, transparent, rgba(186, 230, 253, 0.7), transparent);
+}
+
+html[data-scene="winter"] .autumn-leaf {
+  background:
+    linear-gradient(135deg, rgba(224, 242, 254, 0.5), transparent 45%),
+    linear-gradient(160deg, #7dd3fc 0%, #bae6fd 55%, #38bdf8 100%);
+  box-shadow: 0 7px 18px rgba(56, 189, 248, 0.1);
+}
+
+html[data-scene="winter"] .section-label {
+  color: rgba(14, 116, 144, 0.72);
+}
+
+html[data-theme="dark"][data-scene="winter"] .section-label {
+  color: rgba(125, 211, 252, 0.58);
+}
+
+html[data-scene="winter"] .autumn-chip {
+  border-color: rgba(56, 189, 248, 0.22);
+  color: rgba(8, 51, 68, 0.82);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-chip {
+  border-color: rgba(125, 211, 252, 0.12);
+  color: rgba(186, 230, 253, 0.62);
+}
+
+html[data-scene="winter"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(56, 189, 248, 0.14), transparent);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.08), transparent);
+}
+
+html[data-scene="winter"] .autumn-scroll-cue {
+  border-color: rgba(56, 189, 248, 0.22);
+}
+
+html[data-scene="winter"] .autumn-scroll-cue span {
+  background: rgba(56, 189, 248, 0.4);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-scroll-cue {
+  border-color: rgba(125, 211, 252, 0.2);
+}
+
+html[data-theme="dark"][data-scene="winter"] .autumn-scroll-cue span {
+  background: rgba(125, 211, 252, 0.4);
+}
+
+/* ===== Scene: Starry ===== */
+
+html[data-scene="starry"] .home-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(254, 243, 199, 0.55), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(253, 230, 138, 0.22), transparent 24rem),
+    linear-gradient(180deg, #1a1040 0%, #0c0a1a 38%, #0a0818 72%, #060510 100%);
+}
+
+html[data-theme="light"][data-scene="starry"] .home-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(254, 243, 199, 0.7), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(253, 230, 138, 0.3), transparent 24rem),
+    linear-gradient(180deg, #eef2ff 0%, #e0e7ff 38%, #ddd6fe 72%, #c7d2fe 100%);
+}
+
+html[data-scene="starry"] .autumn-sky {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(254, 243, 199, 0.55), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(253, 230, 138, 0.22), transparent 24rem),
+    linear-gradient(180deg, #1a1040 0%, #0c0a1a 38%, #0a0818 72%, #060510 100%);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-sky {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(254, 243, 199, 0.7), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(253, 230, 138, 0.3), transparent 24rem),
+    linear-gradient(180deg, #eef2ff 0%, #e0e7ff 38%, #ddd6fe 72%, #c7d2fe 100%);
+}
+
+html[data-scene="starry"] .autumn-sun {
+  background: radial-gradient(circle, rgba(254, 243, 199, 0.9) 0%, rgba(251, 191, 36, 0.25) 45%, transparent 72%);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-sun {
+  background: radial-gradient(circle, rgba(254, 243, 199, 0.8) 0%, rgba(251, 191, 36, 0.18) 45%, transparent 72%);
+}
+
+html[data-scene="starry"] .mountain-layer-far {
+  background: linear-gradient(180deg, rgba(109, 40, 217, 0.14), rgba(91, 33, 182, 0.06));
+}
+
+html[data-theme="light"][data-scene="starry"] .mountain-layer-far {
+  background: linear-gradient(180deg, rgba(109, 40, 217, 0.1), rgba(91, 33, 182, 0.04));
+}
+
+html[data-scene="starry"] .mountain-layer-mid {
+  background:
+    linear-gradient(180deg, rgba(139, 92, 246, 0.2), rgba(109, 40, 217, 0.14)),
+    linear-gradient(115deg, transparent 0%, rgba(251, 191, 36, 0.06) 48%, transparent 62%);
+}
+
+html[data-theme="light"][data-scene="starry"] .mountain-layer-mid {
+  background:
+    linear-gradient(180deg, rgba(139, 92, 246, 0.14), rgba(109, 40, 217, 0.08)),
+    linear-gradient(115deg, transparent 0%, rgba(251, 191, 36, 0.05) 48%, transparent 62%);
+}
+
+html[data-scene="starry"] .mountain-layer-near {
+  background:
+    linear-gradient(180deg, rgba(91, 33, 182, 0.36), rgba(55, 19, 112, 0.46)),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.12), transparent 44%, rgba(109, 40, 217, 0.12));
+}
+
+html[data-theme="light"][data-scene="starry"] .mountain-layer-near {
+  background:
+    linear-gradient(180deg, rgba(139, 92, 246, 0.16), rgba(109, 40, 217, 0.2)),
+    linear-gradient(90deg, rgba(196, 181, 253, 0.1), transparent 44%, rgba(167, 139, 250, 0.1));
+}
+
+html[data-scene="starry"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.22), transparent);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-mist {
+  background: linear-gradient(90deg, transparent, rgba(196, 181, 253, 0.4), transparent);
+}
+
+html[data-scene="starry"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.14), transparent);
+}
+
+html[data-theme="light"][data-scene="starry"] .north-wind-line {
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.12), transparent);
+}
+
+html[data-scene="starry"] .red-rain {
+  background: linear-gradient(180deg, transparent, rgba(251, 191, 36, 0.5), transparent);
+}
+
+html[data-scene="starry"] .autumn-leaf {
+  background:
+    linear-gradient(135deg, rgba(254, 243, 199, 0.5), transparent 45%),
+    linear-gradient(160deg, #fbbf24 0%, #fde68a 55%, #f59e0b 100%);
+  box-shadow: 0 7px 18px rgba(251, 191, 36, 0.1);
+}
+
+html[data-scene="starry"] .section-label {
+  color: rgba(251, 191, 36, 0.72);
+}
+
+html[data-theme="light"][data-scene="starry"] .section-label {
+  color: rgba(109, 40, 217, 0.72);
+}
+
+html[data-scene="starry"] .autumn-chip {
+  border-color: rgba(251, 191, 36, 0.22);
+  color: rgba(251, 191, 36, 0.82);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-chip {
+  border-color: rgba(109, 40, 217, 0.18);
+  color: rgba(91, 33, 182, 0.82);
+}
+
+html[data-scene="starry"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.14), transparent);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-divider {
+  background: linear-gradient(90deg, transparent, rgba(109, 40, 217, 0.12), transparent);
+}
+
+html[data-scene="starry"] .autumn-scroll-cue {
+  border-color: rgba(251, 191, 36, 0.22);
+}
+
+html[data-scene="starry"] .autumn-scroll-cue span {
+  background: rgba(251, 191, 36, 0.4);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-scroll-cue {
+  border-color: rgba(109, 40, 217, 0.18);
+}
+
+html[data-theme="light"][data-scene="starry"] .autumn-scroll-cue span {
+  background: rgba(109, 40, 217, 0.4);
+}
+
+/* ===== Spring decorations ===== */
+
+.spring-tree {
+  position: absolute;
+  right: 12%;
+  bottom: 18%;
+}
+
+.spring-trunk {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 120px;
+  background: linear-gradient(180deg, #92400e, #78350f);
+  border-radius: 4px;
+}
+
+.spring-bloom {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(249, 168, 212, 0.85), rgba(236, 72, 153, 0.3));
+}
+
+.spring-bloom-1 { width: 80px; height: 80px; top: -30px; left: -40px; }
+.spring-bloom-2 { width: 60px; height: 60px; top: -50px; left: 10px; }
+.spring-bloom-3 { width: 70px; height: 70px; top: -20px; left: 30px; }
+.spring-bloom-4 { width: 50px; height: 50px; top: -60px; left: -15px; }
+.spring-bloom-5 { width: 45px; height: 45px; top: 10px; left: -55px; }
+
+html[data-theme="dark"] .spring-bloom {
+  background: radial-gradient(circle, rgba(249, 168, 212, 0.4), rgba(236, 72, 153, 0.12));
+}
+
+html[data-theme="dark"] .spring-trunk {
+  background: linear-gradient(180deg, #5c2d0e, #3d1a06);
+}
+
+.spring-ray {
+  position: absolute;
+  height: 1px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(252, 231, 243, 0.5), transparent);
+  transform: rotate(-15deg);
+  animation: spring-ray-drift 12s ease-in-out infinite alternate;
+}
+
+html[data-theme="dark"] .spring-ray {
+  background: linear-gradient(90deg, transparent, rgba(236, 72, 153, 0.12), transparent);
+}
+
+@keyframes spring-ray-drift {
+  from { opacity: 0.4; transform: translateX(-5%) rotate(-15deg); }
+  to { opacity: 0.8; transform: translateX(5%) rotate(-15deg); }
+}
+
+.spring-petal {
+  position: absolute;
+  top: -10vh;
+  border-radius: 50% 0 50% 0;
+  animation: spring-petal-fall 12s linear infinite;
+}
+
+@keyframes spring-petal-fall {
+  0% { transform: translate3d(0, -10vh, 0) rotate(0deg); }
+  30% { transform: translate3d(3vw, 30vh, 0) rotate(120deg); }
+  60% { transform: translate3d(-2vw, 60vh, 0) rotate(240deg); }
+  100% { transform: translate3d(4vw, 110vh, 0) rotate(400deg); }
+}
+
+html[data-scene="spring"] .spring-petal {
+  background: #f9a8d4;
+}
+
+html[data-theme="dark"][data-scene="spring"] .spring-petal {
+  background: rgba(249, 168, 212, 0.5);
+}
+
+/* ===== Winter decorations ===== */
+
+.snowman {
+  position: absolute;
+  right: 15%;
+  bottom: 22%;
+}
+
+.snowman-base {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 50px;
+  background: radial-gradient(ellipse, #f0f9ff 30%, #e0f2fe 100%);
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15), inset 0 0 0 1.5px rgba(56, 189, 248, 0.2);
+}
+
+.snowman-body {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 40% 35%, #ffffff, #e0f2fe);
+  border-radius: 50%;
+  box-shadow: inset -4px -4px 8px rgba(56, 189, 248, 0.15), inset 0 0 0 1.5px rgba(56, 189, 248, 0.18);
+}
+
+.snowman-head {
+  position: absolute;
+  bottom: 72px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  background: radial-gradient(circle at 40% 35%, #ffffff, #e0f2fe);
+  border-radius: 50%;
+  box-shadow: inset -3px -3px 6px rgba(56, 189, 248, 0.15), inset 0 0 0 1.5px rgba(56, 189, 248, 0.18);
+}
+
+.snowman-head::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 5px;
+  height: 5px;
+  background: #1e293b;
+  border-radius: 50%;
+  box-shadow: 13px 0 0 #1e293b;
+}
+
+.snowman-head::after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  width: 8px;
+  height: 5px;
+  background: #f97316;
+  border-radius: 2px 6px 6px 2px;
+  transform: rotate(-5deg);
+}
+
+.snowman-hat {
+  position: absolute;
+  bottom: 102px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28px;
+  height: 22px;
+  background: linear-gradient(180deg, #1e293b, #334155);
+  border-radius: 3px 3px 0 0;
+}
+
+.snowman-hat::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: -6px;
+  width: 40px;
+  height: 5px;
+  background: #334155;
+  border-radius: 2px;
+}
+
+html[data-theme="dark"] .snowman-base,
+html[data-theme="dark"] .snowman-body,
+html[data-theme="dark"] .snowman-head {
+  background: radial-gradient(circle at 40% 35%, rgba(224, 242, 254, 0.6), rgba(186, 230, 253, 0.3));
+}
+
+.snow-ground {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  right: -5%;
+  height: 18%;
+  background: linear-gradient(180deg, rgba(224, 242, 254, 0.6) 0%, rgba(186, 230, 253, 0.3) 100%);
+  border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+}
+
+html[data-theme="dark"] .snow-ground {
+  background: linear-gradient(180deg, rgba(186, 230, 253, 0.15) 0%, rgba(56, 189, 248, 0.05) 100%);
+}
+
+.winter-snowflake {
+  position: absolute;
+  top: -5vh;
+  border-radius: 50%;
+  background: rgba(224, 242, 254, 0.9);
+  box-shadow: 0 0 4px 1px rgba(56, 189, 248, 0.25);
+  animation: winter-snow-fall 8s linear infinite;
+}
+
+html[data-theme="dark"] .winter-snowflake {
+  background: rgba(186, 230, 253, 0.5);
+}
+
+@keyframes winter-snow-fall {
+  0% { transform: translate3d(0, -5vh, 0); }
+  30% { transform: translate3d(-2vw, 30vh, 0); }
+  60% { transform: translate3d(1.5vw, 60vh, 0); }
+  100% { transform: translate3d(-3vw, 108vh, 0); }
+}
+
+/* ===== Starry decorations ===== */
+
+.starry-moon {
+  position: absolute;
+  right: 18%;
+  top: 12%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 55% 45%, #fef3c7 0%, #fde68a 60%, transparent 70%);
+  box-shadow: 0 0 60px 20px rgba(254, 243, 199, 0.3), 0 0 120px 40px rgba(254, 243, 199, 0.1);
+  animation: starry-moon-glow 6s ease-in-out infinite;
+}
+
+.starry-moon::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--app-bg);
+  transition: background 0.3s;
+}
+
+html[data-theme="light"] .starry-moon::after {
+  background: #eef2ff;
+}
+
+html[data-theme="dark"] .starry-moon::after {
+  background: #1a1040;
+}
+
+@keyframes starry-moon-glow {
+  0%, 100% { box-shadow: 0 0 60px 20px rgba(254, 243, 199, 0.3), 0 0 120px 40px rgba(254, 243, 199, 0.1); }
+  50% { box-shadow: 0 0 80px 30px rgba(254, 243, 199, 0.45), 0 0 160px 50px rgba(254, 243, 199, 0.15); }
+}
+
+.starry-star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fef3c7;
+  animation: starry-twinkle 3s ease-in-out infinite;
+}
+
+html[data-theme="light"] .starry-star {
+  background: rgba(139, 92, 246, 0.5);
+}
+
+@keyframes starry-twinkle {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.5); }
+}
+
+.starry-shooting {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(254, 243, 199, 0.8), transparent);
+  border-radius: 999px;
+  transform: rotate(-30deg);
+  animation: starry-shoot 8s ease-in infinite;
+  opacity: 0;
+}
+
+@keyframes starry-shoot {
+  0% { opacity: 0; transform: translateX(0) rotate(-30deg); }
+  5% { opacity: 1; }
+  15% { opacity: 0; transform: translateX(-200px) rotate(-30deg); }
+  100% { opacity: 0; }
 }

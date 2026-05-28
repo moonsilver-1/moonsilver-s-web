@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
 import { ProductJsonSitePanel } from "@/app/contest/product-json-site-panel";
 import { useThemeMode } from "@/app/lib/use-theme-mode";
 
@@ -143,7 +144,8 @@ export default function ContestPage() {
 
   return (
     <div className="min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-500" style={{ background: pageBackground }}>
-      <section className="relative overflow-hidden">
+      <AutumnLeavesBg />
+      <section className="relative z-10 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <div className="grid gap-10 lg:grid-cols-[1fr_420px] lg:items-end">
             <div>
@@ -218,7 +220,7 @@ export default function ContestPage() {
         </div>
       </section>
 
-      <main className="mx-auto max-w-7xl px-6 pb-20">
+      <main className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
         {isSmartCarOpen ? (
           <section className="mb-10 rounded-[28px] p-5 backdrop-blur" style={{ background: framedBackground, border: `1px solid ${borderColor}` }}>
             <ProductJsonSitePanel embedded />
