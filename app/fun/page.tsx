@@ -23,12 +23,6 @@ const entries: Entry[] = [
     note: { zh: "测试", en: "Test" },
   },
   {
-    href: "/fun/football",
-    title: { zh: "足球", en: "Football" },
-    description: { zh: "赛程 / 积分 / 射手榜", en: "Fixtures / standings / scorers" },
-    note: { zh: "数据", en: "Data" },
-  },
-  {
     href: "/fun/2048",
     title: { zh: "2048", en: "2048" },
     description: { zh: "滑动合并，向一个角堆数字", en: "Slide and merge tiles toward one corner" },
@@ -38,12 +32,6 @@ const entries: Entry[] = [
     href: "/fun/tetris",
     title: { zh: "俄罗斯方块", en: "Tetris" },
     description: { zh: "俄罗斯方块", en: "Tetris" },
-    note: { zh: "游戏", en: "Game" },
-  },
-  {
-    href: "/fun/penalty-shootout",
-    title: { zh: "点球大战", en: "Penalty Shootout" },
-    description: { zh: "瞄准、射门、过门将", en: "Aim, shoot, and beat the keeper" },
     note: { zh: "游戏", en: "Game" },
   },
   {

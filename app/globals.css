@@ -321,10 +321,12 @@ html[data-theme="light"] .text-violet-300 {
 }
 
 .home-orb-primary {
+  will-change: transform, opacity;
   animation: home-breathe 6s ease-in-out infinite;
 }
 
 .home-orb-secondary {
+  will-change: transform, opacity;
   animation: home-breathe-soft 8s ease-in-out infinite 1s;
 }
 
@@ -431,6 +433,8 @@ html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
 
 .autumn-page-scene {
   z-index: 0;
+  contain: layout paint;
+  will-change: transform;
 }
 
 html[data-theme="dark"] .home-page {
@@ -447,6 +451,7 @@ html[data-theme="dark"] .home-page {
 .autumn-sky {
   position: absolute;
   inset: 0;
+  transition: background 0.8s ease;
   background:
     radial-gradient(circle at 24% 18%, rgba(255, 245, 210, 0.95), transparent 20rem),
     radial-gradient(circle at 68% 12%, rgba(255, 203, 128, 0.36), transparent 24rem),
@@ -469,6 +474,7 @@ html[data-theme="dark"] .autumn-sky {
   border-radius: 999px;
   background: radial-gradient(circle, rgba(255, 246, 207, 0.9) 0%, rgba(234, 144, 60, 0.22) 45%, transparent 72%);
   filter: blur(2px);
+  will-change: transform, opacity;
   animation: autumn-sun-breathe 8s ease-in-out infinite;
 }
 
@@ -515,6 +521,7 @@ html[data-theme="dark"] .autumn-sky {
   background: linear-gradient(90deg, transparent, rgba(255, 249, 237, 0.7), transparent);
   filter: blur(18px);
   opacity: 0.8;
+  will-change: transform, opacity;
   animation: autumn-mist-drift 18s ease-in-out infinite alternate;
 }
 
@@ -533,6 +540,7 @@ html[data-theme="dark"] .autumn-mist {
   border-radius: 999px;
   background: linear-gradient(90deg, transparent, rgba(130, 73, 42, 0.28), transparent);
   transform: rotate(-8deg);
+  will-change: transform;
   animation: north-wind 9s linear infinite;
 }
 
@@ -547,6 +555,7 @@ html[data-theme="dark"] .north-wind-line {
   border-radius: 999px;
   background: linear-gradient(180deg, transparent, rgba(179, 58, 28, 0.92), transparent);
   transform: rotate(18deg);
+  will-change: transform;
   animation: red-rain-fall 7s linear infinite;
 }
 
@@ -555,6 +564,7 @@ html[data-theme="dark"] .north-wind-line {
   top: -18vh;
   display: block;
   border-radius: 100% 0 100% 0;
+  will-change: transform;
   background:
     linear-gradient(135deg, rgba(255, 227, 168, 0.4), transparent 45%),
     linear-gradient(160deg, #b33a1c 0%, #c76a24 55%, #7a2818 100%);
@@ -652,12 +662,14 @@ html[data-theme="dark"] .autumn-divider {
     linear-gradient(145deg, rgba(255, 250, 240, 0.85), rgba(255, 246, 232, 0.6)),
     var(--card-inner);
   box-shadow: 0 16px 48px rgba(96, 58, 33, 0.1);
+  transition: border-color 0.35s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
+  will-change: transform, box-shadow;
 }
 
 .autumn-card:hover {
   border-color: var(--app-border-strong);
   transform: translateY(-3px);
-  box-shadow: 0 22px 56px rgba(96, 58, 33, 0.13);
+  box-shadow: 0 22px 56px rgba(96, 58, 33, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 html[data-theme="light"] .autumn-card {
@@ -677,11 +689,13 @@ html[data-theme="dark"] .autumn-card {
 
 .autumn-list-item {
   border: 1px solid transparent;
+  transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease;
 }
 
 .autumn-list-item:hover {
   border-color: var(--app-border);
   background: rgba(255, 255, 255, 0.34);
+  transform: translateX(2px);
 }
 
 html[data-theme="dark"] .autumn-list-item:hover {
@@ -758,202 +772,6 @@ html[data-theme="dark"] .autumn-badge-purple { color: #c4b5fd; }
   100% { opacity: 0; transform: translate(-50%, 20px); }
 }
 
-@keyframes home-fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes home-reveal {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.home-fade-up {
-  opacity: 0;
-  animation: home-fade-up 0.8s ease-out forwards;
-}
-
-.home-reveal {
-  opacity: 0;
-  animation: home-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards 0.16s;
-}
-
-@keyframes section-item-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.section-item {
-  opacity: 0;
-  animation: section-item-in 0.45s ease-out forwards;
-}
-
-@keyframes home-arrow {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(8px);
-  }
-}
-
-.home-arrow {
-  animation: home-arrow 1.8s ease-in-out infinite;
-}
-
-@keyframes home-star {
-  0%, 100% { opacity: 0.15; }
-  50% { opacity: 0.85; }
-}
-
-.home-star {
-  animation: home-star 3s ease-in-out infinite;
-}
-
-.home-star-bright {
-  box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.25);
-}
-
-html[data-theme="light"] .home-star {
-  background-color: rgba(180, 140, 80, 0.5) !important;
-}
-
-html[data-theme="light"] .home-star-bright {
-  box-shadow: 0 0 4px 1px rgba(180, 140, 80, 0.2) !important;
-}
-
-html[data-theme="light"] .home-orb-primary {
-  background: radial-gradient(circle, rgba(180, 140, 80, 0.08) 0%, transparent 70%) !important;
-}
-
-html[data-theme="light"] .home-orb-secondary {
-  background: radial-gradient(circle, rgba(200, 160, 90, 0.04) 0%, transparent 70%) !important;
-}
-
-html[data-theme="light"] .home-particle {
-  background-color: rgba(24, 21, 19, 0.12) !important;
-}
-
-html[data-theme="light"] .bg-black {
-  background-color: var(--app-bg) !important;
-}
-
-html[data-theme="light"] .text-white {
-  color: var(--app-fg) !important;
-}
-
-html[data-theme="light"] .text-white\/95,
-html[data-theme="light"] .text-white\/90,
-html[data-theme="light"] .text-white\/85,
-html[data-theme="light"] .text-white\/80,
-html[data-theme="light"] .text-white\/75,
-html[data-theme="light"] .text-white\/70,
-html[data-theme="light"] .text-white\/65,
-html[data-theme="light"] .text-white\/60,
-html[data-theme="light"] .text-white\/55,
-html[data-theme="light"] .text-white\/50,
-html[data-theme="light"] .text-white\/45,
-html[data-theme="light"] .text-white\/40,
-html[data-theme="light"] .text-white\/35,
-html[data-theme="light"] .text-white\/30,
-html[data-theme="light"] .text-white\/25,
-html[data-theme="light"] .text-white\/20,
-html[data-theme="light"] .text-white\/15,
-html[data-theme="light"] .text-white\/10 {
-  color: var(--app-muted) !important;
-}
-
-html[data-theme="light"] .border-white\/5,
-html[data-theme="light"] .border-white\/8,
-html[data-theme="light"] .border-white\/10,
-html[data-theme="light"] .border-white\/15,
-html[data-theme="light"] .border-white\/20,
-html[data-theme="light"] .border-white\/25,
-html[data-theme="light"] .border-white\/30,
-html[data-theme="light"] .border-white\/\[0\.06\] {
-  border-color: var(--app-border) !important;
-}
-
-html[data-theme="light"] .bg-white\/\[0\.01\],
-html[data-theme="light"] .bg-white\/\[0\.015\],
-html[data-theme="light"] .bg-white\/\[0\.02\],
-html[data-theme="light"] .bg-white\/\[0\.03\],
-html[data-theme="light"] .bg-white\/\[0\.04\],
-html[data-theme="light"] .bg-white\/\[0\.08\] {
-  background-color: rgba(255, 255, 255, 0.42) !important;
-}
-
-html[data-theme="light"] .bg-white,
-html[data-theme="light"] .hover\:bg-white\/90:hover {
-  background-color: #181513 !important;
-  color: #f5f1e8 !important;
-}
-
-html[data-theme="light"] .bg-black\/30 {
-  background-color: rgba(255, 255, 255, 0.5) !important;
-}
-
-html[data-theme="light"] .text-yellow-300 {
-  color: #8a5a00 !important;
-}
-
-html[data-theme="light"] .text-sky-300 {
-  color: #075985 !important;
-}
-
-html[data-theme="light"] .text-amber-400 {
-  color: #92400e !important;
-}
-
-html[data-theme="light"] .text-zinc-300 {
-  color: #3f3f46 !important;
-}
-
-html[data-theme="light"] .text-emerald-300 {
-  color: #047857 !important;
-}
-
-html[data-theme="light"] .text-violet-300 {
-  color: #6d28d9 !important;
-}
-
-html[data-theme="light"] .hover\:text-white\/80:hover {
-  color: var(--app-fg) !important;
-}
-
-html[data-theme="light"] .hover\:border-white\/15:hover {
-  border-color: var(--app-border-strong) !important;
-}
-
-html[data-theme="light"] .hover\:bg-white\/\[0\.02\]:hover {
-  background-color: rgba(24, 21, 19, 0.04) !important;
-}
-
-html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
-  background-color: rgba(24, 21, 19, 0.03) !important;
-}
 
 /* ===== Scene: Spring ===== */
 
@@ -1025,6 +843,7 @@ html[data-theme="dark"] .spring-hill-near {
 .spring-butterfly {
   position: absolute;
   top: -5vh;
+  will-change: transform;
   animation: butterfly-float var(--bf-dur, 16s) ease-in-out infinite;
 }
 
@@ -1496,6 +1315,7 @@ html[data-theme="dark"] .spring-ray {
   position: absolute;
   top: -10vh;
   border-radius: 50% 0 50% 0;
+  will-change: transform;
   animation: spring-petal-fall 12s linear infinite;
 }
 
@@ -1630,6 +1450,7 @@ html[data-theme="dark"] .snow-ground {
   border-radius: 50%;
   background: rgba(186, 230, 253, 0.92);
   box-shadow: 0 0 6px 2px rgba(56, 189, 248, 0.4);
+  will-change: transform;
   animation: winter-snow-fall 8s linear infinite;
 }
 
@@ -1687,6 +1508,7 @@ html[data-theme="dark"] .starry-moon::after {
   position: absolute;
   border-radius: 50%;
   background: #fef3c7;
+  will-change: transform, opacity;
   animation: starry-twinkle 3s ease-in-out infinite;
 }
 
@@ -1717,4 +1539,26 @@ html[data-theme="light"] .starry-star {
   5% { opacity: 1; }
   15% { opacity: 0; transform: translateX(-200px) rotate(-30deg); }
   100% { opacity: 0; }
+}
+
+/* ===== Scene transition layers ===== */
+.scene-layer {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.scene-layer.active {
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.scene-layer.inactive {
+  opacity: 0;
+  transform: scale(1.02);
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.7s;
 }

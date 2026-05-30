@@ -69,7 +69,7 @@ function ScenePicker({ language }: { language: "zh" | "en" }) {
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-label={navLabels[language].scenePicker}
-        className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+        className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-all duration-200 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm active:scale-95"
       >
         <span aria-hidden="true">{current.icon}</span>
       </button>
@@ -133,7 +133,7 @@ export function SiteNavbar() {
               type="button"
               onClick={toggleLanguage}
               aria-label={labels.switchLanguage}
-              className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+              className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-all duration-200 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm active:scale-95"
             >
               {labels.language}
             </button>
@@ -141,7 +141,7 @@ export function SiteNavbar() {
               type="button"
               onClick={toggleTheme}
               aria-label={theme === "dark" ? labels.themeDark : labels.themeLight}
-              className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+              className="rounded-full border border-[var(--app-border)] px-3 py-2 text-xs text-[var(--app-muted)] transition-all duration-200 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm active:scale-95"
             >
               <span aria-hidden="true">{theme === "dark" ? "☾" : "☀"}</span>
             </button>
@@ -156,12 +156,16 @@ export function SiteNavbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`relative text-sm tracking-wide transition-colors ${
+                    className={`group relative text-sm tracking-wide transition-colors ${
                       active ? "text-[var(--app-fg)]" : "text-[var(--app-muted)] hover:text-[var(--app-fg)]"
                     }`}
                   >
                     {labels[link.key]}
-                    {active ? <span className="absolute -bottom-1 left-0 right-0 h-px bg-[var(--app-fg)]" /> : null}
+                    <span
+                      className={`absolute -bottom-1 left-1/2 h-px -translate-x-1/2 bg-[var(--app-fg)] transition-all duration-300 ease-out ${
+                        active ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
+                    />
                   </Link>
                 </li>
               );

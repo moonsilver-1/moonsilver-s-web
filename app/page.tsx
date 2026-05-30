@@ -243,104 +243,96 @@ export default function HomePage() {
       <div className="autumn-page-scene pointer-events-none fixed inset-0 overflow-hidden" aria-hidden="true">
           <div className="autumn-sky" />
 
-          {scene === "autumn" && (
-            <>
-              <div className="autumn-sun" />
-              <div className="mountain-layer mountain-layer-far" />
-              <div className="mountain-layer mountain-layer-mid" />
-              <div className="mountain-layer mountain-layer-near" />
-              <div className="autumn-mist autumn-mist-a" />
-              <div className="autumn-mist autumn-mist-b" />
-              <div className="autumn-mist autumn-mist-c" />
-              {autumnWindLines.map((line, i) => (
-                <span key={`wind-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
-              ))}
-              {autumnRedRain.map((drop, i) => (
-                <span key={`rr-${i}`} className="red-rain" style={{ left: drop.left, height: drop.length, opacity: drop.opacity, animationDelay: drop.delay, animationDuration: drop.duration }} />
-              ))}
-              {autumnLeaves.map((leaf, i) => (
-                <span key={`leaf-${i}`} className={`autumn-leaf leaf-depth-${leaf.depth}`} style={{ left: leaf.left, width: leaf.size, height: `calc(${leaf.size} * 1.45)`, rotate: leaf.rotate, animationDelay: leaf.delay, animationDuration: leaf.duration }} />
-              ))}
-            </>
-          )}
+          <div className={`scene-layer ${scene === "autumn" ? "active" : "inactive"}`}>
+            <div className="autumn-sun" />
+            <div className="mountain-layer mountain-layer-far" />
+            <div className="mountain-layer mountain-layer-mid" />
+            <div className="mountain-layer mountain-layer-near" />
+            <div className="autumn-mist autumn-mist-a" />
+            <div className="autumn-mist autumn-mist-b" />
+            <div className="autumn-mist autumn-mist-c" />
+            {autumnWindLines.map((line, i) => (
+              <span key={`wind-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
+            ))}
+            {autumnRedRain.map((drop, i) => (
+              <span key={`rr-${i}`} className="red-rain" style={{ left: drop.left, height: drop.length, opacity: drop.opacity, animationDelay: drop.delay, animationDuration: drop.duration }} />
+            ))}
+            {autumnLeaves.map((leaf, i) => (
+              <span key={`leaf-${i}`} className={`autumn-leaf leaf-depth-${leaf.depth}`} style={{ left: leaf.left, width: leaf.size, height: `calc(${leaf.size} * 1.45)`, rotate: leaf.rotate, animationDelay: leaf.delay, animationDuration: leaf.duration }} />
+            ))}
+          </div>
 
-          {scene === "spring" && (
-            <>
-              {/* Rolling hills */}
-              <div className="spring-hill spring-hill-far" />
-              <div className="spring-hill spring-hill-mid" />
-              <div className="spring-hill spring-hill-near" />
-              {/* Wind lines */}
-              {autumnWindLines.map((line, i) => (
-                <span key={`wind-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
-              ))}
-              {/* Cherry blossom tree */}
-              <div className="spring-tree">
-                <div className="spring-trunk" />
-                <div className="spring-bloom spring-bloom-1" />
-                <div className="spring-bloom spring-bloom-2" />
-                <div className="spring-bloom spring-bloom-3" />
-                <div className="spring-bloom spring-bloom-4" />
-                <div className="spring-bloom spring-bloom-5" />
+          <div className={`scene-layer ${scene === "spring" ? "active" : "inactive"}`}>
+            {/* Rolling hills */}
+            <div className="spring-hill spring-hill-far" />
+            <div className="spring-hill spring-hill-mid" />
+            <div className="spring-hill spring-hill-near" />
+            {/* Wind lines */}
+            {autumnWindLines.map((line, i) => (
+              <span key={`wind-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
+            ))}
+            {/* Cherry blossom tree */}
+            <div className="spring-tree">
+              <div className="spring-trunk" />
+              <div className="spring-bloom spring-bloom-1" />
+              <div className="spring-bloom spring-bloom-2" />
+              <div className="spring-bloom spring-bloom-3" />
+              <div className="spring-bloom spring-bloom-4" />
+              <div className="spring-bloom spring-bloom-5" />
+            </div>
+            {/* Soft light rays */}
+            {springRays.map((ray, i) => (
+              <span key={`ray-${i}`} className="spring-ray" style={{ top: ray.top, left: ray.left, width: ray.width, animationDelay: ray.delay }} />
+            ))}
+            {/* Falling petals */}
+            {springPetals.map((petal, i) => (
+              <span key={`petal-${i}`} className="spring-petal" style={{ left: petal.left, width: petal.size, height: petal.size, opacity: petal.opacity, animationDelay: petal.delay, animationDuration: petal.duration }} />
+            ))}
+            {/* Butterflies */}
+            {springButterflies.map((butterfly, i) => (
+              <span key={`bf-${i}`} className="spring-butterfly" style={{ left: butterfly.left, width: butterfly.size, height: butterfly.size, animationDelay: butterfly.delay, animationDuration: butterfly.duration }} />
+            ))}
+          </div>
+
+          <div className={`scene-layer ${scene === "winter" ? "active" : "inactive"}`}>
+            {/* Aurora */}
+            <div className="winter-aurora" />
+            {/* Wind lines */}
+            {winterWind.map((line, i) => (
+              <span key={`ww-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
+            ))}
+            {/* Pine trees */}
+            {winterPines.map((pine, i) => (
+              <div key={`pine-${i}`} className="winter-pine" style={{ left: pine.left, height: pine.height, bottom: pine.bottom }}>
+                <div className="winter-pine-cap" />
+                <div className="winter-pine-tree" />
               </div>
-              {/* Soft light rays */}
-              {springRays.map((ray, i) => (
-                <span key={`ray-${i}`} className="spring-ray" style={{ top: ray.top, left: ray.left, width: ray.width, animationDelay: ray.delay }} />
-              ))}
-              {/* Falling petals */}
-              {springPetals.map((petal, i) => (
-                <span key={`petal-${i}`} className="spring-petal" style={{ left: petal.left, width: petal.size, height: petal.size, opacity: petal.opacity, animationDelay: petal.delay, animationDuration: petal.duration }} />
-              ))}
-              {/* Butterflies */}
-              {springButterflies.map((butterfly, i) => (
-                <span key={`bf-${i}`} className="spring-butterfly" style={{ left: butterfly.left, width: butterfly.size, height: butterfly.size, animationDelay: butterfly.delay, animationDuration: butterfly.duration }} />
-              ))}
-            </>
-          )}
+            ))}
+            {/* Snowman */}
+            <div className="snowman">
+              <div className="snowman-hat" />
+              <div className="snowman-head" />
+              <div className="snowman-body" />
+              <div className="snowman-base" />
+            </div>
+            {/* Snowy ground */}
+            <div className="snow-ground" />
+            {/* Snowflakes */}
+            {winterSnow.map((flake, i) => (
+              <span key={`snow-${i}`} className="winter-snowflake" style={{ left: flake.left, width: flake.size, height: flake.size, opacity: flake.opacity, animationDelay: flake.delay, animationDuration: flake.duration }} />
+            ))}
+          </div>
 
-          {scene === "winter" && (
-            <>
-              {/* Aurora */}
-              <div className="winter-aurora" />
-              {/* Wind lines */}
-              {winterWind.map((line, i) => (
-                <span key={`ww-${i}`} className="north-wind-line" style={{ top: line.top, width: line.width, animationDelay: line.delay }} />
-              ))}
-              {/* Pine trees */}
-              {winterPines.map((pine, i) => (
-                <div key={`pine-${i}`} className="winter-pine" style={{ left: pine.left, height: pine.height, bottom: pine.bottom }}>
-                  <div className="winter-pine-cap" />
-                  <div className="winter-pine-tree" />
-                </div>
-              ))}
-              {/* Snowman */}
-              <div className="snowman">
-                <div className="snowman-hat" />
-                <div className="snowman-head" />
-                <div className="snowman-body" />
-                <div className="snowman-base" />
-              </div>
-              {/* Snowy ground */}
-              <div className="snow-ground" />
-              {/* Snowflakes */}
-              {winterSnow.map((flake, i) => (
-                <span key={`snow-${i}`} className="winter-snowflake" style={{ left: flake.left, width: flake.size, height: flake.size, opacity: flake.opacity, animationDelay: flake.delay, animationDuration: flake.duration }} />
-              ))}
-            </>
-          )}
-
-          {scene === "starry" && (
-            <>
-              {/* Crescent moon */}
-              <div className="starry-moon" />
-              {/* Twinkling stars */}
-              {starryDots.map((dot, i) => (
-                <span key={`star-${i}`} className="starry-star" style={{ left: dot.left, top: dot.top, width: dot.size, height: dot.size, animationDelay: dot.delay, animationDuration: dot.duration }} />
-              ))}
-              {/* Shooting star */}
-              <span className="starry-shooting" />
-            </>
-          )}
+          <div className={`scene-layer ${scene === "starry" ? "active" : "inactive"}`}>
+            {/* Crescent moon */}
+            <div className="starry-moon" />
+            {/* Twinkling stars */}
+            {starryDots.map((dot, i) => (
+              <span key={`star-${i}`} className="starry-star" style={{ left: dot.left, top: dot.top, width: dot.size, height: dot.size, animationDelay: dot.delay, animationDuration: dot.duration }} />
+            ))}
+            {/* Shooting star */}
+            <span className="starry-shooting" />
+          </div>
       </div>
 
       <section className="autumn-hero relative z-10 flex min-h-[calc(100svh-5rem)] flex-col items-center justify-center overflow-hidden px-6 pt-24">

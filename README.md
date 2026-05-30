@@ -8,9 +8,7 @@
 - `/fun` 娱乐入口
 - `/fun/2048` 2048 小游戏
 - `/fun/tetris` 俄罗斯方块
-- `/fun/penalty-shootout` 点球大战
 - `/fun/birthday` 生日页
-- `/fun/football` 足球数据站
 - `/fun/jobti` Jobti 职业向量速写
 - `/blog` 博客
 - `/contest` 竞赛区（智能车 JSON 小站等）

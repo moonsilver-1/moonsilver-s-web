@@ -9,6 +9,7 @@ type GameStatus = "idle" | "playing" | "over";
 
 type Obstacle = {
   x: number;
+  y: number;
   w: number;
   h: number;
   type: "rock" | "stump" | "gap" | "bird";
@@ -52,6 +53,7 @@ type Particle = {
 
 type State = {
   status: GameStatus;
+  mode: GameMode;
   playerY: number;
   playerVy: number;
   playerFrame: number;
@@ -76,14 +78,15 @@ type State = {
 /* ── constants (virtual coords 400×260) ── */
 /* ── scene system ── */
 type SceneType = "forest" | "beach" | "city" | "countryside" | "mountains" | "night";
+type GameMode = "runner" | "surfer" | "pilot" | "glider";
 
-function getScene(score: number): SceneType {
-  if (score >= 1000) return "night";
-  if (score >= 800) return "mountains";
-  if (score >= 600) return "countryside";
-  if (score >= 400) return "city";
-  if (score >= 200) return "beach";
-  return "forest";
+function getModeAndScene(score: number): { mode: GameMode; scene: SceneType } {
+  if (score >= 1000) return { mode: "glider", scene: "night" };
+  if (score >= 800) return { mode: "runner", scene: "mountains" };
+  if (score >= 600) return { mode: "runner", scene: "countryside" };
+  if (score >= 400) return { mode: "pilot", scene: "city" };
+  if (score >= 200) return { mode: "surfer", scene: "beach" };
+  return { mode: "runner", scene: "forest" };
 }
 
 const W = 400;
@@ -221,16 +224,76 @@ function palette(theme: string, scene: SceneType = "forest") {
     },
   };
   const s = sc[scene] || sc.forest;
+  // outfit colors per scene
+  const outfits: Record<string, {
+    playerBody: string; playerHead: string; playerHat: string; playerHatDark: string;
+    playerArm: string; playerShoe: string; playerCape: string; playerCapeDark: string;
+  }> = {
+    forest: {
+      playerBody: light ? "#5c3a1e" : "#d4a34a",
+      playerHead: light ? "#f5dfc0" : "#f0d8a0",
+      playerHat: light ? "#b33a1c" : "#c0392b",
+      playerHatDark: light ? "#8b2c14" : "#962d22",
+      playerArm: light ? "#7a5030" : "#c49030",
+      playerShoe: light ? "#3a2210" : "#5c3a1e",
+      playerCape: light ? "#c0392b" : "#e74c3c",
+      playerCapeDark: light ? "#962d22" : "#c0392b",
+    },
+    beach: {
+      playerBody: light ? "#ff6b6b" : "#ff8e8e",
+      playerHead: light ? "#f5dfc0" : "#f0d8a0",
+      playerHat: light ? "#f0c040" : "#d4a030",
+      playerHatDark: light ? "#d4a030" : "#b8860b",
+      playerArm: light ? "#f5dfc0" : "#f0d8a0",
+      playerShoe: light ? "#e8d5a0" : "#c0a060",
+      playerCape: light ? "#4ecdc4" : "#7fdbda",
+      playerCapeDark: light ? "#3cb5ad" : "#5ecbc9",
+    },
+    city: {
+      playerBody: light ? "#2d3748" : "#4a5568",
+      playerHead: light ? "#f5dfc0" : "#f0d8a0",
+      playerHat: light ? "#4a5568" : "#718096",
+      playerHatDark: light ? "#2d3748" : "#4a5568",
+      playerArm: light ? "#2d3748" : "#4a5568",
+      playerShoe: light ? "#1a202c" : "#2d3748",
+      playerCape: light ? "#63b3ed" : "#90cdf4",
+      playerCapeDark: light ? "#4299e1" : "#63b3ed",
+    },
+    countryside: {
+      playerBody: light ? "#48bb78" : "#68d391",
+      playerHead: light ? "#f5dfc0" : "#f0d8a0",
+      playerHat: light ? "#f0c040" : "#d4a030",
+      playerHatDark: light ? "#d4a030" : "#b8860b",
+      playerArm: light ? "#f5dfc0" : "#f0d8a0",
+      playerShoe: light ? "#5c3a1e" : "#7a5030",
+      playerCape: light ? "#f6ad55" : "#fbd38d",
+      playerCapeDark: light ? "#ed8936" : "#f6ad55",
+    },
+    mountains: {
+      playerBody: light ? "#f7fafc" : "#e2e8f0",
+      playerHead: light ? "#f5dfc0" : "#f0d8a0",
+      playerHat: light ? "#e53e3e" : "#fc8181",
+      playerHatDark: light ? "#c53030" : "#e53e3e",
+      playerArm: light ? "#e2e8f0" : "#cbd5e0",
+      playerShoe: light ? "#2d3748" : "#4a5568",
+      playerCape: light ? "#a0aec0" : "#cbd5e0",
+      playerCapeDark: light ? "#718096" : "#a0aec0",
+    },
+    night: {
+      playerBody: light ? "#2d3748" : "#1a202c",
+      playerHead: light ? "#1a202c" : "#0d1117",
+      playerHat: light ? "#1a202c" : "#0d1117",
+      playerHatDark: light ? "#0d1117" : "#000000",
+      playerArm: light ? "#2d3748" : "#1a202c",
+      playerShoe: light ? "#0d1117" : "#000000",
+      playerCape: light ? "#00d4ff" : "#00ffff",
+      playerCapeDark: light ? "#0099cc" : "#00cccc",
+    },
+  };
+  const outfit = outfits[scene] || outfits.forest;
   return {
     ...s,
-    playerBody: light ? "#5c3a1e" : "#d4a34a",
-    playerHead: light ? "#f5dfc0" : "#f0d8a0",
-    playerHat: light ? "#b33a1c" : "#c0392b",
-    playerHatDark: light ? "#8b2c14" : "#962d22",
-    playerArm: light ? "#7a5030" : "#c49030",
-    playerShoe: light ? "#3a2210" : "#5c3a1e",
-    playerCape: light ? "#c0392b" : "#e74c3c",
-    playerCapeDark: light ? "#962d22" : "#c0392b",
+    ...outfit,
     eyeColor: "#1a1a1a",
     coin: light ? "#d4a34a" : "#f0d860",
     coinDark: light ? "#b7791f" : "#c49a30",
@@ -267,6 +330,7 @@ function palette(theme: string, scene: SceneType = "forest") {
 function initState(): State {
   return {
     status: "idle",
+    mode: "runner",
     playerY: 0,
     playerVy: 0,
     playerFrame: 0,
@@ -330,25 +394,58 @@ function spawnCoinArc(state: State, afterX: number) {
 function spawnObstacle(state: State): void {
   const rand = Math.random();
   let type: Obstacle["type"], w: number, h: number;
-  if (rand < 0.3) {
-    type = "rock";
-    w = 18 + Math.random() * 10;
-    h = 14 + Math.random() * 10;
-  } else if (rand < 0.55) {
-    type = "stump";
-    w = 14 + Math.random() * 6;
-    h = 22 + Math.random() * 8;
-  } else if (rand < 0.75) {
-    type = "gap";
-    w = 30 + Math.random() * 20;
-    h = 40;
-  } else {
-    // bird - flies at head height, must crouch
+
+  let y = 0;
+  if (state.mode === "pilot" || state.mode === "glider") {
+    // flying modes: 100% air obstacles at random heights
     type = "bird";
-    w = 20;
-    h = 10;
+    w = 22 + Math.random() * 12;
+    h = 12;
+    y = 30 + Math.random() * (GROUND_Y - PLAYER_H - 60);
+  } else if (state.mode === "surfer") {
+    // surfer: more gaps (waves), some rocks (reefs), birds as swooping gulls
+    if (rand < 0.25) {
+      type = "rock";
+      w = 18 + Math.random() * 10;
+      h = 14 + Math.random() * 10;
+    } else if (rand < 0.5) {
+      type = "stump";
+      w = 14 + Math.random() * 6;
+      h = 22 + Math.random() * 8;
+    } else if (rand < 0.75) {
+      type = "gap";
+      w = 35 + Math.random() * 25;
+      h = 40;
+    } else {
+      // giant swooping bird: must crouch
+      type = "bird";
+      w = 28;
+      h = 80;
+      y = GROUND_Y - PLAYER_H - 25;
+    }
+  } else {
+    // runner: giant swooping bird / hanging vine + original distribution
+    if (rand < 0.22) {
+      type = "rock";
+      w = 18 + Math.random() * 10;
+      h = 14 + Math.random() * 10;
+    } else if (rand < 0.44) {
+      type = "stump";
+      w = 14 + Math.random() * 6;
+      h = 22 + Math.random() * 8;
+    } else if (rand < 0.66) {
+      type = "gap";
+      w = 30 + Math.random() * 20;
+      h = 40;
+    } else {
+      // giant swooping bird: must crouch
+      type = "bird";
+      w = 28;
+      h = 80;
+      y = GROUND_Y - PLAYER_H - 25;
+    }
   }
-  state.obstacles.push({ x: W + 20, w, h, type, scored: false });
+  state.obstacles.push({ x: W + 20, y, w, h, type, scored: false });
 
   // coins between obstacles at jump height, not above this obstacle
   const prevObs = state.obstacles.length >= 2 ? state.obstacles[state.obstacles.length - 2] : null;
@@ -624,58 +721,104 @@ function drawObstacles(ctx: CanvasRenderingContext2D, obstacles: Obstacle[], fra
         ctx.fillRect(ob.x + ob.w - 2 + (sy % 4 === 0 ? 0 : 2), GROUND_Y + sy, 2, 2);
       }
     } else if (ob.type === "bird") {
-      const birdY = GROUND_Y - PLAYER_H - 6;
+      const birdY = ob.y || (GROUND_Y - PLAYER_H + 6);
       const cx = ob.x + ob.w / 2;
       const wingPhase = Math.sin(frame * 0.25) * 5;
 
-      // tail feathers
-      ctx.fillStyle = p.birdWing;
-      ctx.beginPath();
-      ctx.moveTo(cx + 7, birdY);
-      ctx.lineTo(cx + 14, birdY - 4);
-      ctx.lineTo(cx + 11, birdY);
-      ctx.lineTo(cx + 14, birdY + 3);
-      ctx.closePath();
-      ctx.fill();
+      const scene = (p as Record<string, unknown>).scene as SceneType;
+      const isGiantSwoop = ob.h > 30;
 
-      // body (rounder)
-      ctx.fillStyle = p.birdBody;
-      ctx.beginPath();
-      ctx.ellipse(cx, birdY, 8, 5, 0, 0, Math.PI * 2);
-      ctx.fill();
+      if (isGiantSwoop) {
+        // giant swooping bird / hanging vine: tall vertical hazard
+        ctx.fillStyle = p.birdBody;
+        ctx.beginPath();
+        ctx.moveTo(cx - ob.w / 2, birdY + ob.h / 2);
+        ctx.quadraticCurveTo(cx - ob.w * 0.8, birdY, cx - ob.w / 2, birdY - ob.h / 2);
+        ctx.lineTo(cx + ob.w / 2, birdY - ob.h / 2);
+        ctx.quadraticCurveTo(cx + ob.w * 0.8, birdY, cx + ob.w / 2, birdY + ob.h / 2);
+        ctx.closePath();
+        ctx.fill();
+        // wing stripes
+        ctx.fillStyle = p.birdWing;
+        for (let i = 0; i < 4; i++) {
+          const sy = birdY - ob.h / 2 + 12 + i * 18;
+          ctx.beginPath();
+          ctx.ellipse(cx, sy, ob.w * 0.35, 3, 0, 0, Math.PI * 2);
+          ctx.fill();
+        }
+        // head at bottom
+        ctx.fillStyle = p.birdBody;
+        ctx.beginPath();
+        ctx.arc(cx, birdY + ob.h / 2 - 6, 7, 0, Math.PI * 2);
+        ctx.fill();
+        // beak
+        ctx.fillStyle = p.coin;
+        ctx.beginPath();
+        ctx.moveTo(cx - 4, birdY + ob.h / 2 - 6);
+        ctx.lineTo(cx - 10, birdY + ob.h / 2 - 4);
+        ctx.lineTo(cx - 4, birdY + ob.h / 2 - 2);
+        ctx.closePath();
+        ctx.fill();
+        // eye
+        ctx.fillStyle = "#fff";
+        ctx.beginPath();
+        ctx.arc(cx - 2, birdY + ob.h / 2 - 8, 2, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = p.eyeColor;
+        ctx.beginPath();
+        ctx.arc(cx - 3, birdY + ob.h / 2 - 8, 1, 0, Math.PI * 2);
+        ctx.fill();
+      } else {
+        // flying bird / plane
+        // tail
+        ctx.fillStyle = p.birdWing;
+        ctx.beginPath();
+        ctx.moveTo(cx + 7, birdY);
+        ctx.lineTo(cx + 14, birdY - 4);
+        ctx.lineTo(cx + 11, birdY);
+        ctx.lineTo(cx + 14, birdY + 3);
+        ctx.closePath();
+        ctx.fill();
 
-      // wing
-      ctx.fillStyle = p.birdWing;
-      ctx.beginPath();
-      ctx.moveTo(cx - 2, birdY - 3);
-      ctx.quadraticCurveTo(cx, birdY - 12 + wingPhase, cx + 6, birdY - 2);
-      ctx.closePath();
-      ctx.fill();
+        // body
+        ctx.fillStyle = p.birdBody;
+        ctx.beginPath();
+        ctx.ellipse(cx, birdY, 8, 5, 0, 0, Math.PI * 2);
+        ctx.fill();
 
-      // head
-      ctx.fillStyle = p.birdBody;
-      ctx.beginPath();
-      ctx.arc(cx - 7, birdY, 4, 0, Math.PI * 2);
-      ctx.fill();
+        // wing
+        ctx.fillStyle = p.birdWing;
+        ctx.beginPath();
+        ctx.moveTo(cx - 2, birdY - 3);
+        ctx.quadraticCurveTo(cx, birdY - 12 + wingPhase, cx + 6, birdY - 2);
+        ctx.closePath();
+        ctx.fill();
 
-      // beak
-      ctx.fillStyle = p.coin;
-      ctx.beginPath();
-      ctx.moveTo(cx - 10, birdY - 1);
-      ctx.lineTo(cx - 14, birdY);
-      ctx.lineTo(cx - 10, birdY + 1);
-      ctx.closePath();
-      ctx.fill();
+        // head
+        ctx.fillStyle = p.birdBody;
+        ctx.beginPath();
+        ctx.arc(cx - 7, birdY, 4, 0, Math.PI * 2);
+        ctx.fill();
 
-      // eye
-      ctx.fillStyle = "#fff";
-      ctx.beginPath();
-      ctx.arc(cx - 8, birdY - 1, 1.5, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = p.eyeColor;
-      ctx.beginPath();
-      ctx.arc(cx - 8.5, birdY - 1, 0.8, 0, Math.PI * 2);
-      ctx.fill();
+        // beak
+        ctx.fillStyle = p.coin;
+        ctx.beginPath();
+        ctx.moveTo(cx - 10, birdY - 1);
+        ctx.lineTo(cx - 14, birdY);
+        ctx.lineTo(cx - 10, birdY + 1);
+        ctx.closePath();
+        ctx.fill();
+
+        // eye
+        ctx.fillStyle = "#fff";
+        ctx.beginPath();
+        ctx.arc(cx - 8, birdY - 1, 1.5, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.fillStyle = p.eyeColor;
+        ctx.beginPath();
+        ctx.arc(cx - 8.5, birdY - 1, 0.8, 0, Math.PI * 2);
+        ctx.fill();
+      }
     } else {
       const baseY = GROUND_Y - ob.h;
       ctx.fillStyle = p.obstacleDark;
@@ -735,7 +878,8 @@ function drawCoins(ctx: CanvasRenderingContext2D, coins: Coin[], p: ReturnType<t
   }
 }
 
-function drawPlayer(ctx: CanvasRenderingContext2D, y: number, frame: number, crouching: boolean, shielding: boolean, shieldTimer: number, p: ReturnType<typeof palette>) {
+function drawPlayer(ctx: CanvasRenderingContext2D, y: number, frame: number, crouching: boolean, shielding: boolean, shieldTimer: number, p: ReturnType<typeof palette>, mode: GameMode) {
+  const scene = (p as Record<string, unknown>).scene as SceneType;
   const px = PLAYER_X;
   const ph = crouching ? PLAYER_CROUCH_H : PLAYER_H;
   const py = GROUND_Y - ph + y;
@@ -843,6 +987,58 @@ function drawPlayer(ctx: CanvasRenderingContext2D, y: number, frame: number, cro
       ctx.fillRect(px + 4, py + PLAYER_H - 6 + l1, 3, 6 - l1);
       ctx.fillRect(px + PLAYER_W - 7, py + PLAYER_H - 6 + l2, 3, 6 - l2);
     }
+
+    // mode-specific extras
+    if (mode === "surfer") {
+      // surfboard
+      ctx.fillStyle = "#e8d5a0";
+      ctx.beginPath();
+      ctx.ellipse(px + PLAYER_W / 2, py + PLAYER_H + 2, 14, 3, 0, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.strokeStyle = "#c0a060";
+      ctx.lineWidth = 0.5;
+      ctx.stroke();
+    } else if (mode === "pilot") {
+      // jetpack wings
+      ctx.fillStyle = "#718096";
+      const wingFlap = Math.sin(frame * 0.15) * 4;
+      ctx.beginPath();
+      ctx.moveTo(px - 2, py + 10);
+      ctx.quadraticCurveTo(px - 10 + wingFlap, py + 6, px - 6 + wingFlap, py + 14);
+      ctx.lineTo(px - 2, py + 12);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(px + PLAYER_W + 2, py + 10);
+      ctx.quadraticCurveTo(px + PLAYER_W + 10 - wingFlap, py + 6, px + PLAYER_W + 6 - wingFlap, py + 14);
+      ctx.lineTo(px + PLAYER_W + 2, py + 12);
+      ctx.fill();
+      // jet flame
+      ctx.fillStyle = "#f6ad55";
+      ctx.globalAlpha = 0.6 + Math.sin(frame * 0.3) * 0.3;
+      ctx.beginPath();
+      ctx.moveTo(px + 5, py + PLAYER_H);
+      ctx.lineTo(px + PLAYER_W - 5, py + PLAYER_H);
+      ctx.lineTo(px + PLAYER_W / 2, py + PLAYER_H + 8 + Math.sin(frame * 0.3) * 3);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    } else if (mode === "glider") {
+      // glowing cape (larger)
+      ctx.fillStyle = p.playerCape;
+      ctx.globalAlpha = 0.6 + Math.sin(frame * 0.15) * 0.2;
+      ctx.beginPath();
+      ctx.moveTo(px + 3, py + 8);
+      ctx.quadraticCurveTo(px - 10, py + 20, px - 8, py + PLAYER_H + 4);
+      ctx.lineTo(px + 3, py + PLAYER_H - 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+      // glow trail
+      ctx.fillStyle = p.playerCape;
+      ctx.globalAlpha = 0.25;
+      ctx.beginPath();
+      ctx.arc(px + PLAYER_W / 2, py + PLAYER_H / 2, 14, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
   }
 }
 
@@ -935,7 +1131,8 @@ export default function MiniRunnerClient() {
     ? { start: "Mini Runner", hint: "Space: jump · ↓: crouch · 5 coins = shield", over: "Game Over", score: "Score", best: "Best", retry: "Space / Click to retry", shield: "Shield" }
     : { start: "跑酷小游戏", hint: "空格:跳跃 · ↓:蹲下 · 集齐5金币自动护盾", over: "游戏结束", score: "分数", best: "最高", retry: "空格 / 点击 重试", shield: "护盾" };
 
-  const p = palette(theme, getScene(stateRef.current.score));
+  const { mode: currentMode, scene: currentScene } = getModeAndScene(stateRef.current.score);
+  const p = palette(theme, currentScene);
 
   useEffect(() => {
     try {
@@ -1033,7 +1230,9 @@ export default function MiniRunnerClient() {
       canvas.style.height = `${rect.height}px`;
       ctx.setTransform(dpr * rect.width / W, 0, 0, dpr * rect.height / H, 0, 0);
 
-      const pal = palette(theme, getScene(s.score));
+      const { mode: activeMode, scene: activeScene } = getModeAndScene(s.score);
+      s.mode = activeMode;
+      const pal = palette(theme, activeScene);
 
       if (s.status === "playing") {
         const onGround = s.playerY >= 0;
@@ -1042,11 +1241,32 @@ export default function MiniRunnerClient() {
         }
         s.wasOnGround = onGround;
 
-        s.playerVy += GRAVITY;
-        s.playerY += s.playerVy;
-        if (s.playerY >= 0) {
-          s.playerY = 0;
-          s.playerVy = 0;
+        if (s.mode === "pilot" || s.mode === "glider") {
+          // flying modes: free y-axis movement with inertia
+          const flySpeed = s.mode === "pilot" ? 3.5 : 2.2;
+          const friction = s.mode === "pilot" ? 0.92 : 0.88;
+          if (keysRef.current.has("Space")) {
+            s.playerVy -= flySpeed * 0.4;
+          }
+          if (keysRef.current.has("ArrowDown") || keysRef.current.has("KeyS")) {
+            s.playerVy += flySpeed * 0.4;
+          }
+          s.playerVy *= friction;
+          s.playerY += s.playerVy;
+          // bounds
+          const minY = -(H - 80);
+          const maxY = 0; // can't go below ground
+          if (s.playerY < minY) { s.playerY = minY; s.playerVy = 0; }
+          if (s.playerY > maxY) { s.playerY = maxY; s.playerVy = 0; }
+        } else {
+          // runner / surfer: gravity-based
+          const gravity = s.mode === "surfer" ? 0.6 : GRAVITY;
+          s.playerVy += gravity;
+          s.playerY += s.playerVy;
+          if (s.playerY >= 0) {
+            s.playerY = 0;
+            s.playerVy = 0;
+          }
         }
         s.playerFrame++;
 
@@ -1155,6 +1375,8 @@ export default function MiniRunnerClient() {
 
           for (const ob of s.obstacles) {
             if (ob.type === "gap") {
+              // flying modes ignore gaps
+              if (s.mode === "pilot" || s.mode === "glider") continue;
               if (s.playerY >= 0 && px2 > ob.x + 4 && px1 < ob.x + ob.w - 4) {
                 s.status = "over";
                 setGameStatus("over");
@@ -1165,10 +1387,10 @@ export default function MiniRunnerClient() {
                 break;
               }
             } else if (ob.type === "bird") {
-              // bird at head height - only hits standing player
-              const birdY = GROUND_Y - PLAYER_H - 6;
-              const by1 = birdY - 4;
-              const by2 = birdY + 4;
+              const birdY = ob.y || (GROUND_Y - PLAYER_H + 6);
+              const halfH = ob.h / 2;
+              const by1 = birdY - halfH;
+              const by2 = birdY + halfH;
               if (px2 > ob.x && px1 < ob.x + ob.w && py2 > by1 && py1 < by2) {
                 s.status = "over";
                 setGameStatus("over");
@@ -1179,6 +1401,8 @@ export default function MiniRunnerClient() {
                 break;
               }
             } else {
+              // flying modes ignore ground obstacles
+              if (s.mode === "pilot" || s.mode === "glider") continue;
               const oy1 = GROUND_Y - ob.h;
               const oy2 = GROUND_Y;
               if (px2 > ob.x && px1 < ob.x + ob.w && py2 > oy1 && py1 < oy2) {
@@ -1227,7 +1451,7 @@ export default function MiniRunnerClient() {
       drawGround(ctx, s.groundOffset, pal);
       drawObstacles(ctx, s.obstacles, s.playerFrame, pal);
       drawCoins(ctx, s.coins, pal);
-      drawPlayer(ctx, s.playerY, s.playerFrame, s.crouching, s.shielding, s.shieldTimer, pal);
+      drawPlayer(ctx, s.playerY, s.playerFrame, s.crouching, s.shielding, s.shieldTimer, pal, s.mode);
       drawParticles(ctx, s.particles, pal);
       drawLeaves(ctx, s.leaves.filter((_, i) => i >= 6), pal);
 
