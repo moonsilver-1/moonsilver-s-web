@@ -326,36 +326,36 @@ export default function TetrisPage() {
 
   const copy = {
     zh: {
-      back: "返回 Fun",
+      back: "返回",
       title: "俄罗斯方块",
-      intro: "方向键移动，空格硬降，P 暂停，R 重开。",
-      keys: ["方向键", "Space 硬降", "P 暂停", "R 重开"],
+      intro: "方向键移动 空格直接掉到底 P 暂停 R 重来",
+      keys: ["方向键", "空格", "P 暂停", "R 重来"],
       score: "分数",
       lines: "行数",
       level: "等级",
-      controls: "Controls",
+      controls: "操作",
       move: "移动",
       soft: "软降",
       rotate: "旋转",
       hard: "硬降",
       pause: "暂停",
-      restart: "重开",
-      playfield: "Playfield",
-      boardTitle: "Stack with intent",
-      paused: "已暂停",
-      over: "游戏结束",
+      restart: "重来",
+      playfield: "场地",
+      boardTitle: "Keep stacking",
+      paused: "暂停中",
+      over: "结束了",
       next: "下一个",
       speed: "速度",
-      goal: "目标是消行并继续往上爬。",
-      tipOk: "把每一列保持干净，先清线，再追更高等级。",
-      tipOver: "游戏结束了，重新开始再来一局。",
-      backToFun: "返回 Fun",
+      goal: "消掉一行行往上冲",
+      tipOk: "把地形铺平点，先消行再冲等级",
+      tipOver: "没了，再来一把",
+      backToFun: "返回",
     },
     en: {
-      back: "Back to Fun",
+      back: "Back",
       title: "Tetris",
-      intro: "Arrow keys move, Space hard-drops, P pauses, R restarts.",
-      keys: ["Arrow keys", "Space drop", "P pause", "R restart"],
+      intro: "Arrows to move Space to slam down P to pause R to restart",
+      keys: ["Arrows", "Space", "P pause", "R restart"],
       score: "Score",
       lines: "Lines",
       level: "Level",
@@ -366,16 +366,16 @@ export default function TetrisPage() {
       hard: "Hard drop",
       pause: "Pause",
       restart: "Restart",
-      playfield: "Playfield",
-      boardTitle: "Stack with intent",
+      playfield: "Field",
+      boardTitle: "Keep stacking",
       paused: "Paused",
-      over: "Game over",
+      over: "Done",
       next: "Next",
       speed: "Speed",
-      goal: "Clear lines and keep climbing.",
-      tipOk: "Keep each column tidy, clear lines first, then push for a higher level.",
-      tipOver: "Game over. Start again for another run.",
-      backToFun: "Back to Fun",
+      goal: "Clear rows and climb higher",
+      tipOk: "Keep it flat, clear rows first then chase levels",
+      tipOver: "Done, go again",
+      backToFun: "Back",
     },
   }[language];
 
@@ -430,7 +430,7 @@ export default function TetrisPage() {
   const panelSurface = surface(theme, 0.72);
 
   return (
-    <div className={`min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-300 ${pageClass}`}>
+    <div className={`min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-300 page-enter ${pageClass}`}>
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
         <div className="max-w-xl">
           <Link href="/fun" className="inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]">
@@ -473,7 +473,7 @@ export default function TetrisPage() {
             <ControlButton label="Rotate" onClick={() => dispatch({ type: "ROTATE" })} />
             <ControlButton label="Drop" onClick={() => dispatch({ type: "DROP" })} />
             <ControlButton label={state.status === "paused" ? "Resume" : copy.pause} onClick={() => dispatch({ type: "TOGGLE_PAUSE" })} />
-            <button type="button" onClick={() => dispatch({ type: "RESET" })} className="rounded-full bg-[var(--app-fg)] px-4 py-2 text-sm font-medium text-[var(--app-bg)] transition-colors hover:opacity-90">
+            <button type="button" onClick={() => dispatch({ type: "RESET" })} className="magnetic-btn rounded-full bg-[var(--app-fg)] px-4 py-2 text-sm font-medium text-[var(--app-bg)] transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-95">
               {copy.restart}
             </button>
           </div>
@@ -552,7 +552,7 @@ function Control({ label, value }: { label: string; value: string }) {
 
 function ControlButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
-    <button type="button" onClick={onClick} className="rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-fg)]/80 transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]">
+    <button type="button" onClick={onClick} className="magnetic-btn rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-fg)]/80 transition-all duration-200 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm active:scale-95">
       {label}
     </button>
   );

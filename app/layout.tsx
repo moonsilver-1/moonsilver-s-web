@@ -37,7 +37,7 @@ export default function RootLayout({
       <body>
         <LanguageProvider>
         <SceneProvider>
-          <div className="min-h-screen bg-[var(--app-bg)] text-[var(--app-fg)] transition-colors duration-300">
+          <div className="relative min-h-screen bg-[var(--app-bg)] text-[var(--app-fg)] transition-colors duration-300">
             <SiteNavbar />
             <main>{children}</main>
             <SiteFooter />

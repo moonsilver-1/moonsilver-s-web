@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function AccountPage() {
   return (
-    <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300">
+    <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300 page-enter">
       <section className="mx-auto max-w-3xl px-6 py-16">
         <p className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">Account</p>
         <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">登录功能已移除</h1>
@@ -17,7 +17,7 @@ export default function AccountPage() {
         </p>
         <Link
           href="/fun/mahjong"
-          className="mt-8 inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+          className="link-arrow mt-8 inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.08)]"
         >
           去麻将房间
         </Link>

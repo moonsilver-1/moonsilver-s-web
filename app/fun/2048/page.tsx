@@ -226,46 +226,46 @@ export default function Game2048Page() {
   const { language } = useSiteLanguage();
   const copy = {
     zh: {
-      back: "返回 Fun",
-      title: "滑动合并，往一个角落堆数字",
-      intro: "方向键和 WASD 都可以操作。",
-      keys: ["方向键", "WASD", "R 重开"],
+      back: "返回",
+      title: "滑来滑去堆大数",
+      intro: "方向键或者 WASD 都能玩",
+      keys: ["方向键", "WASD", "R 重来"],
       score: "分数",
       best: "最高分",
       goal: "目标",
       board: "棋盘",
-      boardTitle: "Keep the grid breathing",
+      boardTitle: "Keep going",
       won: "2048 达成",
-      gameOver: "没有可用操作",
+      gameOver: "没地方动了",
       tipLabel: "提示",
-      tip: "2048 到了以后可以继续玩，尽量把大数字堆到一个角落。",
-      moveLeft: "左移",
-      moveUp: "上移",
-      moveDown: "下移",
-      moveRight: "右移",
-      restart: "重新开始",
-      combine: "合并相同数字",
+      tip: "合成 2048 之后还能继续玩，试试把大数字往一个角挤",
+      moveLeft: "左",
+      moveUp: "上",
+      moveDown: "下",
+      moveRight: "右",
+      restart: "重来",
+      combine: "一样的数字撞一起会合并",
     },
     en: {
-      back: "Back to Fun",
-      title: "Slide and merge tiles toward one corner.",
-      intro: "Arrow keys and WASD both work.",
-      keys: ["Arrow keys", "WASD", "R restart"],
+      back: "Back",
+      title: "Stack big numbers by sliding around",
+      intro: "Arrow keys or WASD both work",
+      keys: ["Arrows", "WASD", "R to restart"],
       score: "Score",
       best: "Best",
       goal: "Goal",
       board: "Board",
-      boardTitle: "Keep the grid breathing",
-      won: "2048 reached",
-      gameOver: "No moves left",
+      boardTitle: "Keep going",
+      won: "You got 2048",
+      gameOver: "Stuck",
       tipLabel: "Tip",
-      tip: "Once you reach 2048, keep going and try to park the larger numbers in one corner.",
+      tip: "After 2048 keep going and cram big numbers into one corner",
       moveLeft: "Left",
       moveUp: "Up",
       moveDown: "Down",
       moveRight: "Right",
       restart: "Restart",
-      combine: "Combine equal tiles",
+      combine: "Same numbers merge when they collide",
     },
   }[language];
 
@@ -336,7 +336,7 @@ export default function Game2048Page() {
   const surfaceSoft = getSurface(theme, 0.56);
 
   return (
-    <div className={`min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-300 ${pageClass}`}>
+    <div className={`min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-300 page-enter ${pageClass}`}>
       <section className="mx-auto grid max-w-7xl gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <div className="max-w-xl">
           <Link href="/fun" className="inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]">
@@ -366,7 +366,7 @@ export default function Game2048Page() {
             <ControlButton label={copy.moveUp} onClick={() => applyMove("up")} />
             <ControlButton label={copy.moveDown} onClick={() => applyMove("down")} />
             <ControlButton label={copy.moveRight} onClick={() => applyMove("right")} />
-            <button type="button" onClick={resetGame} className="rounded-full bg-[var(--app-fg)] px-4 py-2 text-sm font-medium text-[var(--app-bg)] transition-colors hover:opacity-90">
+            <button type="button" onClick={resetGame} className="magnetic-btn rounded-full bg-[var(--app-fg)] px-4 py-2 text-sm font-medium text-[var(--app-bg)] transition-all duration-200 hover:opacity-90 hover:shadow-lg active:scale-95">
               {copy.restart}
             </button>
           </div>
@@ -424,7 +424,7 @@ function Stat({ label, value, surface }: { label: string; value: number; surface
 
 function ControlButton({ label, onClick }: { label: string; onClick: () => void }) {
   return (
-    <button type="button" onClick={onClick} className="rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-fg)]/80 transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]">
+    <button type="button" onClick={onClick} className="magnetic-btn rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-fg)]/80 transition-all duration-200 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm active:scale-95">
       {label}
     </button>
   );

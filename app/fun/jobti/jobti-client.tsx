@@ -168,10 +168,10 @@ export function JobtiClient() {
 
   if (!started) {
     return (
-      <div className="min-h-screen bg-black pt-20 text-white">
+      <div className="min-h-screen bg-black pt-20 text-white page-enter">
         <section className="mx-auto max-w-4xl px-6 py-24">
           <div className="mb-10 space-y-3">
-            <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-colors hover:border-white/20 hover:text-white">
+            <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-all duration-300 hover:border-white/20 hover:text-white hover:shadow-sm">
               {copy.backToFun}
             </Link>
             <SectionLabel>{copy.label}</SectionLabel>
@@ -184,11 +184,11 @@ export function JobtiClient() {
             <button
               type="button"
               onClick={handleStart}
-              className="rounded-full border border-white/15 bg-white px-6 py-3 text-sm font-medium text-black transition-colors hover:bg-white/90"
+              className="magnetic-btn rounded-full border border-white/15 bg-white px-6 py-3 text-sm font-medium text-black transition-all duration-200 hover:bg-white/90 hover:shadow-lg active:scale-95"
             >
               {copy.start}
             </button>
-            <Link href="/fun" className="rounded-full border border-white/10 px-6 py-3 text-sm text-white/60 transition-colors hover:border-white/20 hover:text-white">
+            <Link href="/fun" className="rounded-full border border-white/10 px-6 py-3 text-sm text-white/60 transition-all duration-300 hover:border-white/20 hover:text-white hover:shadow-sm">
               {copy.backToFun}
             </Link>
           </div>
@@ -202,10 +202,10 @@ export function JobtiClient() {
     const progress = Math.round(((currentIndex + 1) / normalizedQuestions.length) * 100);
 
     return (
-      <div className="min-h-screen bg-black pt-20 text-white">
+      <div className="min-h-screen bg-black pt-20 text-white page-enter">
         <section className="mx-auto max-w-4xl px-6 py-24">
           <div className="mb-12 space-y-3">
-            <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-colors hover:border-white/20 hover:text-white">
+            <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-all duration-300 hover:border-white/20 hover:text-white hover:shadow-sm">
               {copy.backToFun}
             </Link>
             <SectionLabel>{copy.label}</SectionLabel>
@@ -283,10 +283,10 @@ export function JobtiClient() {
   }
 
   return (
-    <div className="min-h-screen bg-black pt-20 text-white">
+    <div className="min-h-screen bg-black pt-20 text-white page-enter">
       <section className="mx-auto max-w-4xl px-6 py-24">
         <div className="mb-10 space-y-3">
-          <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-colors hover:border-white/20 hover:text-white">
+          <Link href="/fun" className="inline-flex rounded-full border border-white/10 px-4 py-2 text-sm text-white/60 transition-all duration-300 hover:border-white/20 hover:text-white hover:shadow-sm">
             {copy.backToFunEnd}
           </Link>
           <SectionLabel>{copy.resultLabel}</SectionLabel>

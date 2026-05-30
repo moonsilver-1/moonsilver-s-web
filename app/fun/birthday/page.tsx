@@ -13,6 +13,7 @@ type Person = {
   accent: string;
   tag: string;
   mark: string;
+  zodiac: string;
 };
 
 const rawPeople = [
@@ -78,8 +79,6 @@ const monthFull = [
   "December",
 ];
 const weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
-const palette = ["#8bdcff", "#ff8a3d", "#f472b6", "#a78bfa", "#34d399", "#facc15", "#fb7185", "#60a5fa", "#c084fc", "#2dd4bf", "#f97316", "#e879f9"];
-
 function parseDate(date: string) {
   const [month, day] = date.split(".").map(Number);
   return { month, day };
@@ -98,6 +97,20 @@ function getInitial(name: string) {
   if (name === "爸爸") return "爸";
   return name.slice(-1);
 }
+
+function getZodiac(month: number, day: number): string {
+  const boundaries = [20, 19, 21, 20, 21, 22, 23, 23, 23, 24, 23, 22];
+  const signs = ["水瓶座", "双鱼座", "白羊座", "金牛座", "双子座", "巨蟹座", "狮子座", "处女座", "天秤座", "天蝎座", "射手座", "摩羯座"];
+  if (day < boundaries[month - 1]) {
+    return signs[(month + 10) % 12];
+  }
+  return signs[month - 1];
+}
+
+const monthAccent = [
+  "#a8b5c4", "#c49a8a", "#9ab4a6", "#a5b5a0", "#a8c4b8", "#c9a87c",
+  "#d4b896", "#c4b896", "#d4a5a5", "#d4b0a0", "#a0a8b8", "#b8a9c9",
+];
 
 function daysUntil(month: number, day: number) {
   const now = new Date();
@@ -131,15 +144,16 @@ function buildCalendarCells(month: number, year: number) {
   return cells;
 }
 
-const people = rawPeople.map((item, index) => {
+const people = rawPeople.map((item) => {
   const { month, day } = parseDate(item.date);
   return {
     ...item,
     month,
     day,
-    accent: palette[(month * 7 + day + index) % palette.length],
+    accent: monthAccent[month - 1],
     tag: item.tag || "Birthday",
     mark: item.mark || getInitial(item.name),
+    zodiac: getZodiac(month, day),
   };
 });
 
@@ -203,10 +217,17 @@ function MonthGroup({
             key={`${person.name}-${person.date}`}
             type="button"
             onClick={() => onSelectPerson(person)}
-            className={`flex w-full items-center justify-between rounded-[18px] px-3 py-2 text-left transition-colors ${selectedPerson.name === person.name ? "bg-[var(--app-surface)]" : "hover:bg-[var(--app-surface)]/70"
+            className={`relative flex w-full items-center justify-between rounded-[18px] px-3 py-2 text-left transition-colors ${selectedPerson.name === person.name ? "bg-[var(--app-surface)]" : "hover:bg-[var(--app-surface)]/70"
               }`}
           >
-            <span className="truncate text-sm font-medium">{person.name}</span>
+            <span
+              className="absolute left-0 top-1/2 h-5 w-0.5 -translate-y-1/2 rounded-r-full transition-opacity"
+              style={{
+                backgroundColor: person.accent,
+                opacity: selectedPerson.name === person.name ? 1 : 0,
+              }}
+            />
+            <span className="truncate pl-1.5 text-sm font-medium">{person.name}</span>
             <span className="shrink-0 text-xs text-[var(--app-muted)]">{pad(person.day)}</span>
           </button>
         ))}
@@ -273,13 +294,13 @@ function PasswordLock({ onUnlock }: { onUnlock: () => void }) {
   return (
     <div className="flex min-h-screen items-center justify-center px-6">
       <div className={`text-center ${shake ? "animate-[shake_0.5s_ease-in-out]" : ""}`}>
-        <div className="mx-auto mb-8 flex h-20 w-20 items-center justify-center rounded-full border border-[var(--app-border-strong)] bg-[var(--app-surface)]">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[var(--app-muted)]">
-            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-[var(--app-border)] bg-[var(--app-surface)]/80">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-[#c9a87c]/70">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
           </svg>
         </div>
-        <p className="mb-8 text-sm tracking-[0.2em] text-[var(--app-muted)]">输入密码以继续</p>
+        <p className="mb-2 text-lg font-medium text-[var(--app-fg)]">这个小空间需要一点秘密</p>
+        <p className="mb-8 text-sm text-[var(--app-muted)]">输入生日密码就可以进来啦</p>
         <div className="flex items-center justify-center gap-3" onPaste={handlePaste}>
           {[4, 2, 2].map((group, gi) => (
             <div key={gi} className="flex items-center gap-3">
@@ -362,34 +383,36 @@ export default function BirthdayPage() {
   const monthRecords = birthdaysByMonth[selectedMonth] || [];
   const sceneClass =
     theme === "light"
-      ? "bg-[radial-gradient(circle_at_20%_15%,rgba(24,21,19,0.08),transparent_28%),radial-gradient(circle_at_82%_18%,rgba(24,21,19,0.06),transparent_24%),linear-gradient(180deg,rgba(255,248,236,0.78),rgba(245,241,232,0.98))]"
-      : "bg-[radial-gradient(circle_at_20%_15%,rgba(148,163,184,0.12),transparent_28%),radial-gradient(circle_at_82%_18%,rgba(255,255,255,0.05),transparent_24%),linear-gradient(180deg,rgba(5,5,5,0.82),rgba(5,5,5,1))]";
+      ? "bg-[radial-gradient(circle_at_22%_14%,rgba(201,168,124,0.12),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(196,154,138,0.08),transparent_24%),linear-gradient(180deg,rgba(250,247,242,0.95),rgba(245,241,232,0.98))]"
+      : "bg-[radial-gradient(circle_at_22%_14%,rgba(201,168,124,0.10),transparent_28%),radial-gradient(circle_at_80%_20%,rgba(196,154,138,0.06),transparent_24%),linear-gradient(180deg,rgba(12,10,8,0.95),rgba(8,6,5,1))]";
 
   const copy =
     language === "en"
       ? {
-        label: "Entertainment",
-        title: "Birthday",
-        description: "A compact birthday board that stays in step with the rest of the site.",
-        backToFun: "Back to fun",
-        detail: "Detail",
-        upcoming: "Next birthdays",
-        monthList: "Month list",
-        allRecords: "All records",
-        daysLeft: "Days left",
-        birthdayTag: "Birthday",
+        label: "Fun",
+        title: "Birthdays",
+        description: "Every year is worth celebrating",
+        backToFun: "Back",
+        detail: "About",
+        upcoming: "Coming soon",
+        monthList: "Calendar",
+        allRecords: "Everyone",
+        daysLeft: "In",
+        birthdayTag: "Friend",
+        zodiacLabel: "Zodiac",
       }
       : {
-        label: "Entertainment",
-        title: "Birthday",
-        description: "",
-        backToFun: "返回娱乐页",
-        detail: "生日详情",
-        upcoming: "接下来生日",
-        monthList: "本月列表",
-        allRecords: "全部记录",
-        daysLeft: "距离生日",
-        birthdayTag: "生日",
+        label: "娱乐",
+        title: "生日",
+        description: "记得给重要的人说一句生日快乐",
+        backToFun: "返回",
+        detail: "档案",
+        upcoming: "快要过生日啦",
+        monthList: "日历",
+        allRecords: "所有人",
+        daysLeft: "还有",
+        birthdayTag: "朋友",
+        zodiacLabel: "星座",
       };
 
   if (!unlocked) {
@@ -401,7 +424,7 @@ export default function BirthdayPage() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[var(--app-bg)] pt-20 text-[var(--app-fg)] transition-colors duration-300">
+    <div className="relative min-h-screen overflow-hidden bg-[var(--app-bg)] pt-20 text-[var(--app-fg)] transition-colors duration-300 page-enter">
       <div aria-hidden="true" className={`pointer-events-none absolute inset-0 ${sceneClass}`} />
 
       <section className="relative mx-auto max-w-7xl px-6 py-16">
@@ -425,13 +448,13 @@ export default function BirthdayPage() {
         <MonthStrip selectedMonth={selectedMonth} setSelectedMonth={setSelectedMonth} birthdaysByMonth={birthdaysByMonth} />
 
         <div className="mt-4 grid gap-4 lg:grid-cols-[1.12fr_0.88fr]">
-          <div className="rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/55 p-5">
+          <div className="overflow-hidden rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/60 p-5 shadow-[0_8px_40px_rgba(0,0,0,0.04)]">
             <div className="mb-5 flex items-end justify-between gap-4">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.monthList}</p>
                 <h2 className="mt-2 text-4xl font-semibold tracking-tight">{monthFull[selectedMonth - 1]}</h2>
               </div>
-              <p className="text-sm text-[var(--app-muted)]">{monthRecords.length}</p>
+              <p className="text-sm text-[var(--app-muted)]">{monthRecords.length} 位</p>
             </div>
 
             <div className="grid grid-cols-7 gap-2 pb-2">
@@ -458,20 +481,21 @@ export default function BirthdayPage() {
                     type="button"
                     onClick={() => hasRecords && setSelectedPerson(records[0])}
                     disabled={!hasRecords}
-                    className={`group relative min-h-[76px] rounded-[20px] border p-2 text-left transition-colors ${active
-                      ? "border-[var(--app-border-strong)] bg-[var(--app-surface)] text-[var(--app-fg)]"
+                    className={`group relative min-h-[76px] rounded-[20px] border p-2 text-left transition-all duration-300 ${active
+                      ? "bg-[var(--app-surface)] shadow-sm"
                       : hasRecords
-                        ? "border-[var(--app-border)] bg-[var(--app-surface)] hover:border-[var(--app-border-strong)] hover:bg-[var(--app-surface)]/90"
-                        : "border-[var(--app-border)]/50 bg-transparent text-[var(--app-muted)]/45"
+                        ? "border-[var(--app-border)] bg-[var(--app-surface)] hover:border-[var(--app-border-strong)] hover:shadow-sm"
+                        : "border-transparent bg-transparent text-[var(--app-muted)]/40"
                       }`}
+                    style={active ? { borderColor: records[0]?.accent } : {}}
                   >
-                    <span className="text-sm font-medium">{day}</span>
+                    <span className="text-sm font-medium" style={active ? { color: records[0]?.accent } : {}}>{day}</span>
                     {hasRecords ? (
                       <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1">
                         {records.slice(0, 4).map((record) => (
                           <span
                             key={record.name}
-                            className="h-1.5 w-1.5 rounded-full"
+                            className="h-2 w-2 rounded-full"
                             style={{ backgroundColor: record.accent }}
                           />
                         ))}
@@ -484,7 +508,7 @@ export default function BirthdayPage() {
           </div>
 
           <div className="space-y-4">
-            <div className="rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/55 p-5">
+            <div className="overflow-hidden rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/60 p-5 shadow-[0_8px_40px_rgba(0,0,0,0.04)]">
               <p className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.upcoming}</p>
               <div className="mt-4 space-y-2">
                 {upcoming.slice(0, 6).map((person, index) => (
@@ -495,26 +519,40 @@ export default function BirthdayPage() {
                       setSelectedMonth(person.month);
                       setSelectedPerson(person);
                     }}
-                    className={`flex w-full items-center justify-between rounded-[20px] border px-4 py-3 text-left transition-colors ${person.name === selectedPerson.name
-                      ? "border-[var(--app-border-strong)] bg-[var(--app-surface)]"
+                    className={`relative flex w-full items-center justify-between rounded-[20px] border px-4 py-3 text-left transition-all duration-300 ${person.name === selectedPerson.name
+                      ? "border-[var(--app-border-strong)] bg-[var(--app-surface)] shadow-sm"
                       : "border-[var(--app-border)] bg-transparent hover:border-[var(--app-border-strong)] hover:bg-[var(--app-surface)]/80"
                       }`}
                   >
-                    <div className="min-w-0">
-                      <div className="truncate text-sm font-semibold tracking-tight">{person.name}</div>
+                    <div
+                      className="absolute left-0 top-1/2 h-8 w-1 -translate-y-1/2 rounded-r-full opacity-0 transition-opacity duration-300"
+                      style={{ backgroundColor: person.accent, opacity: person.name === selectedPerson.name ? 1 : 0 }}
+                    />
+                    <div className="min-w-0 pl-1">
+                      <div className="flex items-center gap-2">
+                        <span className="truncate text-sm font-semibold tracking-tight">{person.name}</span>
+                        {index === 0 && (
+                          <span
+                            className="shrink-0 rounded-full px-1.5 py-0.5 text-[10px] font-medium"
+                            style={{ color: person.accent, backgroundColor: `${person.accent}18` }}
+                          >
+                            SOON
+                          </span>
+                        )}
+                      </div>
                       <div className="mt-1 text-xs text-[var(--app-muted)]">
-                        {pad(person.month)}.{pad(person.day)} · {person.tag}
+                        {pad(person.month)}.{pad(person.day)} · {person.zodiac} · {person.tag}
                       </div>
                     </div>
                     <div className="shrink-0 text-right text-sm text-[var(--app-muted)]">
-                      {index === 0 ? "Next" : `${daysUntil(person.month, person.day)} d`}
+                      {index === 0 ? "快到了" : `${daysUntil(person.month, person.day)} 天`}
                     </div>
                   </button>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/55 p-5">
+            <div className="overflow-hidden rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/60 p-5 shadow-[0_8px_40px_rgba(0,0,0,0.04)]">
               <p className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.detail}</p>
               <div className="mt-5 flex items-start justify-between gap-4">
                 <div>
@@ -522,8 +560,12 @@ export default function BirthdayPage() {
                   <div className="mt-3 text-sm uppercase tracking-[0.25em] text-[var(--app-muted)]">{monthNames[selectedPerson.month - 1]}</div>
                 </div>
                 <div
-                  className="flex h-16 min-w-16 items-center justify-center rounded-[24px] border border-[var(--app-border)] text-2xl font-semibold"
-                  style={{ color: selectedPerson.accent }}
+                  className="flex h-16 min-w-16 items-center justify-center rounded-[24px] border text-2xl font-semibold"
+                  style={{
+                    color: selectedPerson.accent,
+                    borderColor: `${selectedPerson.accent}30`,
+                    backgroundColor: `${selectedPerson.accent}12`,
+                  }}
                 >
                   {selectedPerson.mark}
                 </div>
@@ -533,11 +575,24 @@ export default function BirthdayPage() {
                 <div className="flex items-start justify-between gap-4">
                   <div className="min-w-0">
                     <div className="truncate text-2xl font-semibold tracking-tight">{selectedPerson.name}</div>
-                    <div className="mt-1 text-sm text-[var(--app-muted)]">{selectedPerson.tag || copy.birthdayTag}</div>
+                    <div className="mt-1 flex items-center gap-2 text-sm text-[var(--app-muted)]">
+                      <span
+                        className="inline-block rounded-md px-1.5 py-0.5 text-xs font-medium"
+                        style={{
+                          color: selectedPerson.accent,
+                          backgroundColor: `${selectedPerson.accent}15`,
+                        }}
+                      >
+                        {selectedPerson.zodiac}
+                      </span>
+                      <span>·</span>
+                      <span>{selectedPerson.tag || copy.birthdayTag}</span>
+                    </div>
                   </div>
                   <div className="shrink-0 text-right">
                     <div className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.daysLeft}</div>
                     <div className="mt-2 text-4xl font-semibold tracking-tight">{daysUntil(selectedPerson.month, selectedPerson.day)}</div>
+                    <div className="text-xs text-[var(--app-muted)]">天</div>
                   </div>
                 </div>
               </div>
@@ -548,8 +603,8 @@ export default function BirthdayPage() {
                     key={`${person.name}-${person.date}`}
                     type="button"
                     onClick={() => setSelectedPerson(person)}
-                    className={`rounded-full border px-3 py-1 text-xs transition-colors ${person.name === selectedPerson.name
-                      ? "border-[var(--app-border-strong)] bg-[var(--app-surface)] text-[var(--app-fg)]"
+                    className={`rounded-full border px-3 py-1.5 text-xs transition-all duration-300 ${person.name === selectedPerson.name
+                      ? "border-[var(--app-border-strong)] bg-[var(--app-surface)] text-[var(--app-fg)] shadow-sm"
                       : "border-[var(--app-border)] text-[var(--app-muted)] hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
                       }`}
                   >

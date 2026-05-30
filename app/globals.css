@@ -13,10 +13,10 @@
 html[data-theme="light"] {
   --app-bg: #f5f1e8;
   --app-fg: #181513;
-  --app-muted: rgba(24, 21, 19, 0.8);
-  --app-surface: rgba(245, 241, 232, 0.9);
-  --app-border: rgba(24, 21, 19, 0.14);
-  --app-border-strong: rgba(24, 21, 19, 0.32);
+  --app-muted: rgba(24, 21, 19, 0.6);
+  --app-surface: rgba(245, 241, 232, 0.85);
+  --app-border: rgba(24, 21, 19, 0.12);
+  --app-border-strong: rgba(24, 21, 19, 0.28);
   --card-inner: rgba(248, 244, 236, 0.98);
 }
 
@@ -437,6 +437,13 @@ html[data-theme="light"] .hover\:bg-white\/\[0\.015\]:hover {
   will-change: transform;
 }
 
+html[data-theme="light"] .home-page {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 245, 210, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(255, 203, 128, 0.36), transparent 24rem),
+    linear-gradient(180deg, #f7d89d 0%, #f4e3c6 38%, #efe0cf 72%, #e5cfb4 100%);
+}
+
 html[data-theme="dark"] .home-page {
   background:
     radial-gradient(circle at 73% 18%, rgba(215, 170, 94, 0.28), transparent 18rem),
@@ -458,6 +465,13 @@ html[data-theme="dark"] .home-page {
     linear-gradient(180deg, #f7d89d 0%, #f4e3c6 38%, #efe0cf 72%, #e5cfb4 100%);
 }
 
+html[data-theme="light"] .autumn-sky {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 245, 210, 0.95), transparent 20rem),
+    radial-gradient(circle at 68% 12%, rgba(255, 203, 128, 0.36), transparent 24rem),
+    linear-gradient(180deg, #f7d89d 0%, #f4e3c6 38%, #efe0cf 72%, #e5cfb4 100%);
+}
+
 html[data-theme="dark"] .autumn-sky {
   background:
     radial-gradient(circle at 73% 18%, rgba(215, 170, 94, 0.28), transparent 18rem),
@@ -469,11 +483,11 @@ html[data-theme="dark"] .autumn-sky {
   position: absolute;
   left: 16%;
   top: 14%;
-  width: 16rem;
-  height: 16rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(255, 246, 207, 0.9) 0%, rgba(234, 144, 60, 0.22) 45%, transparent 72%);
-  filter: blur(2px);
+  background: radial-gradient(circle, rgba(255, 248, 220, 0.95) 0%, rgba(255, 200, 120, 0.4) 25%, rgba(234, 144, 60, 0.15) 55%, transparent 75%);
+  filter: blur(3px);
   will-change: transform, opacity;
   animation: autumn-sun-breathe 8s ease-in-out infinite;
 }
@@ -514,13 +528,13 @@ html[data-theme="dark"] .autumn-sky {
 
 .autumn-mist {
   position: absolute;
-  left: -12%;
-  right: -12%;
-  height: 10rem;
+  left: -15%;
+  right: -15%;
+  height: 12rem;
   border-radius: 999px;
-  background: linear-gradient(90deg, transparent, rgba(255, 249, 237, 0.7), transparent);
-  filter: blur(18px);
-  opacity: 0.8;
+  background: linear-gradient(90deg, transparent, rgba(255, 249, 237, 0.75), transparent);
+  filter: blur(24px);
+  opacity: 0.85;
   will-change: transform, opacity;
   animation: autumn-mist-drift 18s ease-in-out infinite alternate;
 }
@@ -1562,3 +1576,681 @@ html[data-theme="light"] .starry-star {
   visibility: hidden;
   transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.7s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.7s;
 }
+
+/* ============================================
+   NEW: Scroll-triggered reveal animations
+   ============================================ */
+
+@keyframes scroll-reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll-reveal-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scroll-reveal-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll-reveal-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes blur-reveal {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+.reveal-up {
+  opacity: 0;
+  animation: scroll-reveal-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-scale {
+  opacity: 0;
+  animation: scroll-reveal-scale 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-left {
+  opacity: 0;
+  animation: scroll-reveal-left 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-right {
+  opacity: 0;
+  animation: scroll-reveal-right 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal-blur {
+  opacity: 0;
+  animation: blur-reveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* Stagger delays */
+.reveal-delay-1 { animation-delay: 0.08s; }
+.reveal-delay-2 { animation-delay: 0.16s; }
+.reveal-delay-3 { animation-delay: 0.24s; }
+.reveal-delay-4 { animation-delay: 0.32s; }
+.reveal-delay-5 { animation-delay: 0.40s; }
+.reveal-delay-6 { animation-delay: 0.48s; }
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-up,
+  .reveal-scale,
+  .reveal-left,
+  .reveal-right,
+  .reveal-blur {
+    animation: none;
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+}
+
+/* ============================================
+   NEW: 3D Card Tilt Hover Effect
+   ============================================ */
+
+.card-tilt {
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+}
+
+.card-tilt:hover {
+  transform: perspective(800px) rotateX(2deg) rotateY(-2deg) translateY(-4px);
+}
+
+.card-tilt-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-tilt-glow::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card-tilt-glow:hover::before {
+  opacity: 1;
+}
+
+html[data-theme="light"] .card-tilt-glow::before {
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(255, 255, 255, 0.4),
+    transparent 40%
+  );
+}
+
+/* ============================================
+   NEW: Gradient Text Effect
+   ============================================ */
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--app-fg) 0%, var(--app-muted) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, #d4a574 0%, #c17f4e 50%, #b36a2f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+html[data-theme="dark"] .gradient-text-warm {
+  background: linear-gradient(135deg, #f5d0a9 0%, #e8b88a 50%, #d4a070 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+   NEW: Noise Texture Overlay
+   ============================================ */
+
+.noise-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 128px 128px;
+  z-index: 1000;
+}
+
+html[data-theme="light"] .noise-overlay::after {
+  opacity: 0.018;
+}
+
+/* ============================================
+   NEW: Glow Pulse Effect
+   ============================================ */
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(212, 165, 116, 0.15), 0 0 60px rgba(212, 165, 116, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 165, 116, 0.25), 0 0 80px rgba(212, 165, 116, 0.1);
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes border-glow {
+  0%, 100% {
+    border-color: rgba(212, 165, 116, 0.2);
+  }
+  50% {
+    border-color: rgba(212, 165, 116, 0.5);
+  }
+}
+
+.border-glow {
+  animation: border-glow 3s ease-in-out infinite;
+}
+
+/* ============================================
+   NEW: Magnetic Button Effect Base
+   ============================================ */
+
+.magnetic-btn {
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ============================================
+   NEW: Shimmer Loading Effect
+   ============================================ */
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.06) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+html[data-theme="light"] .shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+}
+
+/* ============================================
+   NEW: Floating Animation
+   ============================================ */
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.float-animation {
+  animation: float 5s ease-in-out infinite;
+}
+
+.float-animation-delayed {
+  animation: float 5s ease-in-out infinite 1s;
+}
+
+/* ============================================
+   NEW: Underline Hover Animation
+   ============================================ */
+
+.hover-underline {
+  position: relative;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: currentColor;
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   NEW: Counter Animation Support
+   ============================================ */
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.count-animate {
+  animation: count-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ============================================
+   NEW: Page Transition Overlay
+   ============================================ */
+
+@keyframes page-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: page-fade-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ============================================
+   NEW: Improved Scrollbar
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb {
+  background: rgba(24, 21, 19, 0.12);
+}
+
+html[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(24, 21, 19, 0.24);
+}
+
+/* Firefox scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+}
+
+html[data-theme="light"] {
+  scrollbar-color: rgba(24, 21, 19, 0.12) transparent;
+}
+
+/* ============================================
+   NEW: Spotlight Border Effect
+   ============================================ */
+
+.spotlight-border {
+  position: relative;
+}
+
+.spotlight-border::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: radial-gradient(
+    400px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%),
+    rgba(212, 165, 116, 0.4),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.spotlight-border:hover::before {
+  opacity: 1;
+}
+
+/* ============================================
+   NEW: Text Reveal Character Animation
+   ============================================ */
+
+@keyframes char-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-40deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+.char-reveal span {
+  display: inline-block;
+  opacity: 0;
+  animation: char-reveal 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ============================================
+   NEW: Smooth image zoom on hover
+   ============================================ */
+
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.05);
+}
+
+/* ============================================
+   NEW: Stagger children animation helper
+   ============================================ */
+
+.stagger-children > * {
+  opacity: 0;
+  animation: scroll-reveal-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.10s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.15s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.20s; }
+.stagger-children > *:nth-child(5) { animation-delay: 0.25s; }
+.stagger-children > *:nth-child(6) { animation-delay: 0.30s; }
+.stagger-children > *:nth-child(7) { animation-delay: 0.35s; }
+.stagger-children > *:nth-child(8) { animation-delay: 0.40s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .stagger-children > * {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+/* ============================================
+   NEW: Divider animated expansion
+   ============================================ */
+
+@keyframes divider-expand {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.divider-animated {
+  transform-origin: center;
+  animation: divider-expand 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ============================================
+   NEW: Tag hover lift
+   ============================================ */
+
+.tag-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   NEW: Glass card refined
+   ============================================ */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="light"] .glass-card {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(24, 21, 19, 0.08);
+}
+
+html[data-theme="light"] .glass-card:hover {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(24, 21, 19, 0.15);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================
+   NEW: Link arrow animation
+   ============================================ */
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  transition: gap 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.link-arrow:hover {
+  gap: 0.6em;
+}
+
+.link-arrow svg,
+.link-arrow .arrow-icon {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.link-arrow:hover svg,
+.link-arrow:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+/* ============================================
+   NEW: Focus ring enhancement
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid rgba(212, 165, 116, 0.6);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+html[data-theme="light"] :focus-visible {
+  outline-color: rgba(139, 92, 246, 0.5);
+}
+
+/* ============================================
+   NEW: Navbar scroll state
+   ============================================ */
+
+.navbar-scrolled {
+  background: rgba(var(--app-surface-rgb, 5, 5, 5), 0.95) !important;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+}
+
+html[data-theme="light"] .navbar-scrolled {
+  background: rgba(245, 241, 232, 0.92) !important;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ============================================
+   NEW: Badge shine effect
+   ============================================ */
+
+@keyframes badge-shine {
+  from {
+    background-position: -100% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+.badge-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.badge-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.15) 50%,
+    transparent 100%
+  );
+  background-size: 50% 100%;
+  animation: badge-shine 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* ============================================
+   NEW: Stats counter style
+   ============================================ */
+
+.stat-number {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+/* ============================================
+   NEW: Section number decoration
+   ============================================ */
+
+.section-number {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  opacity: 0.4;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ============================================
+   NEW: Enhanced selection with scene colors
+   ============================================ */
+
+::selection {
+  background: rgba(212, 165, 116, 0.25);
+  color: inherit;
+}
+
+html[data-theme="light"] ::selection {
+  background: rgba(139, 92, 246, 0.15);
+}
+
+html[data-scene="spring"] ::selection {
+  background: rgba(236, 72, 153, 0.2);
+}
+
+html[data-scene="winter"] ::selection {
+  background: rgba(56, 189, 248, 0.2);
+}
+
+html[data-scene="starry"] ::selection {
+  background: rgba(251, 191, 36, 0.2);
+}
+

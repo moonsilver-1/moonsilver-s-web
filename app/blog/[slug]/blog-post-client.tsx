@@ -10,13 +10,16 @@ type BlogPostClientProps = {
   post: BlogPost;
 };
 
-const copy: Record<SiteLanguage, { back: string; dateLocale: string }> = {
+const copy: Record<
+  SiteLanguage,
+  { back: string; dateLocale: string }
+> = {
   zh: {
-    back: "返回博客",
+    back: "← 返回博客",
     dateLocale: "zh-CN",
   },
   en: {
-    back: "Back to blog",
+    back: "← Back to blog",
     dateLocale: "en-US",
   },
 };
@@ -25,17 +28,17 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
   const { language } = useSiteLanguage();
 
   return (
-    <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300">
+    <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300 page-enter">
       <AutumnLeavesBg />
       <section className="relative z-10 mx-auto max-w-4xl px-6 py-16">
         <Link
           href="/blog"
-          className="inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-colors hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+          className="link-arrow inline-flex rounded-full border border-[var(--app-border)] px-4 py-2 text-sm text-[var(--app-muted)] transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)] hover:shadow-sm"
         >
           {copy[language].back}
         </Link>
 
-        <article className="mt-8 rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6 md:p-10">
+        <article className="mt-8 overflow-hidden rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6 backdrop-blur-sm transition-all duration-500 hover:border-[var(--app-border-strong)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] md:p-10">
           <p className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">
             {new Intl.DateTimeFormat(copy[language].dateLocale, {
               year: "numeric",
@@ -51,7 +54,7 @@ export default function BlogPostClient({ post }: BlogPostClientProps) {
               {post.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-full border border-[var(--app-border)] px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[var(--app-muted)]"
+                  className="tag-lift rounded-full border border-[var(--app-border)] bg-[var(--app-bg)]/40 px-3 py-1 text-[11px] uppercase tracking-[0.18em] text-[var(--app-muted)]"
                 >
                   {tag}
                 </span>

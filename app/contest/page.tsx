@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
 import { ProductJsonSitePanel } from "@/app/contest/product-json-site-panel";
@@ -95,6 +95,72 @@ function hexToRgb(hex: string) {
   return `${(number >> 16) & 255}, ${(number >> 8) & 255}, ${number & 255}`;
 }
 
+function useScrollReveal(threshold = 0.1) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, visible };
+}
+
+function useCountUp(end: number, duration = 1500, start = 0) {
+  const [count, setCount] = useState(start);
+  const [triggered, setTriggered] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !triggered) {
+          setTriggered(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [triggered]);
+
+  useEffect(() => {
+    if (!triggered) return;
+    let startTime: number;
+    let raf: number;
+
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      setCount(Math.floor(start + (end - start) * eased));
+      if (progress < 1) {
+        raf = requestAnimationFrame(animate);
+      }
+    };
+
+    raf = requestAnimationFrame(animate);
+    return () => cancelAnimationFrame(raf);
+  }, [triggered, end, duration, start]);
+
+  return { ref, count };
+}
+
 export default function ContestPage() {
   const { language } = useSiteLanguage();
   const theme = useThemeMode();
@@ -142,12 +208,19 @@ export default function ContestPage() {
   const mutedColor = isLight ? "rgba(24,21,19,0.62)" : "rgba(255,255,255,0.58)";
   const softColor = isLight ? "rgba(24,21,19,0.42)" : "rgba(255,255,255,0.42)";
 
+  const heroReveal = useScrollReveal(0.05);
+
   return (
-    <div className="min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-500" style={{ background: pageBackground }}>
+    <div className="min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-500 page-enter" style={{ background: pageBackground }}>
       <AutumnLeavesBg />
       <section className="relative z-10 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
-          <div className="grid gap-10 lg:grid-cols-[1fr_420px] lg:items-end">
+          <div
+            ref={heroReveal.ref}
+            className={`grid gap-10 lg:grid-cols-[1fr_420px] lg:items-end transition-all duration-700 ${
+              heroReveal.visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
+          >
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.28em]" style={{ color: isLight ? "#0e7490" : "rgba(165,243,252,0.68)" }}>
                 {copy.eyebrow}
@@ -158,12 +231,7 @@ export default function ContestPage() {
               </p>
               <div className="mt-8 grid max-w-xl grid-cols-3 gap-3">
                 {copy.stats.map(([value, label]) => (
-                  <div key={label} className="pt-4" style={{ borderTop: `1px solid ${borderColor}` }}>
-                    <p className="text-2xl font-semibold">{value}</p>
-                    <p className="mt-1 text-xs uppercase tracking-[0.2em]" style={{ color: softColor }}>
-                      {label}
-                    </p>
-                  </div>
+                  <StatCounter key={label} value={value} label={label} borderColor={borderColor} softColor={softColor} />
                 ))}
               </div>
             </div>
@@ -172,12 +240,13 @@ export default function ContestPage() {
               type="button"
               onClick={() => setIsSmartCarOpen((current) => !current)}
               aria-expanded={isSmartCarOpen}
-              className="group rounded-[28px] p-5 text-left shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur transition-all hover:-translate-y-0.5"
+              className="group relative overflow-hidden rounded-[28px] p-5 text-left shadow-[0_24px_80px_rgba(0,0,0,0.18)] backdrop-blur transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_32px_100px_rgba(0,0,0,0.25)]"
               style={{
                 background: cardBackground,
                 border: `1px solid ${isLight ? "rgba(8,145,178,0.22)" : "rgba(103,232,249,0.22)"}`,
               }}
             >
+              <div className="absolute inset-0 bg-gradient-to-br from-[var(--app-fg)]/[0.02] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
               <p className="text-xs uppercase tracking-[0.24em]" style={{ color: isLight ? "#0e7490" : "rgba(207,250,254,0.58)" }}>
                 {copy.focus}
               </p>
@@ -204,13 +273,13 @@ export default function ContestPage() {
               </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {smartCar.tags.map((tag) => (
-                  <span key={tag.en} className="rounded-full px-3 py-1 text-xs" style={{ color: mutedColor, border: `1px solid ${borderColor}` }}>
+                  <span key={tag.en} className="tag-lift rounded-full px-3 py-1 text-xs" style={{ color: mutedColor, border: `1px solid ${borderColor}` }}>
                     {tag[language]}
                   </span>
                 ))}
               </div>
               <span
-                className="mt-6 inline-flex rounded-full px-4 py-2 text-xs font-medium transition-opacity group-hover:opacity-90"
+                className="mt-6 inline-flex rounded-full px-4 py-2 text-xs font-medium transition-all duration-300 group-hover:scale-105"
                 style={{ background: isLight ? "#181513" : "#ffffff", color: isLight ? "#f5f1e8" : "#0f172a" }}
               >
                 {isSmartCarOpen ? copy.close : copy.open}
@@ -222,7 +291,10 @@ export default function ContestPage() {
 
       <main className="relative z-10 mx-auto max-w-7xl px-6 pb-20">
         {isSmartCarOpen ? (
-          <section className="mb-10 rounded-[28px] p-5 backdrop-blur" style={{ background: framedBackground, border: `1px solid ${borderColor}` }}>
+          <section
+            className="mb-10 overflow-hidden rounded-[28px] p-5 backdrop-blur transition-all duration-500"
+            style={{ background: framedBackground, border: `1px solid ${borderColor}` }}
+          >
             <ProductJsonSitePanel embedded />
           </section>
         ) : null}
@@ -231,23 +303,29 @@ export default function ContestPage() {
           <p className="text-xs uppercase tracking-[0.28em]" style={{ color: softColor }}>
             {copy.tracks}
           </p>
-          <div className="ml-5 h-px flex-1" style={{ background: borderColor }} />
+          <div className="ml-5 h-px flex-1 bg-gradient-to-r from-[var(--app-border)] to-transparent" />
         </div>
 
         <section className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {tracks.slice(1).map((track) => {
+          {tracks.slice(1).map((track, index) => {
             const rgb = hexToRgb(track.color);
+            const { ref, visible } = useScrollReveal(0.1);
 
             return (
               <article
                 key={track.id}
-                className="group min-h-[260px] rounded-[24px] p-5 transition-all hover:-translate-y-0.5"
+                ref={ref}
+                className={`group relative min-h-[260px] overflow-hidden rounded-[24px] p-5 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] ${
+                  visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
                 style={{
                   background: cardBackground,
                   border: `1px solid ${borderColor}`,
                   boxShadow: isLight ? "0 18px 50px rgba(94,74,42,0.08)" : "none",
+                  transitionDelay: `${Math.min(index * 80, 240)}ms`,
                 }}
               >
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--app-fg)]/[0.02] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div
                   className="flex h-11 w-11 items-center justify-center rounded-2xl border text-sm font-semibold"
                   style={{
@@ -267,7 +345,11 @@ export default function ContestPage() {
                 </p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {track.tags.map((tag) => (
-                    <span key={tag.en} className="rounded-full px-3 py-1 text-xs" style={{ color: mutedColor, border: `1px solid ${borderColor}` }}>
+                    <span
+                      key={tag.en}
+                      className="tag-lift rounded-full px-3 py-1 text-xs"
+                      style={{ color: mutedColor, border: `1px solid ${borderColor}` }}
+                    >
                       {tag[language]}
                     </span>
                   ))}
@@ -277,6 +359,33 @@ export default function ContestPage() {
           })}
         </section>
       </main>
+    </div>
+  );
+}
+
+function StatCounter({
+  value,
+  label,
+  borderColor,
+  softColor,
+}: {
+  value: string;
+  label: string;
+  borderColor: string;
+  softColor: string;
+}) {
+  const isNumeric = !isNaN(Number(value));
+  const numericEnd = isNumeric ? Number(value) : 0;
+  const { ref, count } = useCountUp(numericEnd, 1200);
+
+  return (
+    <div ref={ref} className="pt-4" style={{ borderTop: `1px solid ${borderColor}` }}>
+      <p className="stat-number text-2xl font-semibold">
+        {isNumeric ? count : value}
+      </p>
+      <p className="mt-1 text-xs uppercase tracking-[0.2em]" style={{ color: softColor }}>
+        {label}
+      </p>
     </div>
   );
 }

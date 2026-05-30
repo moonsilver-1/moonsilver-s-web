@@ -1,9 +1,33 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import type React from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { useScene } from "@/app/components/scene-provider";
 import type { SceneKey } from "@/app/lib/scene-config";
+
+function useScrollReveal(threshold = 0.1) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.unobserve(el);
+        }
+      },
+      { threshold }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [threshold]);
+
+  return { ref, visible };
+}
 
 type LocaleText = {
   zh: string;
@@ -199,13 +223,18 @@ const awardBarColor: Record<Contest["level"], string> = {
 };
 
 function SectionLabel({ children }: { children: string }) {
-  return <span className="section-label">{children}</span>;
+  return (
+    <span className="section-label flex items-center gap-3">
+      <span>{children}</span>
+    </span>
+  );
 }
 
 function Divider() {
+  const { ref, visible } = useScrollReveal(0.3);
   return (
-    <div className="mx-auto max-w-5xl px-6">
-      <div className="autumn-divider" />
+    <div ref={ref} className="mx-auto max-w-5xl px-6">
+      <div className={`autumn-divider ${visible ? "divider-animated" : "opacity-0"}`} />
     </div>
   );
 }
@@ -361,15 +390,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="autumn-section mx-auto max-w-5xl px-6 py-24">
+      <RevealSection className="mx-auto max-w-5xl px-6 py-24">
         <SectionLabel>{copy.aboutLabel}</SectionLabel>
         <h2 className="mt-4 mb-6 text-3xl font-semibold leading-tight md:text-4xl">{copy.aboutTitle}</h2>
         <p className="max-w-2xl leading-8 text-[var(--app-muted)]">{copy.aboutDescription}</p>
-      </section>
+      </RevealSection>
 
       <Divider />
 
-      <section className="autumn-section mx-auto max-w-5xl px-6 py-24">
+      <RevealSection className="mx-auto max-w-5xl px-6 py-24">
         <SectionLabel>{copy.honorsLabel}</SectionLabel>
         <h2 className="mt-4 mb-10 text-3xl font-semibold md:text-4xl">{copy.honorsTitle}</h2>
 
@@ -385,11 +414,11 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
+      </RevealSection>
 
       <Divider />
 
-      <section className="autumn-section mx-auto max-w-5xl px-6 py-24">
+      <RevealSection className="mx-auto max-w-5xl px-6 py-24">
         <SectionLabel>{copy.contestsLabel}</SectionLabel>
         <h2
           className="mt-4 mb-8 cursor-pointer select-none text-3xl font-semibold transition-colors hover:opacity-75 md:text-4xl"
@@ -397,7 +426,7 @@ export default function HomePage() {
         >
           {copy.contestsTitle}
           <span
-            className="ml-3 inline-block text-base font-normal text-[var(--app-muted)] transition-transform"
+            className="ml-3 inline-block text-base font-normal text-[var(--app-muted)] transition-transform duration-300"
             style={{ transform: expanded === "contests" || expanded === "all" ? "rotate(45deg)" : "rotate(0deg)" }}
           >
             +
@@ -405,19 +434,19 @@ export default function HomePage() {
         </h2>
 
         <div
-          className={`overflow-hidden transition-all duration-500 ${
-            expanded === "contests" || expanded === "all" ? "max-h-[900px] opacity-100" : "max-h-0 opacity-0"
+          className={`overflow-hidden transition-all duration-700 ${
+            expanded === "contests" || expanded === "all" ? "max-h-[1200px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="space-y-2">
             {contests.map((contest, i) => (
               <div
                 key={contest.name.zh}
-                className="section-item autumn-list-item group flex items-center justify-between gap-4 rounded-xl px-4 py-3.5 transition-colors"
+                className="section-item autumn-list-item group flex items-center justify-between gap-4 rounded-xl px-4 py-3.5 transition-all duration-300"
                 style={{ animationDelay: `${i * 60}ms` }}
               >
                 <div className="flex min-w-0 items-center gap-4">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full" style={{ background: awardBarColor[contest.level] }} />
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full transition-transform duration-300 group-hover:scale-150" style={{ background: awardBarColor[contest.level] }} />
                   <span className="truncate text-sm text-[var(--app-muted)] transition-colors group-hover:text-[var(--app-fg)]">
                     {contest.name[language]}
                   </span>
@@ -427,11 +456,11 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </RevealSection>
 
       <Divider />
 
-      <section className="autumn-section mx-auto max-w-5xl px-6 py-24">
+      <RevealSection className="mx-auto max-w-5xl px-6 py-24">
         <SectionLabel>{copy.researchLabel}</SectionLabel>
         <h2 className="mt-4 mb-10 text-3xl font-semibold md:text-4xl">{copy.researchTitle}</h2>
 
@@ -447,7 +476,28 @@ export default function HomePage() {
             </div>
           ))}
         </div>
-      </section>
+      </RevealSection>
     </div>
+  );
+}
+
+function RevealSection({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  const { ref, visible } = useScrollReveal(0.1);
+
+  return (
+    <section
+      ref={ref}
+      className={`autumn-section transition-all duration-700 ${
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      } ${className ?? ""}`}
+    >
+      {children}
+    </section>
   );
 }
