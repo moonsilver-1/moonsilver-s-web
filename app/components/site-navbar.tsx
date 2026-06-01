@@ -12,6 +12,7 @@ const navLabels = {
     home: "首页",
     fun: "娱乐",
     blog: "博客",
+    study: "学习",
     themeDark: "切换到白天模式",
     themeLight: "切换到黑夜模式",
     language: "EN",
@@ -22,6 +23,7 @@ const navLabels = {
     home: "Home",
     fun: "Fun",
     blog: "Blog",
+    study: "Study",
     themeDark: "Switch to light mode",
     themeLight: "Switch to dark mode",
     language: "中",
@@ -34,6 +36,7 @@ const links = [
   { href: "/", key: "home" },
   { href: "/fun", key: "fun" },
   { href: "/blog", key: "blog" },
+  { href: "/study/mimo-radar", key: "study" },
 ] as const;
 
 function isActive(pathname: string, href: string) {

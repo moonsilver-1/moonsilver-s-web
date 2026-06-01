@@ -2254,3 +2254,149 @@ html[data-scene="starry"] ::selection {
   background: rgba(251, 191, 36, 0.2);
 }
 
+/* ============================================
+   Study page prose styles
+   ============================================ */
+
+.study-prose {
+  line-height: 1.85;
+  color: var(--app-fg);
+}
+
+.study-prose p {
+  margin-bottom: 1.25em;
+}
+
+.study-prose h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 0.75em;
+  letter-spacing: -0.01em;
+}
+
+.study-prose ul,
+.study-prose ol {
+  padding-left: 1.5em;
+  margin-bottom: 1.25em;
+}
+
+.study-prose ul {
+  list-style-type: disc;
+}
+
+.study-prose ol {
+  list-style-type: decimal;
+}
+
+.study-prose li {
+  margin-bottom: 0.5em;
+}
+
+.study-prose strong {
+  font-weight: 600;
+  color: var(--app-fg);
+}
+
+.study-prose em {
+  font-style: italic;
+  color: var(--app-muted);
+}
+
+.study-prose .math {
+  overflow-x: auto;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+
+.study-prose .katex-display {
+  margin: 1em 0;
+  overflow-x: auto;
+}
+
+.study-prose .img-wrapper {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+.study-prose .img-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--app-border);
+}
+
+.study-prose .img-caption {
+  margin-top: 0.5em;
+  font-size: 0.85rem;
+  color: var(--app-muted);
+}
+
+html[data-theme="light"] .study-prose .img-wrapper img {
+  border-color: var(--app-border);
+}
+
+.study-prose .highlight-box {
+  border-radius: 16px;
+  border: 1px solid var(--app-border-strong);
+  background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  padding: 1.25em 1.5em;
+  margin: 1.5em 0;
+}
+
+html[data-theme="light"] .study-prose .highlight-box {
+  background: linear-gradient(135deg, rgba(24,21,19,0.04), rgba(24,21,19,0.02));
+}
+
+.study-prose .mono-block {
+  font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 1em 1.25em;
+  margin: 1.25em 0;
+  overflow-x: auto;
+}
+
+html[data-theme="light"] .study-prose .mono-block {
+  background: rgba(24,21,19,0.03);
+}
+
+.study-prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.9rem;
+}
+
+.study-prose th,
+.study-prose td {
+  border: 1px solid var(--app-border);
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+
+.study-prose th {
+  font-weight: 600;
+  background: rgba(255,255,255,0.04);
+}
+
+html[data-theme="light"] .study-prose th {
+  background: rgba(24,21,19,0.04);
+}
+
+.study-prose .katex {
+  font-size: 1.05em;
+}
+
+.study-prose .katex-display {
+  margin: 1.25em 0;
+  overflow-x: auto;
+}
+
+.study-prose .katex-display .katex {
+  font-size: 1.1em;
+}
+
