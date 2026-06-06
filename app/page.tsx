@@ -103,6 +103,11 @@ const contests: Contest[] = [
   {
     level: "provincial-3",
     award: { zh: "省级三等奖", en: "Provincial 3rd Prize" },
+    name: { zh: "浙江省大学生智能机器人创意竞赛", en: "Zhejiang University Student Intelligent Robot Creativity Competition" },
+  },
+  {
+    level: "provincial-3",
+    award: { zh: "省级三等奖", en: "Provincial 3rd Prize" },
     name: { zh: "浙江省人工智能竞赛", en: "Zhejiang Artificial Intelligence Contest" },
   },
 ];
