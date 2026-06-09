@@ -52,6 +52,12 @@ const entries: Entry[] = [
     description: { zh: "猎奇小游戏", en: "Card game with friends' memes" },
     note: { zh: "桌游", en: "Card Game" },
   },
+  {
+    href: "/fun/oracle",
+    title: { zh: "猜大学", en: "University Oracle" },
+    description: { zh: "想一所大学我来猜", en: "Think of a university, I'll guess it" },
+    note: { zh: "游戏", en: "Game" },
+  },
 ];
 
 const storyEntry: Entry = {
