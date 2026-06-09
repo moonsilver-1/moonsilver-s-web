@@ -269,7 +269,7 @@ export function OracleClient() {
 
   const ranking = useMemo(() => filterCompatibleUniversities(state.answers), [state.answers]);
   const guessedUniversity = useMemo(() => (guessId ? findUniversityById(guessId) : null), [guessId]);
-  const topUniversity = ranking[0]?.university ?? guessedUniversity;
+  const topUniversity = ranking[0] ?? guessedUniversity;
   const questionStage = currentQuestion?.stage ?? "unknown";
 
   useEffect(() => {
@@ -287,6 +287,11 @@ export function OracleClient() {
         dimension: question.dimension,
         tags: question.tags,
         sourceId: question.sourceId,
+        textZh: question.text.zh,
+        textEn: question.text.en,
+        exclusiveGroup: question.exclusiveGroup,
+        exclusiveValue: question.exclusiveValue,
+        mutexAfterPositiveAnswer: question.mutexAfterPositiveAnswer,
       })),
     }),
     [],
@@ -317,12 +322,12 @@ export function OracleClient() {
         return;
       }
 
-      const result = handleGuessWrong(state, universeResources.universities, universeResources.questions);
+      const result = handleGuessWrong(state, guessId, universeResources.universities, universeResources.questions);
       setState(result.state);
       setGuessId(result.guessId);
       setShowThinking(result.state.phase === "guessing");
     },
-    [state, universeResources.questions, universeResources.universities],
+    [guessId, state, universeResources.questions, universeResources.universities],
   );
 
   const handleRestart = useCallback(() => {

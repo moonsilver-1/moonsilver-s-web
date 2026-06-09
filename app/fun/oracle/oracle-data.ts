@@ -18,6 +18,9 @@ type RawQuestion = {
   stage?: string;
   priority?: number;
   enabled?: boolean;
+  exclusive_group?: string;
+  exclusive_value?: unknown;
+  mutex_after_positive_answer?: boolean;
   question_tags?: unknown;
 };
 
@@ -61,6 +64,9 @@ export type Question = {
   stage: "early" | "mid" | "late" | "unknown";
   priority: number;
   tags: string[];
+  exclusiveGroup?: string;
+  exclusiveValue?: string;
+  mutexAfterPositiveAnswer?: boolean;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -247,49 +253,17 @@ const rawEntities = (() => {
   return [...byId.values()];
 })();
 
+const overview = isRecord((rawData as Record<string, unknown>).system_overview)
+  ? ((rawData as Record<string, unknown>).system_overview as Record<string, unknown>)
+  : null;
+
 export const gameMeta = {
-  titleZh:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.name_zh
-        : "",
-    ) || "\u77e5\u6653\u4e00\u5207\u4e4b\u4eba",
-  titleEn:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.name_en
-        : "",
-    ) || "The All-Knowing One",
-  sloganZh:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.slogan_zh
-        : "",
-    ) || "\u8ba9\u6211\u731c\u731c\u4f60\u5fc3\u91cc\u60f3\u7684\u662f\u4ec0\u4e48\u5927\u5b66\u3002",
-  sloganEn:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.slogan_en
-        : "",
-    ) || "Tell me your university and I will try to guess it.",
-  descriptionZh:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.description_zh
-        : "",
-    ) || "\u4e00\u6b3e\u8f7b\u677e\u4f46\u5f88\u4f1a\u88c5\u6a21\u4f5c\u6837\u7684\u5927\u5b66\u731c\u6d4b\u6e38\u620f\u3002",
-  descriptionEn:
-    toString(
-      (rawData as Record<string, unknown>).system_overview &&
-        isRecord((rawData as Record<string, unknown>).system_overview)
-        ? (rawData as Record<string, unknown>).system_overview.description_en
-        : "",
-    ) || "A playful university-guessing game built from a structured question bank.",
+  titleZh: toString(overview?.name_zh) || "\u77e5\u6653\u4e00\u5207\u4e4b\u4eba",
+  titleEn: toString(overview?.name_en) || "The All-Knowing One",
+  sloganZh: toString(overview?.slogan_zh) || "\u8ba9\u6211\u731c\u731c\u4f60\u5fc3\u91cc\u60f3\u7684\u662f\u4ec0\u4e48\u5927\u5b66\u3002",
+  sloganEn: toString(overview?.slogan_en) || "Tell me your university and I will try to guess it.",
+  descriptionZh: toString(overview?.description_zh) || "\u4e00\u6b3e\u8f7b\u677e\u4f46\u5f88\u4f1a\u88c5\u6a21\u4f5c\u6837\u7684\u5927\u5b66\u731c\u6d4b\u6e38\u620f\u3002",
+  descriptionEn: toString(overview?.description_en) || "A playful university-guessing game built from a structured question bank.",
 };
 
 export const questions: Question[] = rawQuestions
@@ -309,6 +283,9 @@ export const questions: Question[] = rawQuestions
         : "unknown",
     priority: typeof question.priority === "number" ? question.priority : 0,
     tags: Array.isArray(question.question_tags) ? question.question_tags.map((tag) => toString(tag)).filter(Boolean) : [],
+    exclusiveGroup: toString(question.exclusive_group),
+    exclusiveValue: toString(question.exclusive_value),
+    mutexAfterPositiveAnswer: question.mutex_after_positive_answer === true,
   }));
 
 export const universities: University[] = rawEntities
