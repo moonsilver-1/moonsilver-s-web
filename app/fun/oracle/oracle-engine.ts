@@ -30,11 +30,7 @@ type QuestionMeta = {
   mutexAfterPositiveAnswer?: boolean;
 };
 
-type GeoState = {
-  branch: string;
-  level: number;
-  outsideChina: boolean;
-};
+type RankScope = "qs" | "china" | "general";
 
 type RankBounds = {
   min: number;
@@ -98,28 +94,81 @@ function getCompatibleUnis(
 ) {
   const excluded = new Set(excludedGuessIds);
   const compatible = allUnis.filter((u) => !excluded.has(u.id) && isCompatible(u.props, answers));
-  return compatible.length > 0 ? compatible : allUnis;
+  return compatible.length > 0 ? compatible : allUnis.filter((u) => !excluded.has(u.id));
+}
+
+function sourceKey(question: QuestionMeta) {
+  return (question.sourceId?.trim() || question.id).toLowerCase();
 }
 
 function qText(question: QuestionMeta) {
   return `${question.id} ${question.sourceId ?? ""} ${question.dimension ?? ""} ${question.textZh ?? ""} ${question.textEn ?? ""} ${(question.tags ?? []).join(" ")}`.toLowerCase();
 }
 
+function sourceIs(question: QuestionMeta, sourceId: string) {
+  return sourceKey(question) === sourceId.toLowerCase() || question.id.toLowerCase() === sourceId.toLowerCase();
+}
+
+function sourceStarts(question: QuestionMeta, prefix: string) {
+  const key = sourceKey(question);
+  return key.startsWith(prefix.toLowerCase());
+}
+
+function answerOf(question: QuestionMeta, answers: Record<string, Answer>) {
+  return answers[question.id] ?? (question.sourceId ? answers[question.sourceId] : undefined);
+}
+
+function answerBySource(
+  sourceId: string,
+  answers: Record<string, Answer>,
+  questions: QuestionMeta[],
+  askedSet: Set<string>,
+): Answer | undefined {
+  for (const question of questions) {
+    if (!askedSet.has(question.id)) continue;
+    if (!sourceIs(question, sourceId)) continue;
+    return answerOf(question, answers);
+  }
+  return undefined;
+}
+
+function hasAskedSource(sourceId: string, questions: QuestionMeta[], askedSet: Set<string>) {
+  return questions.some((question) => askedSet.has(question.id) && sourceIs(question, sourceId));
+}
+
 function questionFamily(question: QuestionMeta): string {
   const text = qText(question);
-  if (/(qs|rank|ranking|reputation|world university|top\s*\d+)/.test(text)) return "rank";
-  if (/(location|region|province|city|country|mainland|hong kong|macau|taiwan|overseas|domestic|abroad|district)/.test(text)) return "location";
-  if (/(name|school|institution|university name|official name|campus)/.test(text)) return "name";
-  if (/(major|subject|specialty|discipline|program|faculty|college of|school of)/.test(text)) return "major";
+  if (/(qs|rank|ranking|reputation|world university|top\s*\d+|软科|中国大学排名|前\s*\d+)/.test(text)) return "rank";
+  if (/(location|region|province|city|country|mainland|hong kong|macau|taiwan|overseas|domestic|abroad|district|华东|华北|华南|华中|西南|西北|东北|省|市)/.test(text)) return "location";
+  if (/(name|school|institution|university name|official name|campus|校名|名字|简称)/.test(text)) return "name";
+  if (/(major|subject|specialty|discipline|program|faculty|college of|school of|专业|学科|强校|方向)/.test(text)) return "major";
   return question.dimension?.trim().toLowerCase() || "general";
 }
 
-function rankThreshold(question: QuestionMeta): number | null {
+function rankScope(question: QuestionMeta): RankScope {
   const text = qText(question);
+  if (/\bq_qs|\bqs\b|world university/.test(text)) return "qs";
+  if (/软科|中国大学排名|china_rank|cn_rank|\bq_cn_(?:soft|rank)|主榜/.test(text)) return "china";
+  return "general";
+}
+
+function rankThreshold(question: QuestionMeta): number | null {
+  const source = sourceKey(question);
+  const text = qText(question);
+
+  const exactTop = source.match(/\bq_qs_top(\d{1,4})\b/) ?? source.match(/\bq_cn_soft_top(\d{1,4})\b/);
+  if (exactTop) return Number(exactTop[1]);
+
+  const broad = source.match(/\bq_qs(\d{3,4})\b/);
+  if (broad) return Number(broad[1]);
+
+  const ranged = source.match(/\bq_qs_(\d{1,4})_(\d{1,4})\b/);
+  if (ranged) return Number(ranged[2]);
+
   const patterns = [
-    /(?:qs|top|rank(?:ing)?)\s*(?:前)?\s*(\d{2,4})/,
-    /前\s*(\d{2,4})/,
-    /top\s*(\d{2,4})/,
+    /(?:qs|top|rank(?:ing)?|软科|前)\s*(?:世界|中国|主榜)?\s*(?:前)?\s*(\d{1,4})/,
+    /前\s*(\d{1,4})/,
+    /top\s*(\d{1,4})/,
   ];
   for (const pattern of patterns) {
     const match = text.match(pattern);
@@ -130,183 +179,55 @@ function rankThreshold(question: QuestionMeta): number | null {
   return null;
 }
 
-function isChinaDomesticQuestion(question: QuestionMeta): boolean {
-  return /(?:\b211\b|\b985\b|双一流|一流学科|一本|二本|三本|北上广深|大陆|内地|高考|统招|省属|985工程|211工程|软科|中国大学排名|主榜|校友会|武书连|华东|华北|华南|华中|西南|西北|东北|北京|天津|河北|山西|内蒙古|辽宁|吉林|黑龙江|上海|江苏|浙江|安徽|福建|江西|山东|河南|湖北|湖南|广东|广西|海南|重庆|四川|贵州|云南|西藏|陕西|甘肃|青海|宁夏|新疆|香港|澳门|台湾)/.test(qText(question));
-}
-
-function geoInfo(question: QuestionMeta): GeoState {
+function isQsQuestion(question: QuestionMeta) {
   const text = qText(question);
-
-  if (/(usa|us|united states|america|new york|california|texas|florida|massachusetts|illinois)/.test(text)) {
-    return { branch: "usa", level: 2, outsideChina: true };
-  }
-  if (/(canada)/.test(text)) {
-    return { branch: "canada", level: 2, outsideChina: true };
-  }
-  if (/(uk|united kingdom|britain|england|scotland|wales|ireland|france|germany|italy|spain|netherlands|switzerland|europe|oxford|cambridge)/.test(text)) {
-    return { branch: "europe", level: 2, outsideChina: true };
-  }
-  if (/(japan|korea|singapore|malaysia|thailand|vietnam|india|australia|new zealand|asia)/.test(text)) {
-    return { branch: "asia", level: 2, outsideChina: true };
-  }
-  if (/(china|mainland|hong kong|macau|taiwan|beijing|shanghai|guangzhou|shenzhen|hangzhou|nanjing)/.test(text)) {
-    return { branch: "china", level: 2, outsideChina: false };
-  }
-  if (/(north america|south america|latin america|america|oceania|africa)/.test(text)) {
-    if (/(north america|america)/.test(text)) return { branch: "north_america", level: 1, outsideChina: true };
-    if (/(south america|latin america)/.test(text)) return { branch: "south_america", level: 1, outsideChina: true };
-    if (/(oceania)/.test(text)) return { branch: "oceania", level: 1, outsideChina: true };
-    if (/(africa)/.test(text)) return { branch: "africa", level: 1, outsideChina: true };
-  }
-
-  return { branch: "", level: 0, outsideChina: false };
+  return /\bq_qs|\bqs\b|world university/.test(text);
 }
 
-function currentGeoState(
-  answers: Record<string, Answer>,
-  questions: QuestionMeta[],
-  askedSet: Set<string>,
-): GeoState {
-  let locked: GeoState = { branch: "", level: 0, outsideChina: false };
-
-  for (const question of questions) {
-    if (!askedSet.has(question.id)) continue;
-    if (questionFamily(question) !== "location") continue;
-
-    const g = geoInfo(question);
-    const answer = answers[question.id];
-
-    if (answer === "yes") {
-      if (g.level > locked.level) locked = g;
-      if (g.branch === "china") locked.outsideChina = false;
-      if (g.branch && g.branch !== "china") locked.outsideChina = true;
-    }
-
-    if (answer === "no" && (g.branch === "china" || g.branch === "mainland")) {
-      locked.outsideChina = true;
-    }
-  }
-
-  return locked;
+function isQsRankQuestion(question: QuestionMeta) {
+  if (!isQsQuestion(question)) return false;
+  return rankThreshold(question) !== null || /qs_rank|qs_only|qs_gate|排名|rank/.test(qText(question));
 }
 
-function currentRankCeiling(
-  answers: Record<string, Answer>,
-  questions: QuestionMeta[],
-  askedSet: Set<string>,
-): number | null {
-  let ceiling: number | null = null;
-
-  for (const question of questions) {
-    if (!askedSet.has(question.id)) continue;
-    if (answers[question.id] !== "yes") continue;
-    if (questionFamily(question) !== "rank") continue;
-
-    const threshold = rankThreshold(question);
-    if (threshold === null) continue;
-    ceiling = ceiling === null ? threshold : Math.min(ceiling, threshold);
-  }
-
-  return ceiling;
+function isMainlandRootQuestion(question: QuestionMeta) {
+  return sourceIs(question, "q_region_mainland");
 }
 
-function pickQuestion(
-  questions: QuestionMeta[],
-  candidateUnis: Array<{ id: string; props: Record<string, PropVal> }>,
-  askedSet: Set<string>,
-  predicate: (question: QuestionMeta) => boolean,
-): string | null {
-  let bestId: string | null = null;
-  let bestScore = -Infinity;
-
-  for (const question of questions) {
-    if (askedSet.has(question.id)) continue;
-    if (!predicate(question)) continue;
-
-    let yesCount = 0;
-    let noCount = 0;
-    for (const uni of candidateUnis) {
-      const value = uni.props[question.id];
-      if (value === 1) yesCount++;
-      else if (value === -1) noCount++;
-    }
-
-    const score = Math.min(yesCount, noCount) * 10 + question.priority * 0.01;
-    if (score > bestScore) {
-      bestScore = score;
-      bestId = question.id;
-    }
-  }
-
-  return bestId;
+function isHmtRootQuestion(question: QuestionMeta) {
+  return sourceIs(question, "q_region_hmt");
 }
 
-export function selectNextQuestion(
-  allUnis: Array<{ id: string; props: Record<string, PropVal> }>,
-  answers: Record<string, Answer>,
-  askedSet: Set<string>,
-  questions: QuestionMeta[],
-  excludedGuessIds: string[] = [],
-): string | null {
-  const viableUnis = getCompatibleUnis(allUnis, answers, excludedGuessIds);
-  const scored = scoreAll(viableUnis, answers);
-  const candidateIds = new Set(scored.filter((s) => s.score >= 0).slice(0, 30).map((s) => s.id));
-  const candidateUnis = viableUnis.filter((u) => candidateIds.has(u.id));
-  if (candidateUnis.length <= 1) return null;
-
-  const locationQuestion = selectLocationQuestion(questions, candidateUnis, askedSet, answers);
-  if (locationQuestion) return locationQuestion;
-
-  const rankQuestion = selectRankQuestion(questions, candidateUnis, askedSet, answers);
-  if (rankQuestion) return rankQuestion;
-
-  if (candidateUnis.length > 8) {
-    const nextMajor = pickQuestion(questions, candidateUnis, askedSet, (q) => questionFamily(q) === "major");
-    if (nextMajor) return nextMajor;
-  }
-
-  return pickQuestion(questions, candidateUnis, askedSet, () => true);
+function isWorldRegionQuestion(question: QuestionMeta) {
+  return questionExclusiveGroup(question) === "region_world" || sourceStarts(question, "q_world_region_");
 }
 
-function askedSetHasFamily(askedSet: Set<string>, questions: QuestionMeta[], family: string) {
-  for (const question of questions) {
-    if (!askedSet.has(question.id)) continue;
-    if (questionFamily(question) === family) return true;
-  }
+function isQsCountryQuestion(question: QuestionMeta) {
+  return sourceStarts(question, "q_qs_country_");
+}
+
+function isMainlandOnlyQuestion(question: QuestionMeta): boolean {
+  const text = qText(question);
+  const tags = question.tags ?? [];
+  if (tags.some((tag) => ["china_only", "china_rank", "china_province", "china_region"].includes(tag))) return true;
+  if (sourceStarts(question, "q_cn_")) return true;
+  if (sourceStarts(question, "q_china_area_")) return true;
+  if (sourceStarts(question, "q_province_")) return true;
+  if (sourceStarts(question, "q_city_") && !sourceIs(question, "q_city_capital")) return true;
+  if (/(\b211\b|\b985\b|双一流|一流学科|软科|中国大学排名|主榜|校友会|武书连|华东|华北|华南|华中|西南|西北|东北|省会|直辖市|新一线|北上广深|一线城市)/.test(text)) return true;
+  if (/(北京|天津|河北|山西|内蒙古|辽宁|吉林|黑龙江|上海|江苏|浙江|安徽|福建|江西|山东|河南|湖北|湖南|广东|广西|海南|重庆|四川|贵州|云南|西藏|陕西|甘肃|青海|宁夏|新疆)/.test(text)) return true;
   return false;
 }
 
-function findQuestionById(questions: QuestionMeta[], askedSet: Set<string>, questionId: string): string | null {
-  for (const question of questions) {
-    if (question.id !== questionId) continue;
-    if (askedSet.has(question.id)) return null;
-    return question.id;
-  }
-  return null;
-}
-
-function rankThresholdV2(question: QuestionMeta): number | null {
-  const source = `${question.sourceId ?? ""} ${question.id}`.toLowerCase();
-  const exactTop = source.match(/\bq_qs_top(\d{1,4})\b/);
-  if (exactTop) return Number(exactTop[1]);
-
-  const ranged = source.match(/\bq_qs_(\d{1,4})_(\d{1,4})\b/);
-  if (ranged) return Number(ranged[2]);
-
-  const broad = source.match(/\bq_qs(\d{3,4})\b/);
-  if (broad) return Number(broad[1]);
-
-  return null;
-}
-
 function questionExclusiveGroup(question: QuestionMeta): string | null {
-  if (question.id === "q_region_mainland" || question.id === "q_region_hmt") return "china_root_region";
+  if (isMainlandRootQuestion(question) || isHmtRootQuestion(question)) return "china_root_region";
+  if (isQsCountryQuestion(question)) return "qs_country";
   return question.exclusiveGroup?.trim() || null;
 }
 
 function questionExclusiveValue(question: QuestionMeta): string | null {
-  if (question.id === "q_region_mainland") return "mainland";
-  if (question.id === "q_region_hmt") return "hmt";
+  if (isMainlandRootQuestion(question)) return "mainland";
+  if (isHmtRootQuestion(question)) return "hmt";
+  if (isQsCountryQuestion(question)) return sourceKey(question);
   return question.exclusiveValue?.trim() || null;
 }
 
@@ -319,7 +240,7 @@ function buildExclusiveLocks(
 
   for (const question of questions) {
     if (!askedSet.has(question.id)) continue;
-    if (answers[question.id] !== "yes") continue;
+    if (answerOf(question, answers) !== "yes") continue;
 
     const group = questionExclusiveGroup(question);
     const value = questionExclusiveValue(question);
@@ -346,28 +267,30 @@ function hasPositiveAnswerForGroup(
 ): boolean {
   for (const question of questions) {
     if (!askedSet.has(question.id)) continue;
-    if (answers[question.id] !== "yes") continue;
+    if (answerOf(question, answers) !== "yes") continue;
     if (questionExclusiveGroup(question) !== group) continue;
     return true;
   }
   return false;
 }
 
-function currentRankBoundsV2(
+function currentRankBounds(
   answers: Record<string, Answer>,
   questions: QuestionMeta[],
   askedSet: Set<string>,
+  scope: RankScope,
 ): RankBounds {
   let min = 1;
   let max = Number.POSITIVE_INFINITY;
 
   for (const question of questions) {
     if (!askedSet.has(question.id)) continue;
+    if (rankScope(question) !== scope) continue;
 
-    const threshold = rankThresholdV2(question);
+    const threshold = rankThreshold(question);
     if (threshold === null) continue;
 
-    const answer = answers[question.id];
+    const answer = answerOf(question, answers);
     if (answer === "yes") {
       max = Math.min(max, threshold);
     } else if (answer === "no") {
@@ -378,60 +301,152 @@ function currentRankBoundsV2(
   return { min, max };
 }
 
+function contextAnswer(sourceId: string, answers: Record<string, Answer>, questions: QuestionMeta[], askedSet: Set<string>) {
+  return answerBySource(sourceId, answers, questions, askedSet);
+}
+
+function shouldSkipByHardRules(
+  question: QuestionMeta,
+  answers: Record<string, Answer>,
+  questions: QuestionMeta[],
+  askedSet: Set<string>,
+): boolean {
+  if (askedSet.has(question.id)) return true;
+
+  const locks = buildExclusiveLocks(answers, questions, askedSet);
+  if (questionBlockedByLocks(question, locks)) return true;
+
+  const mainland = contextAnswer("q_region_mainland", answers, questions, askedSet);
+  const hmt = contextAnswer("q_region_hmt", answers, questions, askedSet);
+  const qs1000 = contextAnswer("q_qs1000", answers, questions, askedSet);
+
+  // 1. 已知不是中国大陆，就不要再问985/211/双一流/软科/华东/省份/新一线等大陆专属问题。
+  if (mainland === "no") {
+    if (isMainlandRootQuestion(question)) return true;
+    if (isMainlandOnlyQuestion(question)) return true;
+    if (sourceIs(question, "q_qs_country_003") || /中国大陆|china \(mainland\)/i.test(qText(question))) return true;
+  }
+
+  // 2. 已知是中国大陆，就不要再问港澳台、海外大洲、QS国家这种重复问题。
+  if (mainland === "yes") {
+    if (isHmtRootQuestion(question)) return true;
+    if (isWorldRegionQuestion(question)) return true;
+    if (isQsCountryQuestion(question)) return true;
+  }
+
+  // 3. 已知是港澳台，就不要问中国大陆专属标签。
+  if (hmt === "yes") {
+    if (isMainlandOnlyQuestion(question)) return true;
+    if (isMainlandRootQuestion(question)) return true;
+  }
+
+  // 4. 明确不在QS前1000，就不要再问QS前10/50/100/500、QS国家、QS公私立等问题。
+  if (qs1000 === "no" && isQsQuestion(question)) return true;
+
+  // 5. QS/软科排名用区间边界剪枝：QS前10=是 后，QS前50/100/500/1000 全部跳过。
+  if (questionFamily(question) === "rank") {
+    const threshold = rankThreshold(question);
+    if (threshold !== null) {
+      const bounds = currentRankBounds(answers, questions, askedSet, rankScope(question));
+      if (threshold >= bounds.max) return true;
+      if (threshold < bounds.min) return true;
+    }
+  }
+
+  return false;
+}
+
+function pickQuestion(
+  questions: QuestionMeta[],
+  candidateUnis: Array<{ id: string; props: Record<string, PropVal> }>,
+  askedSet: Set<string>,
+  answers: Record<string, Answer>,
+  predicate: (question: QuestionMeta) => boolean,
+): string | null {
+  let bestId: string | null = null;
+  let bestScore = -Infinity;
+
+  for (const question of questions) {
+    if (shouldSkipByHardRules(question, answers, questions, askedSet)) continue;
+    if (!predicate(question)) continue;
+
+    let yesCount = 0;
+    let noCount = 0;
+    for (const uni of candidateUnis) {
+      const value = uni.props[question.id];
+      if (value === 1) yesCount++;
+      else if (value === -1) noCount++;
+    }
+
+    // 候选集里全是同一个答案的问题没有信息量，直接不要问。
+    if (yesCount === 0 || noCount === 0) continue;
+
+    const balance = Math.min(yesCount, noCount);
+    const coverage = yesCount + noCount;
+    const score = balance * 10 + coverage * 0.02 + question.priority * 0.01;
+    if (score > bestScore) {
+      bestScore = score;
+      bestId = question.id;
+    }
+  }
+
+  return bestId;
+}
+
+function findQuestionBySource(questions: QuestionMeta[], askedSet: Set<string>, sourceId: string): string | null {
+  for (const question of questions) {
+    if (!sourceIs(question, sourceId)) continue;
+    if (askedSet.has(question.id)) return null;
+    return question.id;
+  }
+  return null;
+}
+
 function selectLocationQuestion(
   questions: QuestionMeta[],
   candidateUnis: Array<{ id: string; props: Record<string, PropVal> }>,
   askedSet: Set<string>,
   answers: Record<string, Answer>,
 ): string | null {
-  const locks = buildExclusiveLocks(answers, questions, askedSet);
-  const mainland = answers.q_region_mainland;
-  const hmt = answers.q_region_hmt;
+  const mainland = contextAnswer("q_region_mainland", answers, questions, askedSet);
+  const hmt = contextAnswer("q_region_hmt", answers, questions, askedSet);
 
-  if (!askedSet.has("q_region_mainland")) {
-    return findQuestionById(questions, askedSet, "q_region_mainland");
+  // 第一步必须先分中国大陆/非大陆，因为后面大量问题依赖这个答案。
+  if (!hasAskedSource("q_region_mainland", questions, askedSet)) {
+    return findQuestionBySource(questions, askedSet, "q_region_mainland");
   }
 
   if (mainland === "yes") {
-    const areaDone = hasPositiveAnswerForGroup(answers, questions, askedSet, "china_area");
-    if (!areaDone) {
-      const nextArea = pickQuestion(questions, candidateUnis, askedSet, (q) => {
-        if (questionFamily(q) !== "location") return false;
-        if (questionExclusiveGroup(q) !== "china_area") return false;
-        if (questionBlockedByLocks(q, locks)) return false;
-        return true;
-      });
+    if (!hasPositiveAnswerForGroup(answers, questions, askedSet, "china_area")) {
+      const nextArea = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionExclusiveGroup(q) === "china_area");
       if (nextArea) return nextArea;
     }
 
-    const provinceDone = hasPositiveAnswerForGroup(answers, questions, askedSet, "province");
-    if (!provinceDone) {
-      const nextProvince = pickQuestion(questions, candidateUnis, askedSet, (q) => {
-        if (questionFamily(q) !== "location") return false;
-        if (questionExclusiveGroup(q) !== "province") return false;
-        if (questionBlockedByLocks(q, locks)) return false;
-        return true;
-      });
+    if (!hasPositiveAnswerForGroup(answers, questions, askedSet, "province")) {
+      const nextProvince = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionExclusiveGroup(q) === "province");
       if (nextProvince) return nextProvince;
+    }
+
+    if (!hasPositiveAnswerForGroup(answers, questions, askedSet, "city") && candidateUnis.length > 6) {
+      const nextCity = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionExclusiveGroup(q) === "city");
+      if (nextCity) return nextCity;
     }
 
     return null;
   }
 
   if (mainland === "no") {
-    if (!askedSet.has("q_region_hmt")) {
-      return findQuestionById(questions, askedSet, "q_region_hmt");
+    if (!hasAskedSource("q_region_hmt", questions, askedSet)) {
+      return findQuestionBySource(questions, askedSet, "q_region_hmt");
     }
 
     if (hmt === "yes") return null;
 
-    const worldRegion = pickQuestion(questions, candidateUnis, askedSet, (q) => {
-      if (questionFamily(q) !== "location") return false;
-      if (questionExclusiveGroup(q) !== "region_world") return false;
-      if (questionBlockedByLocks(q, locks)) return false;
-      return true;
-    });
+    const worldRegion = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => isWorldRegionQuestion(q));
     if (worldRegion) return worldRegion;
+
+    const country = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => isQsCountryQuestion(q));
+    if (country) return country;
   }
 
   return null;
@@ -443,34 +458,70 @@ function selectRankQuestion(
   askedSet: Set<string>,
   answers: Record<string, Answer>,
 ): string | null {
-  const locks = buildExclusiveLocks(answers, questions, askedSet);
-  const bounds = currentRankBoundsV2(answers, questions, askedSet);
-  const preferredThresholds = [1000, 500, 200, 100, 50, 10];
+  const mainland = contextAnswer("q_region_mainland", answers, questions, askedSet);
+  const qs1000 = contextAnswer("q_qs1000", answers, questions, askedSet);
 
-  if (bounds.max <= 10) return null;
-
-  for (const threshold of preferredThresholds) {
-    const next = pickQuestion(questions, candidateUnis, askedSet, (q) => {
-      if (questionFamily(q) !== "rank") return false;
-      if (questionBlockedByLocks(q, locks)) return false;
-      const qThreshold = rankThresholdV2(q);
-      if (qThreshold !== threshold) return false;
-      if (qThreshold < bounds.min) return false;
-      if (qThreshold >= bounds.max) return false;
-      return true;
-    });
-    if (next) return next;
+  // 海外/非大陆优先问QS门槛；大陆学校也可以问，但不能把QS问题当成大陆排名问题。
+  if (qs1000 === undefined && (mainland === "no" || candidateUnis.length > 18)) {
+    const gate = findQuestionBySource(questions, askedSet, "q_qs1000");
+    if (gate) return gate;
   }
 
-  return pickQuestion(questions, candidateUnis, askedSet, (q) => {
-    if (questionFamily(q) !== "rank") return false;
-    if (questionBlockedByLocks(q, locks)) return false;
-    const qThreshold = rankThresholdV2(q);
-    if (qThreshold === null) return false;
-    if (qThreshold < bounds.min) return false;
-    if (qThreshold >= bounds.max) return false;
-    return true;
-  });
+  const scopeOrder: RankScope[] = mainland === "yes" ? ["china", "qs", "general"] : ["qs", "general"];
+
+  for (const scope of scopeOrder) {
+    const bounds = currentRankBounds(answers, questions, askedSet, scope);
+    if (bounds.max <= 10) continue;
+
+    const preferredThresholds = scope === "qs" ? [500, 200, 100, 50, 10] : [100, 50, 30, 10];
+    for (const threshold of preferredThresholds) {
+      const next = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => {
+        if (questionFamily(q) !== "rank") return false;
+        if (rankScope(q) !== scope) return false;
+        return rankThreshold(q) === threshold;
+      });
+      if (next) return next;
+    }
+
+    const fallback = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => {
+      if (questionFamily(q) !== "rank") return false;
+      if (rankScope(q) !== scope) return false;
+      return rankThreshold(q) !== null;
+    });
+    if (fallback) return fallback;
+  }
+
+  return null;
+}
+
+export function selectNextQuestion(
+  allUnis: Array<{ id: string; props: Record<string, PropVal> }>,
+  answers: Record<string, Answer>,
+  askedSet: Set<string>,
+  questions: QuestionMeta[],
+  excludedGuessIds: string[] = [],
+): string | null {
+  const viableUnis = getCompatibleUnis(allUnis, answers, excludedGuessIds);
+  const scored = scoreAll(viableUnis, answers);
+  const candidateIds = new Set(scored.filter((s) => s.score >= 0).slice(0, 40).map((s) => s.id));
+  const candidateUnis = viableUnis.filter((u) => candidateIds.has(u.id));
+  if (candidateUnis.length <= 1) return null;
+
+  const locationQuestion = selectLocationQuestion(questions, candidateUnis, askedSet, answers);
+  if (locationQuestion) return locationQuestion;
+
+  const rankQuestion = selectRankQuestion(questions, candidateUnis, askedSet, answers);
+  if (rankQuestion) return rankQuestion;
+
+  if (candidateUnis.length > 8) {
+    const nextMajor = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionFamily(q) === "major");
+    if (nextMajor) return nextMajor;
+  }
+
+  const nextName = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionFamily(q) === "name");
+  if (nextName) return nextName;
+
+  return pickQuestion(questions, candidateUnis, askedSet, answers, () => true);
 }
 
 export function shouldGuess(
@@ -551,7 +602,7 @@ export function handleGuessWrong(
   if (!nextQ) {
     const viableUnis = getCompatibleUnis(allUnis, state.answers, excludedGuessIds);
     const scored = scoreAll(viableUnis, state.answers);
-    const nextGuess = scored[newGuessCount] ?? scored[0];
+    const nextGuess = scored[0];
     return {
       state: {
         ...state,

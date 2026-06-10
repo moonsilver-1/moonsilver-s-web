@@ -131,14 +131,22 @@ function compareArrays(actual: unknown, expected: unknown) {
 function isUniversityLike(entity: RawEntity) {
   const nameZh = toString(entity.name_zh);
   const nameEn = toString(entity.name_en);
-  const combined = `${nameZh} ${nameEn} ${toString(entity.aliases)} ${toString(entity.combined_tags)}`.toLowerCase();
+  const aliasText = toString(entity.aliases);
+  const combined = `${nameZh} ${nameEn} ${aliasText}`.toLowerCase();
 
-  if (combined.includes("\u5b66\u9662") || combined.includes("college") || combined.includes("institute")) {
-    return false;
-  }
-
-  return combined.includes("\u5927\u5b66") || combined.includes("university");
+  // 这里不能排除“学院 / college / institute”。
+  // 否则 MIT、Caltech、国内大量“学院”都会被误删，和“所有学校”的目标冲突。
+  return Boolean(
+    nameZh ||
+      nameEn ||
+      combined.includes("大学") ||
+      combined.includes("学院") ||
+      combined.includes("university") ||
+      combined.includes("college") ||
+      combined.includes("institute"),
+  );
 }
+
 
 function evaluateFeature(entity: RawEntity, feature?: RawFeature): PropVal {
   if (!feature?.field || !feature.operator) return 0;

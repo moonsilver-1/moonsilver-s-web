@@ -307,7 +307,7 @@ export function OracleClient() {
   const handleAnswer = useCallback(
     (answer: Answer) => {
       if (!state.currentQuestionId) return;
-      const result = processAnswer(state, answer, universeResources.universities, universeResources.questions);
+      const result = processAnswer(state, answer, universeResources.universities, universeResources.questions, state.excludedGuessIds);
       setState(result.state);
       setGuessId(result.guessId);
       setShowThinking(result.state.phase === "guessing");
