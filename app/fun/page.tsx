@@ -46,17 +46,23 @@ const entries: Entry[] = [
     description: { zh: "湖州本地玩法白板当万能牌", en: "Huzhou style mahjong with wildcards" },
     note: { zh: "游戏", en: "Game" },
   },
-  {
-    href: "/fun/wolf-chicken",
-    title: { zh: "狼鸡杀", en: "Wolf Chicken" },
-    description: { zh: "猎奇小游戏", en: "Card game with friends' memes" },
-    note: { zh: "桌游", en: "Card Game" },
-  },
+  // {
+  //   href: "/fun/wolf-chicken",
+  //   title: { zh: "狼鸡杀", en: "Wolf Chicken" },
+  //   description: { zh: "猎奇小游戏", en: "Card game with friends' memes" },
+  //   note: { zh: "桌游", en: "Card Game" },
+  // },
   {
     href: "/fun/oracle",
     title: { zh: "猜大学", en: "University Oracle" },
     description: { zh: "想一所大学我来猜", en: "Think of a university, I'll guess it" },
     note: { zh: "游戏", en: "Game" },
+  },
+  {
+    href: "/fun/xigai",
+    title: { zh: "习概刷题", en: "Xigai Quiz" },
+    description: { zh: "969 道单选多选判断，刷题 / 错题 / 模拟考", en: "969 MCQ/TF questions, drill & mock exam" },
+    note: { zh: "复习", en: "Study" },
   },
 ];
 

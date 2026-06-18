@@ -1,0 +1,10106 @@
+[
+  {
+    "id": "1-037",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要更加自觉地坚定中国特色社会主义（），以奋发有为的精神，一以贯之地把新时代中国特色社会主义不断推向前进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "道路自信"
+      },
+      {
+        "key": "B",
+        "text": "理论自信"
+      },
+      {
+        "key": "C",
+        "text": "制度自信"
+      },
+      {
+        "key": "D",
+        "text": "文化自信"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-038",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "科学社会主义基本原则在（）等著作中得到进一步总结和阐发。",
+    "options": [
+      {
+        "key": "A",
+        "text": "《哥达纲领批判》"
+      },
+      {
+        "key": "B",
+        "text": "《德意志意识形态》"
+      },
+      {
+        "key": "C",
+        "text": "《反杜林论》"
+      },
+      {
+        "key": "D",
+        "text": "《关于费尔巴哈的提纲》"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-039",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "改革开放以来我们取得一切成绩和进步的根本原因包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "开辟了中国特色社会主义道路"
+      },
+      {
+        "key": "B",
+        "text": "形成了中国特色社会主义理论体系"
+      },
+      {
+        "key": "C",
+        "text": "确立了中国特色社会主义制度"
+      },
+      {
+        "key": "D",
+        "text": "发展了中国特色社会主义文化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-040",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要准确把握（），推动中国特色社会主义事业沿着正确方向开拓前进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "历史新方位"
+      },
+      {
+        "key": "B",
+        "text": "矛盾新变化"
+      },
+      {
+        "key": "C",
+        "text": "时代新要求"
+      },
+      {
+        "key": "D",
+        "text": "世界新主题"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-041",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大前，党内存在不少落实党的领导弱化、虚化、淡化问题，一些地方和部门（）屡禁不止。",
+    "options": [
+      {
+        "key": "A",
+        "text": "形式主义"
+      },
+      {
+        "key": "B",
+        "text": "官僚主义"
+      },
+      {
+        "key": "C",
+        "text": "享乐主义"
+      },
+      {
+        "key": "D",
+        "text": "奢靡之风"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-042",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大前，（）等错误思潮不时出现，网络舆论乱象丛生。",
+    "options": [
+      {
+        "key": "A",
+        "text": "拜金主义"
+      },
+      {
+        "key": "B",
+        "text": "享乐主义"
+      },
+      {
+        "key": "C",
+        "text": "极端个人主义"
+      },
+      {
+        "key": "D",
+        "text": "历史虚无主义"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-043",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "通过新时代十年全面从严治党的实践，党的（）显著增强。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治领导力"
+      },
+      {
+        "key": "B",
+        "text": "思想引领力"
+      },
+      {
+        "key": "C",
+        "text": "群众组织力"
+      },
+      {
+        "key": "D",
+        "text": "社会号召力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-044",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国共产党自成立以来，就坚持把马克思主义写在自己的旗帜上，不断推进马克思主义中国化时代化，先后取得了毛泽东思想、（）等重大理论成果，以科学理论有力引领推动伟大实践。",
+    "options": [
+      {
+        "key": "A",
+        "text": "邓小平理论"
+      },
+      {
+        "key": "B",
+        "text": "“三个代表”重要思想"
+      },
+      {
+        "key": "C",
+        "text": "科学发展观"
+      },
+      {
+        "key": "D",
+        "text": "习近平新时代中国特色社会主义思想"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-045",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的基本路线明确了中国特色社会主义发展的（）、强国之路和奋斗目标，必须牢牢坚持、毫不动摇。",
+    "options": [
+      {
+        "key": "A",
+        "text": "历史方位"
+      },
+      {
+        "key": "B",
+        "text": "主体力量"
+      },
+      {
+        "key": "C",
+        "text": "兴国之要"
+      },
+      {
+        "key": "D",
+        "text": "立国之本"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-046",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持以经济建设为中心，努力推动社会主义物质文明、（）协调发展，不断推进和拓展中国式现代化，不断丰富和发展人类文明新形态。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治文明"
+      },
+      {
+        "key": "B",
+        "text": "精神文明"
+      },
+      {
+        "key": "C",
+        "text": "社会文明"
+      },
+      {
+        "key": "D",
+        "text": "生态文明"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-047",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新征程上，要在推动经济发展的基础上，建设社会主义市场经济、（），协同推进人民富裕、国家强盛、中国美丽。",
+    "options": [
+      {
+        "key": "A",
+        "text": "民主政治"
+      },
+      {
+        "key": "B",
+        "text": "先进文化"
+      },
+      {
+        "key": "C",
+        "text": "和谐社会"
+      },
+      {
+        "key": "D",
+        "text": "生态文明"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "1-048",
+    "chapter": "第1章",
+    "chapter_index": 1,
+    "number": 48,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们必须与之进行坚决斗争的风险挑战包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "危害中国共产党领导和我国社会主义制度的各种风险挑战"
+      },
+      {
+        "key": "B",
+        "text": "危害我国主权、安全、发展利益的各种风险挑战"
+      },
+      {
+        "key": "C",
+        "text": "危害我国核心利益和重大原则的各种风险挑战"
+      },
+      {
+        "key": "D",
+        "text": "危害我国人民根本利益的各种风险挑战"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "1.md"
+  },
+  {
+    "id": "2-036",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国共产党团结带领中国人民，浴血奋战、百折不挠，推翻（）三座大山，完成了新民主主义革命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "帝国主义"
+      },
+      {
+        "key": "B",
+        "text": "封建主义"
+      },
+      {
+        "key": "C",
+        "text": "官僚资本主义"
+      },
+      {
+        "key": "D",
+        "text": "民族资产阶级"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-037",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国梦是（）的梦，中国人民愿意同各国人民在实现各自梦想的过程中相互支持、相互帮助，在推动实现持久和平、共同繁荣世界梦的崇高事业中作出更大贡献。",
+    "options": [
+      {
+        "key": "A",
+        "text": "和平"
+      },
+      {
+        "key": "B",
+        "text": "发展"
+      },
+      {
+        "key": "C",
+        "text": "合作"
+      },
+      {
+        "key": "D",
+        "text": "共赢"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-038",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我国脱贫攻坚战取得了全面胜利的表现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "现行标准下9899万农村贫困人口全部脱贫"
+      },
+      {
+        "key": "B",
+        "text": "832个贫困县全部摘帽"
+      },
+      {
+        "key": "C",
+        "text": "12.8万个贫困村全部出列"
+      },
+      {
+        "key": "D",
+        "text": "区域性整体贫困得到解决"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-039",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "把我国建设成为富强民主文明和谐美丽的社会主义现代化强国的具体目标包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "我国物质文明、政治文明、精神文明、社会文明、生态文明全面提升"
+      },
+      {
+        "key": "B",
+        "text": "实现国家治理体系和治理能力现代化"
+      },
+      {
+        "key": "C",
+        "text": "成为综合国力和国际影响力领先的国家"
+      },
+      {
+        "key": "D",
+        "text": "全体人民共同富裕基本实现"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-040",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "近代以来中国社会进步的最大阻碍是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "帝国主义"
+      },
+      {
+        "key": "B",
+        "text": "封建主义"
+      },
+      {
+        "key": "C",
+        "text": "民族资产阶级"
+      },
+      {
+        "key": "D",
+        "text": "传统文化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B"
+    ],
+    "answer_text": "AB",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-041",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们党团结带领人民经过（），推翻一切反动势力，建立了人民当家作主的中华人民共和国，实现了民族独立、人民解放。",
+    "options": [
+      {
+        "key": "A",
+        "text": "北伐战争"
+      },
+      {
+        "key": "B",
+        "text": "土地革命战争"
+      },
+      {
+        "key": "C",
+        "text": "抗日战争"
+      },
+      {
+        "key": "D",
+        "text": "解放战争"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-042",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "尽管资本主义制度和西方现代化模式也在不断演变，但始终无法改变（）的本性，给广大发展中国家带来深重苦难。",
+    "options": [
+      {
+        "key": "A",
+        "text": "资本至上"
+      },
+      {
+        "key": "B",
+        "text": "弱肉强食"
+      },
+      {
+        "key": "C",
+        "text": "两极分化"
+      },
+      {
+        "key": "D",
+        "text": "霸道强权"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-043",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国式现代化摒弃了（）的西方现代化老路，打破了只有走资本主义道路才能实现现代化的神话。",
+    "options": [
+      {
+        "key": "A",
+        "text": "以资本为中心"
+      },
+      {
+        "key": "B",
+        "text": "两极分化"
+      },
+      {
+        "key": "C",
+        "text": "物质主义膨胀"
+      },
+      {
+        "key": "D",
+        "text": "对外扩张掠夺"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-044",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国式现代化蕴含的独特世界观、价值观、（）等及其伟大实践，是对世界现代化理论和实践的重大创新。",
+    "options": [
+      {
+        "key": "A",
+        "text": "历史观"
+      },
+      {
+        "key": "B",
+        "text": "文明观"
+      },
+      {
+        "key": "C",
+        "text": "民主观"
+      },
+      {
+        "key": "D",
+        "text": "生态观"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-045",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推进中国式现代化，需要统筹兼顾、系统谋划、整体推进，正确处理顶层设计与实践探索、战略与策略、（）等一系列重大关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "守正与创新"
+      },
+      {
+        "key": "B",
+        "text": "效率与公平"
+      },
+      {
+        "key": "C",
+        "text": "活力与秩序"
+      },
+      {
+        "key": "D",
+        "text": "自立自强与对外开放"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "2-046",
+    "chapter": "第2章",
+    "chapter_index": 2,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "战略是从（）上作出判断和决策。",
+    "options": [
+      {
+        "key": "A",
+        "text": "全局"
+      },
+      {
+        "key": "B",
+        "text": "局部"
+      },
+      {
+        "key": "C",
+        "text": "长远"
+      },
+      {
+        "key": "D",
+        "text": "大势"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "2.md"
+  },
+  {
+    "id": "3-017",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我国在中国共产党领导下实现的成就有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "从四分五裂、一盘散沙到高度统一、民族团结"
+      },
+      {
+        "key": "B",
+        "text": "从积贫积弱、一穷二白到全面小康、繁荣富强"
+      },
+      {
+        "key": "C",
+        "text": "从被动挨打、饱受欺凌到独立自主、坚定自信"
+      },
+      {
+        "key": "D",
+        "text": "仅用几十年时间就走完发达国家几百年走过的工业化历程"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-018",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党领导人民确立并不断巩固我们国家的（）、重要制度和各方面的制度机制，形成了人民当家作主的制度体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国体"
+      },
+      {
+        "key": "B",
+        "text": "政体"
+      },
+      {
+        "key": "C",
+        "text": "根本制度"
+      },
+      {
+        "key": "D",
+        "text": "基本制度"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-019",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党经受了长期历史考验和血与火的洗礼，形成了（）的统一整体。",
+    "options": [
+      {
+        "key": "A",
+        "text": "思想高度统一"
+      },
+      {
+        "key": "B",
+        "text": "组织体系严密"
+      },
+      {
+        "key": "C",
+        "text": "组织纪律严明"
+      },
+      {
+        "key": "D",
+        "text": "遵循苏联模式"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-020",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党始终代表最广大人民的根本利益，能够充分整合（）、各界人士的利益诉求，形成共同意志和奋斗目标，制定和执行正确的路线方针政策并保持稳定性和持续性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "各民主党派"
+      },
+      {
+        "key": "B",
+        "text": "各团体"
+      },
+      {
+        "key": "C",
+        "text": "各民族"
+      },
+      {
+        "key": "D",
+        "text": "各阶层"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-021",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党是全国各族人民众望所归的领导核心，是（）的强大领导力量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "保持社会稳定"
+      },
+      {
+        "key": "B",
+        "text": "推动国家发展"
+      },
+      {
+        "key": "C",
+        "text": "实现祖国统一"
+      },
+      {
+        "key": "D",
+        "text": "维护民族团结"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-022",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持和加强党的全面领导，使党的（）显著增强。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治领导力"
+      },
+      {
+        "key": "B",
+        "text": "思想引领力"
+      },
+      {
+        "key": "C",
+        "text": "群众组织力"
+      },
+      {
+        "key": "D",
+        "text": "社会号召力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-023",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在（）等重大斗争中，党的全面领导的优势得到充分彰显。",
+    "options": [
+      {
+        "key": "A",
+        "text": "反腐败"
+      },
+      {
+        "key": "B",
+        "text": "脱贫攻坚"
+      },
+      {
+        "key": "C",
+        "text": "抗击新冠疫情"
+      },
+      {
+        "key": "D",
+        "text": "应对经贸摩擦"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-024",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "脱贫攻坚是一场必须打赢打好的硬仗，我们党形成和强化了（）的工作机制，确保了最终夺取脱贫攻坚战全面胜利。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中央统筹"
+      },
+      {
+        "key": "B",
+        "text": "省负总责"
+      },
+      {
+        "key": "C",
+        "text": "市县抓落实"
+      },
+      {
+        "key": "D",
+        "text": "村乡出人力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-025",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "没有中国共产党的坚强领导，国家就会失去统一的政治领导核心，就无法避免一些发展中国家出现的（）的灾难性后果。",
+    "options": [
+      {
+        "key": "A",
+        "text": "党派林立"
+      },
+      {
+        "key": "B",
+        "text": "各自为政"
+      },
+      {
+        "key": "C",
+        "text": "社会动荡"
+      },
+      {
+        "key": "D",
+        "text": "民不聊生"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-026",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的领导对象包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人民团体"
+      },
+      {
+        "key": "B",
+        "text": "企事业单位"
+      },
+      {
+        "key": "C",
+        "text": "基层群众性自治组织"
+      },
+      {
+        "key": "D",
+        "text": "社会组织"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-027",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的领导内容包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经济建设"
+      },
+      {
+        "key": "B",
+        "text": "政治建设"
+      },
+      {
+        "key": "C",
+        "text": "文化建设"
+      },
+      {
+        "key": "D",
+        "text": "社会建设"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-028",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的领导是全面的，党既制定路线方针政策，又协调各方、督促落实，党的领导贯穿于（）、监督等各项工作之中。",
+    "options": [
+      {
+        "key": "A",
+        "text": "立法"
+      },
+      {
+        "key": "B",
+        "text": "决策"
+      },
+      {
+        "key": "C",
+        "text": "执行"
+      },
+      {
+        "key": "D",
+        "text": "管理"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-029",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的领导方式包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "制定大政方针"
+      },
+      {
+        "key": "B",
+        "text": "提出立法建议"
+      },
+      {
+        "key": "C",
+        "text": "推荐重要干部"
+      },
+      {
+        "key": "D",
+        "text": "进行思想宣传"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-030",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党在推进各项事业发展中发挥着（）的作用，通过总揽全局、协调各方，把党的领导落实到国家治理各领域各方面各环节。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把方向"
+      },
+      {
+        "key": "B",
+        "text": "谋大局"
+      },
+      {
+        "key": "C",
+        "text": "定政策"
+      },
+      {
+        "key": "D",
+        "text": "促改革"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-031",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党把党的领导系统地贯穿到国家政权的机构、体制、制度等的设计、安排、运行之中，其具体做法包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "改革和完善党和国家机构职能体系"
+      },
+      {
+        "key": "B",
+        "text": "完善党的领导体制和工作机制"
+      },
+      {
+        "key": "C",
+        "text": "完善党中央重大决策部署落实机制"
+      },
+      {
+        "key": "D",
+        "text": "完善党中央决策议事协调机构"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-032",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，以习近平同志为核心的党中央进一步加强对重大工作的领导，建立健全（）、网络信息、外交、审计等领域的决策议事协调机构，完善了党中央对国家重大工作的领导体制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "深化改革"
+      },
+      {
+        "key": "B",
+        "text": "依法治国"
+      },
+      {
+        "key": "C",
+        "text": "经济"
+      },
+      {
+        "key": "D",
+        "text": "国家安全"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-033",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党中央作出一系列重大制度性安排，规定中央政治局全体同志每年向党中央和总书记书面述职，中央书记处和中央纪律检查委员会（国家监察委员会）、全国人大常委会党组、（）每年向中央政治局常委会、中央政治局报告工作。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国务院党组"
+      },
+      {
+        "key": "B",
+        "text": "全国政协党组"
+      },
+      {
+        "key": "C",
+        "text": "最高人民法院党组"
+      },
+      {
+        "key": "D",
+        "text": "最高人民检察院党组"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-034",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的（），是党的领导决策核心。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中央委员会"
+      },
+      {
+        "key": "B",
+        "text": "中央政治局"
+      },
+      {
+        "key": "C",
+        "text": "中央政治局常委会"
+      },
+      {
+        "key": "D",
+        "text": "各级地方委员会"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-035",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要完善贯彻党中央重大决策部署的（）、跟踪问效、监督问责等全链条工作机制，确保党中央政令畅通、令行禁止。",
+    "options": [
+      {
+        "key": "A",
+        "text": "任务分工"
+      },
+      {
+        "key": "B",
+        "text": "督办落实"
+      },
+      {
+        "key": "C",
+        "text": "定期报告"
+      },
+      {
+        "key": "D",
+        "text": "检查通报"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-036",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "完善党在各种组织中发挥领导作用的制度，就要完善党领导（）的体制机制，确保各级党委在同级各种组织中更好发挥领导核心作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人民团体"
+      },
+      {
+        "key": "B",
+        "text": "企事业单位"
+      },
+      {
+        "key": "C",
+        "text": "基层群众性自治组织"
+      },
+      {
+        "key": "D",
+        "text": "社会组织"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "3.md"
+  },
+  {
+    "id": "4-012",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 12,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "习近平指出：“江山就是人民，人民就是江山。中国共产党领导人民打江山、守江山，守的是人民的心。”坚持人民立场，就要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持以人民为中心的执政理念"
+      },
+      {
+        "key": "B",
+        "text": "保持同人民群众的血肉联系"
+      },
+      {
+        "key": "C",
+        "text": "接受人民批评和监督"
+      },
+      {
+        "key": "D",
+        "text": "同人民同呼吸、共命运、心连心"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-013",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 13,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "不忘初心，牢记使命，我们党才能在极端困境中发展壮大，才能在濒临绝境中突出重围，才能在困顿逆境中毅然奋起。忘记党的初心和使命，党就会（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "改变性质"
+      },
+      {
+        "key": "B",
+        "text": "改变颜色"
+      },
+      {
+        "key": "C",
+        "text": "失去未来"
+      },
+      {
+        "key": "D",
+        "text": "失去人民"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-014",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 14,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，我国社会主要矛盾发生了转化，人民的美好生活需要呈现出（）的特点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "多样化"
+      },
+      {
+        "key": "B",
+        "text": "多层次"
+      },
+      {
+        "key": "C",
+        "text": "多方面"
+      },
+      {
+        "key": "D",
+        "text": "两极化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-015",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 15,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们党历来尊重人民首创精神，始终把人民群众作为智慧和力量的源泉。以下选项中，生动体现了人民首创精神的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "凤阳县小岗村农民以“包产到户”肇始的农村家庭联产承包责任制"
+      },
+      {
+        "key": "B",
+        "text": "温州群众“靠剪刀闯天下”带动兴起的乡镇企业"
+      },
+      {
+        "key": "C",
+        "text": "广西壮族自治区宜山市农民首创的“村民自治”"
+      },
+      {
+        "key": "D",
+        "text": "河南林县“十万农民建筑大军出太行”的民工潮"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-016",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 16,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "群众路线是我们党始终坚持的根本工作方法。关于坚持群众路线，下列说法中正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "要坚持问政于民、问需于民、问计于民"
+      },
+      {
+        "key": "B",
+        "text": "要以务实的作风争取人民群众满意的实效"
+      },
+      {
+        "key": "C",
+        "text": "要接受群众监督，诚恳请群众评判"
+      },
+      {
+        "key": "D",
+        "text": "要把人民群众的意愿和要求作为制定路线方针政策的基本依据"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-017",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "贯彻党的群众路线，使群众路线落地稳、扎根深，融入经济社会发展全过程，贯穿到党的全部工作中，就要善于（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "从群众的实践创造和发展要求中完善政策主张"
+      },
+      {
+        "key": "B",
+        "text": "通过提出和贯彻正确的路线方针政策带领人民前进"
+      },
+      {
+        "key": "C",
+        "text": "从群众中寻找解决问题的方案和办法"
+      },
+      {
+        "key": "D",
+        "text": "打造形象工程和政绩工程"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-018",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "没有调查就没有发言权。开展调查研究的基本要求有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "深入基层，听真话、察实情"
+      },
+      {
+        "key": "B",
+        "text": "坚持问题导向，增强问题意识"
+      },
+      {
+        "key": "C",
+        "text": "要到困难较多、情况复杂、矛盾尖锐的地方去把脉问诊"
+      },
+      {
+        "key": "D",
+        "text": "要在深入分析思考上下功夫"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-019",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持以人民为中心的发展思想，不是一句空洞口号，不能只停留在口头上、止步于思想环节。关于为人民造福，以下说法中正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "要落实到新时代中国特色社会主义的各项事业、全部工作之中"
+      },
+      {
+        "key": "B",
+        "text": "短期目标向发达国家看齐"
+      },
+      {
+        "key": "C",
+        "text": "要着力解决好人民群众最关心最直接最现实的利益问题"
+      },
+      {
+        "key": "D",
+        "text": "要一件事情接着一件事情办，一年接着一年干"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-020",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "解决好人民群众最关心最直接最现实的利益问题，要注意（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把群众的小事当作大事来办"
+      },
+      {
+        "key": "B",
+        "text": "从最困难的群体入手"
+      },
+      {
+        "key": "C",
+        "text": "建立健全困难群众帮扶工作机制"
+      },
+      {
+        "key": "D",
+        "text": "聚焦群众亟待解决的痛点难点问题"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-021",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要着力健全为人民执政靠人民执政各项制度、社会公平正义法治保障制度、（）等，把以人民为中心的发展思想通过制度落到实处。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人民文化权益保障制度"
+      },
+      {
+        "key": "B",
+        "text": "统筹城乡的民生保障制度"
+      },
+      {
+        "key": "C",
+        "text": "共建共治共享的社会治理制度"
+      },
+      {
+        "key": "D",
+        "text": "最严格的生态环境保护制度"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-022",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "必须把实现人民对美好生活的向往作为现代化建设的出发点和落脚点，在推动高质量发展的同时，解决好（），着力维护和促进社会公平正义，坚决防止两极分化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "地区差距"
+      },
+      {
+        "key": "B",
+        "text": "城乡差距"
+      },
+      {
+        "key": "C",
+        "text": "收入分配差距"
+      },
+      {
+        "key": "D",
+        "text": "生活习惯差异"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-023",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，以习近平同志为核心的党中央始终把增进人民福祉放在重要位置。我国保障和改善民生的措施有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "推动城乡区域协调发展"
+      },
+      {
+        "key": "B",
+        "text": "打赢脱贫攻坚战"
+      },
+      {
+        "key": "C",
+        "text": "全面建成小康社会"
+      },
+      {
+        "key": "D",
+        "text": "深入打好污染防治攻坚战"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-024",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "扎实推进共同富裕，要正确处理效率和公平的关系，构建（）协调配套的基础性制度安排。",
+    "options": [
+      {
+        "key": "A",
+        "text": "初次分配"
+      },
+      {
+        "key": "B",
+        "text": "再分配"
+      },
+      {
+        "key": "C",
+        "text": "三次分配"
+      },
+      {
+        "key": "D",
+        "text": "平均分配"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "4.md"
+  },
+  {
+    "id": "5-015",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 15,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "改革开放是一场深刻而全面的社会变革，全面深化改革开放是一场（）的深刻变革。",
+    "options": [
+      {
+        "key": "A",
+        "text": "思想理论"
+      },
+      {
+        "key": "B",
+        "text": "改革组织方式"
+      },
+      {
+        "key": "C",
+        "text": "国家制度和治理体系"
+      },
+      {
+        "key": "D",
+        "text": "人民广泛参与"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-016",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 16,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面深化改革，必须着眼改革的（），全面系统整体推进各方面改革，使社会主义制度的优越性得到更好发挥。",
+    "options": [
+      {
+        "key": "A",
+        "text": "关联性"
+      },
+      {
+        "key": "B",
+        "text": "速效性"
+      },
+      {
+        "key": "C",
+        "text": "系统性"
+      },
+      {
+        "key": "D",
+        "text": "可行性"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-017",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新时代的改革开放是（）的，取得的成就是历史性、革命性、开创性的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "全方位"
+      },
+      {
+        "key": "B",
+        "text": "深层次"
+      },
+      {
+        "key": "C",
+        "text": "根本性"
+      },
+      {
+        "key": "D",
+        "text": "速效性"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-018",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "“三个进一步解放”既是改革的目的，又是改革的条件，它们具体是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进一步释放生态红利"
+      },
+      {
+        "key": "B",
+        "text": "进一步解放思想"
+      },
+      {
+        "key": "C",
+        "text": "进一步解放和发展社会生产力"
+      },
+      {
+        "key": "D",
+        "text": "进一步解放和增强社会活力"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-019",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "“完善和发展中国特色社会主义制度”，规定了改革的根本方向，就是无论改什么、怎么改，都要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持中国共产党领导"
+      },
+      {
+        "key": "B",
+        "text": "坚持中国特色社会主义"
+      },
+      {
+        "key": "C",
+        "text": "推动中国特色社会主义制度更加成熟"
+      },
+      {
+        "key": "D",
+        "text": "更好发挥中国特色社会主义制度的优越性"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-020",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国特色社会主义制度和国家治理体系是在中国的社会土壤中生长起来的，是马克思主义国家理论指导我国制度建设实践的成果，是经过革命、建设、改革长期探索形成的，凝结着党和人民的智慧，具有深厚的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "理论渊源"
+      },
+      {
+        "key": "B",
+        "text": "历史基础"
+      },
+      {
+        "key": "C",
+        "text": "文化底蕴"
+      },
+      {
+        "key": "D",
+        "text": "现实依据"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-021",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推进社会主义事业，必须发挥历史主动性和创造性，以（）的马克思主义为指导，大力推进实践基础上的理论创新、制度创新、文化创新以及其他各方面创新，不断推进中国特色社会主义制度更加成熟更加定型，不断提高国家治理体系和治理能力现代化水平。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中国化"
+      },
+      {
+        "key": "B",
+        "text": "时代化"
+      },
+      {
+        "key": "C",
+        "text": "国际化"
+      },
+      {
+        "key": "D",
+        "text": "普适化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B"
+    ],
+    "answer_text": "AB",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-022",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要深化社会主义市场经济体制改革，形成有利于（）的体制机制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "贯彻新发展理念"
+      },
+      {
+        "key": "B",
+        "text": "构建新发展格局"
+      },
+      {
+        "key": "C",
+        "text": "推动高质量发展"
+      },
+      {
+        "key": "D",
+        "text": "发挥政府决定性作用"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "5.md"
+  },
+  {
+    "id": "6-033",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新发展阶段，我国发展的国内外环境进一步发生深刻变化，面对（），需要解决的矛盾和问题比以往更加错综复杂。",
+    "options": [
+      {
+        "key": "A",
+        "text": "新的战略机遇"
+      },
+      {
+        "key": "B",
+        "text": "新的战略环境"
+      },
+      {
+        "key": "C",
+        "text": "新的战略任务"
+      },
+      {
+        "key": "D",
+        "text": "新的战略要求"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-034",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "开放是国家繁荣发展的必由之路，必须推动形成（）的对外开放格局，不断增强我国国际经济合作和竞争新优势。",
+    "options": [
+      {
+        "key": "A",
+        "text": "更大范围"
+      },
+      {
+        "key": "B",
+        "text": "更慢节奏"
+      },
+      {
+        "key": "C",
+        "text": "更宽领域"
+      },
+      {
+        "key": "D",
+        "text": "更深层次"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-035",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推动高质量发展，必须以新发展理念为引领，深入推进发展方式、发展动力、发展领域、发展质量变革，实现更高质量、（）的发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "更加公平"
+      },
+      {
+        "key": "B",
+        "text": "更可持续"
+      },
+      {
+        "key": "C",
+        "text": "更有效率"
+      },
+      {
+        "key": "D",
+        "text": "更为安全"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-036",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，以习近平同志为核心的党中央着眼于更好发挥社会主义制度优越性、推动高质量发展，对社会主义基本经济制度作出新概括，将（）等共同作为社会主义基本经济制度。",
+    "options": [
+      {
+        "key": "A",
+        "text": "公有制为主体、多种所有制经济共同发展"
+      },
+      {
+        "key": "B",
+        "text": "社会主义计划经济体制"
+      },
+      {
+        "key": "C",
+        "text": "按劳分配为主体、多种分配方式并存"
+      },
+      {
+        "key": "D",
+        "text": "社会主义市场经济体制"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-037",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "2022年12月15日，习近平在中央经济工作会议上讲话指出，要切实落实“两个毫不动摇”。“两个毫不动摇”是指（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "毫不动摇巩固市场在资源配置中起基础性作用"
+      },
+      {
+        "key": "B",
+        "text": "毫不动摇鼓励、支持、引导非公有制经济发展"
+      },
+      {
+        "key": "C",
+        "text": "毫不动摇支持和促进国有企业私有化进程"
+      },
+      {
+        "key": "D",
+        "text": "毫不动摇巩固和发展公有制经济"
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ],
+    "answer_text": "BD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-038",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在中国共产党领导和我国社会主义制度下，国有企业不仅要，而且一定要办好。要坚持（）的方针，深化国资国企改革，推动国有资本和国有企业做强做优做大。",
+    "options": [
+      {
+        "key": "A",
+        "text": "有利于国有企业私有化"
+      },
+      {
+        "key": "B",
+        "text": "有利于国有资产保值增值"
+      },
+      {
+        "key": "C",
+        "text": "有利于提高国有经济竞争力"
+      },
+      {
+        "key": "D",
+        "text": "有利于放大国有资本功能"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-039",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "公有制经济和非公有制经济都是社会主义市场经济的重要组成部分，都是我国经济社会发展的重要基础。非公有制经济包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "私营经济"
+      },
+      {
+        "key": "B",
+        "text": "港澳台投资经济"
+      },
+      {
+        "key": "C",
+        "text": "外商投资经济"
+      },
+      {
+        "key": "D",
+        "text": "集体经济"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-040",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "关于宏观调控的主要任务，下列说法中正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "保持经济总量平衡"
+      },
+      {
+        "key": "B",
+        "text": "促进重大经济结构协调和生产力布局优化"
+      },
+      {
+        "key": "C",
+        "text": "消除经济周期波动影响"
+      },
+      {
+        "key": "D",
+        "text": "防范区域性、系统性风险"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-041",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "如果经济循环过程中出现堵点、断点，循环就会受阻，在微观上就会表现为（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国际收支失衡"
+      },
+      {
+        "key": "B",
+        "text": "失业增加"
+      },
+      {
+        "key": "C",
+        "text": "产能过剩"
+      },
+      {
+        "key": "D",
+        "text": "企业效益下降"
+      }
+    ],
+    "answer": [
+      "C",
+      "D"
+    ],
+    "answer_text": "CD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-042",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推动构建新发展格局，要把增强产业链韧性和竞争力放在更加重要的位置，推动（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "短板产业补链"
+      },
+      {
+        "key": "B",
+        "text": "优势产业延链"
+      },
+      {
+        "key": "C",
+        "text": "传统产业升链"
+      },
+      {
+        "key": "D",
+        "text": "新兴产业建链"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-043",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "以下选项中，属于乡村振兴战略总要求的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "产业兴旺"
+      },
+      {
+        "key": "B",
+        "text": "生态宜居"
+      },
+      {
+        "key": "C",
+        "text": "乡风文明"
+      },
+      {
+        "key": "D",
+        "text": "治理有效"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-044",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "促进区域协调发展，就要健全主体功能区制度，逐步形成（）空间格局。",
+    "options": [
+      {
+        "key": "A",
+        "text": "城市化地区"
+      },
+      {
+        "key": "B",
+        "text": "生态功能区"
+      },
+      {
+        "key": "C",
+        "text": "农产品主产区"
+      },
+      {
+        "key": "D",
+        "text": "自由贸易区"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "6.md"
+  },
+  {
+    "id": "7-010",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 10,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "改革开放后，党把教育、科技和人才摆在经济社会发展的重要位置，深入实施（），不断完善国家创新体系、建设创新性国家。",
+    "options": [
+      {
+        "key": "A",
+        "text": "西部大开发战略"
+      },
+      {
+        "key": "B",
+        "text": "知识创新工程"
+      },
+      {
+        "key": "C",
+        "text": "科教兴国战略"
+      },
+      {
+        "key": "D",
+        "text": "人才强国战略"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-011",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 11,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，党中央高度重视教育事业，把教育摆在优先发展的战略位置，将公平和质量作为主要追求。我国现在教育事业取得的成就包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "教育现代化发展总体水平跨入世界中上国家行列"
+      },
+      {
+        "key": "B",
+        "text": "教育普及水平实现历史性跨越"
+      },
+      {
+        "key": "C",
+        "text": "人民群众教育获得感不断增强"
+      },
+      {
+        "key": "D",
+        "text": "教育服务发展能力全面提升"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-012",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 12,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "目前我国已经进入创新型国家行列，具体表现有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "基础研究和原始创新不断加强"
+      },
+      {
+        "key": "B",
+        "text": "一些关键核心技术实现突破"
+      },
+      {
+        "key": "C",
+        "text": "战略性新兴产业发展壮大"
+      },
+      {
+        "key": "D",
+        "text": "只重视学历的人才考核机制已经成熟"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-013",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 13,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我国正进入高质量发展阶段，面临（）的繁重任务，迫切需要教育、科技、人才提供新的动能。",
+    "options": [
+      {
+        "key": "A",
+        "text": "质量变革"
+      },
+      {
+        "key": "B",
+        "text": "效率变革"
+      },
+      {
+        "key": "C",
+        "text": "供给变革"
+      },
+      {
+        "key": "D",
+        "text": "动力变革"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-014",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 14,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "实施科教兴国战略，促进教育同经济、科技的紧密结合，要把经济建设转到依靠（）的轨道上来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "军民融合"
+      },
+      {
+        "key": "B",
+        "text": "科技进步"
+      },
+      {
+        "key": "C",
+        "text": "吸引外资"
+      },
+      {
+        "key": "D",
+        "text": "提高劳动者素质"
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ],
+    "answer_text": "BD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-015",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 15,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "实施创新驱动发展战略，就要坚持面向（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "世界科技前沿"
+      },
+      {
+        "key": "B",
+        "text": "经济主战场"
+      },
+      {
+        "key": "C",
+        "text": "国家重大需求"
+      },
+      {
+        "key": "D",
+        "text": "人民生命健康"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-016",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 16,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "实施创新驱动发展战略，以国家战略需求为导向，要坚持（）双轮驱动。",
+    "options": [
+      {
+        "key": "A",
+        "text": "科技创新"
+      },
+      {
+        "key": "B",
+        "text": "国际人才交流"
+      },
+      {
+        "key": "C",
+        "text": "流程创新"
+      },
+      {
+        "key": "D",
+        "text": "经济效益"
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ],
+    "answer_text": "AD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-017",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在组织领导、发展规划、资源保障上为教育提供有力支持，就要做到（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经济社会发展规划优先安排教育发展"
+      },
+      {
+        "key": "B",
+        "text": "财政资金投入优先保障教育投入"
+      },
+      {
+        "key": "C",
+        "text": "公共资源配置优先满足教育和人力资源开发需要"
+      },
+      {
+        "key": "D",
+        "text": "切实提高教育经费投入的市场转化率"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-018",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下面各项中，属于坚持人才引领驱动做法的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把人才资源开发放在最优先位置"
+      },
+      {
+        "key": "B",
+        "text": "促进人才区域合理布局和协调发展"
+      },
+      {
+        "key": "C",
+        "text": "按照创新规律培养和吸引人才"
+      },
+      {
+        "key": "D",
+        "text": "按照市场规律让人才自由流动"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-019",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "为更好推动动实现教育同党和国家事业发展要求相适应、同人民群众期待相契合、同我国综合国力和国际地位相匹配，就必须坚持教育（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为人民服务"
+      },
+      {
+        "key": "B",
+        "text": "为中国共产党治国理政服务"
+      },
+      {
+        "key": "C",
+        "text": "为巩固和发展中国特色社会主义制度服务"
+      },
+      {
+        "key": "D",
+        "text": "为改革开放和社会主义现代化建设服务"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-020",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "办好中国特色社会主义教育，必须（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持党对教育工作的全面领导"
+      },
+      {
+        "key": "B",
+        "text": "坚持党的教育方针"
+      },
+      {
+        "key": "C",
+        "text": "坚持社会主义办学方向"
+      },
+      {
+        "key": "D",
+        "text": "坚持以效用为首要标准"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-021",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下列各项中，属于我们所培养的社会主义建设者和接班人的特质的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚定共产主义远大理想和中国特色社会主义共同理想"
+      },
+      {
+        "key": "B",
+        "text": "有高尚的道德品质"
+      },
+      {
+        "key": "C",
+        "text": "有刻苦学习的习惯"
+      },
+      {
+        "key": "D",
+        "text": "积极投身社会实践"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-022",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "各级各类学校都要把立德树人作为教育的根本任务，融入（）各个环节，贯穿基础教育、职业教育、高等教育各领域。",
+    "options": [
+      {
+        "key": "A",
+        "text": "思想道德教育"
+      },
+      {
+        "key": "B",
+        "text": "文化知识教育"
+      },
+      {
+        "key": "C",
+        "text": "专业知识教育"
+      },
+      {
+        "key": "D",
+        "text": "社会实践教育"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-023",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下列做法中，属于改进科技项目组织管理方式的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "完善覆盖全学段学生资助体系"
+      },
+      {
+        "key": "B",
+        "text": "完善科技评价机制"
+      },
+      {
+        "key": "C",
+        "text": "扩大科研自主权"
+      },
+      {
+        "key": "D",
+        "text": "加强知识产权保护"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-024",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "自主创新确保国家拥有自主可控的创新能力，抓住了自主创新，就抓住了（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "科学技术发展的战略基点"
+      },
+      {
+        "key": "B",
+        "text": "科研领域政治生态的净化路径"
+      },
+      {
+        "key": "C",
+        "text": "结构调整和增长方式转变的中心环节"
+      },
+      {
+        "key": "D",
+        "text": "把握战略机遇期、实现经济长期稳定较快发展的关键"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-025",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在增强自主创新能力上，我们面临（）等问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "原始创新能力还不强"
+      },
+      {
+        "key": "B",
+        "text": "集成创新整体效能还不高"
+      },
+      {
+        "key": "C",
+        "text": "整体重视程度还不够"
+      },
+      {
+        "key": "D",
+        "text": "开放创新还需进一步加强"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-026",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "把握科技发展的大趋势，下好自主创新的先手棋，要有组织地推进（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "战略导向的体系化基础研究"
+      },
+      {
+        "key": "B",
+        "text": "前沿导向的探索性基础研究"
+      },
+      {
+        "key": "C",
+        "text": "高论文产量的跨学科研究"
+      },
+      {
+        "key": "D",
+        "text": "市场导向的应用性基础研究"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-027",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "做好基础研究，要坚持做好（）的结合。",
+    "options": [
+      {
+        "key": "A",
+        "text": "效益导向"
+      },
+      {
+        "key": "B",
+        "text": "目标导向"
+      },
+      {
+        "key": "C",
+        "text": "自由探索"
+      },
+      {
+        "key": "D",
+        "text": "固定任务"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "answer_text": "BC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-028",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，党中央深刻把握人才工作规律，作出全方位培养、引进、使用人才的重大部署，有力地推动了（），为实施创新驱动发展战略、建设创新型国家发挥了重要支撑作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人才配置完全均衡"
+      },
+      {
+        "key": "B",
+        "text": "人才队伍快速壮大"
+      },
+      {
+        "key": "C",
+        "text": "人才效能持续增强"
+      },
+      {
+        "key": "D",
+        "text": "人才比较优势稳步增强"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-029",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "功以才成，业由才广。经过长期努力，我国已经拥有一支（）的人才队伍。",
+    "options": [
+      {
+        "key": "A",
+        "text": "规模宏大"
+      },
+      {
+        "key": "B",
+        "text": "素质优良"
+      },
+      {
+        "key": "C",
+        "text": "结构不断优化"
+      },
+      {
+        "key": "D",
+        "text": "作用日益突出"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-030",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "对人才的培养、使用、评价、服务、支持、激励等方面存在的体制机制障碍包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "唯论文"
+      },
+      {
+        "key": "B",
+        "text": "唯职称"
+      },
+      {
+        "key": "C",
+        "text": "唯学历"
+      },
+      {
+        "key": "D",
+        "text": "唯奖项"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-031",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "培养造就大批德才兼备的高素质人才要遵循（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "社会主义市场经济规律"
+      },
+      {
+        "key": "B",
+        "text": "资本逻辑"
+      },
+      {
+        "key": "C",
+        "text": "舆论导向"
+      },
+      {
+        "key": "D",
+        "text": "人才成长规律"
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ],
+    "answer_text": "AD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-032",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "培养造就大批德才兼备的高素质人才要以（）为导向。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国家发展需要"
+      },
+      {
+        "key": "B",
+        "text": "少部分特殊需求"
+      },
+      {
+        "key": "C",
+        "text": "社会需求"
+      },
+      {
+        "key": "D",
+        "text": "有效行动"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-033",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深化人才发展体制机制改革，要建立健全以（）为导向的评价体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "创新能力"
+      },
+      {
+        "key": "B",
+        "text": "质量"
+      },
+      {
+        "key": "C",
+        "text": "资历"
+      },
+      {
+        "key": "D",
+        "text": "贡献"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-034",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "把各方面优秀人才集聚到党和国家事业中来，坚持营造（）的环境是做好人才工作的社会条件。",
+    "options": [
+      {
+        "key": "A",
+        "text": "识才"
+      },
+      {
+        "key": "B",
+        "text": "爱才"
+      },
+      {
+        "key": "C",
+        "text": "敬才"
+      },
+      {
+        "key": "D",
+        "text": "用才"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-035",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在全社会积极营造鼓励（）的良好氛围，既要重视成功，更要宽容失败，推动形成尊重人才的风尚。",
+    "options": [
+      {
+        "key": "A",
+        "text": "大胆创新"
+      },
+      {
+        "key": "B",
+        "text": "勇于创新"
+      },
+      {
+        "key": "C",
+        "text": "包容创新"
+      },
+      {
+        "key": "D",
+        "text": "保险守成"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "7.md"
+  },
+  {
+    "id": "8-022",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "以下关于我国的社会主义民主政治制度，正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "能够有效调节国家政治关系"
+      },
+      {
+        "key": "B",
+        "text": "能够有效保证人民享有更加广泛、更加充实的权利和自由"
+      },
+      {
+        "key": "C",
+        "text": "能够集中力量办大事，有效促进社会生产力解放和发展"
+      },
+      {
+        "key": "D",
+        "text": "能够有效维护国家独立自主，有力维护国家主权、安全、发展利益"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-023",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "评价一个国家政治制度是不是民主的、有效的，主要看（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国家领导层能否依法有序更替"
+      },
+      {
+        "key": "B",
+        "text": "权力运用能否得到有效制约和监督"
+      },
+      {
+        "key": "C",
+        "text": "人民群众能否畅通表达利益要求"
+      },
+      {
+        "key": "D",
+        "text": "社会各方面能否有效参与国家政治生活"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-024",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "走中国特色社会主义政治发展道路，必须坚持（）有机统一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "文化产业繁荣"
+      },
+      {
+        "key": "B",
+        "text": "党的领导"
+      },
+      {
+        "key": "C",
+        "text": "人民当家作主"
+      },
+      {
+        "key": "D",
+        "text": "依法治国"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-025",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全过程人民民主是社会主义民主政治的本质属性，是（）的民主。",
+    "options": [
+      {
+        "key": "A",
+        "text": "最广泛"
+      },
+      {
+        "key": "B",
+        "text": "最真实"
+      },
+      {
+        "key": "C",
+        "text": "最管用"
+      },
+      {
+        "key": "D",
+        "text": "最优越"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-026",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "习近平总书记在（）等场合多次阐述“全过程人民民主”，极大丰富了中国特色社会主义民主政治理论，为新时代政治建设和民主发展提供了科学指南。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中央人大工作会议"
+      },
+      {
+        "key": "B",
+        "text": "党的二十大"
+      },
+      {
+        "key": "C",
+        "text": "党的十九届六中全会"
+      },
+      {
+        "key": "D",
+        "text": "庆祝中国共产党成立100周年大会"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-027",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全过程人民民主是全链条的民主，体现在（）环节中。",
+    "options": [
+      {
+        "key": "A",
+        "text": "民主选举"
+      },
+      {
+        "key": "B",
+        "text": "民主协商"
+      },
+      {
+        "key": "C",
+        "text": "民主管理"
+      },
+      {
+        "key": "D",
+        "text": "民主监督"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-028",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全过程人民民主把（）紧密融合在一起，充分彰显了人民的主体地位，彰显了人民民主的真实性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "世界精神"
+      },
+      {
+        "key": "B",
+        "text": "党的主张"
+      },
+      {
+        "key": "C",
+        "text": "国家意志"
+      },
+      {
+        "key": "D",
+        "text": "人民意愿"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-029",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全过程人民民主具有显著的实践优越性，是最管用的民主，具体体现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "在党的领导下有效治理国家，切实防止出现群龙无首、一盘散沙的现象"
+      },
+      {
+        "key": "B",
+        "text": "发展基层民主，切实防止出现人民形式上有权、实际上无权的现象"
+      },
+      {
+        "key": "C",
+        "text": "人民依法行使权利，切实防止出现选举时漫天许诺、选举后无人过问的现象"
+      },
+      {
+        "key": "D",
+        "text": "加强社会各种力量的合作协调，切实防止出现党争纷沓、相互倾轧的现象"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-030",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全过程人民民主体现了社会主义民主的优势，这体现在（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "形成治国理政的强大合力，切实防止出现相互掣肘、内耗严重的现象"
+      },
+      {
+        "key": "B",
+        "text": "巩固平等团结互助和谐的社会主义民族关系，切实防止出现民族隔阂、民族冲突的现象"
+      },
+      {
+        "key": "C",
+        "text": "保证人民依法行使权利，切实防止出现选举时漫天许诺、选举后无人过问的现象"
+      },
+      {
+        "key": "D",
+        "text": "发展基层民主，切实防止出现人民形式上有权、实际上无权的现象"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-031",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加强人民当家作主制度保障，要（），以此有效保证党的主张、国家意志、人民意愿相统一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持和完善我国根本政治制度、基本政治制度、重要政治制度"
+      },
+      {
+        "key": "B",
+        "text": "毫不动摇鼓励、支持、引导非公有制经济发展"
+      },
+      {
+        "key": "C",
+        "text": "构建多样、畅通、有序的民主渠道"
+      },
+      {
+        "key": "D",
+        "text": "坚持和完善统筹城乡的民生保障制度和共建共治共享的社会治理制度"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-032",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "人民通过选举、投票行使权利和人民内部各方面在重大决策之前进行充分协商，尽可能就共同性问题取得一致意见。对于这二者之间的关系，说法错误的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "相互替代"
+      },
+      {
+        "key": "B",
+        "text": "相互补充"
+      },
+      {
+        "key": "C",
+        "text": "相得益彰"
+      },
+      {
+        "key": "D",
+        "text": "相互否定"
+      }
+    ],
+    "answer": [
+      "A",
+      "D"
+    ],
+    "answer_text": "AD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-033",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加强和促进海内外中华儿女大团结要把握好（）的关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "固守圆心和扩大共识"
+      },
+      {
+        "key": "B",
+        "text": "潜绩和显绩"
+      },
+      {
+        "key": "C",
+        "text": "原则性和灵活性"
+      },
+      {
+        "key": "D",
+        "text": "团结和斗争"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "8.md"
+  },
+  {
+    "id": "9-024",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "（）等历史和现实告诉我们，法治兴则国兴，法治强则国强。",
+    "options": [
+      {
+        "key": "A",
+        "text": "从我国古代看，凡属盛世都是法制相对健全的时期"
+      },
+      {
+        "key": "B",
+        "text": "从世界历史看，国家强盛往往同法治相伴而生"
+      },
+      {
+        "key": "C",
+        "text": "近代以来，一些快速发展的国家没有顺利迈进现代化的门槛，很大程度上与法治不彰有关"
+      },
+      {
+        "key": "D",
+        "text": "新中国成立以来，我们党越来越深刻认识到，法治是治国理政不可或缺的重要手段"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-025",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要把（）落实到全面依法治国各领域全过程，保证人民充分行使当家作主的权利，保证人民依法享有广泛的权利和自由、承担应尽的义务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "体现人民利益"
+      },
+      {
+        "key": "B",
+        "text": "反映人民愿望"
+      },
+      {
+        "key": "C",
+        "text": "维护人民权益"
+      },
+      {
+        "key": "D",
+        "text": "增进人民福祉"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-026",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面依法治国必须正确处理（）的关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治和法治"
+      },
+      {
+        "key": "B",
+        "text": "改革和法治"
+      },
+      {
+        "key": "C",
+        "text": "依法治国和以德治国"
+      },
+      {
+        "key": "D",
+        "text": "依法治国和依规治党"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-027",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面依法治国可以进一步（），更好地完成党的执政使命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "巩固党的执政地位"
+      },
+      {
+        "key": "B",
+        "text": "改变党的执政目的"
+      },
+      {
+        "key": "C",
+        "text": "改善党的执政方式"
+      },
+      {
+        "key": "D",
+        "text": "提高党的执政能力"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-028",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设中国特色社会主义法治体系、建设社会主义法治国家是实现国家治理体系和治理能力现代化的必然要求，也是全面深化改革的必然要求，有利于（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "在法治轨道上推进国家治理体系和治理能力现代化"
+      },
+      {
+        "key": "B",
+        "text": "让我国法律与西方法律的内核更加接近和统一"
+      },
+      {
+        "key": "C",
+        "text": "在全面深化改革总体框架内推进全面依法治国各项工作"
+      },
+      {
+        "key": "D",
+        "text": "在法治轨道上不断深化改革"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-029",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持依宪治国、依宪执政，必须全面贯彻实施宪法，必须（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持和加强党对宪法工作的全面领导"
+      },
+      {
+        "key": "B",
+        "text": "把宪法实施贯穿到治国理政各方面全过程"
+      },
+      {
+        "key": "C",
+        "text": "加快完善以宪法为核心的中国特色社会主义法律体系"
+      },
+      {
+        "key": "D",
+        "text": "健全保证宪法全面实施的制度体系"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-030",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "更好推进中国特色社会主义法治体系建设，必须加快形成（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "完备的法律规范体系"
+      },
+      {
+        "key": "B",
+        "text": "高效的法治实施体系"
+      },
+      {
+        "key": "C",
+        "text": "严密的法治监督体系"
+      },
+      {
+        "key": "D",
+        "text": "有力的法治保障体系"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-031",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要把平等保护贯彻到（）等各个环节，依法平等保护各类市场主体产权和合法权益。",
+    "options": [
+      {
+        "key": "A",
+        "text": "立法"
+      },
+      {
+        "key": "B",
+        "text": "执法"
+      },
+      {
+        "key": "C",
+        "text": "司法"
+      },
+      {
+        "key": "D",
+        "text": "守法"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-032",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "实施好民法典和相关法律法规，依法平等保护（）等各种所有制企业产权和自主经营权，完善各类市场主体公平竞争的法治环境。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国企"
+      },
+      {
+        "key": "B",
+        "text": "央企"
+      },
+      {
+        "key": "C",
+        "text": "外资"
+      },
+      {
+        "key": "D",
+        "text": "民营"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-033",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加强统筹谋划，完善法治人才培养体系，加快发展（）等法律服务队伍，着力建设一支忠于党、忠于国家、忠于人民、忠于法律的社会主义法治工作队伍。",
+    "options": [
+      {
+        "key": "A",
+        "text": "律师"
+      },
+      {
+        "key": "B",
+        "text": "教师"
+      },
+      {
+        "key": "C",
+        "text": "司法鉴定"
+      },
+      {
+        "key": "D",
+        "text": "公证"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-034",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设法治中国，必须更加注重系统性、整体性、协同性。以下说法正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持依法治国、依法执政、依法行政共同推进"
+      },
+      {
+        "key": "B",
+        "text": "坚持法治国家、法治政府、法治社会一体建设"
+      },
+      {
+        "key": "C",
+        "text": "坚持统筹推进国内法治和涉外法治"
+      },
+      {
+        "key": "D",
+        "text": "增加中外法治领域交流，尽量移植英美国家法治建设经验"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-035",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "必须加强（）的立法，补齐立法短板，以良法促进发展、保障善治。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国家安全、公共卫生、生物安全、防范风险等重要领域"
+      },
+      {
+        "key": "B",
+        "text": "人工智能、大数据、云计算等新兴领域"
+      },
+      {
+        "key": "C",
+        "text": "住房、就业、教育、卫生等民生领域"
+      },
+      {
+        "key": "D",
+        "text": "关系国家主权、安全、发展利益等涉外领域"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-036",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "强化对司法活动的制约监督，规范司法权力运行，健全（）各司其职、相互配合、相互制约的体制机制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "公安机关"
+      },
+      {
+        "key": "B",
+        "text": "检察机关"
+      },
+      {
+        "key": "C",
+        "text": "审判机关"
+      },
+      {
+        "key": "D",
+        "text": "司法行政机关"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "9.md"
+  },
+  {
+    "id": "10-026",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "只有推动文化繁荣兴盛，才能为推进中国式现代化建设、实现第二个百年奋斗目标提供（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "思想保证"
+      },
+      {
+        "key": "B",
+        "text": "舆论支持"
+      },
+      {
+        "key": "C",
+        "text": "精神动力"
+      },
+      {
+        "key": "D",
+        "text": "文化条件"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-027",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下面关于文化重要性的说法正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "统筹推进“五位一体”总体布局、协调推进“四个全面”战略布局，文化是重要内容"
+      },
+      {
+        "key": "B",
+        "text": "推动高质量发展，文化是重要支点"
+      },
+      {
+        "key": "C",
+        "text": "满足人民日益增长的美好文化需要，文化是重要因素"
+      },
+      {
+        "key": "D",
+        "text": "战胜前进道路上各种风险挑战，文化是重要力量源泉"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-028",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "随着我国社会主要矛盾的转化，人民对美好生活的向往越来越强烈，对精神文化生活更加看重，文化需求（）的特点更加明显。",
+    "options": [
+      {
+        "key": "A",
+        "text": "单一化"
+      },
+      {
+        "key": "B",
+        "text": "高品质"
+      },
+      {
+        "key": "C",
+        "text": "标准化"
+      },
+      {
+        "key": "D",
+        "text": "个性化"
+      }
+    ],
+    "answer": [
+      "B",
+      "D"
+    ],
+    "answer_text": "BD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-029",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深刻把握新时代新征程的历史方位和民族复兴的时代主题，唱响昂扬的主旋律，充分发挥文化（）的作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "引领风尚"
+      },
+      {
+        "key": "B",
+        "text": "教育人民"
+      },
+      {
+        "key": "C",
+        "text": "服务社会"
+      },
+      {
+        "key": "D",
+        "text": "推动发展"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-030",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设以马克思主义为指导的教材体系，推动马克思主义中国化时代化最新成果（），使党的创新理论全面融入教育教学之中。",
+    "options": [
+      {
+        "key": "A",
+        "text": "进教条"
+      },
+      {
+        "key": "B",
+        "text": "进教材"
+      },
+      {
+        "key": "C",
+        "text": "进课堂"
+      },
+      {
+        "key": "D",
+        "text": "进头脑"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-031",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "（）是新闻舆论工作必须遵循的重要方针，要牢牢坚持这一方针，把握好时度效，唱响主旋律，弘扬正能量，激发全党全社会团结奋进攻坚克难的强大力量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "教条主义"
+      },
+      {
+        "key": "B",
+        "text": "团结稳定鼓劲"
+      },
+      {
+        "key": "C",
+        "text": "正面宣传为主"
+      },
+      {
+        "key": "D",
+        "text": "流量至上"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "answer_text": "BC",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-032",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新闻观是新闻舆论工作的灵魂，要引导广大新闻舆论工作者做（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "党的政策主张的传播者"
+      },
+      {
+        "key": "B",
+        "text": "时代风云的记录者"
+      },
+      {
+        "key": "C",
+        "text": "社会进步的推动者"
+      },
+      {
+        "key": "D",
+        "text": "公平正义的守望者"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-033",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加快推动媒体融合发展，形成（）的主流舆论矩阵。",
+    "options": [
+      {
+        "key": "A",
+        "text": "强说教"
+      },
+      {
+        "key": "B",
+        "text": "全方位"
+      },
+      {
+        "key": "C",
+        "text": "多层次"
+      },
+      {
+        "key": "D",
+        "text": "多声部"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-034",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "形成资源集约、结构合理、差异发展、协同高效的全媒体传播体系，需要统筹处理好（）的关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "传统媒体和新兴媒体"
+      },
+      {
+        "key": "B",
+        "text": "中央媒体和地方媒体"
+      },
+      {
+        "key": "C",
+        "text": "主流媒体和商业媒体"
+      },
+      {
+        "key": "D",
+        "text": "大众化媒体和专业性媒体"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-035",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "社会主义核心价值观，要强化（），使社会主义核心价值观的影响像空气一样无所不在、无时不有。",
+    "options": [
+      {
+        "key": "A",
+        "text": "教育引导"
+      },
+      {
+        "key": "B",
+        "text": "宣讲说教"
+      },
+      {
+        "key": "C",
+        "text": "实践养成"
+      },
+      {
+        "key": "D",
+        "text": "制度保障"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-036",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要把社会主义核心价值观贯穿到（），使社会主义核心价值观成为广泛的社会共识。",
+    "options": [
+      {
+        "key": "A",
+        "text": "日常形势宣传"
+      },
+      {
+        "key": "B",
+        "text": "典型宣传"
+      },
+      {
+        "key": "C",
+        "text": "热点引导"
+      },
+      {
+        "key": "D",
+        "text": "舆论监督"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-037",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "发展文化事业、提升公共文化水平要坚持（），推进城乡公共文化服务体系一体建设。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政府主导"
+      },
+      {
+        "key": "B",
+        "text": "社会参与"
+      },
+      {
+        "key": "C",
+        "text": "重心下移"
+      },
+      {
+        "key": "D",
+        "text": "共建共享"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-038",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下列属于我国在国际上面临的困境的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "信息流进流出的“逆差”"
+      },
+      {
+        "key": "B",
+        "text": "国内新闻舆论工作和国外的“代差”"
+      },
+      {
+        "key": "C",
+        "text": "中国真实形象和西方主观印象的“反差”"
+      },
+      {
+        "key": "D",
+        "text": "软实力和硬实力的“落差”"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-039",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面提升国际传播效能，需要推进中国故事和中国声音的（），增强国际传播的亲和力和实效性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "全球化表达"
+      },
+      {
+        "key": "B",
+        "text": "区域化表达"
+      },
+      {
+        "key": "C",
+        "text": "单一化表达"
+      },
+      {
+        "key": "D",
+        "text": "分众化表达"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-040",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持（）的根本方向，是决定社会主义文化事业前途命运的关键。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为创造经济效益服务"
+      },
+      {
+        "key": "B",
+        "text": "为人民服务"
+      },
+      {
+        "key": "C",
+        "text": "为社会主义服务"
+      },
+      {
+        "key": "D",
+        "text": "只为充实完善学术理论服务"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "answer_text": "BC",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-041",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下列关于意识形态重要性说法正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "意识形态关乎旗帜、关乎道路、关乎国家政治安全"
+      },
+      {
+        "key": "B",
+        "text": "意识形态决定文化前进方向和发展道路"
+      },
+      {
+        "key": "C",
+        "text": "意识形态工作是为国家立心、为民族立魂的工作"
+      },
+      {
+        "key": "D",
+        "text": "大力加强马克思主义理论建设，塑造主流舆论新格局，建设具有强大凝聚力和引领力的社会主义意识形态"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-042",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深入推进习近平新时代中国特色社会主义思想学习教育，把学习这一思想同学习党史、（）结合起来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "新中国史"
+      },
+      {
+        "key": "B",
+        "text": "改革开放史"
+      },
+      {
+        "key": "C",
+        "text": "社会主义发展史"
+      },
+      {
+        "key": "D",
+        "text": "中华民族发展史"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-043",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深入推进习近平新时代中国特色社会主义思想学习教育，就要增强对当代中国马克思主义、二十一世纪马克思主义的（）认同。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治"
+      },
+      {
+        "key": "B",
+        "text": "思想"
+      },
+      {
+        "key": "C",
+        "text": "理论"
+      },
+      {
+        "key": "D",
+        "text": "情感"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-044",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深化马克思主义理论研究和建设，就要从党和国家急迫需要和战略需求出发，聚焦实践遇到的新问题、（），积极开展前瞻性、政策性、应用性研究。",
+    "options": [
+      {
+        "key": "A",
+        "text": "改革发展稳定存在的深层次问题"
+      },
+      {
+        "key": "B",
+        "text": "人民群众急难愁盼问题"
+      },
+      {
+        "key": "C",
+        "text": "国际变局中的重大问题"
+      },
+      {
+        "key": "D",
+        "text": "党的建设面临的突出问题"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-045",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "深化马克思主义理论研究和建设，要加强体系化研究和学理化阐释，把习近平新时代中国特色社会主义思想的（）研究深、阐释透。",
+    "options": [
+      {
+        "key": "A",
+        "text": "时代背景"
+      },
+      {
+        "key": "B",
+        "text": "科学体系"
+      },
+      {
+        "key": "C",
+        "text": "精神实质"
+      },
+      {
+        "key": "D",
+        "text": "实践要求"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-046",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "下列选项中属于网信工作“十个坚持”重要原则的内容的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持党管互联网"
+      },
+      {
+        "key": "B",
+        "text": "坚持筑牢国家网络安全屏障"
+      },
+      {
+        "key": "C",
+        "text": "坚持发挥信息化驱动引领作用"
+      },
+      {
+        "key": "D",
+        "text": "坚持建设忠诚干净担当的网信工作队伍"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-047",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "社会主义核心价值观成为广泛的社会共识，要注重发挥社会实践的养成作用，广泛开展（）活动。",
+    "options": [
+      {
+        "key": "A",
+        "text": "学雷锋志愿服务"
+      },
+      {
+        "key": "B",
+        "text": "群众性精神文明创建"
+      },
+      {
+        "key": "C",
+        "text": "公益广告传播"
+      },
+      {
+        "key": "D",
+        "text": "各种形式的纪念庆典"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-048",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 48,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "青年要从自己做起、从现在做起，在（）上下功夫，使社会主义核心价值观成为自己的基本遵循。",
+    "options": [
+      {
+        "key": "A",
+        "text": "勤学"
+      },
+      {
+        "key": "B",
+        "text": "修德"
+      },
+      {
+        "key": "C",
+        "text": "明辨"
+      },
+      {
+        "key": "D",
+        "text": "笃实"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-049",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 49,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "培育时代新风貌，要在全社会弘扬劳动精神、（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "奋斗精神"
+      },
+      {
+        "key": "B",
+        "text": "奉献精神"
+      },
+      {
+        "key": "C",
+        "text": "创造精神"
+      },
+      {
+        "key": "D",
+        "text": "勤俭节约精神"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-050",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 50,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中华文明的统一性从根本上决定了（）的共同信念。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国土不可分"
+      },
+      {
+        "key": "B",
+        "text": "国家不可乱"
+      },
+      {
+        "key": "C",
+        "text": "民族不可散"
+      },
+      {
+        "key": "D",
+        "text": "文明不可断"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "10.md"
+  },
+  {
+    "id": "11-037",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "随着我国社会主要矛盾的变化，人民美好生活需要日益广泛，期盼有（），对增进民生福祉、提高生活品质提出了新的更高要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "更好的教育"
+      },
+      {
+        "key": "B",
+        "text": "更舒适的居住条件"
+      },
+      {
+        "key": "C",
+        "text": "更高水平的医疗卫生服务"
+      },
+      {
+        "key": "D",
+        "text": "更高的收入"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-038",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "为了让脱贫基础更加稳固、成效更可持续，我们要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把巩固拓展脱贫攻坚成果同乡村振兴有效衔接起来"
+      },
+      {
+        "key": "B",
+        "text": "把增加脱贫群众收入作为主攻方向"
+      },
+      {
+        "key": "C",
+        "text": "增强脱贫地区和脱贫群众内生发展动力"
+      },
+      {
+        "key": "D",
+        "text": "健全防止返贫动态监测和帮扶机制"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-039",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "继续深化收入分配制度改革，需要构建完善的（）协调配套的制度体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "初次分配"
+      },
+      {
+        "key": "B",
+        "text": "再分配"
+      },
+      {
+        "key": "C",
+        "text": "第三次分配"
+      },
+      {
+        "key": "D",
+        "text": "第四次分配"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-040",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，党和国家持续实施就业优先战略和积极的就业政策，包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "健全就业公共服务体系"
+      },
+      {
+        "key": "B",
+        "text": "扩大高校毕业生就业渠道"
+      },
+      {
+        "key": "C",
+        "text": "稳定农民工等重点群体就业"
+      },
+      {
+        "key": "D",
+        "text": "破除妨碍劳动力、人才流动的体制和政策弊端"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-041",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，党和国家持续实施就业优先战略和积极的就业政策，包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "健全终身职业技能培训制度"
+      },
+      {
+        "key": "B",
+        "text": "支持和规范发展新就业形态"
+      },
+      {
+        "key": "C",
+        "text": "完善劳动关系协商协调机制"
+      },
+      {
+        "key": "D",
+        "text": "加强灵活就业和新就业形态劳动者权益保障"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-042",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持以（）为重点，推动我国社会保障体系建设进入快车道，基本建成以社会保险为主体、功能完备的社会保障体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "增强公平性"
+      },
+      {
+        "key": "B",
+        "text": "提高收益性"
+      },
+      {
+        "key": "C",
+        "text": "适应流动性"
+      },
+      {
+        "key": "D",
+        "text": "保证可持续性"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-043",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "随着我国（），凸显出我国社会保障体系仍存在不足，必须高度重视并切实加以解决。",
+    "options": [
+      {
+        "key": "A",
+        "text": "社会性质发生变化"
+      },
+      {
+        "key": "B",
+        "text": "社会主要矛盾发生变化"
+      },
+      {
+        "key": "C",
+        "text": "人口老龄化"
+      },
+      {
+        "key": "D",
+        "text": "就业方式多样化加快发展"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-044",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我国社会保障体系仍存在不足，必须高度重视并切实加以解决。具体举措有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "完善基本养老保险全国统筹制度"
+      },
+      {
+        "key": "B",
+        "text": "加快发展多层次、多支柱养老保险体系"
+      },
+      {
+        "key": "C",
+        "text": "健全基本养老、基本医疗保险筹资和待遇调整机制"
+      },
+      {
+        "key": "D",
+        "text": "规范发展第三支柱养老保险"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-045",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们把保障人民健康放在优先发展的战略位置，在（）方面不断发力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "推动中医药和西医药相互补充、协调发展"
+      },
+      {
+        "key": "B",
+        "text": "健全重大疫情救治体系"
+      },
+      {
+        "key": "C",
+        "text": "推动心理健康和精神卫生防治体系建设"
+      },
+      {
+        "key": "D",
+        "text": "实施积极应对人口老龄化国家战略"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-046",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "社会治理体系要求（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "科技支撑"
+      },
+      {
+        "key": "B",
+        "text": "民主协商"
+      },
+      {
+        "key": "C",
+        "text": "社会协同"
+      },
+      {
+        "key": "D",
+        "text": "法治保障"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-047",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "制度是完善社会治理体系的保障，必须健全社会治理制度，提升社会治理效能，必须构建和完善（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "社会矛盾综合治理机制"
+      },
+      {
+        "key": "B",
+        "text": "公共安全体制机制"
+      },
+      {
+        "key": "C",
+        "text": "社会治安综合治理体制机制"
+      },
+      {
+        "key": "D",
+        "text": "心理服务体系和疏导机制、危机干预机制"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-048",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 48,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "创新社会治理方式、途径和手段，要强化互联网思维，利用互联网扁平化、交互式、快捷性优势，推进（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政府决策科学化"
+      },
+      {
+        "key": "B",
+        "text": "社会治理精准化"
+      },
+      {
+        "key": "C",
+        "text": "管理模式统一化"
+      },
+      {
+        "key": "D",
+        "text": "公共服务高效化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-049",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 49,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "随着经济社会结构加速转型，大量流动人口出现，城乡社区成员构成越来越多样化，社会矛盾也越来越多样化。新时代的（）等正是正确处理新形势下人民内部矛盾机制的典范。",
+    "options": [
+      {
+        "key": "A",
+        "text": "“兰考经验”"
+      },
+      {
+        "key": "B",
+        "text": "“枫桥经验”"
+      },
+      {
+        "key": "C",
+        "text": "“浦江经验”"
+      },
+      {
+        "key": "D",
+        "text": "“威海经验”"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "answer_text": "BC",
+    "source_file": "11.md"
+  },
+  {
+    "id": "12-015",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 15,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "大自然是人类赖以生存发展的基本条件，（）是全面建设社会主义现代化国家的内在要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "破坏自然"
+      },
+      {
+        "key": "B",
+        "text": "尊重自然"
+      },
+      {
+        "key": "C",
+        "text": "顺应自然"
+      },
+      {
+        "key": "D",
+        "text": "保护自然"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-016",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 16,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "自然是生命之母，人与自然是生命共同体。下列对人与自然的关系理解正确的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人来源于自然，依赖于自然，在同自然的互动中生产、生活与发展"
+      },
+      {
+        "key": "B",
+        "text": "人类友好保护自然时，自然的回报是慷慨的"
+      },
+      {
+        "key": "C",
+        "text": "人类粗暴掠夺自然时，自然的惩罚是无情的"
+      },
+      {
+        "key": "D",
+        "text": "人类对大自然的伤害最终会伤及人类自身"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-017",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "绿水青山就是金山银山，这是重要的发展理念，也是推进现代化建设的重大原则。这一理念（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "阐明了经济发展与生态环境保护之间的关系"
+      },
+      {
+        "key": "B",
+        "text": "揭示了保护生态环境就是保护生产力的道理"
+      },
+      {
+        "key": "C",
+        "text": "揭示了改善生态环境就是发展生产力的道理"
+      },
+      {
+        "key": "D",
+        "text": "指明了实现发展和保护协同共生的新路径"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-018",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "习近平指出：“我们既要绿水青山，也要金山银山。宁要绿水青山，不要金山银山，而且绿水青山就是金山银山。”这表明，绿水青山是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "自然财富"
+      },
+      {
+        "key": "B",
+        "text": "生态财富"
+      },
+      {
+        "key": "C",
+        "text": "社会财富"
+      },
+      {
+        "key": "D",
+        "text": "经济财富"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-019",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持生态优先、绿色发展，把生态环境优势转化为（），绿水青山就变成了金山银山。",
+    "options": [
+      {
+        "key": "A",
+        "text": "生态农业"
+      },
+      {
+        "key": "B",
+        "text": "生态工业"
+      },
+      {
+        "key": "C",
+        "text": "生态旅游"
+      },
+      {
+        "key": "D",
+        "text": "产能积累"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-020",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "处理好绿水青山和金山银山的关系，关键在（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人"
+      },
+      {
+        "key": "B",
+        "text": "资金"
+      },
+      {
+        "key": "C",
+        "text": "思路"
+      },
+      {
+        "key": "D",
+        "text": "效益"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-021",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，我们党把生态文明建设摆在全局工作的突出位置，从思想、法律、体制、组织、作风上全面发力，谋划开展了一系列根本性、开创性、长远性工作，实现了（）的重大转变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "由重点整治到系统治理"
+      },
+      {
+        "key": "B",
+        "text": "由被动应对到主动作为"
+      },
+      {
+        "key": "C",
+        "text": "由全球环境治理参与者到引领者"
+      },
+      {
+        "key": "D",
+        "text": "由实践探索到科学理论指导"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-022",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "生态环境问题，归根到底是（）造成的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "资源过度开发"
+      },
+      {
+        "key": "B",
+        "text": "粗放利用"
+      },
+      {
+        "key": "C",
+        "text": "奢侈消费"
+      },
+      {
+        "key": "D",
+        "text": "循环利用"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-023",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加快发展方式绿色转型，必须在（）上下功夫。",
+    "options": [
+      {
+        "key": "A",
+        "text": "转变资源利用方式"
+      },
+      {
+        "key": "B",
+        "text": "提高资源利用效率"
+      },
+      {
+        "key": "C",
+        "text": "增加物质资源消耗"
+      },
+      {
+        "key": "D",
+        "text": "依赖高耗能高排放产业"
+      }
+    ],
+    "answer": [
+      "A",
+      "B"
+    ],
+    "answer_text": "AB",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-024",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面推动吃、穿、住、行、用、游等各领域消费绿色转型升级，形成（）的生活方式和消费模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "节约适度"
+      },
+      {
+        "key": "B",
+        "text": "奢华浪费"
+      },
+      {
+        "key": "C",
+        "text": "绿色低碳"
+      },
+      {
+        "key": "D",
+        "text": "文明健康"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-025",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "扎实推进碳达峰碳中和，要把系统观念切实贯彻到“双碳”工作全过程，注重处理好（）的关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发展和减排"
+      },
+      {
+        "key": "B",
+        "text": "整体和局部"
+      },
+      {
+        "key": "C",
+        "text": "长远目标和短期目标"
+      },
+      {
+        "key": "D",
+        "text": "政府和市场"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-026",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "健全绿色发展的保障体系，要统筹各领域资源，打好（）“组合拳”。",
+    "options": [
+      {
+        "key": "A",
+        "text": "法治"
+      },
+      {
+        "key": "B",
+        "text": "市场"
+      },
+      {
+        "key": "C",
+        "text": "科技"
+      },
+      {
+        "key": "D",
+        "text": "政策"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-027",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "以国家重点生态功能区、自然保护地等为重点，突出对国家重大战略的生态支撑，加快推进“三区四带”生态屏障建设。“三区”指的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "青藏高原生态屏障区"
+      },
+      {
+        "key": "B",
+        "text": "黄河重点生态区"
+      },
+      {
+        "key": "C",
+        "text": "长江重点生态区"
+      },
+      {
+        "key": "D",
+        "text": "粤港澳大湾区"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-028",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "科学划定自然保护地保护范围及功能分区，构建（）的自然保护地体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "以国家公园为主体"
+      },
+      {
+        "key": "B",
+        "text": "以自然保护区为基础"
+      },
+      {
+        "key": "C",
+        "text": "以地方公园为主体"
+      },
+      {
+        "key": "D",
+        "text": "以各类自然公园为补充"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-029",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推进自然保护地体系建设，要逐步把（）的区域纳入国家公园体系，建设好三江源、大熊猫、东北虎豹、海南热带雨林、武夷山等国家公园。",
+    "options": [
+      {
+        "key": "A",
+        "text": "自然生态系统最重要"
+      },
+      {
+        "key": "B",
+        "text": "自然景观最独特"
+      },
+      {
+        "key": "C",
+        "text": "自然遗产最精华"
+      },
+      {
+        "key": "D",
+        "text": "生物多样性最富集"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-030",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推行草原森林河流湖泊湿地休养生息，主要措施有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "降低人为活动对草原、森林、河流、湖泊、湿地资源的干扰强度，推动生态保护修复"
+      },
+      {
+        "key": "B",
+        "text": "加强长江、黄河等大江大河和重要湖泊湿地生态保护治理"
+      },
+      {
+        "key": "C",
+        "text": "落实禁牧、休牧和草畜平衡制度，促进草原永续利用"
+      },
+      {
+        "key": "D",
+        "text": "统筹水资源、水环境、水生态、水安全，加强河流和湿地生态流量管理"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-031",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "保护生态环境，必须把制度建设作为生态文明建设的重中之重，构建（）的生态文明制度体系，把生态文明建设纳入制度化、法治化轨道。",
+    "options": [
+      {
+        "key": "A",
+        "text": "产权清晰"
+      },
+      {
+        "key": "B",
+        "text": "多元参与"
+      },
+      {
+        "key": "C",
+        "text": "激励约束并重"
+      },
+      {
+        "key": "D",
+        "text": "系统完整"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-032",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "保护生态环境必须实行最严格的生态环境保护制度，下列举措中体现这一要求的是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "加快建立健全国土空间规划和用途统筹协调管控制度，完善主体功能区制度"
+      },
+      {
+        "key": "B",
+        "text": "完善绿色生产和消费的法律制度和政策导向，更加自觉地推动绿色循环低碳发展"
+      },
+      {
+        "key": "C",
+        "text": "构建以排污许可制为核心的固定污染源监管制度体系"
+      },
+      {
+        "key": "D",
+        "text": "健全生态保护和修复制度，加强对重要生态系统的保护和永续利用"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-033",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "完善生态文明领域统筹协调机制，健全（）以及社会组织和公众共同参与的现代环境治理体系，构建一体谋划、一体部署、一体推进、一体考核的制度机制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "党委领导"
+      },
+      {
+        "key": "B",
+        "text": "政府主导"
+      },
+      {
+        "key": "C",
+        "text": "企业主体"
+      },
+      {
+        "key": "D",
+        "text": "社团主导"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-034",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面建立资源高效利用制度，要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "健全资源节约集约循环利用政策体系"
+      },
+      {
+        "key": "B",
+        "text": "普遍实行垃圾分类和资源化利用制度"
+      },
+      {
+        "key": "C",
+        "text": "推进能源革命，构建清洁低碳、安全高效的能源体系"
+      },
+      {
+        "key": "D",
+        "text": "健全海洋资源开发保护制度"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-035",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "共建清洁美丽世界，必须（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持以人为本"
+      },
+      {
+        "key": "B",
+        "text": "坚持科学治理"
+      },
+      {
+        "key": "C",
+        "text": "坚持多边主义"
+      },
+      {
+        "key": "D",
+        "text": "坚持共同但有区别的责任原则"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-036",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国作为世界上最大的发展中国家，积极参与全球气候治理，主要贡献有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "将应对气候变化全面融入国家经济社会发展战略，实施一系列应对气候变化的战略、措施和行动"
+      },
+      {
+        "key": "B",
+        "text": "倡议各方携手应对气候变化挑战，努力推动构建公平合理、合作共赢的全球气候治理体系"
+      },
+      {
+        "key": "C",
+        "text": "提前完成2020年应对气候变化和设立自然保护区相关目标，人工林面积居全球第一，是对全球臭氧层保护贡献最大的国家"
+      },
+      {
+        "key": "D",
+        "text": "宣布提高国家自主贡献力度，力争2030年前实现碳达峰，努力争取2060年前实现碳中和"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "12.md"
+  },
+  {
+    "id": "13-011",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 11,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "总体国家安全观强调做好国家安全工作的系统思维和方法，加强科学统筹，做到统筹（），统筹维护国家安全和塑造国家安全，着力解决国家安全工作不平衡不充分的问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "外部安全和内部安全"
+      },
+      {
+        "key": "B",
+        "text": "国土安全和国民安全"
+      },
+      {
+        "key": "C",
+        "text": "传统安全和非传统安全"
+      },
+      {
+        "key": "D",
+        "text": "自身安全和共同安全"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-012",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 12,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新时代国家安全得到全面加强，主要体现在（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "党对国家安全工作的领导更加有力"
+      },
+      {
+        "key": "B",
+        "text": "国家安全体系和能力建设取得突破性进展"
+      },
+      {
+        "key": "C",
+        "text": "国家主权、安全、发展利益得到全面维护"
+      },
+      {
+        "key": "D",
+        "text": "平安中国建设迈向更高水平"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-013",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 13,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，平安中国建设迈向更高水平，主要成就有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "法律法规制度不断健全"
+      },
+      {
+        "key": "B",
+        "text": "共建共治共享工作格局初步形成"
+      },
+      {
+        "key": "C",
+        "text": "扫黑除恶专项斗争取得阶段性成果"
+      },
+      {
+        "key": "D",
+        "text": "社会治安状况处于历史最好水平"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-014",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 14,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "发展和安全是两件大事，对二者关系的理解正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发展解决的是动力问题，是推动国家和民族赓续绵延的根本支撑"
+      },
+      {
+        "key": "B",
+        "text": "安全解决的是保障问题，是确保国家和民族行稳致远的坚强柱石"
+      },
+      {
+        "key": "C",
+        "text": "发展是解决安全问题的总钥匙，是最大的安全"
+      },
+      {
+        "key": "D",
+        "text": "没有国家安全，发展只能是“镜花水月”"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-015",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 15,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国共产党是执政党，党的领导是做好党和国家各项工作的根本保证，是我国（）的根本点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治稳定"
+      },
+      {
+        "key": "B",
+        "text": "经济发展"
+      },
+      {
+        "key": "C",
+        "text": "民族团结"
+      },
+      {
+        "key": "D",
+        "text": "社会稳定"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-016",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 16,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "政治安全与人民安全、国家利益至上的关系是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治安全是维护人民安全和国家利益的根本保证"
+      },
+      {
+        "key": "B",
+        "text": "人民安全居于中心地位，国家安全归根到底是保障人民利益"
+      },
+      {
+        "key": "C",
+        "text": "国家利益至上是实现政治安全和人民安全的要求和原则"
+      },
+      {
+        "key": "D",
+        "text": "政治安全与人民安全、国家利益至上是相互制约、互不干涉的"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-017",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 17,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "维护国土安全必须坚决反对一切分裂祖国的活动，要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "深入打击恐怖主义、分裂主义、极端主义“三股势力”"
+      },
+      {
+        "key": "B",
+        "text": "坚决防范“藏独”“东突”"
+      },
+      {
+        "key": "C",
+        "text": "坚决粉碎任何“台独”分裂图谋"
+      },
+      {
+        "key": "D",
+        "text": "全力维护香港、澳门长期繁荣稳定"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-018",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 18,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "维护社会安全的具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "着力防范管控各类社会风险，妥善处置影响国家安全的突发事件"
+      },
+      {
+        "key": "B",
+        "text": "强化社会治安整体防控，编织全方位、立体化的公共安全网"
+      },
+      {
+        "key": "C",
+        "text": "推进扫黑除恶常态化，依法严惩群众反映强烈的各类违法犯罪活动"
+      },
+      {
+        "key": "D",
+        "text": "发展壮大群防群治力量，努力使人民群众安全感更有保障"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-019",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 19,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "人工智能发展可能带来（）问题，要加快建立人工智能安全监管和评估体系，构建人工智能安全监测预警机制，确保人工智能安全、可靠、可控。",
+    "options": [
+      {
+        "key": "A",
+        "text": "改变就业结构"
+      },
+      {
+        "key": "B",
+        "text": "冲击法律和社会伦理"
+      },
+      {
+        "key": "C",
+        "text": "侵犯个人隐私"
+      },
+      {
+        "key": "D",
+        "text": "挑战国际准则"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-020",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "健全完善国家安全体系，要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚持党中央对国家安全工作的集中统一领导"
+      },
+      {
+        "key": "B",
+        "text": "强化国家安全工作协调机制"
+      },
+      {
+        "key": "C",
+        "text": "加快涉外法治工作战略布局"
+      },
+      {
+        "key": "D",
+        "text": "完善国家安全力量布局"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-021",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设平安中国要准确把握平安中国建设面临的新形势新任务，全面提升平安中国建设的（）水平，努力建设治理效能更强、安全稳定局面更巩固、人民更满意的平安中国。",
+    "options": [
+      {
+        "key": "A",
+        "text": "科学化"
+      },
+      {
+        "key": "B",
+        "text": "社会化"
+      },
+      {
+        "key": "C",
+        "text": "法治化"
+      },
+      {
+        "key": "D",
+        "text": "智能化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-022",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新形势下我国国家安全和社会稳定面临的威胁和挑战增多，面临的风险是多方面的，主要有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "外部风险"
+      },
+      {
+        "key": "B",
+        "text": "内部风险"
+      },
+      {
+        "key": "C",
+        "text": "一般风险"
+      },
+      {
+        "key": "D",
+        "text": "重大风险"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-023",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "面对波谲云诡的国际形势、艰巨繁重的改革发展稳定任务，我们要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "既要高度警惕“黑天鹅”事件，也要防范“灰犀牛”事件"
+      },
+      {
+        "key": "B",
+        "text": "既要有防范风险的先手，也要有应对和化解风险挑战的高招"
+      },
+      {
+        "key": "C",
+        "text": "既要打好防范和抵御风险的有准备之战，也要打好化险为夷、转危为机的战略主动战"
+      },
+      {
+        "key": "D",
+        "text": "力争不出现重大风险或在出现重大风险时扛得住、过得去"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-024",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "发展环境越是严峻复杂，越要（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚定不移深化改革"
+      },
+      {
+        "key": "B",
+        "text": "健全各方面制度"
+      },
+      {
+        "key": "C",
+        "text": "完善治理体系"
+      },
+      {
+        "key": "D",
+        "text": "促进制度建设和治理效能更好转化融合"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "13.md"
+  },
+  {
+    "id": "14-020",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 20,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，以习近平同志为核心的党中央着眼实现中华民族伟大复兴这个国家和民族最高利益，对人民军队使命任务作出新定位、提出新要求，即（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为巩固中国共产党领导和我国社会主义制度提供战略支撑"
+      },
+      {
+        "key": "B",
+        "text": "为捍卫国家主权、统一和领土完整提供战略支撑"
+      },
+      {
+        "key": "C",
+        "text": "为维护我国海外利益提供战略支撑"
+      },
+      {
+        "key": "D",
+        "text": "为促进世界和平与发展提供战略支撑"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-021",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 21,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "人民军队必须坚定站在党的旗帜下，坚决（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "听党指挥"
+      },
+      {
+        "key": "B",
+        "text": "保卫社会主义制度"
+      },
+      {
+        "key": "C",
+        "text": "维护国家政权安全"
+      },
+      {
+        "key": "D",
+        "text": "维护政治社会大局稳定"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-022",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 22,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我国的国家利益向海外延伸的同时，来自（）等的各种风险和威胁迅速增多，海外安全保障问题更加凸显。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政局动荡"
+      },
+      {
+        "key": "B",
+        "text": "恐怖袭击"
+      },
+      {
+        "key": "C",
+        "text": "自然灾害"
+      },
+      {
+        "key": "D",
+        "text": "意外事故"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-023",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 23,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "进入新时代，国防和军队建设站在一个新的历史起点上，但（）的问题很现实地摆在我们面前。",
+    "options": [
+      {
+        "key": "A",
+        "text": "军队现代化水平与国家安全需求相比差距还很大"
+      },
+      {
+        "key": "B",
+        "text": "军队现代化水平与世界先进军事水平相比差距还很大"
+      },
+      {
+        "key": "C",
+        "text": "打现代化战争能力不够"
+      },
+      {
+        "key": "D",
+        "text": "各级干部指挥现代化战争能力不够"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-024",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 24,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党在新时代的强军目标的提出，体现了我们党一以贯之的建军治军指导思想和方针原则，回答了（）的重大课题，立起了人民军队作为大国军队、强国军队应有的样子。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为什么强军"
+      },
+      {
+        "key": "B",
+        "text": "强军是针对谁"
+      },
+      {
+        "key": "C",
+        "text": "强军强什么"
+      },
+      {
+        "key": "D",
+        "text": "怎样强军"
+      }
+    ],
+    "answer": [
+      "A",
+      "C",
+      "D"
+    ],
+    "answer_text": "ACD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-025",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 25,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "作风优良才能塑造英雄部队，必须加强作风建设、纪律建设，坚定不移正风肃纪、反腐惩恶，做到（），永葆人民军队政治本色。",
+    "options": [
+      {
+        "key": "A",
+        "text": "信念不动摇"
+      },
+      {
+        "key": "B",
+        "text": "思想不松懈"
+      },
+      {
+        "key": "C",
+        "text": "斗志不衰退"
+      },
+      {
+        "key": "D",
+        "text": "作风不涣散"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-026",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 26,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "国防和军队现代化新“三步走”战略安排具体表述为（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "到2020年实现武器装备现代化"
+      },
+      {
+        "key": "B",
+        "text": "到2027年实现建军一百年奋斗目标"
+      },
+      {
+        "key": "C",
+        "text": "到2035年基本实现国防和军队现代化"
+      },
+      {
+        "key": "D",
+        "text": "到本世纪中叶把人民军队全面建成世界一流军队"
+      }
+    ],
+    "answer": [
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "BCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-027",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "基本实现国防和军队现代化的关键是实现（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "军事理论现代化"
+      },
+      {
+        "key": "B",
+        "text": "军队组织形态现代化"
+      },
+      {
+        "key": "C",
+        "text": "军事人员现代化"
+      },
+      {
+        "key": "D",
+        "text": "武器装备现代化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-028",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "加快军事人员现代化，就是要推动军事人员能力素质、结构布局、开发管理全面转型升级，贯彻新时代军事教育方针，加快培养（），打造新型军事人才方阵。",
+    "options": [
+      {
+        "key": "A",
+        "text": "联合作战指挥人才"
+      },
+      {
+        "key": "B",
+        "text": "新型作战力量人才"
+      },
+      {
+        "key": "C",
+        "text": "高层次科技创新人才"
+      },
+      {
+        "key": "D",
+        "text": "高水平战略管理人才"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-029",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "到本世界中叶把人民军队全面建成世界一流军队，目标要求是（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "同我国强国地位相称"
+      },
+      {
+        "key": "B",
+        "text": "能够全面有效维护国家安全"
+      },
+      {
+        "key": "C",
+        "text": "具备强大国际影响力"
+      },
+      {
+        "key": "D",
+        "text": "能够完全独立于其他国家进行作战，且不受国际法约束"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-030",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持党对人民军队的绝对领导必须有一整套制度作保证，这些制度主要包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "军队最高领导权和指挥权属于党中央、中央军委，中央军委实行主席负责制"
+      },
+      {
+        "key": "B",
+        "text": "实行党委制、政治委员制、政治机关制"
+      },
+      {
+        "key": "C",
+        "text": "实行党委(支部)统一的集体领导下的首长分工负责制"
+      },
+      {
+        "key": "D",
+        "text": "实行支部建在连上"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-031",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "抓军队建设要强化（），确保枪杆子永远掌握在忠于党的可靠的人手中。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治意识"
+      },
+      {
+        "key": "B",
+        "text": "大局意识"
+      },
+      {
+        "key": "C",
+        "text": "核心意识"
+      },
+      {
+        "key": "D",
+        "text": "看齐意识"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-032",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "充分发挥政治工作的重要作用，培养新时代革命军人，锻造具有（）的过硬部队。",
+    "options": [
+      {
+        "key": "A",
+        "text": "铁一般信仰"
+      },
+      {
+        "key": "B",
+        "text": "铁一般信念"
+      },
+      {
+        "key": "C",
+        "text": "铁一般纪律"
+      },
+      {
+        "key": "D",
+        "text": "铁一般担当"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-033",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新时代，我们党全面实施改革强军战略，人民军队实现整体性革命性重塑，实现（）的焕然一新。",
+    "options": [
+      {
+        "key": "A",
+        "text": "体制"
+      },
+      {
+        "key": "B",
+        "text": "结构"
+      },
+      {
+        "key": "C",
+        "text": "格局"
+      },
+      {
+        "key": "D",
+        "text": "面貌"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-034",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "构建完善的中国特色军事法治体系，形成（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "系统完备、严密高效的军事法规制度体系"
+      },
+      {
+        "key": "B",
+        "text": "军事法治实施体系"
+      },
+      {
+        "key": "C",
+        "text": "军事法治监督体系"
+      },
+      {
+        "key": "D",
+        "text": "军事法治保障体系"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-035",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面加强练兵备战的重要举措有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "牢固树立战斗力这个唯一的根本的标准"
+      },
+      {
+        "key": "B",
+        "text": "深入推进实战化军事训练"
+      },
+      {
+        "key": "C",
+        "text": "创新军事战略指导"
+      },
+      {
+        "key": "D",
+        "text": "大力培育“一不怕苦、二不怕死”的战斗精神"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-036",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "必须坚定不移把军事训练摆在战略位置，坚持（），提高军队实战能力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "实战实训"
+      },
+      {
+        "key": "B",
+        "text": "联战联训"
+      },
+      {
+        "key": "C",
+        "text": "科技强训"
+      },
+      {
+        "key": "D",
+        "text": "依法治训"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "14.md"
+  },
+  {
+    "id": "15-029",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "“一国两制”把（）统一起来，凝结了中国共产党人为解决国家统一问题展现出的超凡勇气和卓越智慧，是前无古人的伟大创举。",
+    "options": [
+      {
+        "key": "A",
+        "text": "原则性和灵活性"
+      },
+      {
+        "key": "B",
+        "text": "现实性和长远性"
+      },
+      {
+        "key": "C",
+        "text": "一致性和差异性"
+      },
+      {
+        "key": "D",
+        "text": "理想性和实用性"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-030",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "“一国两制”伟大构想体现了中国共产党的政治智慧和开拓创新的勇气，体现了中华民族（）的精神特质和中国特色社会主义制度的先进性质。",
+    "options": [
+      {
+        "key": "A",
+        "text": "追求统一"
+      },
+      {
+        "key": "B",
+        "text": "反对分裂"
+      },
+      {
+        "key": "C",
+        "text": "爱好和平"
+      },
+      {
+        "key": "D",
+        "text": "国强图霸"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-031",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "2012年12月，习近平在会见香港特别行政区行政长官时指出，中央支持香港、澳门两个特别行政区（）的政策不会变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "发展经济"
+      },
+      {
+        "key": "B",
+        "text": "改善民生"
+      },
+      {
+        "key": "C",
+        "text": "推进民主"
+      },
+      {
+        "key": "D",
+        "text": "促进和谐"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-032",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "以习近平同志为核心的党中央的鲜明态度和有力支持，为香港保持长期繁荣稳定提供了坚强后盾。其具体表现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "中央全力支持香港主动对接“十四五”规划、粤港澳大湾区建设"
+      },
+      {
+        "key": "B",
+        "text": "中央全力支持香港主动对接“一带一路”高质量发展等国家战略"
+      },
+      {
+        "key": "C",
+        "text": "中央全力支持香港同世界各地展开更广泛、更紧密的交流合作"
+      },
+      {
+        "key": "D",
+        "text": "中央全力支持香港积极稳妥推进改革，破除利益固化藩篱"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-033",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中央政府大力支持香港、澳门发展经济、改善民生，巩固提升香港、澳门在（）、文化旅游等领域的地位。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国际金融"
+      },
+      {
+        "key": "B",
+        "text": "贸易"
+      },
+      {
+        "key": "C",
+        "text": "航运航空"
+      },
+      {
+        "key": "D",
+        "text": "创新科技"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-034",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "澳门在（）等各方面取得了长足的进步，走出一条具有澳门特色的“一国两制”成功实践道路。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经济发展"
+      },
+      {
+        "key": "B",
+        "text": "民生改善"
+      },
+      {
+        "key": "C",
+        "text": "社会稳定"
+      },
+      {
+        "key": "D",
+        "text": "文化建设"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-035",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "香港、澳门特别行政区政府大力加强对香港、澳门社会特别是青少年的（），增强香港、澳门青少年的国家意识和爱国精神，努力使爱国爱港爱澳光荣传统薪火相传。",
+    "options": [
+      {
+        "key": "A",
+        "text": "宪法和基本法教育"
+      },
+      {
+        "key": "B",
+        "text": "国情教育"
+      },
+      {
+        "key": "C",
+        "text": "中国历史教育"
+      },
+      {
+        "key": "D",
+        "text": "中华文化教育"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-036",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "2021年3月，十三届全国人大常委会第二十七次会议通过新修订的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "《全国人民代表大会关于完善香港特别行政区选举制度的决定》"
+      },
+      {
+        "key": "B",
+        "text": "《中华人民共和国香港特别行政区基本法附件一香港特别行政区行政长官的产生办法》"
+      },
+      {
+        "key": "C",
+        "text": "《中华人民共和国香港特别行政区基本法附件二香港特别行政区立法会的产生办法和表决程序》"
+      },
+      {
+        "key": "D",
+        "text": "《关于〈中华人民共和国香港特别行政区维护国家安全法〉第十四条和第四十七条的解释》"
+      }
+    ],
+    "answer": [
+      "B",
+      "C"
+    ],
+    "answer_text": "BC",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-037",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建立健全香港特别行政区维护国家安全的法律制度和执行机制的具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "十三届全国人大三次会议通过《全国人民代表大会关于建立健全香港特别行政区维护国家安全的法律制度和执行机制的决定》"
+      },
+      {
+        "key": "B",
+        "text": "十三届全国人大常委会第二十次会议通过《中华人民共和国香港特别行政区维护国家安全法》"
+      },
+      {
+        "key": "C",
+        "text": "中央人民政府依法设立驻香港特别行政区维护国家安全公署，香港特别行政区依法设立维护国家安全委员会"
+      },
+      {
+        "key": "D",
+        "text": "十三届全国人大常委会第三十八次会议通过《关于〈中华人民共和国香港特别行政区维护国家安全法〉第十四条和第四十七条的解释》"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-038",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "完善香港特别行政区选举制度的具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "十三届全国人大四次会议通过《全国人民代表大会关于完善香港特别行政区选举制度的决定》"
+      },
+      {
+        "key": "B",
+        "text": "十三届全国人大常委会第二十七次会议通过新修订的《中华人民共和国香港特别行政区基本法附件一香港特别行政区行政长官的产生办法》《中华人民共和国香港特别行政区基本法附件二香港特别行政区立法会的产生办法和表决程序》"
+      },
+      {
+        "key": "C",
+        "text": "香港特别行政区立法会通过《2021年完善选举制度（综合修订）条例草案》"
+      },
+      {
+        "key": "D",
+        "text": "《2023年区议会（修订）条例》刊宪并实施"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-039",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持以行政长官为核心的行政主导体制的具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚决防范和遏制外部势力干预香港事务，严厉打击分裂、颠覆、渗透、破坏活动"
+      },
+      {
+        "key": "B",
+        "text": "支持特别行政区政府积极回应社会发展新要求和广大居民新期待"
+      },
+      {
+        "key": "C",
+        "text": "全力支持行政、立法、司法机关依法履职"
+      },
+      {
+        "key": "D",
+        "text": "完善特别行政区司法制度和法律体系"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-040",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中央全力支持特别行政区政府团结带领全社会（）、包容共济促进和谐。",
+    "options": [
+      {
+        "key": "A",
+        "text": "集中精力发展经济"
+      },
+      {
+        "key": "B",
+        "text": "切实有效改善民生"
+      },
+      {
+        "key": "C",
+        "text": "坚定不移守护法治"
+      },
+      {
+        "key": "D",
+        "text": "循序渐进推进民主"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-041",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "香港、澳门融入国家发展大局的具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "积极主动助力国家全面开放"
+      },
+      {
+        "key": "B",
+        "text": "积极主动参与粤港澳大湾区建设"
+      },
+      {
+        "key": "C",
+        "text": "积极主动参与国家治理实践"
+      },
+      {
+        "key": "D",
+        "text": "积极主动促进国际人文交流"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-042",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "香港、澳门要把国际联系广泛、专业服务发达等优势同内地（）等优势结合起来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "市场广阔"
+      },
+      {
+        "key": "B",
+        "text": "产业体系完整"
+      },
+      {
+        "key": "C",
+        "text": "科技实力较强"
+      },
+      {
+        "key": "D",
+        "text": "发展平衡充分"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-043",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "粤港澳大湾区建设已取得重要阶段性成果，（）等重大合作平台建设加快推进，内地与港澳规则衔接、机制对接不断深化，生产要素跨境流动更加快捷。",
+    "options": [
+      {
+        "key": "A",
+        "text": "深圳前海"
+      },
+      {
+        "key": "B",
+        "text": "珠海横琴"
+      },
+      {
+        "key": "C",
+        "text": "广州南沙"
+      },
+      {
+        "key": "D",
+        "text": "河套深港"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-044",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "实现台海持久和平，达成国家统一愿景，我们的子孙后代将在（）的共同家园中生活成长。",
+    "options": [
+      {
+        "key": "A",
+        "text": "祥和"
+      },
+      {
+        "key": "B",
+        "text": "安宁"
+      },
+      {
+        "key": "C",
+        "text": "繁荣"
+      },
+      {
+        "key": "D",
+        "text": "尊严"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-045",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "促进两岸经济文化交流合作，两岸要应通尽通，提升（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经贸合作畅通"
+      },
+      {
+        "key": "B",
+        "text": "基础设施联通"
+      },
+      {
+        "key": "C",
+        "text": "能源资源互通"
+      },
+      {
+        "key": "D",
+        "text": "行业标准共通"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-046",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "促进两岸经济文化交流合作，就要率先实现（）同福建沿海地区通水、通电、通气、通桥，推动两岸贸易和台商对大陆投资增长。",
+    "options": [
+      {
+        "key": "A",
+        "text": "金门"
+      },
+      {
+        "key": "B",
+        "text": "马祖"
+      },
+      {
+        "key": "C",
+        "text": "乌丘"
+      },
+      {
+        "key": "D",
+        "text": "兰屿"
+      }
+    ],
+    "answer": [
+      "A",
+      "B"
+    ],
+    "answer_text": "AB",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-047",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "关于外部势力纵容鼓动“台独”分裂势力滋事挑衅，下列说法中正确的有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "加剧两岸对抗和台海形势紧张"
+      },
+      {
+        "key": "B",
+        "text": "违逆求和平、促发展、谋共赢的时代潮流"
+      },
+      {
+        "key": "C",
+        "text": "违背国际社会期待和世界人民意愿"
+      },
+      {
+        "key": "D",
+        "text": "解决台湾问题是中国人自己的事，要由中国人来决定"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "15.md"
+  },
+  {
+    "id": "16-027",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 27,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "放眼世界，我们面对的是百年未有之大变局，（）深入发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "世界多极化"
+      },
+      {
+        "key": "B",
+        "text": "经济全球化"
+      },
+      {
+        "key": "C",
+        "text": "社会信息化"
+      },
+      {
+        "key": "D",
+        "text": "文化多样化"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-028",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 28,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "当今世界正经历百年未有之大变局，国际力量对比深刻变化，“（）”更加鲜明。",
+    "options": [
+      {
+        "key": "A",
+        "text": "东升西降"
+      },
+      {
+        "key": "B",
+        "text": "东降西升"
+      },
+      {
+        "key": "C",
+        "text": "中治西乱"
+      },
+      {
+        "key": "D",
+        "text": "西治中乱"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-029",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 29,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "当今世界正经历百年未有之大变局，新一轮科技革命和产业变革深入发展， （）等前沿科技不断取得突破。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人工智能"
+      },
+      {
+        "key": "B",
+        "text": "大数据"
+      },
+      {
+        "key": "C",
+        "text": "量子技术"
+      },
+      {
+        "key": "D",
+        "text": "基因工程"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-030",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 30,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "世界进入新的动荡变革期，（）有增无减。",
+    "options": [
+      {
+        "key": "A",
+        "text": "和平赤字"
+      },
+      {
+        "key": "B",
+        "text": "发展赤字"
+      },
+      {
+        "key": "C",
+        "text": "安全赤字"
+      },
+      {
+        "key": "D",
+        "text": "治理赤字"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-031",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 31,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "世界进入新的动荡变革期，（）等非传统安全威胁持续蔓延。",
+    "options": [
+      {
+        "key": "A",
+        "text": "公共卫生"
+      },
+      {
+        "key": "B",
+        "text": "恐怖主义"
+      },
+      {
+        "key": "C",
+        "text": "气候变化"
+      },
+      {
+        "key": "D",
+        "text": "网络安全"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-032",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 32,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国以世界眼光关注人类前途命运，从（）正确认识和处理同外部世界的关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "人类发展大潮流"
+      },
+      {
+        "key": "B",
+        "text": "世界变化大格局"
+      },
+      {
+        "key": "C",
+        "text": "中国发展大历史"
+      },
+      {
+        "key": "D",
+        "text": "“中国优先”"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-033",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 33,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国特色大国外交紧紧围绕中华民族伟大复兴的历史任务，为实现中华民族伟大复兴营造和平安宁的国际环境、（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "睦邻友好的周边环境"
+      },
+      {
+        "key": "B",
+        "text": "开放包容的合作环境"
+      },
+      {
+        "key": "C",
+        "text": "稳定有序的安全环境"
+      },
+      {
+        "key": "D",
+        "text": "客观友善的舆论环境"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-034",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 34,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国特色大国外交以（），更多从全世界、全人类整体利益的角度思考问题、积极作为，为建设更加美好的世界贡献智慧和力量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "更加远大的目光"
+      },
+      {
+        "key": "B",
+        "text": "更加恢宏的格局"
+      },
+      {
+        "key": "C",
+        "text": "更加开阔的胸襟"
+      },
+      {
+        "key": "D",
+        "text": "更加从容的气度"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-035",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 35,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新时代中国特色大国外交，是在（）的形势下进行的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "国际局势风云变幻"
+      },
+      {
+        "key": "B",
+        "text": "和平与发展不再是时代主题"
+      },
+      {
+        "key": "C",
+        "text": "各种严峻考验接踵而至"
+      },
+      {
+        "key": "D",
+        "text": "中国发展不再处于战略机遇期"
+      }
+    ],
+    "answer": [
+      "A",
+      "C"
+    ],
+    "answer_text": "AC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-036",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 36,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国始终高举（）旗帜，在快速变革的世界中牢牢把握大变局的发展方向。",
+    "options": [
+      {
+        "key": "A",
+        "text": "和平"
+      },
+      {
+        "key": "B",
+        "text": "发展"
+      },
+      {
+        "key": "C",
+        "text": "合作"
+      },
+      {
+        "key": "D",
+        "text": "共赢"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-037",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 37,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国坚定不移在和平共处五项原则基础上积极发展全球伙伴关系，以精彩纷呈的元首外交为外交全局提供战略引领，构建（）的大国关系格局。",
+    "options": [
+      {
+        "key": "A",
+        "text": "和平共处"
+      },
+      {
+        "key": "B",
+        "text": "总体稳定"
+      },
+      {
+        "key": "C",
+        "text": "均衡发展"
+      },
+      {
+        "key": "D",
+        "text": "党同伐异"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-038",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 38,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国服务发展全面深化，加强（）、互联互通等领域对外合作。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经贸"
+      },
+      {
+        "key": "B",
+        "text": "投资"
+      },
+      {
+        "key": "C",
+        "text": "产能"
+      },
+      {
+        "key": "D",
+        "text": "科技"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-039",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 39,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国始终高举和平、发展、合作、共赢旗帜，通过（）等平台支持地方开放发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "主场外交"
+      },
+      {
+        "key": "B",
+        "text": "国际展会"
+      },
+      {
+        "key": "C",
+        "text": "全球推介"
+      },
+      {
+        "key": "D",
+        "text": "“中国俱乐部”"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-040",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 40,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国在（）、亚太经济合作组织、上海合作组织等多边机制中发挥越来越重要的作用，在国际舞台上发出更多中国声音、注入更多中国元素、提供更多中国方案。",
+    "options": [
+      {
+        "key": "A",
+        "text": "联合国"
+      },
+      {
+        "key": "B",
+        "text": "世界贸易组织"
+      },
+      {
+        "key": "C",
+        "text": "二十国集团"
+      },
+      {
+        "key": "D",
+        "text": "金砖国家"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-041",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 41,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国特色大国外交全面推进的具体表现包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "同180多个国家建立了外交关系"
+      },
+      {
+        "key": "B",
+        "text": "与110多个国家和地区组织建立了不同形式的伙伴关系"
+      },
+      {
+        "key": "C",
+        "text": "与有关国家缔结2万多项双边条约"
+      },
+      {
+        "key": "D",
+        "text": "加入了几乎所有普遍性政府间国际组织和600多项国际公约"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-042",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 42,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国愿意同世界各国人民和睦相处、和谐发展，共谋和平、共护和平、共享和平，始终做国际和地区安全的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "维护者"
+      },
+      {
+        "key": "B",
+        "text": "建设者"
+      },
+      {
+        "key": "C",
+        "text": "贡献者"
+      },
+      {
+        "key": "D",
+        "text": "搅局者"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-043",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 43,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "推动构建新型国际关系，就是要秉持（）原则，走出一条对话而不对抗、结伴而不结盟的国与国交往新路。",
+    "options": [
+      {
+        "key": "A",
+        "text": "相互尊重"
+      },
+      {
+        "key": "B",
+        "text": "公平正义"
+      },
+      {
+        "key": "C",
+        "text": "合作共赢"
+      },
+      {
+        "key": "D",
+        "text": "以邻为壑"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-044",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国坚持在和平共处五项原则基础上同各国发展友好合作，深化拓展（）的全球伙伴关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "平等"
+      },
+      {
+        "key": "B",
+        "text": "开放"
+      },
+      {
+        "key": "C",
+        "text": "合作"
+      },
+      {
+        "key": "D",
+        "text": "对抗"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-045",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要始终从战略高度和长远角度看待和发展中欧关系，继续推进中欧（）伙伴关系建设。",
+    "options": [
+      {
+        "key": "A",
+        "text": "和平"
+      },
+      {
+        "key": "B",
+        "text": "增长"
+      },
+      {
+        "key": "C",
+        "text": "改革"
+      },
+      {
+        "key": "D",
+        "text": "文明"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-046",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "打造周边命运共同体，就要着力推进区域安全合作，坚持（）的亚洲安全观，主动参与区域和次区域安全合作。",
+    "options": [
+      {
+        "key": "A",
+        "text": "共同"
+      },
+      {
+        "key": "B",
+        "text": "综合"
+      },
+      {
+        "key": "C",
+        "text": "合作"
+      },
+      {
+        "key": "D",
+        "text": "可持续"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-047",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国要积极推动南南合作、南北合作，加强同（）、太平洋岛国等广大发展中国家的团结合作，维护发展中国家共同利益。",
+    "options": [
+      {
+        "key": "A",
+        "text": "亚洲"
+      },
+      {
+        "key": "B",
+        "text": "非洲"
+      },
+      {
+        "key": "C",
+        "text": "拉美和加勒比国家"
+      },
+      {
+        "key": "D",
+        "text": "阿拉伯国家"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-048",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 48,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国要同金砖国家深化战略伙伴关系，巩固（）合作架构。",
+    "options": [
+      {
+        "key": "A",
+        "text": "经贸财金"
+      },
+      {
+        "key": "B",
+        "text": "政治安全"
+      },
+      {
+        "key": "C",
+        "text": "军事同盟"
+      },
+      {
+        "key": "D",
+        "text": "人文交流"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-049",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 49,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国要妥善处理义利关系，在国际事务中（），做到义利兼顾、义利平衡。",
+    "options": [
+      {
+        "key": "A",
+        "text": "讲信义"
+      },
+      {
+        "key": "B",
+        "text": "重情义"
+      },
+      {
+        "key": "C",
+        "text": "扬正义"
+      },
+      {
+        "key": "D",
+        "text": "树道义"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-050",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 50,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "中国共产党愿在（）原则基础上加强同各国政党和政治组织交流合作，探索建立求同存异、相互尊重、互学互鉴的新型政党关系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "独立自主"
+      },
+      {
+        "key": "B",
+        "text": "完全平等"
+      },
+      {
+        "key": "C",
+        "text": "互相尊重"
+      },
+      {
+        "key": "D",
+        "text": "互不干涉内部事务"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-051",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 51,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要打造海外民生工程，切实保障中国公民和企业的海外安全与合法权益，其具体做法包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "为中国留学生争取更好的学习环境"
+      },
+      {
+        "key": "B",
+        "text": "为中国商人营造更友善的兴业环境"
+      },
+      {
+        "key": "C",
+        "text": "为中国侨胞带去更温暖的关怀"
+      },
+      {
+        "key": "D",
+        "text": "为海外中国游客提供更安全的旅游环境"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-052",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 52,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "积极开展民间外交是中国外交的优良传统和鲜明特色，其具体举措包括（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "加强民间组织往来"
+      },
+      {
+        "key": "B",
+        "text": "密切妇女、青年、残疾人等群体交流"
+      },
+      {
+        "key": "C",
+        "text": "全方位推进人文交流"
+      },
+      {
+        "key": "D",
+        "text": "深入开展旅游、科教、地方合作等友好交往"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-053",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 53,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "构建人类命运共同体，就是要携手世界各国人民共同建设持久和平、（）的世界。",
+    "options": [
+      {
+        "key": "A",
+        "text": "普遍安全"
+      },
+      {
+        "key": "B",
+        "text": "共同繁荣"
+      },
+      {
+        "key": "C",
+        "text": "开放包容"
+      },
+      {
+        "key": "D",
+        "text": "清洁美丽"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-054",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 54,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设普遍安全的世界，就要树立（）的安全观，统筹应对传统和非传统安全威胁，反对一切形式的恐怖主义，营造公道正义、共建共享的安全格局。",
+    "options": [
+      {
+        "key": "A",
+        "text": "共同"
+      },
+      {
+        "key": "B",
+        "text": "综合"
+      },
+      {
+        "key": "C",
+        "text": "合作"
+      },
+      {
+        "key": "D",
+        "text": "可持续"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-055",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 55,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设共同繁荣的世界，就要坚持你好我好大家好的理念，推进（）、共赢的经济全球化，创造全人类共同发展的良好条件，共同推动世界各国发展繁荣，让发展成果惠及世界各国。",
+    "options": [
+      {
+        "key": "A",
+        "text": "开放"
+      },
+      {
+        "key": "B",
+        "text": "包容"
+      },
+      {
+        "key": "C",
+        "text": "普惠"
+      },
+      {
+        "key": "D",
+        "text": "平衡"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-056",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 56,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "建设清洁美丽的世界，就要倡导（）的生产生活方式，采取行动应对气候变化，构筑尊崇自然、绿色发展的生态体系，促进人与自然和谐共生，共建地球生命共同体。",
+    "options": [
+      {
+        "key": "A",
+        "text": "绿色"
+      },
+      {
+        "key": "B",
+        "text": "低碳"
+      },
+      {
+        "key": "C",
+        "text": "循环"
+      },
+      {
+        "key": "D",
+        "text": "可持续"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-057",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 57,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "构建人类命运共同体理念为人类社会实现（）绘制了蓝图，对中国的和平发展、世界的繁荣进步都具有重大而深远的意义。",
+    "options": [
+      {
+        "key": "A",
+        "text": "共同发展"
+      },
+      {
+        "key": "B",
+        "text": "持续繁荣"
+      },
+      {
+        "key": "C",
+        "text": "长治久安"
+      },
+      {
+        "key": "D",
+        "text": "集团政治回潮"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-058",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 58,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们要坚持（），携手破解和平赤字、发展赤字、安全赤字、治理赤字，使全球治理体系满足应对全球性挑战的现实需要，顺应和平发展合作共赢的历史趋势。",
+    "options": [
+      {
+        "key": "A",
+        "text": "公正合理"
+      },
+      {
+        "key": "B",
+        "text": "互商互谅"
+      },
+      {
+        "key": "C",
+        "text": "同舟共济"
+      },
+      {
+        "key": "D",
+        "text": "互利共赢"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-059",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 59,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "共建“一带一路”，就要秉持共商共建共享原则，全面推进（）、民心相通。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政策沟通"
+      },
+      {
+        "key": "B",
+        "text": "设施联通"
+      },
+      {
+        "key": "C",
+        "text": "贸易畅通"
+      },
+      {
+        "key": "D",
+        "text": "资金融通"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "16.md"
+  },
+  {
+    "id": "17-044",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 44,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，我们解决了党内许多突出问题，但党面临的（）将长期存在。",
+    "options": [
+      {
+        "key": "A",
+        "text": "执政考验"
+      },
+      {
+        "key": "B",
+        "text": "改革开放考验"
+      },
+      {
+        "key": "C",
+        "text": "市场经济考验"
+      },
+      {
+        "key": "D",
+        "text": "外部环境考验"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-045",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 45,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，我们解决了党内许多突出问题，但党面临的（）将长期存在。",
+    "options": [
+      {
+        "key": "A",
+        "text": "精神懈怠危险"
+      },
+      {
+        "key": "B",
+        "text": "能力不足危险"
+      },
+      {
+        "key": "C",
+        "text": "脱离群众危险"
+      },
+      {
+        "key": "D",
+        "text": "消极腐败危险"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-046",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 46,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "有些党员、干部政治信仰出现严重危机，一些地方和部门（）盛行，引起广大党员、干部、群众强烈不满和义愤。",
+    "options": [
+      {
+        "key": "A",
+        "text": "形式主义"
+      },
+      {
+        "key": "B",
+        "text": "官僚主义"
+      },
+      {
+        "key": "C",
+        "text": "享乐主义"
+      },
+      {
+        "key": "D",
+        "text": "奢靡之风"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-047",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 47,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们党作为百年大党，如何（），是我们必须回答好、解决好的一个根本性问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "永葆先进性和纯洁性"
+      },
+      {
+        "key": "B",
+        "text": "永葆青春活力"
+      },
+      {
+        "key": "C",
+        "text": "永远得到人民拥护和支持"
+      },
+      {
+        "key": "D",
+        "text": "实现长期执政"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-048",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 48,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面从严治党，“基础在全面”，就要把从严治党的要求落实到每个党组织每名党员，体现到党的（）、纪律建设、制度建设、反腐败斗争各个领域。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治建设"
+      },
+      {
+        "key": "B",
+        "text": "思想建设"
+      },
+      {
+        "key": "C",
+        "text": "组织建设"
+      },
+      {
+        "key": "D",
+        "text": "作风建设"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-049",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 49,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "全面从严治党是一项管党治党的系统工程，客观上需要一个（）的全面从严治党体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "布局合理"
+      },
+      {
+        "key": "B",
+        "text": "内容科学"
+      },
+      {
+        "key": "C",
+        "text": "要素齐备"
+      },
+      {
+        "key": "D",
+        "text": "统一高效"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-050",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 50,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "要落实新时代党的建设总要求，把（）落实到全面从严治党全过程。",
+    "options": [
+      {
+        "key": "A",
+        "text": "全的要求"
+      },
+      {
+        "key": "B",
+        "text": "严的基调"
+      },
+      {
+        "key": "C",
+        "text": "治的理念"
+      },
+      {
+        "key": "D",
+        "text": "松的胸襟"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C"
+    ],
+    "answer_text": "ABC",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-051",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 51,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "在全党开展集中学习教育活动，通过党的群众路线教育实践活动、“三严三实”专题教育、（）等，使广大党员理想信念更加坚定，精神面貌发生巨大变化，党和人民群众的联系更加紧密。",
+    "options": [
+      {
+        "key": "A",
+        "text": "“两学一做”学习教育"
+      },
+      {
+        "key": "B",
+        "text": "“不忘初心、牢记使命”主题教育"
+      },
+      {
+        "key": "C",
+        "text": "党史学习教育"
+      },
+      {
+        "key": "D",
+        "text": "学习贯彻习近平新时代中国特色社会主义思想主题教育"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-052",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 52,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党的十八大以来，党中央采取一系列战略举措，持续推进全面从严治党，其具体举措有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "坚决扭转一些地方和部门存在的党的领导弱化、党的建设缺失现象"
+      },
+      {
+        "key": "B",
+        "text": "突出政治标准选贤任能"
+      },
+      {
+        "key": "C",
+        "text": "建立健全巡视巡察上下联动格局"
+      },
+      {
+        "key": "D",
+        "text": "坚决整治群众身边的不正之风和腐败问题"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-053",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 53,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "马克思主义政党坚持以无产阶级和全人类的解放为己任，具有（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "崇高政治理想"
+      },
+      {
+        "key": "B",
+        "text": "高尚政治追求"
+      },
+      {
+        "key": "C",
+        "text": "纯洁政治品质"
+      },
+      {
+        "key": "D",
+        "text": "严明政治纪律"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-054",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 54,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "必须严格执行新形势下党内政治生活若干准则，增强党内政治生活的（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "政治性"
+      },
+      {
+        "key": "B",
+        "text": "时代性"
+      },
+      {
+        "key": "C",
+        "text": "原则性"
+      },
+      {
+        "key": "D",
+        "text": "战斗性"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-055",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 55,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "发挥党的政治建设的统领性作用，必须（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "把准政治方向"
+      },
+      {
+        "key": "B",
+        "text": "站稳政治立场"
+      },
+      {
+        "key": "C",
+        "text": "营造良好政治生态"
+      },
+      {
+        "key": "D",
+        "text": "提高政治能力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-056",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 56,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持加强马克思主义武装，使全党始终保持（），是党的事业发展的重要法宝。",
+    "options": [
+      {
+        "key": "A",
+        "text": "统一的思想"
+      },
+      {
+        "key": "B",
+        "text": "坚定的意志"
+      },
+      {
+        "key": "C",
+        "text": "协调的行动"
+      },
+      {
+        "key": "D",
+        "text": "强大的战斗力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-057",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 57,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "真正领会和把握习近平新时代中国特色社会主义思想，就要将学习成果体现到（）上，以实干担当推动事业发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "推动高质量发展"
+      },
+      {
+        "key": "B",
+        "text": "增进民生福祉"
+      },
+      {
+        "key": "C",
+        "text": "增强斗争本领"
+      },
+      {
+        "key": "D",
+        "text": "弘扬清风正气"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-058",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 58,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "基层党组织是贯彻落实党中央决策部署的“最后一公里”,要坚持大抓基层的鲜明导向，把各领域基层党组织建设成为宣传党的主张、（）的坚强战斗堡垒。",
+    "options": [
+      {
+        "key": "A",
+        "text": "贯彻党的决定"
+      },
+      {
+        "key": "B",
+        "text": "领导基层治理"
+      },
+      {
+        "key": "C",
+        "text": "团结动员群众"
+      },
+      {
+        "key": "D",
+        "text": "推动改革发展"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-059",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 59,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "坚持制度治党、依规治党，就要及时将行之有效的措施制度化法规化，进一步完善（）的党内法规制度体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "内容科学"
+      },
+      {
+        "key": "B",
+        "text": "程序严密"
+      },
+      {
+        "key": "C",
+        "text": "配套完备"
+      },
+      {
+        "key": "D",
+        "text": "运行有效"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-060",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 60,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "新时代推进反腐败斗争构建起党全面领导的反腐败工作格局，实现了反腐败领导体制重塑、（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "战略目标重塑"
+      },
+      {
+        "key": "B",
+        "text": "组织机构重塑"
+      },
+      {
+        "key": "C",
+        "text": "工作力量重塑"
+      },
+      {
+        "key": "D",
+        "text": "责任体系重塑"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-061",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 61,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党中央坚决惩治利用公权力及其影响力谋取私利的腐败行为，深化（）等重点领域反腐败工作。",
+    "options": [
+      {
+        "key": "A",
+        "text": "金融"
+      },
+      {
+        "key": "B",
+        "text": "国有企业"
+      },
+      {
+        "key": "C",
+        "text": "政法"
+      },
+      {
+        "key": "D",
+        "text": "粮食购销"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-062",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 62,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党中央制定和完善了一批对反腐败具有基础性、标志性、关键性的法规制度，先后修订并颁布实施（）等，形成一系列防范和惩治腐败的党内“铁规”。",
+    "options": [
+      {
+        "key": "A",
+        "text": "《中国共产党党内监督条例》"
+      },
+      {
+        "key": "B",
+        "text": "《中国共产党纪律处分条例》"
+      },
+      {
+        "key": "C",
+        "text": "《中华人民共和国反腐败法》"
+      },
+      {
+        "key": "D",
+        "text": "《中国共产党问责条例》"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "D"
+    ],
+    "answer_text": "ABD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-063",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 63,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "党中央全面加强授权、用权、制权等环节的法规制度建设，依纪依法（），为系统施治、标本兼治提供了制度支撑。",
+    "options": [
+      {
+        "key": "A",
+        "text": "设定权力"
+      },
+      {
+        "key": "B",
+        "text": "规范权力"
+      },
+      {
+        "key": "C",
+        "text": "制约权力"
+      },
+      {
+        "key": "D",
+        "text": "监督权力"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-064",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 64,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "勇于自我革命就要同一切影响党的先进性、弱化党的纯洁性的问题作坚决斗争，实现（）。",
+    "options": [
+      {
+        "key": "A",
+        "text": "自我净化"
+      },
+      {
+        "key": "B",
+        "text": "自我完善"
+      },
+      {
+        "key": "C",
+        "text": "自我革新"
+      },
+      {
+        "key": "D",
+        "text": "自我提高"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-065",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 65,
+    "type": "多选题",
+    "type_key": "multiple",
+    "stem": "我们党始终加强自身建设，进行伟大自我革命，确保党成为（）、朝气蓬勃的马克思主义执政党。",
+    "options": [
+      {
+        "key": "A",
+        "text": "始终走在时代前列"
+      },
+      {
+        "key": "B",
+        "text": "人民衷心拥护"
+      },
+      {
+        "key": "C",
+        "text": "勇于自我革命"
+      },
+      {
+        "key": "D",
+        "text": "经得起各种风浪考验"
+      }
+    ],
+    "answer": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "answer_text": "ABCD",
+    "source_file": "17.md"
+  }
+]

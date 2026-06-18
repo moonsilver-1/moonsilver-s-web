@@ -41,7 +41,17 @@ export function SiteFooter() {
             rel="noreferrer"
             className="group relative overflow-hidden rounded-full border border-[var(--app-border)] px-4 py-2 text-xs transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
           >
-            <span className="relative z-10">{labels.friendSite}</span>
+            <span className="relative z-10">johnlin</span>
+            <span className="absolute inset-0 -translate-x-full bg-[var(--app-fg)]/5 transition-transform duration-300 group-hover:translate-x-0" />
+          </a>
+
+          <a
+            href="https://www.hdu-wiki.cn/"
+            target="_blank"
+            rel="noreferrer"
+            className="group relative overflow-hidden rounded-full border border-[var(--app-border)] px-4 py-2 text-xs transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
+          >
+            <span className="relative z-10">hdu-wiki</span>
             <span className="absolute inset-0 -translate-x-full bg-[var(--app-fg)]/5 transition-transform duration-300 group-hover:translate-x-0" />
           </a>
 

@@ -205,6 +205,18 @@ function isQsCountryQuestion(question: QuestionMeta) {
   return sourceStarts(question, "q_qs_country_");
 }
 
+function isProjectLabelQuestion(question: QuestionMeta): boolean {
+  const key = sourceKey(question);
+  return [
+    "q_rank_985",
+    "q_rank_211",
+    "q_rank_dfc",
+    "q_cn_985",
+    "q_cn_211",
+    "q_cn_double_first_class",
+  ].includes(key);
+}
+
 function isMainlandOnlyQuestion(question: QuestionMeta): boolean {
   const text = qText(question);
   const tags = question.tags ?? [];
@@ -467,6 +479,12 @@ function selectRankQuestion(
     if (gate) return gate;
   }
 
+  // 对大陆学校，优先问 985/211/双一流 项目标签，这些问题的区分度通常比 QS/软科区间更高。
+  if (mainland === "yes") {
+    const labelQ = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => isProjectLabelQuestion(q));
+    if (labelQ) return labelQ;
+  }
+
   const scopeOrder: RankScope[] = mainland === "yes" ? ["china", "qs", "general"] : ["qs", "general"];
 
   for (const scope of scopeOrder) {
@@ -513,13 +531,20 @@ export function selectNextQuestion(
   const rankQuestion = selectRankQuestion(questions, candidateUnis, askedSet, answers);
   if (rankQuestion) return rankQuestion;
 
-  if (candidateUnis.length > 8) {
-    const nextMajor = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionFamily(q) === "major");
-    if (nextMajor) return nextMajor;
+  // 排名问完后，如果候选集还很大，优先问学校类型（理工、师范、农林、医药等）。
+  if (candidateUnis.length > 4) {
+    const nextType = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => {
+      const family = questionFamily(q);
+      return family === "type" || family === "major";
+    });
+    if (nextType) return nextType;
   }
 
-  const nextName = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionFamily(q) === "name");
-  if (nextName) return nextName;
+  // 候选集缩到较小范围时，问校名关键词（名字里是否有“林业”“邮电”“师范”等）。
+  if (candidateUnis.length > 2) {
+    const nextName = pickQuestion(questions, candidateUnis, askedSet, answers, (q) => questionFamily(q) === "name");
+    if (nextName) return nextName;
+  }
 
   return pickQuestion(questions, candidateUnis, askedSet, answers, () => true);
 }

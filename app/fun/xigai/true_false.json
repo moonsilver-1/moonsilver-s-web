@@ -1,0 +1,6698 @@
+[
+  {
+    "id": "3-037",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持党的全面领导是坚持和发展中国特色社会主义的必由之路。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-038",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有中国共产党，就没有新中国，就没有中国特色社会主义。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-039",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国人民和中华民族之所以能够扭转近代以后的历史命运、取得今天的伟大成就，最根本的是有中国共产党的坚强领导。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-040",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有中国共产党的领导，人民当家作主的愿望就无法实现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-041",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国特色社会主义之所以是社会主义，究其根本就在于坚持科学社会主义基本原则，在于坚持中国共产党的领导。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-042",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国共产党的领导是实现中华民族伟大复兴的根本保证。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-043",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只有坚持党的领导，才能使党自身的优势充分彰显，不断转化为中国特色社会主义制度优势和国家治理效能。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-044",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "党的思想引领力是保证全党全国各族人民思想统一、步调一致的坚实基础。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-045",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "党的领导是党和国家的根本所在、命脉所在，是全国各族人民的利益所系、命运所系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-046",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国共产党作为最高政治领导力量是由我国国家性质和政治制度体系决定的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-047",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国共产党坚强有力的领导，是中国社会团结稳定、国家繁荣发展的根本保证。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "3-048",
+    "chapter": "第3章",
+    "chapter_index": 3,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持党作为最高政治领导力量，是国家和民族兴旺发达的根本所在，是全国各族人民幸福安康的根本所在。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "3.md"
+  },
+  {
+    "id": "4-025",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 25,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "历史唯物主义群众史观，第一次彻底解决了如何认识人民群众在历史上的作用这一重大问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-026",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 26,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民群众是社会变革的决定力量，但历史上一切生产关系的深刻变革、社会制度的兴亡更替，都是由个别英雄人物推动的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-027",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 27,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会主义国家是由无产阶级建立和领导的，第一次真正实现了人民当家作主。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-028",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 28,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "各国国情不同，每个国家的政治制度都是独特的，都是由这个国家的人民决定的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-029",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 29,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国是工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家，国家一切权力属于人民。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-030",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 30,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "工人阶级取得统治权后，要尽可能继续运用原来的国家机器来进行管理。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-031",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 31,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们党来自人民、根植人民，人民群众的支持和拥护是我们胜利前进的不竭力量源泉。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-032",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 32,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民性是马克思主义的本质属性和鲜明品格。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-033",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 33,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "根据历史唯物主义基本原理，历史发展和社会进步的主体力量是人民群众。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-034",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 34,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国共产党作为以马克思主义为指导的无产阶级政党，除了国家、民族、人民的利益，没有自己特殊的利益。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-035",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 35,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们党的百年奋斗归根到底就是让中国人民过上好日子，实现国家富强和民族振兴。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-036",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 36,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民对美好生活的向往就是党的奋斗目标，这体现了我国社会主要矛盾转化对党和国家工作的新要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-037",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民是我们党的生命之根、执政之基、力量之源。党永远要依靠人民创造新的历史伟业。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-038",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发展始终是解决我国一切问题的基础和关键。谋划发展，最了解实际情况的是人民群众。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-039",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "正是因为我们党紧紧依靠人民推动国家发展，充分尊重人民首创精神，最大限度地激发人民的创造热情，我们的事业才能不断保持与时俱进的活力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-040",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "尊重人民首创精神，就要及时发现、总结、概括人民群众实践中形成的新鲜经验，使之上升为理论和政策，更好指导中国特色社会主义实践。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-041",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "党员干部要树立正确的政绩观，以经济发展数据作为检验工作的最终评判标准。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-042",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "要关注民情、顺应民意，人民群众赞成什么、期盼什么，就要坚持和推动什么；人民群众反对什么、痛恨什么，就要防范和纠正什么。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-043",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持以人民为中心的发展思想是抽象的、空泛的，难以切实贯穿到党和国家事业各方面。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-044",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们党是在同人民群众的密切联系中成长、发展、壮大起来的，是靠宣传群众、组织群众、依靠群众起家的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-045",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "开展调查研究就是走群众路线，没有调查就没有发言权，就没有决策权。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-046",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "要扑下身子、沉到一线、深入基层，听真话、察实情，从人民群众的创造性实践中获得正确认识。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-047",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在民主政治建设中，要发展全过程人民民主，使国家政治生活和社会生活各环节、各方面都体现人民意愿、听到人民声音。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-048",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "制度建设是持续为群众办实事的有力保障，要把以人民为中心的发展思想通过制度落到实处。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-049",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在中国共产党领导的社会主义中国，我们追求的富裕是全体人民共同富裕。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "4.md"
+  },
+  {
+    "id": "4-050",
+    "chapter": "第4章",
+    "chapter_index": 4,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "共同富裕是全体人民共同富裕，是整齐划一的平均主义。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "4.md"
+  },
+  {
+    "id": "5-023",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 23,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只有社会主义才能救中国，只有改革开放才能发展中国、发展社会主义、发展马克思主义。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-024",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 24,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面深化改革开放是在多年改革开放基础上的深化，是一场全面、系统、整体的制度创新。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-025",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 25,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "要保持战略定力，牢牢把握全面深化改革开放的正确方向，确保改革不改向、变革不变色。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-026",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 26,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "改革开放是对社会主义生产关系和上层建筑的调整，使之适应生产力和经济基础发展的新要求，是社会主义制度的自我完善和发展，而不是改弦易张。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-027",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 27,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "新时代全面深化改革具有全面性、系统性、整体性的鲜明特点，必须将其作为一个系统工程来把握。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-028",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 28,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "“推进国家治理体系和治理能力现代化”，就是要通过改革进一步增强我国制度活力，把制度优势转化为国家治理效能。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-029",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 29,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有有效的治理能力，再好的制度也难以发挥作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-030",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 30,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "国家治理体系和治理能力是一个国家制度和制度执行能力的集中体现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-031",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 31,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "世界上不存在适用于一切国家的政治制度模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-032",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 32,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有坚定的制度自信就不可能有全面深化改革的勇气，同样，离开不断改革，制度自信也不可能彻底、不可能久远。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-033",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 33,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面深化改革，要加强对改革的整体谋划、协同推进、系统集成，注重改革措施整体效果，坚持平均用力、齐头并进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-034",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 34,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面深化改革，要注意抓主要矛盾和矛盾的主要方面，要畸重畸轻、单兵突进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-035",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 35,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面深化改革开放，只要经过充分论证和评估，是符合实际、必须做的，就要大胆地试、大胆地闯。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-036",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 36,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会主义事业是一项全新事业，没有现成的方案和固定的模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-037",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "开放也是改革。以开放促改革、促发展是我国发展不断取得新成就的宝贵经验。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-038",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "开放合作仍然是历史潮流，经济全球化的历史大势不可逆转。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "5-039",
+    "chapter": "第5章",
+    "chapter_index": 5,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持实施更大范围、更宽领域、更深层次对外开放，要优化区域开放布局，形成陆海内外联动、东西双向互济的开放格局。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "5.md"
+  },
+  {
+    "id": "6-045",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "正确认识历史方位和发展阶段是我们党明确各个阶段中心任务、制定正确路线方针政策的根本依据。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-046",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国经济发展进入新常态，重要战略机遇期的内涵和条件发生了改变，经济发展方式和经济结构也发生了改变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-047",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "总体来说，我国发展仍处于可以大有作为的重要战略机遇期，我国经济发展总体向好的基本面没有改变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-048",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "当前和今后一个时期，虽然我国发展仍然处于重要战略机遇期，但机遇和挑战都有新的发展变化，机遇和挑战之大都前所未有，总体上机遇与挑战相当。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-049",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "进入新发展阶段，必须把发展质量问题摆在更为突出的位置，在质量效益明显提升的基础上实现经济持续健康发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-050",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "所有制结构是基本经济制度的基础，决定分配方式和资源配置方式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-051",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "所有制、分配制度、资源配置体制机制是经济制度体系中具有长期性和稳定性的部分，起着规范方向的作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-052",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "要坚持党对国有企业的领导不动摇，把加强党的领导和完善公司治理统一起来，建设中国特色现代国有企业制度。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-053",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "任何想把公有制经济否定掉或者想把非公有制经济否定掉的观点都是错误的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-054",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "要坚持公有制为主体、多种所有制经济共同发展，积极推进国有资本、集体资本、非公有资本等交叉持股、相互融合的混合所有制经济发展。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-055",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "基本分配制度是由我国社会主义性质和基本国情决定的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-056",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发展社会主义市场经济既发挥了市场经济的长处，又发挥了社会主义制度的优越性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-057",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "宏观调控是党和国家治理经济的重要方式，体现了中国特色社会主义制度的独特优势。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-058",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "构建以国内大循环为主体、国内国际双循环相互促进的新发展格局，是推动高质量发展的战略基点，是关系我国发展全局的重大战略任务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-059",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 59,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "2008年国际金融危机是我国发展格局演变的一个重要分水岭。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-060",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "从国际比较看，大国经济的特征都是外需为主导、内部可循环。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-061",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "构建新发展格局是开放的国内国际双循环，不是封闭的国内单循环。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-062",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "科技自立自强是我国经济生存和发展的基础，是畅通国内国际双循环、促进我国发展大局的关键。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "6-063",
+    "chapter": "第6章",
+    "chapter_index": 6,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "战略性新兴产业具有先导性，代表新一轮科技革命和产业变革的方向，是引领国家未来产业发展的决定性力量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "6.md"
+  },
+  {
+    "id": "7-036",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 36,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有知识分子参加的革命是不可能胜利的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-037",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "科教兴国是我国的基本国策。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-038",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "实施科教兴国战略，要把教育摆在优先发展的战略地位。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-039",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "可以重视科技与教育工作，但不应要求科技和教育成果向现实生产力转化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-040",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "创新在国家发展全局中居于核心位置。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-041",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "教育优先发展重在夯实人力资源深度开发基础。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-042",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "抓教育就是抓发展，谋教育就是谋未来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-043",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "教育主要是给学生传授知识，价值观塑造和能力锻造不重要。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-044",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "家长将孩子送进校园就万事大吉，不必再操心孩子的教育了。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-045",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "青少年成长成才是学校和家庭的事情，与所在街道、社区无关。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-046",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "如果科技创新搞不上去，发展动力就不可能实现转换，我们在全球竞争中就会处于下风。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-047",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国科技正处于将强未强、不进则退的关键阶段，只有加快实现高水平科技自立自强，牢牢掌握发展主动权，我国的现代化进程才不会被迟滞甚至打断。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-048",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们可以大力引进高新技术，不用自己辛苦研发，一样能够提高科技水平。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-049",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "新型举国体制在开展科技攻关方面不具备优势。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-050",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国是一个大国，对人才数量、质量、结构的需求是全方位的，满足这样庞大的人才需求必须主要依靠外部引进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "7-051",
+    "chapter": "第7章",
+    "chapter_index": 7,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "同新形势新任务相比，我国人才队伍建设已基本不存在不适应的地方。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "7.md"
+  },
+  {
+    "id": "8-034",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 34,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民民主是社会主义的生命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-035",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 35,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在我国，国家一切权力属于人民，体现在国体上，就是指工人阶级领导的、以工农联盟为基础的人民民主专政的社会主义国家。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-036",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 36,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发展社会主义民主政治，是全面建设社会主义现代化国家的内在要求和重要目标。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-037",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "目前，人民民主的制度程序和参与实践还不完整。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-038",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有民主就没有社会主义，就没有社会主义的现代化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-039",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "民主不是一种国家制度，而是一种默认的准则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-040",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国特色社会主义民主是个新事物，也是个好事物，这说明中国政治制度完美无缺。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-041",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "世界上存在某一种适用于一切国家的政治制度模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-042",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全过程人民民主是过程民主，而非成果民主。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-043",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全过程人民民主具有完整的制度程序，构建了多样、畅通、有序的民主渠道。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-044",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "民主已经从价值理念变成扎根中国大地的制度形态、治理机制和人民的生活方式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-045",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全过程人民民主是直接民主。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-046",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中华人民共和国的一切国家权力都是为人民服务的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-047",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全过程人民民主的“全过程”主要是指有完整的制度程序，而不是完整的参与实践。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-048",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全过程人民民主是全链条、全方位、全覆盖的民主。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-049",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民当家作主必须通过一定的制度予以保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-050",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国的重要政治制度是建立在我国根本政治制度和基本政治制度基础上的、由根本政治制度和基本政治制度派生而来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-051",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "当前，我们的民主制度建设同扩大人民民主和促进经济社会发展的要求还不完全适应。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-052",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国协商民主有效克服了党派和利益集团为自己的利益相互竞争甚至相互倾轧的弊端。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-053",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人心向背、力量对比是决定党和人民事业成败的关键。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-054",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "民族团结是我国各族人民的生命线，中华民族共同体意识是民族团结之本。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-055",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中华民族处于最孱弱的时期也没有分崩离析，靠的就是国土不可分、民族不可散、文明不可断的理念。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-056",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在我们国家，群众既有信仰宗教的自由，也有不信仰宗教的自由。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-057",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "团结奋斗是中国共产党和中国人民最显著的精神标识。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "8-058",
+    "chapter": "第8章",
+    "chapter_index": 8,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "统一战线的性质是爱国统一战线。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "8.md"
+  },
+  {
+    "id": "9-037",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有全面依法治国，我们也可以治好国、理好政。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-038",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面依法治国为制度之治提供最基本最稳定最可靠的保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-039",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "通过宪法法律确认和巩固国家根本制度、基本制度、重要制度，并运用国家强制力保证实施，保障了国家治理体系的系统性、规范性、协调性、稳定性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-040",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国特色社会主义法治道路在本质上是中国特色社会主义道路在法治领域的具体体现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-041",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "推进全面依法治国，根本目的是依法保障人民权益。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-042",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "法治当中有政治，没有脱离政治的法治。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-043",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "每一种法治形态背后都有一套政治理论。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-044",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "每一种法治模式当中都有一种政治逻辑。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-045",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "依法治国，可能会虚化、弱化党的领导。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-046",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "道德是成文的法律，法律是内心的道德。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-047",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "法律和道德都具有规范社会行为和维护社会秩序的作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-048",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国特色社会主义法治体系，本质上是中国特色社会主义制度的法律表现形式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-049",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们讲依宪治国、依宪执政，同西方的“宪政”没有本质区别。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-050",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "更好推进中国特色社会主义法治建设，必须推进合宪性审查工作，对一切违反宪法法律的法规、规范性文件必须坚决予以纠正和撤销。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-051",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只要公权力存在，就必须有制约和监督，否则，公权力就会被滥用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "9.md"
+  },
+  {
+    "id": "9-052",
+    "chapter": "第9章",
+    "chapter_index": 9,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "科学立法是维护社会公平正义的最后一道防线。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "9.md"
+  },
+  {
+    "id": "10-051",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "保护好、传承好文化遗产是对历史负责、对人民负责，要坚持把开发放在第一位，增强对历史文物和文化遗产的敬畏之心。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-052",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "考古工作是展示和构建中华民族历史、中华文明瑰宝的重要文化事业。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-053",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "衡量文化产业发展质量和水平，最重要的是看经济效益。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "10.md"
+  },
+  {
+    "id": "10-054",
+    "chapter": "第10章",
+    "chapter_index": 10,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "一个国家的文化软实力，从根本上说，取决于其核心价值观的生命力、凝聚力、感召力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "10.md"
+  },
+  {
+    "id": "11-050",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "以经济增长为中心是我们党的根本执政理念。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-051",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "随着经济社会的发展进步，人民生活品质的不断提高，民生内涵也在不断丰富。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-052",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "民生能决定党的事业成败和国家命运兴衰。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-053",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在资本主义社会，生产表现为人的目的，而人并不是生产的目的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-054",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "关注人本身的发展，是社会主义和资本主义的根本区别之一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-055",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "脱贫摘帽是我们党奋斗的重点和终点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-056",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国已建成世界上规模第二大的社会保障体系和医疗卫生体系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-057",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国城乡、区域、不同群体间收入差距较大问题已得到历史性解决。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-058",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "随着互联网的迅猛发展和广泛普及，人们的生产生活方式、思维方式、交往方式深刻改变，这对社会治理提出更高的要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-059",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 59,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会治理体系是进行社会治理的基础，也是提高社会治理效能的保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-060",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会治理是一门科学，管得太死，一潭死水不行；管得太松，波涛汹涌也不行。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-061",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会治理的最好办法，是将矛盾消解于未然，将风险化解于无形。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-062",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "市域是将风险隐患解决在基层、化解在萌芽状态的最直接、最有效力的治理层级，处于推进基层治理现代化的前线位置。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "11-063",
+    "chapter": "第11章",
+    "chapter_index": 11,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社区社会治理成效很大程度取决于市域社会治理能力和水平。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "11.md"
+  },
+  {
+    "id": "12-037",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "生态环境是人类生存最为基础的条件，生态文明建设是关系中华民族永续发展的根本大计。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-038",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "保护自然就是保护人类，建设生态文明就是造福人类。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-039",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人类文明的发展离不开良好生态环境这个根本基础。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-040",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "生态文明是人类文明发展的历史趋势。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-041",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "生态环境问题归根到底是经济发展方式和生活方式问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-042",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "从根本上讲，生态环境保护和经济发展是矛盾对立的关系，是鱼和熊掌不可兼得的两难选择。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-043",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "经济发展不能以破坏生态为代价，不能把生态环境保护和经济发展割裂开来，更不能对立起来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-044",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "绿水青山可以带来金山银山，金山银山也可以买到绿水青山。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-045",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "绿水青山是人民群众健康的重要保障，是人民群众的共有财富。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-046",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持正确的发展理念，产业和生态完全可以相得益彰、和平共处。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-047",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "生态文明建设是重大经济问题，也是关系党的使命宗旨的重大政治问题、关系民生福祉的重大社会问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-048",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "良好的生态环境是最公平的公共产品，是最普惠的民生福祉。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-049",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "绿色发展是新发展理念的重要内容，是发展观的一场深刻革命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-050",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "实现“双碳”目标，不是别人让我们做，而是我们自己必须要做。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-051",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国承诺的“双碳”目标是确定不移的，但达到这一目标的路径和方式、节奏和力度则应该而且必须由我们自己作主，决不受他人左右。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-052",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "生态文明是人民群众共同参与共同建设共同享有的事业，每个人都是生态环境的保护者、建设者、受益者。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-053",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只有实行最严格的制度、最严密的法治，才能为生态文明建设提供可靠保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-054",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "对已出台的生态环境保护制度必须认真执行，不得作选择、搞变通、打折扣。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-055",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "保护生态环境、推动可持续发展，需要世界各国同舟共济、共同努力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-056",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "地球是全人类赖以生存的唯一家园，珍爱和呵护地球是人类的唯一选择。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-057",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "保护生态环境、推动可持续发展是发达国家的责任，与其他国家无关。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-058",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人类可以利用自然、改造自然，但归根结底是自然的一部分，必须呵护自然，不能凌驾于自然之上。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-059",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 59,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "面对生态环境挑战，人类是一荣俱荣、一损俱损的命运共同体，任何一国想单打独斗都无法解决。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-060",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "顺应自然、保护自然、绿色发展，人类才有美好的未来。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-061",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "建设绿色家园是各国人民的共同梦想，也是全球可持续发展的大势所趋。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-062",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "建设清洁美丽的世界，是为了造福世界各国人民。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "12.md"
+  },
+  {
+    "id": "12-063",
+    "chapter": "第12章",
+    "chapter_index": 12,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发达国家和发展中国家虽然处于不同发展阶段，但在环境问题上的历史责任和现实能力并无差别。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "12.md"
+  },
+  {
+    "id": "13-025",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 25,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "国家安全是关乎国家发展稳定和社会长治久安的重大战略问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-026",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 26,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "总体国家安全观与新时代国家安全实践相生相成、共进并行，为维护和塑造新时代国家安全提供了基本遵循。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-027",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 27,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "国家安全是民族复兴的根基，社会稳定是国家强盛的前提。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-028",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 28,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "纵览世界各国发展史，国家的兴盛往往是在国家安全最稳固的时候，国家的衰落往往与安全政策失当密切相关。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-029",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 29,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "当前我国国家安全内涵和外延比历史上任何时候都要丰富，时空领域比历史上任何时候都要宽广，内外因素比历史上任何时候都要复杂。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-030",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 30,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "距离实现中华民族伟大复兴的目标越近，我们越不能懈怠，越要准备经受风高浪急甚至惊涛骇浪的重大考验，为党和国家兴旺发达、长治久安提供有力保证。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-031",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 31,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "总体国家安全观的关键是“总体”，强调“大安全”理念，涵盖诸多领域，而且将随着社会发展不断动态调整。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-032",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 32,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "总体国家安全强调维护国家安全要贯穿党和国家工作各方面全过程，绝非某一领域、单一部门的职责。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-033",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 33,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "总体国家安全观强调打总体战，形成汇聚党政军民学各战线各方面各层级的强大合力，全社会全政府全体系全手段应对重大国家安全风险挑战。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-034",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 34,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "统筹发展和安全，是党和国家的一项基础性工作，是我们党治国理政的一个重大原则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-035",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 35,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发展具有基础性、根本性，是解决安全问题的总钥匙，发展就是最大的安全。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-036",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 36,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "安全是发展的条件和保障，没有国家安全，发展只能是“镜花水月”，取得的成果也可能毁于一旦。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-037",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "发展和安全是一体之两翼、驱动之双轮，必须同步推进。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-038",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "政治安全是国家安全的根本。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-039",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "政治安全决定和影响着国家的经济安全、军事安全、社会安全等各个领域的安全。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-040",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "维护政权安全，就是要毫不动摇坚持和巩固党的领导和长期执政地位。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-041",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "维护制度安全，就是要毫不动摇坚持和完善中国特色社会主义制度。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-042",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国特色社会主义制度所具有的显著优势是抵御风险挑战、维护国家安全的根本保证。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-043",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "意识形态事关举什么旗、走什么路的重大问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-044",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "历史和现实反复证明，搞乱一个社会、颠覆一个政权，往往先从意识形态领域打开缺口，先从搞乱对方思想入手。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-045",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "构建统筹各领域安全的新安全格局，维护重点领域国家安全是主阵地、主战场。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-046",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会安全与人民群众切身利益关系最密切，是人民群众安全感的晴雨表，是社会安定的风向标。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-047",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "平安是老百姓解决温饱后的第一需求，是极重要的民生，也是最基本的发展环境。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-048",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有网络安全就没有国家安全，就没有经济社会稳定运行，广大人民群众利益也难以得到保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-049",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "任何一个国家的安全问题积累到一定程度，都可能外溢成为区域性甚至全球性安全问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-050",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "国家安全体系和能力是国家安全制度及其执行能力的集中体现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-051",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "推进国家安全体系和能力现代化，是新时代维护国家安全的迫切要求，也是推进国家治理体系和治理能力现代化的重要工程。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-052",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "建设平安中国，是全面建设社会主义现代化国家的重要内容和重要保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-053",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "社会更加安全稳定有序，是检验更高水平的平安中国建设成效的重要标志。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "13-054",
+    "chapter": "第13章",
+    "chapter_index": 13,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持底线思维和极限思维，从最坏处着眼，做最充分的准备，朝好的方向努力，争取最好的结果。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "13.md"
+  },
+  {
+    "id": "14-037",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 37,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "巩固国防和强大人民军队是新时代坚持和发展中国特色社会主义、实现中华民族伟大复兴的战略支撑。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-038",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 38,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "强国必须强军，军强才能国安。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-039",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 39,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "没有一支强大的军队，就不可能有强大的祖国。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-040",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 40,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "当今世界，和平与发展已不是时代主题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-041",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 41,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "面对严峻复杂的国家安全形势，必须对战争危险保持清醒头脑。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-042",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 42,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民军队是执行党的政治任务的武装集团，党和人民所需就是军队使命任务所系。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-043",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 43,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民军队自成立起，就始终为争取民族独立、人民解放和实现国家富强、人民幸福而英勇奋斗。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-044",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 44,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "任何政治力量要执掌好国家政权，都必须牢牢掌握军队这个“枪杆子”。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-045",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 45,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我国是世界上邻国最多、陆地边界最长、海上安全环境十分复杂的国家之一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-046",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 46,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "海外利益是我国国家利益的重要组成部分。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-047",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 47,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "国家利益发展到哪里，安全保障就必须跟进到哪里。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-048",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "在革命、建设、改革的不同历史时期，我们党都根据形势任务发展变化，明确提出与之相适应的人民军队建设发展目标要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-049",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持党对人民军队的绝对领导是人民军队永远不变的军魂。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-050",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "能打仗、打胜仗是军队的根本价值所在。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-051",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "能打胜仗的能力标准不会随着战争实践发展而不断变化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-052",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "人民军队在长期实践中形成的一整套光荣传统和优良作风，是人民军队的鲜明特色和政治优势，也是人民军队战无不胜、攻无不克的重要保证。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-053",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "如期实现建军一百年奋斗目标，加快把人民军队建成世界一流军队，是全面建设社会主义现代化国家的战略要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-054",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持党对人民军队的绝对领导，是马克思主义建党建军的一条基本原则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-055",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "改革是决定人民军队发展壮大、制胜未来的关键一招。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-056",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "军事科技的每一次突破，都极大提升了军队的作战能力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-057",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "必须实施新时代人才强军战略，锻造德才兼备的高素质、专业化新型军事人才。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-058",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "依法治军是我们党建军治军基本方式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-059",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 59,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "一支现代化军队必然是法治军队。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-060",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "厉行法治、严肃军纪，是治军带兵的铁律，也是建设强大军队的基本规律。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-061",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "按照法治要求转变治军方式，就要实现从单纯依靠行政命令的做法向依法行政的根本性转变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-062",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "按照法治要求转变治军方式，要实现从依靠法规和制度开展工作到单纯靠习惯和经验开展工作的根本性转变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-063",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "按照法治要求转变治军方式，要实现从按条令条例办事到突击式、运动式抓工作的根本性转变。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-064",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 64,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "军事训练实际上是未来战争的预演，来不得半点飘浮和虚假。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-065",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 65,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "战争充满着偶然性和不确定性，不是一厢情愿的事，也不可能等我们完全准备好了再去打。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-066",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 66,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "巩固提高一体化国家战略体系和能力，关键是要在一体化上下功夫，实现国家战略能力最大化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "14-067",
+    "chapter": "第14章",
+    "chapter_index": 14,
+    "number": 67,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "军政军民团结是实现富国和强军相统一的重要政治保障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "14.md"
+  },
+  {
+    "id": "15-048",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 48,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "维护国家主权和领土完整，绝不容忍国家分裂的历史悲剧重演，是中国共产党对历史和人民的庄严承诺。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-049",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 49,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "香港、澳门问题是历史上殖民主义侵略中国遗留下来的问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-050",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 50,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "“一国”之内的“两制”是等量齐观、比肩并列的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-051",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 51,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面管治权是授权特别行政区高度自治的前提和基础，高度自治权是中央行使全面管治权的体现。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-052",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 52,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "基本法是根据宪法制定的基本法律，规定了在特别行政区实行的制度和政策，是“一国两制”方针的法律化、制度化。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-053",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 53,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "“一国两制”是保持港澳长期繁荣稳定的好制度，是保障港澳居民根本利益和福祉的好制度。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-054",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 54,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "任何危害国家主权安全、挑战中央权力和香港特别行政区基本法权威、利用香港对内地进行渗透破坏的活动，都是对底线的触碰，都是绝不能允许的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-055",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 55,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "香港正处在由乱到治的关键时期。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-056",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 56,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "解决台湾问题、实现祖国完全统一，是党矢志不渝的历史任务，是全体中华儿女的共同愿望，是实现中华民族伟大复兴的必然要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-057",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 57,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "实现祖国完全统一是由中华民族伟大复兴的时和势决定的，是不可阻挡的历史潮流。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-058",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 58,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国的主权和领土完整从未分割，也不容分割。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-059",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 59,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "台湾问题因民族弱乱而产生，必将随着民族复兴而解决。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-060",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "两岸关系和平发展是维护两岸和平、促进两岸共同发展、造福两岸同胞的正确道路。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-061",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "“台独”分裂是祖国统一的最大障碍，是民族复兴的严重隐患。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-062",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "新时代党解决台湾问题的总体方略，标志着我们党的国家统一理论更加成熟，是我们党解决台湾问题、实现祖国统一的最新理论成果。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-063",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "“和平统一、一国两制”方针是实现两岸统一的最佳方式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-064",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 64,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "确保国家主权和领土完整是国家核心利益，是一条不可逾越的红线。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "15-065",
+    "chapter": "第15章",
+    "chapter_index": 15,
+    "number": 65,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "绝不允许任何人、任何组织、任何政党、在任何时候、以任何形式、把任何一块中国领土从中国分裂出去。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "15.md"
+  },
+  {
+    "id": "16-060",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 60,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国共产党致力于为中国人民谋幸福、为中华民族谋复兴，同时也致力于为人类谋进步、为世界谋大同。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-061",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 61,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "坚持走和平发展道路，是我们党根据时代发展潮流和我国根本利益作出的战略抉择，是新时代中国外交的基本原则。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-062",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 62,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "中国坚持走和平发展道路，集中力量办好自己的事，本身就是对世界和平发展的重大贡献。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-063",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 63,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "大国拥有更多的资源，具备更强的能力，有责任也有义务为维护国际和平与安全发挥更大作用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-064",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 64,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "任何外国，不要指望中国会拿自己的核心利益做交易，不要指望中国会吞下损害自己主权、安全、发展利益的苦果。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-065",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 65,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "推动构建人类命运共同体，是当代中国共产党人回答和解决关乎人类前途命运的时代之问的中国方案，是应对人类共同挑战、建设更加繁荣美好世界的人间正道。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-066",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 66,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "推进全球治理体系改革和建设，是完善全球治理、增进世界各国人民福祉的客观要求，也是构建人类命运共同体的内在要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-067",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 67,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们应当以多边主义之名行单边主义之实，搞有选择的多边主义。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "16.md"
+  },
+  {
+    "id": "16-068",
+    "chapter": "第16章",
+    "chapter_index": 16,
+    "number": 68,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "共建“一带一路”就是要谋求地缘政治联盟和军事同盟。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "16.md"
+  },
+  {
+    "id": "17-066",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 66,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "必须以永远在路上的执着把全面从严治党引向深入，以党的伟大自我革命引领伟大社会革命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-067",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 67,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面从严治党是党永葆生机活力、走好新的赶考之路的必由之路，是新时代党的建设的鲜明主题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-068",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 68,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "加强党的自身建设是新形势下推进伟大事业、进行伟大斗争、实现伟大梦想的必然要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-069",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 69,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "自党成立以来，我们面临的最大风险是经济增长速度不够高。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-070",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 70,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "全面从严治党是党的长期战略、永恒课题，决不能有松劲歇脚、疲劳厌战的情绪。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-071",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 71,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只有坚持和加强党中央权威和集中统一领导，才能把全国各族人民团结起来，汇聚起战胜一切困难的强大力量。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-072",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 72,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "加强思想教育和理论武装，是党内政治生活的首要任务，是保证全党步调一致的前提。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-073",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 73,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "只有真正领会和把握习近平新时代中国特色社会主义思想，才能在落实上更加自觉，在实践中贯彻得更加彻底。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-074",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 74,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "党的作风就是党的形象，关系人心向背，关系党的生死存亡。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-075",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 75,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "腐败严重侵蚀党的肌体，对党的执政基础破坏力最大、杀伤力也最大。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-076",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 76,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "反对腐败是党一贯的政治立场，是保持党的先进性和纯洁性的必然要求。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-077",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 77,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "我们党与腐败现象的斗争已经可以停止。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-078",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 78,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "党的先进性和党的执政地位是一劳永逸、一成不变的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "B"
+    ],
+    "answer_text": "错",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-079",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 79,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "世界上没有任何一个政党能像中国共产党如此严肃认真地对待自身建设如此高度自觉地以科学的态度、体系化的方式推进自我革命。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  },
+  {
+    "id": "17-080",
+    "chapter": "第17章",
+    "chapter_index": 17,
+    "number": 80,
+    "type": "判断题",
+    "type_key": "true_false",
+    "stem": "如果没有全面从严治党这场深刻的自我革命，就不可能有党和国家今天这样的大好局面。",
+    "options": [
+      {
+        "key": "A",
+        "text": "对"
+      },
+      {
+        "key": "B",
+        "text": "错"
+      }
+    ],
+    "answer": [
+      "A"
+    ],
+    "answer_text": "对",
+    "source_file": "17.md"
+  }
+]
