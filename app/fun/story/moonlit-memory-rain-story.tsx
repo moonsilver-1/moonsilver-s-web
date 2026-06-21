@@ -33,11 +33,13 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
     let raf = 0;
     const mouse = { x: -9999, y: -9999 };
 
-    const codes = ["0xA5B9", "42425", "DXY", "moonsilver", "010010", "return memory;"];
+    const codes = ["0xA5B9", "42425", "DXY", "moonsilver", "010010", "return memory;", "sunflower"];
     const rain: Array<{ x: number; y: number; len: number; speed: number; alpha: number; drift: number; thick: number }> = [];
     const petals: Array<{ x: number; y: number; s: number; vx: number; vy: number; a: number; phase: number }> = [];
     const ghosts: Array<{ x: number; y: number; t: string; a: number; size: number; life: number; max: number }> = [];
     const droplets: Array<{ x: number; y: number; len: number; speed: number; a: number }> = [];
+    const stars: Array<{ x: number; y: number; r: number; a: number; tw: number; ph: number; c: string }> = [];
+    const motes: Array<{ x: number; y: number; r: number; vx: number; vy: number; a: number; tw: number; ph: number }> = [];
 
     function resize() {
       const rect = element.getBoundingClientRect();
@@ -52,6 +54,8 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       petals.length = 0;
       ghosts.length = 0;
       droplets.length = 0;
+      stars.length = 0;
+      motes.length = 0;
 
       const rainCount = Math.floor(width / 5.4);
       for (let i = 0; i < rainCount; i += 1) {
@@ -99,6 +103,33 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
           a: 0.035 + Math.random() * 0.12,
         });
       }
+
+      const starCount = Math.floor(width / 13);
+      for (let i = 0; i < starCount; i += 1) {
+        const warm = Math.random() > 0.82;
+        stars.push({
+          x: Math.random() * width,
+          y: Math.random() * height * 0.58,
+          r: Math.random() * 0.9 + 0.25,
+          a: 0.12 + Math.random() * 0.52,
+          tw: 0.012 + Math.random() * 0.05,
+          ph: Math.random() * Math.PI * 2,
+          c: warm ? "rgba(255,226,178,0.92)" : "rgba(212,224,247,0.92)",
+        });
+      }
+
+      for (let i = 0; i < 16; i += 1) {
+        motes.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          r: 0.9 + Math.random() * 1.7,
+          vx: -0.08 + Math.random() * 0.16,
+          vy: -0.12 - Math.random() * 0.26,
+          a: 0.12 + Math.random() * 0.32,
+          tw: 0.02 + Math.random() * 0.05,
+          ph: Math.random() * Math.PI * 2,
+        });
+      }
     }
 
     function background() {
@@ -109,6 +140,16 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       g.addColorStop(1, "#03060c");
       ctx.fillStyle = g;
       ctx.fillRect(0, 0, width, height);
+
+      for (const s of stars) {
+        const twinkle = 0.42 + 0.58 * Math.sin(frame * s.tw + s.ph);
+        ctx.globalAlpha = s.a * twinkle;
+        ctx.fillStyle = s.c;
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.globalAlpha = 1;
 
       const moonX = width * 0.74;
       const moonY = height * 0.18;
@@ -132,19 +173,41 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       ctx.fill();
       ctx.restore();
 
+      // Warm dawn glow breaking over the horizon — "山的那边，是光"
+      const dawnX = width * 0.3;
+      const dawnY = height * 0.66;
+      const dawn = ctx.createRadialGradient(dawnX, dawnY, 0, dawnX, dawnY, width * 0.54);
+      dawn.addColorStop(0, "rgba(255,200,142,0.22)");
+      dawn.addColorStop(0.22, "rgba(230,154,114,0.12)");
+      dawn.addColorStop(0.55, "rgba(120,72,64,0.05)");
+      dawn.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = dawn;
+      ctx.fillRect(0, 0, width, height);
+
+      // Layered mountain ranges along the horizon
+      const drawRange = (
+        baseY: number,
+        color: string,
+        amp1: number,
+        freq1: number,
+        amp2: number,
+        freq2: number,
+      ) => {
+        ctx.beginPath();
+        ctx.moveTo(0, baseY);
+        for (let x = 0; x <= width; x += 22) {
+          const y = baseY + Math.sin(x * freq1) * amp1 + Math.sin(x * freq2 + 1.7) * amp2;
+          ctx.lineTo(x, y);
+        }
+        ctx.lineTo(width, height);
+        ctx.lineTo(0, height);
+        ctx.closePath();
+        ctx.fillStyle = color;
+        ctx.fill();
+      };
       ctx.save();
-      ctx.globalAlpha = 0.6;
-      ctx.fillStyle = "rgba(3,7,12,0.76)";
-      ctx.beginPath();
-      ctx.moveTo(0, height * 0.63);
-      for (let x = 0; x <= width; x += 40) {
-        const y = height * 0.62 + Math.sin(x * 0.011) * 22 + Math.sin(x * 0.023) * 9;
-        ctx.lineTo(x, y);
-      }
-      ctx.lineTo(width, height);
-      ctx.lineTo(0, height);
-      ctx.closePath();
-      ctx.fill();
+      drawRange(height * 0.6, "rgba(9,16,27,0.82)", 32, 0.012, 12, 0.026);
+      drawRange(height * 0.64, "rgba(2,5,11,0.93)", 20, 0.017, 8, 0.034);
       ctx.restore();
 
       const seaY = height * 0.64;
@@ -175,6 +238,13 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       reflect.addColorStop(0.62, "rgba(80,120,160,0.07)");
       reflect.addColorStop(1, "rgba(40,70,110,0)");
       ctx.fillStyle = reflect;
+      ctx.fillRect(0, seaY, width, height - seaY);
+
+      const dawnReflect = ctx.createRadialGradient(dawnX, height * 0.82, 0, dawnX, height * 0.82, width * 0.24);
+      dawnReflect.addColorStop(0, "rgba(255,188,124,0.2)");
+      dawnReflect.addColorStop(0.4, "rgba(212,122,92,0.08)");
+      dawnReflect.addColorStop(1, "rgba(70,34,32,0)");
+      ctx.fillStyle = dawnReflect;
       ctx.fillRect(0, seaY, width, height - seaY);
     }
 
@@ -262,6 +332,30 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       }
     }
 
+    function drawMotes() {
+      for (const m of motes) {
+        m.ph += m.tw;
+        m.x += m.vx + Math.sin(m.ph) * 0.14;
+        m.y += m.vy;
+        if (m.y < -24) {
+          m.y = height + 24;
+          m.x = Math.random() * width;
+        }
+        if (m.x < -30) m.x = width + 30;
+        if (m.x > width + 30) m.x = -30;
+
+        const pulse = 0.5 + 0.5 * Math.sin(m.ph);
+        const glow = ctx.createRadialGradient(m.x, m.y, 0, m.x, m.y, m.r * 4);
+        glow.addColorStop(0, `rgba(255,216,138,${m.a * pulse})`);
+        glow.addColorStop(0.5, `rgba(230,170,96,${m.a * pulse * 0.4})`);
+        glow.addColorStop(1, "rgba(230,170,96,0)");
+        ctx.fillStyle = glow;
+        ctx.beginPath();
+        ctx.arc(m.x, m.y, m.r * 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
     function drawVignette() {
       const vignette = ctx.createRadialGradient(width * 0.52, height * 0.44, width * 0.16, width * 0.52, height * 0.44, width * 0.7);
       vignette.addColorStop(0, "rgba(0,0,0,0)");
@@ -276,6 +370,7 @@ function useMoonlitBackground(canvasRef: React.RefObject<HTMLCanvasElement | nul
       background();
       drawGhostCodes();
       drawPetals();
+      drawMotes();
       drawRain();
       drawGlass();
       drawVignette();

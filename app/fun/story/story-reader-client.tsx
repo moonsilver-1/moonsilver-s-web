@@ -382,17 +382,18 @@ export default function StoryReaderClient() {
   }
 
   if (activeStory) {
-    if (activeStory.id === "我" && activeStorySource) {
-      if (viewMode === "cinematic") {
-        return <CinematicReader story={activeStorySource} onExit={() => setViewMode("text")} />;
-      }
+    if (activeStory.id === "雨的尽头是海" && activeStorySource) {
       return (
         <>
-          <MoonlitMemoryRainStory
-            story={activeStorySource}
-            onBackToList={() => setActiveStoryId(null)}
-            onSwitchToCinematic={() => setViewMode("cinematic")}
-          />
+          {viewMode === "cinematic" ? (
+            <CinematicReader story={activeStorySource} onExit={() => setViewMode("text")} />
+          ) : (
+            <MoonlitMemoryRainStory
+              story={activeStorySource}
+              onBackToList={() => setActiveStoryId(null)}
+              onSwitchToCinematic={() => setViewMode("cinematic")}
+            />
+          )}
           <StoryMusicPlayer />
         </>
       );

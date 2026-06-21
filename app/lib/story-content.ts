@@ -40,6 +40,10 @@ function storyFileSlug(name: string): string {
   return plain.replace(/\.(md|markdown|txt)$/i, "");
 }
 const FALLBACK_CHAPTER_LABELS = ["\u7b2c\u4e00\u7ae0", "\u7b2c\u4e8c\u7ae0", "\u7b2c\u4e09\u7ae0", "\u7b2c\u56db\u7ae0"];
+// Reserved preface/epilogue words, optionally followed by a separator and a title,
+// e.g. "\u5c3e\u58f0" or "\u5c3e\u58f0\uff1a\u7ffb\u8fc7\u90a3\u5ea7\u5c71".
+const RESERVED_HEADING = /^(\u5e8f|\u524d\u8a00|\u6954\u5b50|\u5c3e\u58f0|\u540e\u8bb0)$/;
+const RESERVED_HEADING_WITH_TITLE = /^(\u5e8f|\u524d\u8a00|\u6954\u5b50|\u5c3e\u58f0|\u540e\u8bb0)[\uff1a:\s]+(.+)$/;
 
 function normalizeWhitespace(value: string) {
   return value.replace(/\s+/g, " ").trim();
@@ -88,7 +92,16 @@ function extractChapterMeta(paragraph: string) {
     };
   }
 
-  if (/^(序|前言|楔子|尾声|后记)$/.test(heading)) {
+  const reservedTitled = heading.match(RESERVED_HEADING_WITH_TITLE);
+  if (reservedTitled) {
+    return {
+      chapterLabel: reservedTitled[1],
+      title: normalizeWhitespace(reservedTitled[2]),
+      period: "",
+    };
+  }
+
+  if (RESERVED_HEADING.test(heading)) {
     return {
       chapterLabel: heading,
       title: heading,
@@ -108,7 +121,8 @@ function isChapterHeading(paragraph: string) {
   return (
     (heading.startsWith("\u7b2c") && heading.includes("\u7ae0\uff1a")) ||
     /^([一二三四五六七八九十百千零]+)[、.．]\s*(.*)$/.test(heading) ||
-    /^(序|前言|楔子|尾声|后记)$/.test(heading)
+    RESERVED_HEADING_WITH_TITLE.test(heading) ||
+    RESERVED_HEADING.test(heading)
   );
 }
 
