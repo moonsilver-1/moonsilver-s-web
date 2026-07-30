@@ -53,6 +53,7 @@ const rawPeople = [
   { name: "王佳诺", date: "9.26" },
   { name: "王赛", date: "9.29", tag: "486" },
   { name: "丁欣怡", date: "10.10" },
+  { name: "黄崇峻", date: "10.14" },
   { name: "妈妈", date: "10.21", tag: "Family", mark: "♥" },
   { name: "徐晨萧", date: "10.25" },
   { name: "曹向", date: "11.8" },
