@@ -46,6 +46,12 @@ const entries: Entry[] = [
     description: { zh: "湖州本地玩法白板当万能牌", en: "Huzhou style mahjong with wildcards" },
     note: { zh: "游戏", en: "Game" },
   },
+  {
+    href: "/fun/weiqi",
+    title: { zh: "围棋", en: "Go" },
+    description: { zh: "在线双人对弈黑白交", en: "Online two-player Go" },
+    note: { zh: "游戏", en: "Game" },
+  },
   // {
   //   href: "/fun/wolf-chicken",
   //   title: { zh: "狼鸡杀", en: "Wolf Chicken" },
