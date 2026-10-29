@@ -1,82 +1,97 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
+import { initSfxMuted, isSfxMuted, setSfxMuted } from "@/app/lib/pixel-sfx";
 
 const footerLabels = {
   zh: {
     friendSite: "友站",
     backToTop: "回到顶部",
-    madeWith: "用心制作",
+    madeWith: "用心搭建 · 像素风小站",
+    companion: (days: number) => `小鸡已陪伴你 ${days} 天`,
+    sound: "音效",
   },
   en: {
     friendSite: "Friend site",
     backToTop: "Back to top",
-    madeWith: "Made with care",
+    madeWith: "Built with care · pixel style",
+    companion: (days: number) => `Chicken has been with you for ${days} day${days === 1 ? "" : "s"}`,
+    sound: "SFX",
   },
 } as const;
+
+const FIRST_VISIT_KEY = "first-visit-day";
+
+function readFirstVisitDay(): string {
+  const today = new Date().toISOString().slice(0, 10);
+  const stored = window.localStorage.getItem(FIRST_VISIT_KEY);
+  if (stored) return stored;
+  window.localStorage.setItem(FIRST_VISIT_KEY, today);
+  return today;
+}
+
+function companionDays(): number {
+  const first = readFirstVisitDay();
+  const diff = Date.now() - new Date(`${first}T00:00:00`).getTime();
+  return Math.max(1, Math.floor(diff / 86400000) + 1);
+}
 
 export function SiteFooter() {
   const { language } = useSiteLanguage();
   const labels = footerLabels[language];
+  const [days, setDays] = useState(1);
+  const [muted, setMuted] = useState(false);
+
+  useEffect(() => {
+    setDays(companionDays());
+    initSfxMuted();
+    setMuted(isSfxMuted());
+  }, []);
+
+  function toggleMuted() {
+    const next = !muted;
+    setSfxMuted(next);
+    setMuted(next);
+  }
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
-    <footer className="relative border-t border-[var(--app-border)] bg-[var(--app-surface)]/40 px-6 py-10 text-[var(--app-muted)] transition-colors duration-300 md:px-12">
-      <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
-        <div className="flex flex-col gap-2">
-          <p className="font-brand text-xs tracking-[0.2em]">
+    <footer className="pixel-footer relative px-4 py-8 text-xs md:px-10">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-full h-[10px]"
+        style={{
+          background:
+            "repeating-linear-gradient(90deg, var(--sv-grass-lo) 0 16px, var(--sv-grass) 16px 32px)",
+          borderTop: "3px solid var(--sv-border)",
+        }}
+      />
+      <div className="mx-auto flex max-w-7xl flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-1.5">
+          <p className="font-brand text-[10px] tracking-[0.18em]" style={{ textShadow: "1px 1px 0 rgba(0,0,0,0.5)" }}>
             © {new Date().getFullYear()} MOONSILVER
           </p>
-          <p className="text-[11px] opacity-60">{labels.madeWith}</p>
+          <p className="opacity-70">{labels.madeWith}</p>
+          <p className="opacity-90">🐔 {labels.companion(days)}</p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3">
-          <a
-            href="https://www.johnlin.top/"
-            target="_blank"
-            rel="noreferrer"
-            className="group relative overflow-hidden rounded-full border border-[var(--app-border)] px-4 py-2 text-xs transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-          >
-            <span className="relative z-10">johnlin</span>
-            <span className="absolute inset-0 -translate-x-full bg-[var(--app-fg)]/5 transition-transform duration-300 group-hover:translate-x-0" />
+        <div className="flex flex-wrap items-center gap-2">
+          <button type="button" onClick={toggleMuted} className="pixel-btn !px-3 !py-1.5 !text-xs">
+            {muted ? "🔇" : "🔊"} {labels.sound}
+          </button>
+          <a href="https://www.johnlin.top/" target="_blank" rel="noreferrer" className="pixel-btn !px-3 !py-1.5 !text-xs">
+            johnlin
           </a>
-
-          <a
-            href="https://www.hdu-wiki.cn/"
-            target="_blank"
-            rel="noreferrer"
-            className="group relative overflow-hidden rounded-full border border-[var(--app-border)] px-4 py-2 text-xs transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-          >
-            <span className="relative z-10">hdu-wiki</span>
-            <span className="absolute inset-0 -translate-x-full bg-[var(--app-fg)]/5 transition-transform duration-300 group-hover:translate-x-0" />
+          <a href="https://www.hdu-wiki.cn/" target="_blank" rel="noreferrer" className="pixel-btn !px-3 !py-1.5 !text-xs">
+            hdu-wiki
           </a>
-
-          <button
-            type="button"
-            onClick={scrollToTop}
-            className="group relative overflow-hidden rounded-full border border-[var(--app-border)] px-4 py-2 text-xs transition-all duration-300 hover:border-[var(--app-border-strong)] hover:text-[var(--app-fg)]"
-          >
-            <span className="relative z-10 flex items-center gap-1.5">
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="transition-transform duration-300 group-hover:-translate-y-0.5"
-              >
-                <path d="m18 15-6-6-6 6" />
-              </svg>
-              {labels.backToTop}
-            </span>
-            <span className="absolute inset-0 -translate-x-full bg-[var(--app-fg)]/5 transition-transform duration-300 group-hover:translate-x-0" />
+          <button type="button" onClick={scrollToTop} className="pixel-btn !px-3 !py-1.5 !text-xs">
+            ▲ {labels.backToTop}
           </button>
         </div>
       </div>

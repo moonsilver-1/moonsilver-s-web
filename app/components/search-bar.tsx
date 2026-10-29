@@ -20,7 +20,7 @@ export default function SearchBar({ value, onChange, placeholder = "Search..." }
         value={value}
         onChange={(event) => onChange(event.target.value)}
         placeholder={placeholder}
-        className="w-full rounded-[16px] border border-[var(--app-border)] bg-[var(--app-surface)]/50 py-3 pl-11 pr-12 text-sm text-[var(--app-fg)] placeholder-[var(--app-muted)] transition-all duration-300 focus:border-[var(--app-border-strong)] focus:bg-[var(--app-surface)]/80 focus:outline-none focus:shadow-[0_0_0_3px_rgba(212,165,116,0.1)]"
+        className="w-full border-[3px] border-[var(--sv-border)] bg-[var(--sv-panel)] py-2.5 pl-11 pr-12 text-sm text-[var(--app-fg)] placeholder-[var(--app-muted)] shadow-[inset_0_3px_0_0_var(--sv-panel-hi),inset_0_-3px_0_0_var(--sv-panel-lo),0_3px_0_0_var(--sv-shadow)] transition-colors duration-150 focus:outline-none focus-visible:outline-none"
       />
       {value ? (
         <button

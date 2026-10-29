@@ -4,7 +4,7 @@ import type { BlogPost } from "@/app/lib/blog-content";
 import type { FeedEntry } from "@/app/lib/feed-content";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import BlogContentClient from "./blog-content-client";
-import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
+import { PixelSceneBg } from "@/app/components/pixel-scene-bg";
 
 type BlogPageClientProps = {
   posts: BlogPost[];
@@ -37,11 +37,11 @@ export default function BlogPageClient({ posts, feedEntries }: BlogPageClientPro
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300 page-enter">
-      <AutumnLeavesBg />
-      <section className="relative z-10 mx-auto max-w-7xl px-6 py-16">
+      <PixelSceneBg />
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-14">
         <div className="max-w-3xl">
-          <p className="text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy[language].eyebrow}</p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-5xl">{copy[language].title}</h1>
+          <span className="pixel-section-label">{copy[language].eyebrow}</span>
+          <h1 className="pixel-title font-brand mt-4 text-2xl leading-relaxed md:text-4xl">{copy[language].title}</h1>
         </div>
       </section>
 

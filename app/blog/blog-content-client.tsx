@@ -101,7 +101,7 @@ export default function BlogContentClient({ posts }: BlogContentClientProps) {
           ))}
         </div>
       ) : (
-        <div className="rounded-[28px] border border-dashed border-[var(--app-border)] bg-[var(--app-surface)]/60 p-10 text-sm text-[var(--app-muted)]">
+        <div className="pixel-panel border-dashed p-10 text-sm text-[var(--app-muted)]">
           {posts.length === 0 ? copy[language].emptyWithoutPosts : copy[language].emptyWithPosts}
         </div>
       )}
@@ -130,34 +130,27 @@ function BlogCard({
     >
       <Link
         href={`/blog/${post.slug}`}
-        className="group relative block overflow-hidden rounded-[28px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-6 transition-all duration-500 hover:border-[var(--app-border-strong)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.12)]"
+        className="pixel-panel autumn-card group relative block p-6"
       >
-        <div className="absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--app-fg)]/[0.02] to-transparent" />
-        </div>
-
-        <p className="text-xs uppercase tracking-[0.2em] text-[var(--app-muted)]">
+        <p className="pixel-section-label !text-[9px]">
           {formatBlogDate(post.publishedAt, language)}
         </p>
-        <h2 className="mt-4 text-xl font-semibold tracking-tight text-[var(--app-fg)] transition-colors group-hover:text-[var(--app-fg)]">
+        <h2 className="pixel-title mt-3 text-lg leading-relaxed text-[var(--app-fg)]">
           {post.title}
         </h2>
-        <p className="mt-3 text-sm leading-relaxed text-[var(--app-muted)] line-clamp-3">{post.excerpt}</p>
+        <p className="mt-3 text-[13px] leading-6 text-[var(--app-muted)] line-clamp-3">{post.excerpt}</p>
 
         {post.tags.length > 0 ? (
-          <div className="mt-6 flex flex-wrap gap-2">
+          <div className="mt-5 flex flex-wrap gap-2">
             {post.tags.map((tag) => (
-              <span
-                key={tag}
-                className="tag-lift rounded-full border border-[var(--app-border)] bg-[var(--app-bg)]/40 px-3 py-1 text-[11px] uppercase tracking-[0.15em] text-[var(--app-muted)] transition-colors group-hover:border-[var(--app-border-strong)] group-hover:text-[var(--app-fg)]"
-              >
+              <span key={tag} className="pixel-tag tag-lift text-[var(--app-muted)]">
                 {tag}
               </span>
             ))}
           </div>
         ) : null}
 
-        <span className="link-arrow mt-6 inline-flex text-sm text-[var(--app-fg)]/60 transition-colors group-hover:text-[var(--app-fg)]">
+        <span className="link-arrow mt-5 inline-flex text-[13px] text-[var(--app-muted)] transition-colors group-hover:text-[var(--app-fg)]">
           {copy[language].readMore}
         </span>
       </Link>

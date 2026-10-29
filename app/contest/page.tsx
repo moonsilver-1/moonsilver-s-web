@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
-import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
+import { PixelSceneBg } from "@/app/components/pixel-scene-bg";
 import { ProductJsonSitePanel } from "@/app/contest/product-json-site-panel";
 import { useThemeMode } from "@/app/lib/use-theme-mode";
 
@@ -212,7 +212,7 @@ export default function ContestPage() {
 
   return (
     <div className="min-h-screen pt-20 text-[var(--app-fg)] transition-colors duration-500 page-enter" style={{ background: pageBackground }}>
-      <AutumnLeavesBg />
+      <PixelSceneBg />
       <section className="relative z-10 overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 py-16 md:py-20">
           <div

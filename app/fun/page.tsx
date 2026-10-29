@@ -6,7 +6,7 @@ import SearchBar from "@/app/components/search-bar";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { useThemeMode } from "@/app/lib/use-theme-mode";
 import MiniRunnerClient from "./mini-runner/mini-runner-client";
-import { AutumnLeavesBg } from "@/app/components/autumn-leaves-bg";
+import { PixelSceneBg } from "@/app/components/pixel-scene-bg";
 
 type Entry = {
   href: string;
@@ -162,7 +162,7 @@ export default function FunPage() {
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-20 text-[var(--app-fg)] transition-colors duration-300 page-enter">
-      <AutumnLeavesBg />
+      <PixelSceneBg />
       <section className="relative z-10 mx-auto max-w-7xl px-6 py-16">
         <div
           ref={heroReveal.ref}
@@ -171,10 +171,10 @@ export default function FunPage() {
           }`}
         >
           <div className="max-w-2xl">
-            <span className="text-xs font-medium uppercase tracking-[0.25em] text-[var(--app-muted)]">
+            <span className="pixel-section-label">
               {copy.label}
             </span>
-            <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-7xl">{copy.title}</h1>
+            <h1 className="pixel-title font-brand mt-5 text-3xl leading-relaxed md:text-5xl">{copy.title}</h1>
             <p className="mt-6 max-w-xl text-sm leading-7 text-[var(--app-muted)] md:text-base">
               {copy.description}
             </p>
@@ -221,7 +221,7 @@ export default function FunPage() {
           </div>
         ) : null}
 
-        <div className="rounded-[30px] border border-[var(--app-border)] bg-[var(--app-surface)]/55 p-3 backdrop-blur-sm">
+        <div className="pixel-panel p-3">
           {filteredEntries.length > 0 ? (
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-5">
               {filteredEntries.map((entry, index) => (
@@ -234,8 +234,8 @@ export default function FunPage() {
         </div>
 
         <div className="mt-14">
-          <div className="h-px bg-gradient-to-r from-transparent via-[var(--app-border)] to-transparent" />
-          <p className="mt-5 text-xs uppercase tracking-[0.25em] text-[var(--app-muted)]">{copy.footer}</p>
+          <div className="pixel-divider" />
+          <p className="pixel-section-label mt-5">{copy.footer}</p>
         </div>
       </section>
     </div>
@@ -268,17 +268,15 @@ function FunCard({ entry, index, language }: { entry: Entry; index: number; lang
         ref={cardRef}
         href={entry.href}
         onMouseMove={handleMouseMove}
-        className="card-tilt-glow group relative block min-h-52 overflow-hidden rounded-[22px] border border-[var(--app-border)] p-5 transition-all duration-500 hover:border-[var(--app-border-strong)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.1)]"
+        className="pixel-panel autumn-card group relative block min-h-52 p-5"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--app-fg)]/[0.02] to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-
-        <p className="text-xs uppercase tracking-[0.22em] text-[var(--app-muted)]">{entry.note[language]}</p>
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight transition-transform duration-300 group-hover:translate-x-0.5">
+        <p className="pixel-section-label !text-[9px]">{entry.note[language]}</p>
+        <h2 className="pixel-title mt-4 text-xl leading-relaxed transition-transform duration-150 group-hover:translate-x-0.5">
           {entry.title[language]}
         </h2>
-        <p className="mt-4 max-w-xs text-sm leading-7 text-[var(--app-muted)]">{entry.description[language]}</p>
-        <div className="link-arrow mt-8 text-sm text-[var(--app-muted)] transition-colors group-hover:text-[var(--app-fg)]">
-          <span className="arrow-icon">→</span>
+        <p className="mt-3 max-w-xs text-[13px] leading-6 text-[var(--app-muted)]">{entry.description[language]}</p>
+        <div className="link-arrow mt-6 text-sm text-[var(--app-muted)] transition-colors group-hover:text-[var(--app-fg)]">
+          <span className="arrow-icon">▶</span>
         </div>
       </Link>
     </div>

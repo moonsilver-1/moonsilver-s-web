@@ -1470,10 +1470,10 @@ export default function MiniRunnerClient() {
   }, [theme, highScore]);
 
   return (
-    <div className="rounded-[32px] border border-[var(--app-border)] bg-[var(--app-surface)]/70 p-5 backdrop-blur-sm">
+    <div className="pixel-panel p-4">
       <div
         ref={wrapperRef}
-        className="relative min-h-[260px] rounded-[28px] border border-[var(--app-border)] bg-[var(--app-surface)]/55 overflow-hidden cursor-pointer"
+        className="pixel-inset relative min-h-[260px] overflow-hidden cursor-pointer"
         onClick={startOrJump}
         onTouchStart={(e) => { e.preventDefault(); startOrJump(); }}
       >
