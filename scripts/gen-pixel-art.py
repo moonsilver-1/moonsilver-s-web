@@ -118,6 +118,60 @@ BUSH = [
     ".LLLLLL.",
 ]
 
+# ===== Chicken hats (drawn above the head) =====
+
+HAT_GRAD = [  # 学士帽
+    ".KKKKKK.",
+    "KKKKKKKK",
+    ".KKKKKKY",
+    "......Y.",
+]
+
+HAT_SANTA = [  # 圣诞帽
+    ".....R..",
+    "...RRR..",
+    "..RRRRRW",
+    ".WWWWWW.",
+]
+
+HAT_CROWN = [  # 皇冠
+    "G.G..G.G",
+    "GGGGGGGG",
+    "GGGRGGGG",
+]
+
+HAT_STRAWBERRY = [  # 草莓帽
+    "..LLL...",
+    ".LLLLL..",
+    ".RRRRR..",
+    "RRRRRRR.",
+    ".RRRRR..",
+    "..RRR...",
+]
+
+HAT_BUNNY = [  # 兔耳帽
+    ".W....W.",
+    ".W....W.",
+    ".WWWWWW.",
+    ".WWWWWW.",
+]
+
+HAT_TOPHAT = [  # 礼帽
+    ".KKKKKK.",
+    ".KKKKKK.",
+    "KKKKKKKK",
+]
+
+HAT_PALETTE = dict(PALETTE)
+HAT_PALETTE.update({
+    "K": "#2f3a4e",  # grad / tophat dark
+    "G": "#f7c541",  # crown gold
+    "R": "#d94f4f",  # santa red / strawberry body
+    "W": "#f8f4ea",  # white brim / fur
+    "L": "#4f9e3f",  # strawberry leaf
+    "Y": "#ffd94d",  # tassel
+})
+
 
 def rects(map_lines):
     out = []
@@ -140,8 +194,26 @@ def rects(map_lines):
     return out, len(map_lines[0]), h
 
 
-def sprite(name, map_lines):
-    r, w, h = rects(map_lines)
+def sprite(name, map_lines, palette=None):
+    pal = palette or PALETTE
+    out = []
+    w = len(map_lines[0])
+    h = len(map_lines)
+    for y, row in enumerate(map_lines):
+        x = 0
+        while x < len(row):
+            ch = row[x]
+            if ch == ".":
+                x += 1
+                continue
+            run = 1
+            while x + run < len(row) and row[x + run] == ch:
+                run += 1
+            out.append(
+                '<rect x="%d" y="%d" width="%d" height="1" fill="%s"/>'
+                % (x, y, run, pal.get(ch, "#000"))
+            )
+            x += run
     return (
         "export function %s({ className, style }: { className?: string; style?: React.CSSProperties }) {\n"
         "  return (\n"
@@ -149,7 +221,7 @@ def sprite(name, map_lines):
         "      <g>%s</g>\n"
         "    </svg>\n"
         "  );\n"
-        "}\n" % (name, w, h, "".join(r))
+        "}\n" % (name, w, h, "".join(out))
     )
 
 
@@ -170,6 +242,18 @@ buf.write("\n")
 buf.write(sprite("PixelSprout", SPROUT))
 buf.write("\n")
 buf.write(sprite("PixelBush", BUSH))
+buf.write("\n")
+buf.write(sprite("PixelHatGrad", HAT_GRAD, HAT_PALETTE))
+buf.write("\n")
+buf.write(sprite("PixelHatSanta", HAT_SANTA, HAT_PALETTE))
+buf.write("\n")
+buf.write(sprite("PixelHatCrown", HAT_CROWN, HAT_PALETTE))
+buf.write("\n")
+buf.write(sprite("PixelHatStrawberry", HAT_STRAWBERRY, HAT_PALETTE))
+buf.write("\n")
+buf.write(sprite("PixelHatBunny", HAT_BUNNY, HAT_PALETTE))
+buf.write("\n")
+buf.write(sprite("PixelHatTophat", HAT_TOPHAT, HAT_PALETTE))
 
 out = r"D:\coding\zmywork\moonsilver-blog\app\components\pixel-art.tsx"
 with open(out, "w", encoding="utf-8", newline="\n") as f:

@@ -94,6 +94,11 @@ export function SiteNavbar() {
     setLanguage(language === "en" ? "zh" : "en");
   }
 
+  // 主页为纯净星空全景，评判系统内建木质专属导航栏，此处不重叠展示外部顶栏
+  if (pathname === "/" || pathname === "/six") {
+    return null;
+  }
+
   return (
     <nav className={`pixel-navbar fixed left-0 right-0 top-0 z-50 px-4 py-2.5 transition-shadow duration-300 md:px-10 ${scrolled ? "pixel-navbar-solid" : ""}`}>
       {sweeping && <span className="theme-sweep" aria-hidden="true" />}

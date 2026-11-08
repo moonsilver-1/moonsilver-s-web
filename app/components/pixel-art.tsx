@@ -65,3 +65,51 @@ export function PixelBush({ className, style }: { className?: string; style?: Re
     </svg>
   );
 }
+
+export function PixelHatGrad({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 4" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="1" y="0" width="6" height="1" fill="#2f3a4e"/><rect x="0" y="1" width="8" height="1" fill="#2f3a4e"/><rect x="1" y="2" width="6" height="1" fill="#2f3a4e"/><rect x="7" y="2" width="1" height="1" fill="#ffd94d"/><rect x="6" y="3" width="1" height="1" fill="#ffd94d"/></g>
+    </svg>
+  );
+}
+
+export function PixelHatSanta({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 4" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="5" y="0" width="1" height="1" fill="#d94f4f"/><rect x="3" y="1" width="3" height="1" fill="#d94f4f"/><rect x="2" y="2" width="5" height="1" fill="#d94f4f"/><rect x="7" y="2" width="1" height="1" fill="#f8f4ea"/><rect x="1" y="3" width="6" height="1" fill="#f8f4ea"/></g>
+    </svg>
+  );
+}
+
+export function PixelHatCrown({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 3" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="0" y="0" width="1" height="1" fill="#f7c541"/><rect x="2" y="0" width="1" height="1" fill="#f7c541"/><rect x="5" y="0" width="1" height="1" fill="#f7c541"/><rect x="7" y="0" width="1" height="1" fill="#f7c541"/><rect x="0" y="1" width="8" height="1" fill="#f7c541"/><rect x="0" y="2" width="3" height="1" fill="#f7c541"/><rect x="3" y="2" width="1" height="1" fill="#d94f4f"/><rect x="4" y="2" width="4" height="1" fill="#f7c541"/></g>
+    </svg>
+  );
+}
+
+export function PixelHatStrawberry({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 6" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="2" y="0" width="3" height="1" fill="#4f9e3f"/><rect x="1" y="1" width="5" height="1" fill="#4f9e3f"/><rect x="1" y="2" width="5" height="1" fill="#d94f4f"/><rect x="0" y="3" width="7" height="1" fill="#d94f4f"/><rect x="1" y="4" width="5" height="1" fill="#d94f4f"/><rect x="2" y="5" width="3" height="1" fill="#d94f4f"/></g>
+    </svg>
+  );
+}
+
+export function PixelHatBunny({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 4" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="1" y="0" width="1" height="1" fill="#f8f4ea"/><rect x="6" y="0" width="1" height="1" fill="#f8f4ea"/><rect x="1" y="1" width="1" height="1" fill="#f8f4ea"/><rect x="6" y="1" width="1" height="1" fill="#f8f4ea"/><rect x="1" y="2" width="6" height="1" fill="#f8f4ea"/><rect x="1" y="3" width="6" height="1" fill="#f8f4ea"/></g>
+    </svg>
+  );
+}
+
+export function PixelHatTophat({ className, style }: { className?: string; style?: React.CSSProperties }) {
+  return (
+    <svg viewBox="0 0 8 3" shapeRendering="crispEdges" className={className} style={style} aria-hidden="true">
+      <g><rect x="1" y="0" width="6" height="1" fill="#2f3a4e"/><rect x="1" y="1" width="6" height="1" fill="#2f3a4e"/><rect x="0" y="2" width="8" height="1" fill="#2f3a4e"/></g>
+    </svg>
+  );
+}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { PixelChickenFrameA, PixelChickenFrameB } from "@/app/components/pixel-art";
 import { petChicken, subscribeFarm, type FarmState } from "@/app/lib/farm-state";
 import { playCluck } from "@/app/lib/pixel-sfx";
@@ -24,6 +25,10 @@ const CLUCKS_EN = [
 
 /** Stardew-style pet chicken that wanders along the bottom of every page. */
 export function PixelChicken() {
+  const pathname = usePathname();
+  if (pathname === "/" || pathname === "/six") {
+    return null;
+  }
   const [frame, setFrame] = useState<0 | 1>(0);
   const [bubble, setBubble] = useState<string | null>(null);
   const [coinPop, setCoinPop] = useState(0);

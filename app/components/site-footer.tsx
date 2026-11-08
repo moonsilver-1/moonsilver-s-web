@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useSiteLanguage } from "@/app/components/language-provider";
 import { initSfxMuted, isSfxMuted, setSfxMuted } from "@/app/lib/pixel-sfx";
@@ -39,6 +40,10 @@ function companionDays(): number {
 }
 
 export function SiteFooter() {
+  const pathname = usePathname();
+  if (pathname === "/" || pathname === "/six") {
+    return null;
+  }
   const { language } = useSiteLanguage();
   const labels = footerLabels[language];
   const [days, setDays] = useState(1);

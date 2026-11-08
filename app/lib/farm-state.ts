@@ -1,5 +1,7 @@
 "use client";
 
+export type CosmeticId = "strawberry" | "santa" | "grad" | "crown" | "bunny" | "tophat";
+
 export type FarmState = {
   coins: number;
   lastCheckIn: string | null;
@@ -7,10 +9,13 @@ export type FarmState = {
   totalCheckIns: number;
   lastPetDay: string | null;
   petTotal: number;
+  owned: CosmeticId[];
+  equipped: CosmeticId | null;
 };
 
 const STORAGE_KEY = "farm-state-v1";
 export const FARM_EVENT = "farm-state-changed";
+export const SHOP_EVENT = "open-shop";
 
 export function todayKey(): string {
   const d = new Date();
@@ -34,7 +39,18 @@ const DEFAULT_STATE: FarmState = {
   totalCheckIns: 0,
   lastPetDay: null,
   petTotal: 0,
+  owned: [],
+  equipped: null,
 };
+
+const COSMETIC_IDS = new Set<CosmeticId>([
+  "strawberry",
+  "santa",
+  "grad",
+  "crown",
+  "bunny",
+  "tophat",
+]);
 
 export function readFarmState(): FarmState {
   if (typeof window === "undefined") return DEFAULT_STATE;
@@ -42,6 +58,13 @@ export function readFarmState(): FarmState {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (!raw) return { ...DEFAULT_STATE };
     const parsed = JSON.parse(raw) as Partial<FarmState>;
+    const owned = Array.isArray(parsed.owned)
+      ? parsed.owned.filter((id): id is CosmeticId => typeof id === "string" && COSMETIC_IDS.has(id as CosmeticId))
+      : [];
+    const equipped =
+      typeof parsed.equipped === "string" && COSMETIC_IDS.has(parsed.equipped as CosmeticId)
+        ? (parsed.equipped as CosmeticId)
+        : null;
     return {
       coins: Number(parsed.coins) || 0,
       lastCheckIn: typeof parsed.lastCheckIn === "string" ? parsed.lastCheckIn : null,
@@ -49,6 +72,8 @@ export function readFarmState(): FarmState {
       totalCheckIns: Number(parsed.totalCheckIns) || 0,
       lastPetDay: typeof parsed.lastPetDay === "string" ? parsed.lastPetDay : null,
       petTotal: Number(parsed.petTotal) || 0,
+      owned,
+      equipped: owned.includes(equipped as CosmeticId) ? equipped : null,
     };
   } catch {
     return { ...DEFAULT_STATE };
@@ -101,6 +126,55 @@ export function petChicken(): { ok: boolean; state: FarmState } {
   };
   writeFarmState(next);
   return { ok: true, state: next };
+}
+
+export type CosmeticInfo = {
+  id: CosmeticId;
+  name: { zh: string; en: string };
+  price: number;
+};
+
+export const COSMETICS: CosmeticInfo[] = [
+  { id: "strawberry", name: { zh: "草莓帽", en: "Strawberry Hat" }, price: 60 },
+  { id: "santa", name: { zh: "圣诞帽", en: "Santa Hat" }, price: 80 },
+  { id: "bunny", name: { zh: "兔耳帽", en: "Bunny Hood" }, price: 100 },
+  { id: "grad", name: { zh: "学士帽", en: "Graduation Cap" }, price: 120 },
+  { id: "tophat", name: { zh: "礼帽", en: "Top Hat" }, price: 150 },
+  { id: "crown", name: { zh: "皇冠", en: "Crown" }, price: 200 },
+];
+
+export type BuyResult = {
+  ok: boolean;
+  reason?: "funds" | "owned" | "unknown";
+  state: FarmState;
+};
+
+export function buyCosmetic(id: CosmeticId): BuyResult {
+  const info = COSMETICS.find((c) => c.id === id);
+  if (!info) return { ok: false, reason: "unknown", state: readFarmState() };
+  const state = readFarmState();
+  if (state.owned.includes(id)) return { ok: false, reason: "owned", state };
+  if (state.coins < info.price) return { ok: false, reason: "funds", state };
+  const next: FarmState = {
+    ...state,
+    coins: state.coins - info.price,
+    owned: [...state.owned, id],
+    equipped: id,
+  };
+  writeFarmState(next);
+  return { ok: true, state: next };
+}
+
+export function equipCosmetic(id: CosmeticId | null): FarmState {
+  const state = readFarmState();
+  const equipped = id && state.owned.includes(id) ? id : null;
+  const next: FarmState = { ...state, equipped };
+  writeFarmState(next);
+  return next;
+}
+
+export function openShop() {
+  window.dispatchEvent(new CustomEvent(SHOP_EVENT));
 }
 
 export function subscribeFarm(listener: () => void): () => void {
