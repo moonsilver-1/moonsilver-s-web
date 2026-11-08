@@ -115,8 +115,19 @@ body {
 }
 
 .font-brand {
-  font-family: "Press Start 2P", "Fusion Pixel 12px Proportional Simplified Chinese", monospace;
+  font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'SimSun', serif;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.font-artistic {
+  font-family: 'Cinzel', 'Playfair Display', 'Cormorant Garamond', 'SimSun', serif;
   letter-spacing: 0.08em;
+}
+
+.font-literary {
+  font-family: 'Cormorant Garamond', 'LXGW WenKai', 'SimSun', serif;
 }
 
 .font-pixel-en {

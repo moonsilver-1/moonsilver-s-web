@@ -94,8 +94,8 @@ export function SiteNavbar() {
     setLanguage(language === "en" ? "zh" : "en");
   }
 
-  // 主页为纯净星空全景，评判系统内建木质专属导航栏，此处不重叠展示外部顶栏
-  if (pathname === "/" || pathname === "/six") {
+  // 评判系统内建木质专属侧边栏，此处不重叠展示外部顶栏
+  if (pathname === "/six") {
     return null;
   }
 

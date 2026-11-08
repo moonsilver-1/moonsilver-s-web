@@ -81,7 +81,7 @@ const academicMilestones: StoryMilestone[] = [
     id: "m_nat_scholarship",
     tag: { zh: "学业之冠", en: "Apex Honor" },
     title: { zh: "国家奖学金", en: "National Scholarship" },
-    metric: { zh: "国家教育部评定 · 顶尖0.2%", en: "Top 0.2% by Ministry of Education" },
+    metric: { zh: "国家教育部评定 顶尖0.2%", en: "Top 0.2% by Ministry of Education" },
     note: {
       zh: "数载晨昏披星戴月，以踏实学力问鼎国家级最高荣誉学业奖项。",
       en: "Years of dedicated scholarly pursuit rewarded with the nation's premier academic honor.",
@@ -92,7 +92,7 @@ const academicMilestones: StoryMilestone[] = [
     id: "m_comp_eval",
     tag: { zh: "知行合一", en: "Comprehensive" },
     title: { zh: "综合测评专业第一", en: "1st in Comprehensive Evaluation" },
-    metric: { zh: "总评 104.77 · 排名 1/756", en: "Score 104.77 · Rank 1/756" },
+    metric: { zh: "总评 104.77 排名 1/756", en: "Score 104.77   Rank 1/756" },
     note: {
       zh: "不唯分数，兼修科技竞赛、社会实践与思想品格，立德笃行。",
       en: "Synthesizing academics, competitive research, and social engagement.",
@@ -126,7 +126,7 @@ const academicMilestones: StoryMilestone[] = [
 const contestActs: ContestAct[] = [
   {
     id: "act_math",
-    themeTitle: { zh: "第一幕 · 算理观天 · 数模天下", en: "Act I · The Calculus of Reason · MCM Modeling" },
+    themeTitle: { zh: "第一幕 算理观天 数模天下", en: "Act I The Calculus of Reason MCM Modeling" },
     themeEpigraph: {
       zh: "三天四夜不灭的灯火，从白纸推演至万行代码。在纷繁世界变量中，以数学之眼洞察万物脉络。",
       en: "Four sleepless nights of mathematical derivation and code, distilling the world's variables into pure truth.",
@@ -136,7 +136,7 @@ const contestActs: ContestAct[] = [
       {
         id: "c_mcm_ams",
         level: "ams",
-        award: { zh: "AMS奖 · 全球第一名（特等奖提名冠名）", en: "AMS Award · 1st Worldwide" },
+        award: { zh: "AMS奖 全球第一名（特等奖提名冠名）", en: "AMS Award 1st Worldwide" },
         name: { zh: "美国大学生数学建模竞赛（MCM / ICM）", en: "Mathematical Contest in Modeling" },
         storySnippet: {
           zh: "与全球万支名校团队竞逐，获美国数学学会 AMS 冠名特等奖，站在世界数学建模最高领奖台。",
@@ -177,7 +177,7 @@ const contestActs: ContestAct[] = [
   },
   {
     id: "act_hardware",
-    themeTitle: { zh: "第二幕 · 智车破晓 · 极客创研", en: "Act II · The Silicon Pulse · Smart Systems & Robotics" },
+    themeTitle: { zh: "第二幕 智车破晓 极客创研", en: "Act II The Silicon Pulse Smart Systems & Robotics" },
     themeEpigraph: {
       zh: "示波器的荧光与电烙铁的微烟，在深夜实验室调试千百次微秒响应，赋予冷冰机械感知与速度。",
       en: "Faint solder smoke and oscilloscope glows, tuning microsecond loops until silicon springs to life.",
@@ -197,7 +197,7 @@ const contestActs: ContestAct[] = [
       {
         id: "c_physics",
         level: "provincial-1",
-        award: { zh: "浙江省一等奖 · 直通国赛", en: "Provincial 1st · Advanced to Nationals" },
+        award: { zh: "浙江省一等奖 直通国赛", en: "Provincial 1st Advanced to Nationals" },
         name: { zh: "浙江省大学生物理实验与科技创新竞赛", en: "Physics Experiment & Tech Innovation" },
         storySnippet: {
           zh: "深入微观物理机制，设计高灵敏度空间测量装置，全省决胜直通全国舞台。",
@@ -228,7 +228,7 @@ const contestActs: ContestAct[] = [
   },
   {
     id: "act_industry",
-    themeTitle: { zh: "第三幕 · 潮起之江 · 创变破局", en: "Act III · Industrial Frontiers · Impact & Innovation" },
+    themeTitle: { zh: "第三幕 潮起之江 创变破局", en: "Act III Industrial Frontiers Impact & Innovation" },
     themeEpigraph: {
       zh: "走出象牙塔，让技术穿透实验室窗扉，在产业深水区与社会真实需求里生根发芽。",
       en: "Taking engineering out of textbook pages and planting real algorithms into industrial workflows.",
@@ -282,47 +282,47 @@ const contestActs: ContestAct[] = [
 const researchLogs: ResearchLog[] = [
   {
     id: "r_thu",
-    stage: { zh: "前沿浸润 · 2024", en: "Immersion · 2024" },
+    stage: { zh: "前沿浸润 2024", en: "Immersion 2024" },
     title: { zh: "清华大学 Radar & Signal Lab 科研实习", en: "Internship at THU Radar & Signal Lab" },
-    subtitle: { zh: "五道口五月清风 · 探微雷达信号处理", en: "Five Months at Tsinghua Radar & Signal Lab" },
+    subtitle: { zh: "五道口五月清风 探微雷达信号处理", en: "Five Months at Tsinghua Radar & Signal Lab" },
     narrative: {
       zh: "沉浸于雷达与信号处理顶尖课题组，与导师和博士团队并肩。从微弱信号探测、空间阵列流型到高分辨率谱估计，以矩阵与算法还原波束背后的真实世界。",
       en: "Five months immersed in advanced array signal processing and radar waveform analysis alongside leading faculty and doctoral scholars.",
     },
-    stats: { zh: "完成5个月全职科研 · 深度参与国家级重点课题实验验证", en: "5 Months Full-time · High-resolution Spectrum Estimation" },
+    stats: { zh: "完成5个月全职科研 深度参与国家级重点课题实验验证", en: "5 Months Full-time   High-resolution Spectrum Estimation" },
   },
   {
     id: "r_national_project",
-    stage: { zh: "独立挂帅 · 2026", en: "Leadership · 2026" },
+    stage: { zh: "独立挂帅 2026", en: "Leadership   2026" },
     title: { zh: "国家级大学生创新创业训练计划（项目负责人）", en: "National Innovation Training Program (Leader)" },
-    subtitle: { zh: "从白纸选题到独立结题的完整闭环", en: "Principal Investigator · National Level" },
+    subtitle: { zh: "从白纸选题到独立结题的完整闭环", en: "Principal Investigator National Level" },
     narrative: {
       zh: "以第一负责人身份主持国家级大创项目，带领跨学科团队完成从前沿选题、数学建模、硬件选型到系统实测的全部流程，培育严密的工程闭环能力。",
       en: "Leading a multidisciplinary engineering team through hypothesis, system architecture, prototyping, and rigorous field testing.",
     },
-    stats: { zh: "教育部国家级立项批准 · 带领4人跨专业攻坚组", en: "National Grant Approved · 4-member cross-disciplinary squad" },
+    stats: { zh: "教育部国家级立项批准 带领4人跨专业攻坚组", en: "National Grant Approved 4-member squad" },
   },
   {
     id: "r_papers",
-    stage: { zh: "学术立言 · 论文与审稿", en: "Scholarship · Papers & Peer Review" },
+    stage: { zh: "学术立言 论文与审稿", en: "Scholarship Papers & Peer Review" },
     title: { zh: "顶级学术会议论文与国际同行审稿", en: "Publications in Tier-1 Venues & Peer Reviewing" },
     subtitle: { zh: "以第一作者与国际学术共同体直接对话", en: "First-author Manuscripts & Invited Reviewer Role" },
     narrative: {
-      zh: "以第一作者录用国际会议学术论文一篇；以第一作者投稿国际顶级会议 CCF-A 类 WWW 与中科院二区权威期刊 IEEE T-REL；以共同第一作者投稿信号处理旗舰会议 CCF-B 类 ICASSP 并受邀担任同行审稿人。在文字与审稿意见的切磋中，淬炼严谨求实的学者底色。",
+      zh: "以第一作者录用国际会议学术论文一篇，以第一作者投稿国际顶级会议 CCF-A 类 WWW 与中科院二区权威期刊 IEEE T-REL，以共同第一作者投稿信号处理旗舰会议 CCF-B 类 ICASSP 并受邀担任同行审稿人。在文字与审稿意见的切磋中，淬炼严谨求实的学者底色。",
       en: "One first-author paper accepted; first-author submissions to WWW (CCF-A) and IEEE T-REL (CAS Q2); co-first author submission to ICASSP (CCF-B) with invited peer reviewer appointments.",
     },
-    stats: { zh: "录用1篇 · 投稿CCF-A / 中科院二区 / CCF-B各一篇 · 获邀国际审稿", en: "1 Accepted · 3 Under Review (CCF-A/B, IEEE) · Active Peer Reviewer" },
+    stats: { zh: "录用1篇 投稿CCF-A / 中科院二区 / CCF-B各一篇 获邀国际审稿", en: "1 Accepted 3 Under Review (CCF-A/B, IEEE) Active Peer Reviewer" },
   },
   {
     id: "r_patents",
-    stage: { zh: "知产筑基 · 实体沉淀", en: "Patents · Practical Assets" },
+    stage: { zh: "知产筑基 实体沉淀", en: "Patents Practical Assets" },
     title: { zh: "7 项国家发明专利授权与公开", en: "7 Granted & Published National Invention Patents" },
     subtitle: { zh: "让实验室灵光凝结为可触摸的科技资产", en: "Translating Ingenuity into Protected Engineering Assets" },
     narrative: {
       zh: "拒绝纸上谈兵，将算法创新与系统设计深度结合，累计参与发明专利授权与公开发布 7 项，涵盖信号解算、智能控制与边缘软硬件融合架构。",
       en: "Bridging theoretical algorithms and practical industry IP with 7 granted or published invention patents.",
     },
-    stats: { zh: "累计 7 项国家发明专利 · 涵盖信号解析与软硬件协同系统", en: "7 Invention Patents Filed · Signal & Intelligent Control Architectures" },
+    stats: { zh: "累计 7 项国家发明专利 涵盖信号解析与软硬件协同系统", en: "7 Invention Patents Filed Signal & Intelligent Control" },
   },
 ];
 
@@ -462,19 +462,19 @@ export default function MyPersonalPage() {
         </div>
       </div>
 
-      {/* 卷首 · 银月絮语与主视觉 */}
+      {/* 卷首   银月絮语与主视觉 */}
       <section className="autumn-hero relative z-10 flex min-h-[90vh] flex-col items-center justify-center px-6 pt-20">
         <div className="autumn-hero-panel home-fade-up relative z-10 mx-auto max-w-4xl px-4 py-8 text-center md:py-12">
           
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#381a0b]/80 border border-[#d49b55] text-[#ffdf79] text-xs font-mono mb-6 shadow-md backdrop-blur-sm">
             <span>✦</span>
-            <span>{isEnglish ? "AUTUMN MOON · CHRONICLES OF GROWTH" : "银月秋风 · 求索与躬耕录"}</span>
-            <span>·</span>
+            <span>{isEnglish ? "AUTUMN MOON CHRONICLES OF GROWTH" : "银月秋风 求索与躬耕录"}</span>
+            <span>✦</span>
             <span>{weatherLabel[language][weather]}</span>
           </div>
 
           <h1
-            className="font-brand home-reveal text-4xl sm:text-6xl text-[#ffdf79] tracking-wider mb-4"
+            className="font-artistic home-reveal text-4xl sm:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#ffe89c] via-[#ffdf79] to-[#eedcb1] tracking-[0.2em] font-bold mb-4 drop-shadow-[0_4px_16px_rgba(212,155,85,0.4)]"
             style={{ textShadow: "4px 4px 0 #2b1408" }}
           >
             MOONSILVER
@@ -483,7 +483,7 @@ export default function MyPersonalPage() {
           <p className="font-serifSc text-sm sm:text-base text-[#eedcb1] max-w-xl mx-auto leading-relaxed italic mb-8">
             {isEnglish
               ? "Someday, the quiet fragrance of persistence will wander far and wide."
-              : "终有一天馥郁传香 · 在算力与电路的坚硬骨骼里，盛放诗意与远方"}
+              : "终有一天馥郁传香 在算力与电路的坚硬骨骼里，盛放诗意与远方"}
           </p>
 
           <div className="mt-4 flex justify-center">
@@ -511,16 +511,16 @@ export default function MyPersonalPage() {
         </div>
       </section>
 
-      {/* 卷一 · 砚田晨昏 · 躬耕之阶 */}
+      {/* 卷一   砚田晨昏   躬耕之阶 */}
       <RevealSection className="mx-auto max-w-5xl px-6 py-14 relative z-20">
         <div className="border-b-2 border-[#5b2b14]/40 pb-4 mb-8">
           <div className="flex items-center gap-2.5 text-xs text-[#d49b55] font-mono tracking-widest uppercase">
             <span>CHAPTER 01</span>
-            <span>•</span>
+            <span>✦</span>
             <span>{isEnglish ? "SCHOLARLY CULTIVATION" : "砚田晨昏"}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#ffdf79] mt-1 font-serifSc tracking-wide">
-            {isEnglish ? "Academic Foundation & Quiet Milestones" : "躬耕之阶 · 沉潜的学力印记"}
+            {isEnglish ? "Academic Foundation & Quiet Milestones" : "躬耕之阶 沉潜的学力印记"}
           </h2>
           <p className="text-xs sm:text-sm text-[#eedcb1]/75 mt-2 leading-relaxed max-w-2xl font-serifSc">
             {isEnglish
@@ -533,7 +533,7 @@ export default function MyPersonalPage() {
           {academicMilestones.map((item) => (
             <div
               key={item.id}
-              className="sd-box p-5 rounded-xl border-2 border-[#5b2b14] bg-[#2b1408]/90 hover:bg-[#34180a] transition-all flex flex-col justify-between shadow-lg group"
+              className="p-5 rounded-2xl border border-[#5b2b14] bg-[#24130a]/85 hover:bg-[#34180a] transition-all flex flex-col justify-between shadow-lg group hover:border-[#d49b55]/70 hover:-translate-y-0.5"
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -561,16 +561,16 @@ export default function MyPersonalPage() {
         </div>
       </RevealSection>
 
-      {/* 卷二 · 淬火成芒 · 竞技远征 */}
+      {/* 卷二   淬火成芒   竞技远征 */}
       <RevealSection className="mx-auto max-w-5xl px-6 py-14 relative z-20">
         <div className="border-b-2 border-[#5b2b14]/40 pb-4 mb-8">
           <div className="flex items-center gap-2.5 text-xs text-[#d49b55] font-mono tracking-widest uppercase">
             <span>CHAPTER 02</span>
-            <span>•</span>
+            <span>✦</span>
             <span>{isEnglish ? "COMPETITIVE CRUCIBLE" : "竞技远征"}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#ffdf79] mt-1 font-serifSc tracking-wide">
-            {isEnglish ? "The Crucible of Contests · Three Epic Acts" : "淬火成芒 · 三幕竞技远征录"}
+            {isEnglish ? "The Crucible of Contests Three Epic Acts" : "淬火成芒 三幕竞技远征录"}
           </h2>
           <p className="text-xs sm:text-sm text-[#eedcb1]/75 mt-2 leading-relaxed max-w-2xl font-serifSc">
             {isEnglish
@@ -592,7 +592,7 @@ export default function MyPersonalPage() {
                       : "bg-[#2b1408]/70 text-[#eedcb1]/70 border-[#4a2411] hover:text-[#ffdf79] hover:bg-[#381a0b]"
                   }`}
                 >
-                  {act.themeTitle[language].split("·")[1]?.trim() || act.themeTitle[language]}
+                  {act.themeTitle[language].split(" ")[1]?.trim() || act.themeTitle[language]}
                 </button>
               );
             })}
@@ -638,16 +638,16 @@ export default function MyPersonalPage() {
           ))}
       </RevealSection>
 
-      {/* 卷三 · 探微索隐 · 灯塔航程 */}
+      {/* 卷三   探微索隐   灯塔航程 */}
       <RevealSection className="mx-auto max-w-5xl px-6 py-14 relative z-20">
         <div className="border-b-2 border-[#5b2b14]/40 pb-4 mb-8">
           <div className="flex items-center gap-2.5 text-xs text-[#d49b55] font-mono tracking-widest uppercase">
             <span>CHAPTER 03</span>
-            <span>•</span>
+            <span>✦</span>
             <span>{isEnglish ? "SCIENTIFIC EXPEDITIONS" : "探微索隐"}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-[#ffdf79] mt-1 font-serifSc tracking-wide">
-            {isEnglish ? "Research Journal · Signals & Horizons" : "灯塔航程 · 实验室探微日记"}
+            {isEnglish ? "Research Journal Signals & Horizons" : "灯塔航程 实验室探微日记"}
           </h2>
           <p className="text-xs sm:text-sm text-[#eedcb1]/75 mt-2 leading-relaxed max-w-2xl font-serifSc">
             {isEnglish
@@ -695,22 +695,22 @@ export default function MyPersonalPage() {
         </div>
       </RevealSection>
 
-      {/* 卷尾 · 行囊与未竟之路 */}
+      {/* 卷尾   行囊与未竟之路 */}
       <RevealSection className="mx-auto max-w-5xl px-6 py-16 relative z-20">
-        <div className="sd-box p-6 sm:p-8 rounded-2xl border-2 border-[#d49b55] bg-[#24130a]/95 text-center space-y-4 shadow-2xl relative overflow-hidden">
+        <div className="p-8 sm:p-12 rounded-3xl border border-[#d49b55]/80 bg-gradient-to-b from-[#24130a]/95 via-[#1a0c05]/98 to-[#100602]/98 text-center space-y-6 shadow-[0_16px_50px_rgba(0,0,0,0.8)] relative overflow-hidden backdrop-blur-md">
           
           <div className="w-10 h-10 rounded-full bg-[#4a2411] border border-[#d49b55] text-[#ffdf79] font-serif flex items-center justify-center mx-auto text-sm shadow">
             ✦
           </div>
 
-          <h3 className="text-xl sm:text-2xl font-bold text-[#ffdf79] font-serifSc">
-            {isEnglish ? "The Harvest Season & The Unfinished Trail" : "麦穗金黄 · 行囊与未竟的远方"}
+          <h3 className="text-2xl sm:text-3xl font-bold text-[#ffe89c] font-artistic drop-shadow-[0_2px_10px_rgba(255,223,121,0.3)]">
+            {isEnglish ? "The Harvest Season & The Unfinished Trail" : "麦穗金黄   行囊与未竟的远方"}
           </h3>
 
-          <p className="text-xs sm:text-sm text-[#eedcb1]/85 max-w-2xl mx-auto leading-relaxed font-serifSc italic">
+          <p className="text-xs sm:text-sm text-[#f5e6cc] max-w-2xl mx-auto leading-relaxed font-serif italic">
             {isEnglish
               ? "Honors are merely wildflowers gathered along the trail. What truly endures is the soul that derived equations into dawn and still gazes upon the starlight."
-              : "麦穗已在秋风中垂首，而星光依然在夜空深处闪烁。所谓奖项不过是远征沿途采下的野花与矿石；真正珍贵的，是那个在深夜台灯下专注推导、在星空草丘上依然仰望未来的灵魂。"}
+              : "麦穗已在秋风中垂首，而星光依然在夜空深处闪烁。所谓奖项不过是远征沿途采下的野花与矿石。真正珍贵的，是那个在深夜台灯下专注推导、在星空草丘上依然仰望未来的灵魂。"}
           </p>
 
           <div className="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs font-serifSc">

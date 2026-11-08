@@ -46,12 +46,12 @@ export default function StudyClient({ sections }: { sections: Section[] }) {
 
   return (
     <div className="min-h-screen bg-[var(--app-bg)] pt-24 text-[var(--app-fg)] transition-colors duration-300 page-enter">
-      <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 lg:grid lg:grid-cols-[260px_1fr] lg:gap-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 lg:flex lg:gap-12">
         {/* Sidebar TOC */}
-        <aside className="hidden lg:block">
+        <aside className="hidden lg:block w-64 shrink-0">
           <div className="sticky top-28 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2">
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--app-muted)]">
-              {language === "zh" ? "目录" : "Contents"}
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--app-muted)] font-artistic">
+              {language === "zh" ? "研读目录" : "Contents"}
             </p>
             <nav className="flex flex-col gap-1 border-l border-[var(--app-border)]">
               {sections.map((s) => (
@@ -60,7 +60,7 @@ export default function StudyClient({ sections }: { sections: Section[] }) {
                   onClick={() => scrollTo(s.id)}
                   className={`relative pl-4 text-left text-sm leading-6 transition-colors ${
                     activeId === s.id
-                      ? "text-[var(--app-fg)]"
+                      ? "text-[var(--app-fg)] font-semibold"
                       : "text-[var(--app-muted)] hover:text-[var(--app-fg)]"
                   }`}
                 >
@@ -75,12 +75,12 @@ export default function StudyClient({ sections }: { sections: Section[] }) {
         </aside>
 
         {/* Main content */}
-        <main ref={mainRef} className="min-w-0">
+        <main ref={mainRef} className="flex-1 min-w-0">
           <div className="mb-12">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl font-artistic">
               {title}
             </h1>
-            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--app-muted)] md:text-base">
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[var(--app-muted)] md:text-base font-serif">
               {subtitle}
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function StudyClient({ sections }: { sections: Section[] }) {
                 id={section.id}
                 className="scroll-mt-28 overflow-hidden rounded-[28px] border border-[var(--app-border)] bg-[var(--app-surface)]/60 p-6 backdrop-blur-sm transition-all duration-500 hover:border-[var(--app-border-strong)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.08)] md:p-10"
               >
-                <h2 className="mb-6 text-2xl font-semibold tracking-tight md:text-3xl">
+                <h2 className="mb-6 text-2xl font-semibold tracking-tight md:text-3xl font-serif">
                   {section.title}
                 </h2>
                 <div
@@ -103,11 +103,11 @@ export default function StudyClient({ sections }: { sections: Section[] }) {
             ))}
           </div>
 
-          <div className="mt-20 border-t border-[var(--app-border)] pt-8 text-center text-xs text-[var(--app-muted)]">
+          <div className="mt-20 border-t border-[var(--app-border)] pt-8 text-center text-xs text-[var(--app-muted)] font-serif">
             <p>
               {language === "zh"
-                ? "持续更新中 · 基于多篇期刊论文整理"
-                : "Work in progress · Curated from multiple journal papers"}
+                ? "持续更新中 基于多篇学术论文整理"
+                : "Work in progress — Curated from multiple journal papers"}
             </p>
           </div>
         </main>

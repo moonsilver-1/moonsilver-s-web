@@ -10,14 +10,14 @@ const footerLabels = {
   zh: {
     friendSite: "友站",
     backToTop: "回到顶部",
-    madeWith: "用心搭建 · 像素风小站",
+    madeWith: "用心搭建 像素风小站",
     companion: (days: number) => `小鸡已陪伴你 ${days} 天`,
     sound: "音效",
   },
   en: {
     friendSite: "Friend site",
     backToTop: "Back to top",
-    madeWith: "Built with care · pixel style",
+    madeWith: "Built with care pixel style",
     companion: (days: number) => `Chicken has been with you for ${days} day${days === 1 ? "" : "s"}`,
     sound: "SFX",
   },
